@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Dec 21 15:12:35 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+sources "vela" (above 100 MeV), and "vela_low" (extrapolated above 30 MeV) added, suggestion in spectrum.cxx to remove defaulted interval function.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Dec 21 15:12:35 PST 2002
 FluxSvc/src
 
 Modified Files:
