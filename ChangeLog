@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 30 11:27:25 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx rootplot.h roottest.cxx 
+Log Message:
+add interface to command line, access to FluxMgr
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 11:05:17 PST 2002
 FluxSvc/src
 
