@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 22:30:56 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	ISpectrum.h 
+Removed Files:
+	EventSource.h FluxSource.h 
+Log Message:
+move header files from interface directory;  
+more doc changes, clean out unused methods.
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  1 18:08:45 PST 2003
 FluxSvc/doc
 
