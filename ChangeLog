@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Dec  7 15:20:16 PST 2001
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+Fixed xml file declaration method - default is set only if no files are declared -
+declaring source xml files overrides the default entirely, to give the user full
+control over source files....
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Nov 27 14:39:09 PST 2001
 FluxSvc/src
 
