@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.37 2003/08/24 01:16:32 hierath Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.38 2003/10/03 00:26:46 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -17,7 +17,7 @@
 #include <vector>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc("FluxSvc", 3 , 0); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 4 , 0); 
 
 // forward declarations
 class IFlux;
@@ -31,13 +31,14 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.37 2003/08/24 01:16:32 hierath Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.38 2003/10/03 00:26:46 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
 
-    /// just get an IFlux object by name
+    /// just get an IFlux object by name -- see compositeSource
     virtual  StatusCode source(std::string name, IFlux*&)=0;
+
 
     /// return a list of legal names
     virtual std::list<std::string> fluxNames()const=0;
@@ -93,6 +94,10 @@ public:
 
     ///this should return the source file names, along with the contained sources.
     virtual std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const=0;
+
+    /// set pointer to a flux object, constructed from set of names
+    virtual StatusCode compositeSource(std::vector<std::string> names, IFlux*& flux)=0;
+
 
 };
 
