@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Aug  9 14:37:02 PDT 2001
+FluxSvc/doc release.notes
+
+Modified Files:
+	release.notes 
+Log Message:
+
+ready to tag
+    *
+------------------------------------------------------------
 User: burnett  Thu Aug  9 14:22:48 PDT 2001
 FluxSvc/src/Dll FluxSvc_load.cxx
 
