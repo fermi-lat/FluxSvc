@@ -1,12 +1,10 @@
 /** @file CompositeSource.cxx
     @brief Define CompositeSource
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.18 2003/02/22 14:38:02 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.19 2003/03/02 06:30:57 burnett Exp $
 */
 
 #include "CompositeSource.h"  
-
-#include "FluxSource.h"
 
 
 #include <strstream>
@@ -14,6 +12,7 @@
 #include <numeric> // for accumulate
 #include <functional>
 #include <iomanip>
+#include <cmath>
 
 CompositeSource::CompositeSource (double aRate)
 : EventSource(aRate),m_numofiters(0), m_recent(0)
@@ -29,17 +28,13 @@ CompositeSource::~CompositeSource()
 void CompositeSource::addSource (EventSource* aSource)
 {
     m_sourceList.push_back(aSource);
-#if 0 //THB does this do anything?
-    EventSource::setFlux( flux(EventSource::time()) );
-#endif
     //here, set up the associated vectors by default.
     m_unusedSource.push_back(0);
     m_sourceTime.push_back(-1);
     m_eventList.push_back(0);
 }
 
-
-FluxSource* CompositeSource::event (double time)
+EventSource* CompositeSource::event (double time)
 {
     int i=0; //for iterating through the m_unusedSource vector
     int winningsourcenum; //the number of the "winning" source

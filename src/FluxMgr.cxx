@@ -1,11 +1,11 @@
 /** @file FluxMgr.cxx
     @brief Implementation of FluxMgr
 
-  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.46 2003/03/04 00:04:32 srobinsn Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.47 2003/03/19 06:31:04 srobinsn Exp $
 */
 
 #include "FluxMgr.h"
-#include "FluxSource.h"
+#include "EventSource.h"
 #include "SpectrumFactoryTable.h"
 #include "GPS.h"
 #include "FluxException.h" // defines FATAL_MACRO
@@ -255,8 +255,7 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
     
     //testing rotateangles function
     GPS::instance()->rotateAngles(std::make_pair<double,double>(0.0,0.3));
-    
-    FluxSource* f;
+    EventSource* f;
     double totalinterval=0;
     for( int i = 0; i< count; ++i) {
         
@@ -278,7 +277,7 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
         }else{counts[sourceNumber]++;}
         
         totalinterval+=interval;
-        cout << f->spectrum()->particleName()
+        cout << f->particleName()
             << "(" << f->energy()<< " GeV)"
             << ", Launch: "  << f->launchPoint() 
             << ", Dir "      << f->launchDir() 

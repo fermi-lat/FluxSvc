@@ -1,7 +1,7 @@
 /** @file EventSource.cxx
     @brief Implementation of class EventSource
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.14 2003/03/02 06:30:57 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.15 2003/03/02 19:11:16 burnett Exp $
 */
 
 #include "EventSource.h"
@@ -54,3 +54,17 @@ double	EventSource::solidAngle () const{
 std::string EventSource::fullTitle () const 
 { return std::string("EventSource");   }
 std::string EventSource::displayTitle () const  {  return m_name; }
+
+// inline function declarations:
+
+
+const std::string& EventSource::name () const	{   return m_name;  }
+void EventSource::name (const std::string& value)    { m_name = value;   }
+
+double    EventSource::totalArea () { return s_total_area; }
+void    EventSource::totalArea (double value) { s_total_area = value; }
+
+unsigned EventSource::code () const { return m_code; }
+void EventSource::code ( unsigned c ) { m_code = c; }
+
+void EventSource::setFlux(double value){ m_flux=value; }

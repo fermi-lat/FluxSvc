@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.26 2003/03/01 23:26:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.27 2003/03/02 17:49:00 burnett Exp $
 
 #ifndef _H_IFlux_
 #define _H_IFlux_
@@ -11,7 +11,7 @@
 
 class ParticleProperty;
 class EventSource;
-class FluxSource;
+
 class ISpectrumFactory;
 
 /** 
@@ -22,7 +22,7 @@ class ISpectrumFactory;
 * 
   Abstract interface for an object that generates particles, Flux
 
-  * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.26 2003/03/01 23:26:48 burnett Exp $
+  * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.27 2003/03/02 17:49:00 burnett Exp $
 */
 class IFlux {
 public:
@@ -89,8 +89,7 @@ public:
     virtual HepRotation transformGlastToGalactic(double time)const=0;
     
     virtual EventSource* currentEvent()=0;
-    
-    virtual FluxSource* currentFlux()=0;
+    virtual EventSource* currentFlux()=0;
 
     /// write the characteristics of the current source distribution to a stream
     virtual void writeSourceCharacteristic(std::ostream& out)=0;

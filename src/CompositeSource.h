@@ -1,7 +1,7 @@
 /** @file CompositeSource.h
     @brief CompositeSource declaration
     
-  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.14 2002/10/31 01:31:01 srobinsn Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.15 2003/03/02 06:30:57 burnett Exp $
 */
 
 #ifndef CompositeSource_h
@@ -14,13 +14,11 @@
 * "which source" it is representing this time.  Old particles are held, along with the
 * time of their arrival, until use.
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.15 2003/03/02 06:30:57 burnett Exp $
 */
 
 #include "EventSource.h"
 #include <vector>
-
-class FluxSource;
 
 class CompositeSource : public EventSource { 
 public:
@@ -34,7 +32,7 @@ public:
     
     /// generate an event from from one of the sources 
     /// which make up the composite, and return a pointer to it
-    virtual FluxSource* event (double time);
+    virtual EventSource* event (double time);
     
     /// rate - compute overall rate...
     virtual double rate (double time)const;
@@ -85,7 +83,8 @@ protected:
     
     //private: 
     std::vector< EventSource* > m_sourceList;
-    std::vector< FluxSource* > m_eventList;
+    std::vector< EventSource* > m_eventList;
+
     //vector of flags, holds whether or not the current source has a remaining unused particle.
     std::vector<int> m_unusedSource;
     //vector of recorded arrival times of held sources.
