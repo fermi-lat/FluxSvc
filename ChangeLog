@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jan 24 02:03:47 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxMgr.h FluxSource.h IFlux.h ISpectrumFactory.h 
+Added Files:
+	Spectrum.h SpectrumFactory.h SpectrumFactoryTable.h 
+Log Message:
+moved files to work with FLuxdisplay,
+transformation matrix can be gotten from Flux now.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jan 18 03:22:07 PST 2002
 FluxSvc/xml
 
