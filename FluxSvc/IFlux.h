@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.17 2002/05/03 17:26:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.18 2002/05/05 23:58:57 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -67,8 +67,11 @@ public:
     /// pass a specific amount of time
     virtual void pass ( double t)=0;
 
-    /// get the transformation matrix
+    ///get the transformation matrix due to orientation of the Galaxy 
     virtual Rotation CELTransform(double time)const=0;
+
+    ///get the transformation matrix due to orientation of the spacecraft.
+    virtual Rotation OrientTransform(double time)const=0;
        
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.2 2002/03/11 16:55:06 cohen Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -46,7 +46,7 @@ public:
     void test(std::ostream& out, std::string source_name, int count);
     
     /// set the angular (off-zenith) values of the GLAST satellite
-    void setGlastAngles(std::pair<double,double> ang);
+    void setOrientation(std::pair<double,double> ang);
     
     /// set the orbital (position) values of the GLAST satellite
     void setGlastPosition(std::pair<double,double> pos);
@@ -72,8 +72,11 @@ public:
     std::pair<double,double> location();
 
 
-    ///get the transformation matrix.
+    ///get the transformation matrix due to orientation of the Galaxy
     Rotation CELTransform(double time);
+
+     ///get the transformation matrix due to orientation of the spacecraft.
+    Rotation OrientTransform(double time);
     
 private:
     

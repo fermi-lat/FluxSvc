@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.14 2002/05/01 22:33:06 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.15 2002/05/08 16:59:08 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -284,7 +284,7 @@ void FluxMgr::addFactory(std::string name, const ISpectrumFactory* factory ) {
     SpectrumFactoryTable::instance()->addFactory(name,factory);
 }
 
-void FluxMgr::setGlastAngles(std::pair<double,double> ang){
+void FluxMgr::setOrientation(std::pair<double,double> ang){
     GPS::instance()->rotateAngles(ang);
 }
 
@@ -327,6 +327,10 @@ Rotation FluxMgr::CELTransform(double time){
     return GPS::instance()->orbit()->CELtransform(time);
 }
 
+//get the transformation matrix.
+Rotation FluxMgr::OrientTransform(double time){
+    return GPS::instance()->rockingAngleTransform(time);
+}
 
 
 /** creates a document of the form
