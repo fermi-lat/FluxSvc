@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Feb 14 08:00:06 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx Spectrum.cxx 
+Log Message:
+time is passed as argument to Spectrum::energySrc, so that randomly drawed kinetic energies of particles can be time dependant
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Feb 13 13:03:18 PST 2002
 FluxSvc/src
 
