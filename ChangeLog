@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Feb 10 06:48:22 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+did not need ToolSvc: just have the tools belong to FluxSvc.
+    *
+------------------------------------------------------------
 User: burnett  Sun Feb  9 08:53:58 PST 2003
 FluxSvc/src
 
