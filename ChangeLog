@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: srobinsn  Sun Jun 30 13:57:26 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h CompositeSource.h 
+	EventSource.cxx FluxMgr.cxx FluxSvc.cxx MapSpectrum.cxx 
+	Orbit.cxx Orbit.h Spectrum.cxx Spectrum.h 
+Log Message:
+code cleanup, additional d0xygen parameters explaining lat/lon and directional syntax.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sun Jun 30 13:57:26 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
