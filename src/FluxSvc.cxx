@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.18 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.19 2002/04/05 23:40:22 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -150,7 +150,7 @@ void FluxSvc::pass ( double t){
 m_fluxMgr->pass(t);
 }
 
-void rootDisplay(std::vector<char*> arguments){
+void FluxSvc::rootDisplay(std::vector<char*> arguments){
 rootplot abc(arguments);
 }
 
