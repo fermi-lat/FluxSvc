@@ -1,6 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.35 2003/03/01 23:14:56 burnett Exp $
+
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.36 2003/03/02 06:35:58 burnett Exp $
 
 */
 
@@ -52,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.35 2003/03/01 23:14:56 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.36 2003/03/02 06:35:58 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {

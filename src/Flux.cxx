@@ -1,6 +1,7 @@
 /** @file Flux.cxx
     @brief Implementation of Flux
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.25 2003/03/01 23:14:56 burnett Exp $
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.26 2003/03/02 06:30:57 burnett Exp $
 
   Original author: T. Burnett
 */

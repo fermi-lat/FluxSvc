@@ -1,4 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.23 2002/10/14 15:00:31 burnett Exp $
+/** @file Flux.h
+    @brief Declaration of Flux
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.26 2003/03/02 06:30:57 burnett Exp $
+
+  Original author: T. Burnett
+*/
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
