@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kyoung  Wed Jul 18 13:25:27 PDT 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Added ld_library_path
+    *
+------------------------------------------------------------
 User: burnett  Mon Jul 16 06:26:13 PDT 2001
 FluxSvc/src/Dll FluxSvc_load.cxx
 
