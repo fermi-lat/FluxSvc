@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Sep  4 19:24:02 PDT 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+non-shareable static library defined to clean up requirements file, rocking-angle modes added to GPS, controllable via the service interface, example in TestFluxSvc.  Rotation methods ghanged in GPS, SkyDir used in getGalacticDirection structure in FluxSource, extra "TestOptions" file for alternate joboptions, all(?) references to the internal orbit class migrated to GPS, which uses the astro package for the orbit model.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Sep  4 19:24:01 PDT 2002
 FluxSvc/src/test
 
