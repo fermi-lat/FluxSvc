@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.11 2002/04/19 08:17:29 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.12 2002/04/21 03:08:59 burnett Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -23,7 +23,8 @@ class FluxSource : public EventSource
       ///  constructor
       FluxSource ( ISpectrum* aSpec = 0, double aFlux = 1 );
       FluxSource ( const DOM_Element& xelem );
-      
+      FluxSource::FluxSource(double aFlux, ISpectrum* aSpec,  Vector* direction);
+
       ///    destructor
       virtual ~FluxSource();
           
@@ -92,7 +93,7 @@ class FluxSource : public EventSource
 
       double interval (double time);
 
-	  void FluxSource::getGalacticDir(double l,double b);
+      void FluxSource::getGalacticDir(double l,double b);
 
       /// acess to the maximum energy (kinetic)
       double maxEnergy()const { return m_maxEnergy;}
