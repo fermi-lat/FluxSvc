@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.1 2002/01/16 11:55:58 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.2 2002/01/17 08:38:46 srobinsn Exp $
 
 
 #ifndef EventSource_h
@@ -25,23 +25,23 @@ class EventSource
       virtual ~EventSource();
 
       ///    a randomized interval to the next event - default is 1/rate()
-      GPStime interval ();
+      double interval (double);
 
       ///    calculate the rate for a given flux/solid angle integral (NOTE: integral of solid angle)
-      virtual double  rate ( double solid_angle, double flux );	
-      virtual double  rate ()const;
-      virtual void    rate ( double );
+     // virtual double  rate ( double solid_angle, double flux );	
+      virtual double  rate (double time)const;
+      virtual void    setRate ( double );
 
       ///    abstract method - create an event
-      virtual FluxSource* event () = 0;	  
+      virtual FluxSource* event (double) = 0;	  
 
       ///    UI titles - used for tuple header (verbose) or window title (display)
       virtual std::string fullTitle () const;
       virtual std::string displayTitle () const;
 
       ///    flux for this source in (p/(m^2*sr*sec))
-      virtual double	flux () const;
-      virtual void      flux (double value);
+      virtual double	flux (double time) const;
+      virtual void      setFlux (double value);
 
       ///    disable/enable, test this particular source 
       void      disable (){m_enabled=false;}
@@ -77,6 +77,7 @@ class EventSource
       /// return a unique number correcponding to that spectrum
       virtual int numSource()const{return -1;}
 
+      double m_time;    // elapsed time
   private:							    
       bool m_enabled;           // toggle that it is enabled
       double m_flux;		// representative flux for this event source...

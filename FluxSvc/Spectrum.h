@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.3 2002/01/24 10:03:47 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.4 2002/01/25 09:02:25 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -54,10 +54,11 @@ public:
     /// for choosing limits
     float fraction(float energy);
     
-    
     virtual ~Spectrum();
     
-    
+    /// a randomized interval to the next event - default is 1/rate()
+    virtual double interval (double time);
+
     virtual std::pair<float,float> dir(float energy)const;
     
     /// new interface for Hirosima classes
