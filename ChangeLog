@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Sun Apr 28 21:52:24 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+fix conversion factors in FluxAlg
+    *
+------------------------------------------------------------
 User: srobinsn  Sun Apr 28 14:08:10 PDT 2002
 FluxSvc/src/test/flux
 
