@@ -1,4 +1,4 @@
-// $Header: /home/cvs/SLAC/FluxSvc/src/Attic/GalElSpectrum.cxx,v 1.6 2002/06/24 22:37:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.8 2003/01/28 20:28:34 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 #ifdef __GNUG__
@@ -66,10 +66,10 @@ float GalElSpectrum::operator() (float x) const{
 }
 
 void GalElSpectrum::setPosition(float lat, float lon) {
-    m_pspec.setPosition(lat, lon);
-    //m_lat = lat;
-    //m_lon = lon;
-    m_cutoff = findCutoff(lat,lon);
+    m_lat = lat;
+    m_lon = lon>0? lon : lon+360.;
+    m_pspec.setPosition(m_lat, m_lon);
+    m_cutoff = findCutoff(m_lat,m_lon);
     m_flux = flux(m_cutoff);
 }
 
