@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Oct 14 12:46:13 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	GPS.cxx 
+Log Message:
+rocking angle defaults to 35 degrees.
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Oct 14 10:49:12 PDT 2002
 FluxSvc/src/test
 
