@@ -1,7 +1,7 @@
 // SpectrumFactory.h: interface for the SpectrumFactory class.
 //
 //////////////////////////////////////////////////////////////////////
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/flux/SpectrumFactory.h,v 1.1 2001/12/17 13:36:22 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/SpectrumFactory.h,v 1.1 2002/01/16 12:07:14 srobinsn Exp $
 
 #if !defined(AFX_SPECTRUMFACTORY_H__211C2F25_9111_44B9_B357_0762789222AF__INCLUDED_)
 #define AFX_SPECTRUMFACTORY_H__211C2F25_9111_44B9_B357_0762789222AF__INCLUDED_
@@ -11,7 +11,7 @@
 #endif // _MSC_VER > 1000
 
 #include "FluxSvc/ISpectrumFactory.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
+#include "SpectrumFactoryTable.h"
 #include <typeinfo>
 #include <vector>
 

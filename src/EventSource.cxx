@@ -1,11 +1,11 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/flux/src/EventSource.cxx,v 1.4 2001/06/16 13:26:00 burnett Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
 
 #include "../FluxSvc/EventSource.h"
 
 #include "dom/DOM_Element.hpp"
 #include "xml/Dom.h"
-#include "FluxSvc/GPS.h"
-#include "FluxSvc/Orbit.h"
+#include "GPS.h"
+#include "Orbit.h"
 #include "CLHEP/Random/RandExponential.h"
 
 #include <strstream>

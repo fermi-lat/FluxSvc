@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.1 2002/01/16 12:25:40 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.2 2002/01/16 22:28:05 burnett Exp $
 
 #include "FluxSvc/FluxMgr.h"
 #include "FluxSvc/EventSource.h"
 #include "FluxSvc/ISpectrumFactory.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
+#include "../../SpectrumFactoryTable.h"
 #include <iostream>
 #include <algorithm>
-#include "FluxSvc/CHIMESpectrum.h"
-#include "FluxSvc/Orbit.h"
+#include "../../CHIMESpectrum.h"
+#include "../../Orbit.h"
 
 
 static int default_count = 10;

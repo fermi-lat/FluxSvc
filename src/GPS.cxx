@@ -1,10 +1,10 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.6 2002/01/07 23:01:11 srobinsn Exp $
+// $Id: GPS.cxx,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
-#include "FluxSvc/GPS.h"
+#include "GPS.h"
 
-#include "FluxSvc/Orbit.h"
+#include "Orbit.h"
 #include "CLHEP/Random/RandFlat.h"
 
 #include <iomanip>

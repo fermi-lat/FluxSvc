@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.9 2001/10/18 03:30:16 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.1 2002/01/16 11:54:48 srobinsn Exp $
 
 
 // File: CHIMESpectrum.h
@@ -38,7 +38,7 @@
 #ifndef CHIME_SPECTRUM_H
 #define CHIME_SPECTRUM_H
 
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 #include "facilities/Observer.h"
 #include <vector>
 #include <string>

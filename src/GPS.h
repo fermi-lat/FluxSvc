@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/flux/GPS.h,v 1.11 2002/01/09 23:40:41 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/GPS.h,v 1.1 2002/01/16 12:01:02 srobinsn Exp $
 // GPS.h: interface for the GPS class.
 //
 //	Models the Global Positoning System for a spacecraft. Handles time

@@ -1,4 +1,4 @@
-// $Id: StaticOrbit.h,v 1.3 2001/10/20 07:20:35 srobinsn Exp $
+// $Id: StaticOrbit.h,v 1.1 2002/01/16 12:08:21 srobinsn Exp $
 // Specification for the static orbit class
 // Author: Sawyer Gillespie - hgillesp@u.washington.edu
 

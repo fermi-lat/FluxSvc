@@ -1,6 +1,6 @@
-// $Id: HeSpectrum.cxx,v 1.9 2001/12/17 13:39:06 burnett Exp $
+// $Id: HeSpectrum.cxx,v 1.1 2002/01/16 12:25:38 srobinsn Exp $
 
-#include "FluxSvc/HeSpectrum.h"
+#include "HeSpectrum.h"
 
 #include "HeSpectrum.inc"  // numerical data: energies, fluxes, gfluxes
 
@@ -8,9 +8,9 @@
 #include <algorithm>
 #include <functional>
 #include "CLHEP/Random/Random.h"
-#include "FluxSvc/GPS.h"
+#include "GPS.h"
 
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<HeSpectrum> factory;
 const ISpectrumFactory& HeSpectrumFactory = factory;

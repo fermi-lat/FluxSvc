@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/flux/EventSource.h,v 1.7 2001/10/18 03:30:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.1 2002/01/16 11:55:58 srobinsn Exp $
 
 
 #ifndef EventSource_h
@@ -6,7 +6,7 @@
 
 #include <string>
 
-#include "GPS.h"
+#include "../src/GPS.h"
 
 
 class DOM_Element;
