@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.14 2002/01/14 23:22:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -38,7 +38,8 @@ public:
     /// pass a specific amount of time
     virtual void pass ( double t);
 
-    
+    /// create a set of display windows using rootplot.
+    void rootDisplay(std::vector<char*> arguments);
 
     
     //------------------------------------------------------------------
@@ -49,7 +50,6 @@ public:
     
     /// perform the finalization, as required for a service.
     virtual StatusCode finalize ();
-    
     
     /// Query interface
     virtual StatusCode queryInterface( const IID& riid, void** ppvUnknown );
