@@ -1,7 +1,7 @@
 package FluxSvc
-version v6r17p2
+version v6r18
 
-# $Id: requirements,v 1.117 2004/12/16 21:28:54 usher Exp $
+# $Id: requirements,v 1.118 2005/02/27 00:15:49 burnett Exp $
 author  T. Kozanecki <hansl$slac.stanford.edu> T. Burnett
 
 branches FluxSvc cmt doc cdf 
@@ -26,9 +26,9 @@ use GRB * celestialSources -no_auto_imports
 # _____________________________________________________________
 
 private
-use Event       v10*
-use GlastSvc    v9r*
-use astro       v1r*
+use Event       v*
+use GlastSvc    v*
+use astro       v*
 #use genericSources * celestialSources
 #use Pulsar  * celestialSources
 
