@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Apr 29 14:26:03 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx 
+Log Message:
+output of launch points in detector now in mm ; xml sources understood to be declared in mm.  this is reflected in the DTD.
+
+    *
+------------------------------------------------------------
 User: burnett  Sun Apr 28 21:52:25 PDT 2002
 FluxSvc/src
 
