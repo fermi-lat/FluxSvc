@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.43 2003/07/11 23:10:38 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.44 2003/07/29 23:13:25 burnett Exp $
 
 */
 
@@ -53,7 +53,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.43 2003/07/11 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.43 2003/07/11 23:10:38 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.44 2003/07/29 23:13:25 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -136,7 +136,7 @@ StatusCode FluxAlg::initialize(){
     //then this line sets the rocking type, as well as the rocking angle.
     m_fluxSvc->setRockType(m_pointing_mode,m_rocking_angle);
 
-    log << MSG::INFO << "loading source..." << endreq;
+    log << MSG::INFO << "loading source " << m_source_name << endreq;
     
     sc =  m_fluxSvc->source(m_source_name, m_flux);
     if( sc.isFailure()) {
