@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sat Oct 20 00:21:11 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
+
+Modified Files:
+	FluxSvc.h IFlux.h IFluxSvc.h 
+Log Message:
+
+Added more commenting.
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Oct 17 20:31:13 PDT 2001
 FluxSvc/src/Dll FluxSvc_dll.cxx FluxSvc_load.cxx
 
