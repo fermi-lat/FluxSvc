@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.28 2005/03/15 04:29:40 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.29 2005/03/18 02:08:03 burnett Exp $
 */
 
 // Include files
@@ -17,12 +17,6 @@
 #include "astro/SkyDir.h"
 #include "astro/EarthCoordinate.h"
 #include "astro/SolarSystem.h"
-#include "astro/EarthOrbit.h"
-// Event for creating the McEvent stuff
-#include "Event/TopLevel/MCEvent.h"
-#include "Event/MonteCarlo/McParticle.h"
-#include "Event/TopLevel/EventModel.h"
-#include "Event/MonteCarlo/Exposure.h"
 
 //flux
 #include "FluxSvc/IFluxSvc.h"
@@ -47,7 +41,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.28 2005/03/15 04:29:40 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.29 2005/03/18 02:08:03 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -84,6 +78,7 @@ private:
     double m_initial_time; 
 
     StringProperty m_root_tree;
+    StringProperty m_pointing_history_input_file;
 
     IFluxSvc*   m_fluxSvc;
 
@@ -122,12 +117,9 @@ void ExposureAlg::FT2entry::begin(double time)
     dec_scz =   gps->DECZ();
     //uncomment for debug check double check=astro::SkyDir(rax, decx)().dot(astro::SkyDir(raz, decz)());
 
-    EarthOrbit orb; //for the following line - this should have a better implementation.
-    double julianDate = orb.dateFromSeconds(time);
-    EarthCoordinate earthpos(location,julianDate);
-    lat_geo = earthpos.latitude();
-    lon_geo = earthpos.longitude();
-    rad_geo = earthpos.altitude();
+    lat_geo = gps->lat(); 
+    lon_geo = gps->lon(); 
+    rad_geo = gps->altitude(); 
 }
 void ExposureAlg::FT2entry::finish(double stop_time, double live)
 {
@@ -160,6 +152,7 @@ ExposureAlg::ExposureAlg(const std::string& name, ISvcLocator* pSvcLocator)
 {
     // declare properties with setProperties calls
     declareProperty("root_tree",  m_root_tree="pointing_history");
+    declareProperty("pointing_history_input_file",  m_pointing_history_input_file="");
 
 }
 
@@ -185,6 +178,14 @@ StatusCode ExposureAlg::initialize(){
         log << MSG::ERROR << "Unable to locate PropertyManager Service" << endreq;
         return sc;
     }
+
+    //set the input file to be used as the pointing database
+    if(! m_pointing_history_input_file.value().empty() ){
+        std::string fileName(m_pointing_history_input_file.value());
+        facilities::Util::expandEnvVar(&fileName);
+        GPS::instance()->setPointingHistoryFile(fileName);
+    }
+
 
     DoubleProperty startTime("StartTime",0);
     sc = propMgr->getProperty( &startTime );
@@ -212,7 +213,14 @@ StatusCode ExposureAlg::execute()
 
     m_lasttime = m_fluxSvc->currentFlux()->time();
 
-    log << MSG::INFO << "tick at " << m_lasttime - m_initial_time << " sec"<<  endreq;
+    log << MSG::DEBUG ;
+    if( log.isActive() ){
+        std::stringstream t;
+        t << "tick at " << std::setprecision(10)
+        << m_lasttime - m_initial_time << " sec";
+        log << t.str();
+    }
+    log << endreq;
 
     if( m_tickCount!=0){
         double interval = m_lasttime - m_history->start;
