@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.4 2002/04/03 21:26:12 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
 
 
 // File: CHIMESpectrum.h
@@ -136,29 +136,6 @@ private:
     ObserverAdapter< CHIMESpectrum > m_observer; //obsever tag
     
 };
-
-class CHIMEMax : public CHIMESpectrum
-{
-public:
-    CHIMEMax();
-    ~CHIMEMax(){}
-};
-
-class CHIMEMin : public CHIMESpectrum
-{
-public:
-    CHIMEMin();
-    ~CHIMEMin(){}
-};
-
-
-class CHIMEAvg : public CHIMESpectrum
-{
-public:
-    CHIMEAvg();
-    ~CHIMEAvg(){}
-};
-
 
 #endif // CHIME_SPECTRUM_H
 
