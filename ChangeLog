@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 30 11:04:33 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx FluxSvc.h 
+Log Message:
+use const for pointers.
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Oct 28 23:17:01 PST 2002
 FluxSvc/xml
 
