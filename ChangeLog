@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu May 24 20:04:02 PDT 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+update for new flux v4
+
+    *
+------------------------------------------------------------
 User: burnett  Wed May 16 17:31:09 PDT 2001
 FluxSvc/src/test FluxTestAlg.cxx jobOptions.txt
 
