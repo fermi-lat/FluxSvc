@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.8 2002/01/02 05:00:15 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.9 2002/01/10 17:35:01 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -103,7 +103,8 @@ StatusCode FluxTestAlg::execute() {
         << " GeV), Launch: " 
         << "(" << p.x() <<", "<< p.y() <<", "<<p.z()<<")" 
         << " Dir " 
-        << "(" << d.x() <<", "<< d.y() <<", "<<d.z()<<")" 
+        << "(" << d.x() <<", "<< d.y() <<", "<<d.z()<<")"
+        << ",  Elapsed Time = " << m_flux->time()
         << endreq;
 
     //m_flux->pass(10.);

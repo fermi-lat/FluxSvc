@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/CompositeSource.h,v 1.3 2002/01/31 09:55:19 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -65,6 +65,9 @@ public:
 
    // double m_time; 
     double m_interval;
+
+    //return how many sources are in the sourcelist
+    int howManySources(){return m_sourceList.size();}
 
 protected:
     virtual void setupXML (const DOM_Element&);

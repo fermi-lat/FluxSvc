@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/flux/xml/source_library.xml,v 1.32 2001/12/07 23:18:37 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.1 2002/01/15 17:12:41 burnett Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -405,6 +405,13 @@
     <source name="backgndavg">
         <nestedSource sourceRef="chimeavg"/>
         <nestedSource sourceRef="albedo_proton_avg"/>
+    </source>
+
+
+	<!-- background mixture 4 -  averages-->
+    <source name="comptest">
+        <nestedSource sourceRef="chime"/>
+        <nestedSource sourceRef="all_gamma"/>
     </source>
 
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.3 2002/01/31 09:55:20 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.4 2002/02/02 01:33:25 srobinsn Exp $
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -67,12 +67,13 @@ FluxSource* CompositeSource::event (double time)
         std::vector<EventSource*>::iterator  it = now;
         
         double intrval=0.,intrmin=100000.;
-        for (; now != m_sourceList.end(); ++now) {
+        for (int q=0 ; now != m_sourceList.end(); ++now) {
             intrval=(*now)->interval(EventSource::time());
             
             if(intrval < intrmin){
                 it=now;
                 intrmin=intrval;
+                m_numofiters=q;
             }
             //y += fabs((*it)->rate(m_time));
             //if (x <= y) {
@@ -81,8 +82,9 @@ FluxSource* CompositeSource::event (double time)
             //}
             
             m_recent = (*it);
-            m_numofiters++;
+            q++;
         }
+        setInterval(intrmin);
     }
     //update the time
     //m_time += interval(m_time);

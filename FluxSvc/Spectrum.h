@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.4 2002/01/25 09:02:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.5 2002/01/30 01:36:44 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -75,6 +75,7 @@ protected:
     virtual void parseParamList(std::string input, std::vector<float>& output) const;
     
     double    m_lat, m_lon;   // latitude and longitudinal coordinates
+    double m_currentInterval; // so we only find the interval for each particle once.
 
 };
 

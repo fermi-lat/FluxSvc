@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.4 2002/01/31 09:55:19 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.5 2002/02/02 01:33:24 srobinsn Exp $
 
 
 #ifndef EventSource_h
@@ -79,6 +79,10 @@ class EventSource
 
       virtual double time()const{return m_time;}
       virtual void setTime(double time){m_time=time;}
+
+
+      //return how many sources are in the sourcelist (defaults to 1 if only a single FluxSource)
+      virtual int howManySources(){return 1;}
 
       //double m_time;    // elapsed time, really only needed for EventSource
   private:
