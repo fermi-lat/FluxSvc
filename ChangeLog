@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 10 17:50:30 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+fix Event version
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Sep  6 14:14:47 PDT 2002
 FluxSvc/src
 
