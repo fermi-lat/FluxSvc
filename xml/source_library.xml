@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.23 2003/01/27 19:35:35 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.24 2003/01/28 20:28:34 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -172,6 +172,18 @@
     <!-- galactic electron spectrum -->
     <source name="electron">
         <spectrum escale="GeV"> <SpectrumClass name="GalElSpectrum"/> <use_spectrum/> </spectrum>
+    </source>
+
+
+	<!-- galactic electron spectrum evaluated at the CHIME  average . angular dependence and rate are from the CHIME spectrum object -->
+    <source name="electronavg" >
+        <spectrum escale="GeV"> <SpectrumClass name="GalElSpectrum" params="13.8, 24.9"/> <use_spectrum/> </spectrum>
+    </source>
+
+ 
+    <!-- galactic electron spectrum orbit max-->
+    <source name="electronmax">
+        <spectrum escale="GeV"> <SpectrumClass name="GalElSpectrum" params="-28.5,110"/> <use_spectrum/> </spectrum>
     </source>
 
 
