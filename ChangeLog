@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb 27 17:47:39 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+SetExplicitRotationAngles put in as a fluxSvc method, sets an explicitly declared set of rocking angles.
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Feb 26 21:02:24 PST 2003
 FluxSvc/doc
 
