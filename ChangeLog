@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Aug 29 13:30:00 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+exposureAlf and FluxAlg altered (in the sense of when filterpassed() flags are set) to work with the new Gleam infrastructure (the top sequence loop).  Some sources moved into source_library.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Aug 28 19:13:11 PDT 2002
 FluxSvc/xml
 
