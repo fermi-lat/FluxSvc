@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Oct 30 17:31:01 PST 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx CompositeSource.h 
+Log Message:
+compositeSource altered for proper timing of nested composite sources.
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 17:19:56 PST 2002
 FluxSvc/src
 
