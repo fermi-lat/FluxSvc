@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 15:13:34 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+rootplot works now
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Jan 16 14:28:05 PST 2002
 FluxSvc/src/test/flux
 
