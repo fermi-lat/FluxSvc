@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.27 2002/05/20 23:19:27 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.28 2002/05/25 21:08:57 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -60,7 +60,6 @@ StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
         &&(std::find(source_list2.begin(), source_list2.end(), name) == source_list2.end()))
         //flux =  new Flux(name);
         return StatusCode::FAILURE;
-    
     flux =  new Flux(name);
     m_currentFlux = flux;
     //std::cout << "currentFluxPointer = " << flux << std::endl;
