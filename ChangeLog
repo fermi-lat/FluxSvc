@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Jul 23 12:00:58 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source.dtd 
+Log Message:
+Possible "transcode" memory leak in FluxSource fixed, file with list of possible particles referenced in DTD, rocking angle transformation now works in opposite direction, mainpage.h changed to produce better output, JobOptions elements documented in FluxTestAlg, Class headers brought up to code across the board.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Jul 23 12:00:58 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
