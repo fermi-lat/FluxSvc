@@ -1,7 +1,7 @@
 // Flux test program that generates a ROOT macro to plot the flux
 //
 
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/rootplot.h,v 1.2 2002/05/01 22:33:06 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/rootplot.h,v 1.3 2002/10/30 19:27:25 burnett Exp $
 
 // Original author: Theodore Hierath
 
@@ -10,9 +10,9 @@ Test program for graphing the spectrums available through the flux
 package.
 */
 
-#include "../../FluxMgr.h"
+#include "../FluxMgr.h"
 #include "FluxSvc/EventSource.h"
-#include "../../SpectrumFactoryTable.h"
+#include "../SpectrumFactoryTable.h"
 #include "rootEnergyHist.h"
 #include "rootAngleHist.h"
 

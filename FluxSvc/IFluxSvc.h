@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header:  $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.29 2002/10/14 15:00:31 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -50,7 +50,7 @@ public:
     virtual void pass (double t)=0;    
     
     /// create a set of display windows using rootplot.
-    virtual void rootDisplay(std::vector<char*> arguments)=0;
+    virtual void rootDisplay(std::vector<const char*> arguments)=0;
     
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }

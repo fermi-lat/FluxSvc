@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.7 2002/07/23 19:00:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.8 2002/07/25 05:18:59 srobinsn Exp $
 
 
 #ifndef GLAST_SPECTRUM_H
@@ -82,13 +82,11 @@ public:
     
 protected:
     Spectrum(const std::vector<float>& /*params*/){};
-    Spectrum(/* double lat = 0, double lon = 0, double time=0*/) 
-        /*: m_lat(0), m_lon(0), m_time(0)*/{}
+    Spectrum(){}
         // all constructors protected to ensure an abstract class
         
         virtual void parseParamList(std::string input, std::vector<float>& output) const;
     
-    double    m_lat, m_lon;   // latitude and longitudinal coordinates
     double m_currentInterval; // so we only find the interval for each particle once.
     
 };

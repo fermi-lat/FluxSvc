@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.8 2002/07/23 19:00:55 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.9 2002/10/07 23:42:18 srobinsn Exp $
 
 
 #ifndef EventSource_h
@@ -11,7 +11,7 @@
 * what Glastsim uses as a data source.  This can constitute GISMO based 
 * event generation, reading in from a file, etc...
 * 
-* $Header $
+* $Header: $
 */
 
 

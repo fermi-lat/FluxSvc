@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.29 2002/10/08 22:48:37 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.30 2002/10/14 15:00:31 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -93,11 +93,7 @@ void FluxMgr::init(const std::vector<std::string>& fileList){
         }
         
     }
-    // these are the spectra that we want to make available
-    DLL_DECL_SPECTRUM( CHIMESpectrum);
-    DLL_DECL_SPECTRUM( AlbedoPSpectrum);
-    DLL_DECL_SPECTRUM( HeSpectrum);
-    DLL_DECL_SPECTRUM( GalElSpectrum);
+    // these are the localally defined spectra that we want to make available
     DLL_DECL_SPECTRUM( FILESpectrum);
     DLL_DECL_SPECTRUM( TimeCandle);
     
