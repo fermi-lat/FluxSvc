@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Mar 29 06:07:45 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+remove bad include
+    *
+------------------------------------------------------------
 User: burnett  Wed Mar 27 10:41:25 PST 2002
 FluxSvc/src
 
