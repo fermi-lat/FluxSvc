@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 13 09:12:04 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxAlg.h 
+Log Message:
+setting sequence number in MCEvent
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 12 16:05:44 PDT 2002
 FluxSvc/doc
 
