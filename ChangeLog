@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Oct 17 20:31:12 PDT 2001
+FluxSvc/doc used_packages.html
+
+Modified Files:
+	used_packages.html 
+Log Message:
+
+added and fixed documentation
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Oct 17 20:31:12 PDT 2001
 FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
 
 Modified Files:
