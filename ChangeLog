@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Aug 13 15:47:51 PDT 2004
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+adopted celestial sources, starting with GRB and SpectObj -- tagging v6r16
+    *
+------------------------------------------------------------
 User: burnett  Fri Aug 13 15:47:50 PDT 2004
 FluxSvc/doc
 
