@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.36 2002/08/09 17:23:06 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.37 2002/08/28 07:26:56 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -152,8 +152,9 @@ StatusCode FluxSvc::initialize ()
                 if( status.isSuccess() ){
                     log << MSG::INFO << "Registering sources in " << tooltype << endreq;
                     dynamic_cast<IRegisterSource*>(itool)->registerMe(this);
-                }
-                tsvc->releaseTool(itool);
+                }else{
+		  tsvc->releaseTool(itool);
+		}
 
             }
             
