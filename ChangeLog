@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul  1 13:32:36 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	CHIMESpectrum.cxx FluxSvc.cxx GalElSpectrum.cxx 
+	SimpleSpectrum.cxx SurfaceMuons.cxx 
+Log Message:
+vc8 fixes
+    *
+------------------------------------------------------------
 User: hierath  Fri Jun 13 16:25:01 PDT 2003
 FluxSvc/src/rootplot
 
