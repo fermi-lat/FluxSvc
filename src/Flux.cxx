@@ -1,7 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.7 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.8 2001/11/27 22:39:09 srobinsn Exp $
 
 // Original author: T. Burnett
-
 
 #include "Flux.h"
 
@@ -12,6 +11,7 @@
 
 Flux::Flux(std::string name) 
 : m_time(0)
+, m_flux(0)
 {
     m_event = s_mgr->source(name);
 }
@@ -46,7 +46,13 @@ void Flux::generate()
 std::string Flux::particleName()const{
     return std::string(m_flux->spectrum()->particleName());
 }
+/*
+ParticleProperty* property()const {
+    ParticleProperty* prop = m_propSvc->find(particleName());
+    return prop;
 
+}
+*/
 // its kinetic energy
 double Flux::energy()const
 {
@@ -113,11 +119,11 @@ int Flux::numSource()const
     
 }
 
-
+#if 0
 void Flux::addFactory( const IFactory* factory ) {
     FactoryTable::instance()->addFactory( factory );
 }
-
+#endif
 
 void Flux::addFactory(std::string name, const ISpectrumFactory* factory ) {
     SpectrumFactoryTable::instance()->addFactory(name,factory);

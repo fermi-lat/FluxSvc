@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.9 2001/10/20 07:21:11 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -18,6 +18,7 @@ static const InterfaceID IID_IFluxSvc(910, 1 , 0);
 // forward declarations
 class IFlux;
 class HepRandomEngine;
+class IParticlePropertySvc;
 
 //! Abstract interface for the flux service, FluxSvc.
 class  IFluxSvc : virtual public IInterface {
@@ -39,8 +40,7 @@ public:
     
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }
-    
-    
+ 
 };
 
 #endif  // _H_IFluxSvc

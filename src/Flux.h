@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.9 2001/10/20 07:21:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.10 2001/11/27 22:39:09 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -34,6 +34,9 @@ public:
     /// the particle generated 
     virtual std::string particleName()const;
     
+    /// the particle property entry for the last particle generated 
+    //virtual ParticleProperty* property()const=0;
+
     /// its kinetic energy
     virtual double energy()const;
     
@@ -70,7 +73,7 @@ public:
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const;
     
-    virtual void addFactory( const IFactory* factory );
+   // virtual void addFactory( const IFactory* factory );
     
     virtual void addFactory(std::string name, const ISpectrumFactory* factory );/* {
                                                                                 insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));

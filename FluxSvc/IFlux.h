@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.9 2001/10/20 07:21:11 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -10,9 +10,9 @@
 #include <string>
 #include "CLHEP/Geometry/Point3D.h"
 #include "CLHEP/Geometry/Vector3D.h"
-#include "GaudiKernel/FactoryTable.h"
 #include "flux/SpectrumFactoryTable.h"
 
+class ParticleProperty;
 
 //!  Abstract interface for an object that generates particles, Flux
 class IFlux {
@@ -32,6 +32,9 @@ public:
     
     /// the particle name of the last particle generated 
     virtual std::string particleName()const=0;
+
+    /// the particle property entry for the last particle generated 
+    //virtual ParticleProperty* property()const=0;
     
     /// its kinetic energy
     virtual double energy()const=0;
@@ -59,9 +62,7 @@ public:
     
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const=0;
-    
-    virtual void addFactory( const IFactory* factory )=0;
-    
+       
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 #if 0
     // get a description of the parameters that can be modified, and reference to a list of them

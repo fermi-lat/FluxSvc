@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.6 2001/08/23 21:08:42 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.7 2001/10/13 22:40:37 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -32,10 +32,10 @@ private:
 
 static const AlgFactory<FluxTestAlg>  Factory;
 const IAlgFactory& FluxTestAlgFactory = Factory;
-
+/*
 void WARNING (const char * text ){  std::cerr << "WARNING: " << text << '\n';}
 void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
-
+*/
 
 //------------------------------------------------------------------------------
 //
