@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: omodei  Thu Mar 14 07:10:50 PST 2002
+FluxSvc/src/GRB
+
+Modified Files:
+	GRBConstants.cxx GRBConstants.h GRBShell.cxx GRBShell.h 
+	GRBShock.cxx GRBShock.h GRBSim.cxx GRBSim.h GRBSpectrum.cxx 
+	GRBSpectrum.h 
+Log Message:
+Add doxygen documentations, clean up the code
+    *
+------------------------------------------------------------
 User: cohen  Mon Mar 11 08:55:07 PST 2002
 FluxSvc/src
 
