@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Apr  3 13:26:12 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h IFlux.h ISpectrumFactory.h 
+Added Files:
+	ISpectrum.h 
+Removed Files:
+	Spectrum.h SpectrumFactory.h SpectrumFactoryTable.h 
+Log Message:
+Added RemoteSpectrumFactory, external Spectrum declarations working.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Mar 29 06:07:45 PST 2002
 FluxSvc/src
 
