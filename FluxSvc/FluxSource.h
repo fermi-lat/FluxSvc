@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.23 2002/07/23 19:00:55 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.24 2002/09/02 19:34:48 burnett Exp $
 
 #ifndef FluxSource_h
 #define FluxSource_h 1
@@ -8,7 +8,7 @@
 * \brief EventSource subclass to take over the functionality of the old Flux class, 
 * which implemented a GISMO based event generation scheme.
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.24 2002/09/02 19:34:48 burnett Exp $
 */
 
 #include "FluxSvc/EventSource.h"
@@ -46,7 +46,7 @@ public:
     ///    getLaunch - compute launch point, direction, & energy
     virtual void computeLaunch (double time=0);
     
-    virtual double flux(double time)const; // calculate flux for attached specturm
+    virtual double flux(double time)const; // calculate flux for attached spectrum
     
     /// return effective solid angle
     double solidAngle()const;
