@@ -3,7 +3,7 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.77 2003/08/28 19:23:18 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.78 2004/05/11 15:31:28 omodei Exp $
 
 ApplicationMgr.DLLs   = { "GlastSvc", "FluxSvc"};
 ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
@@ -28,6 +28,8 @@ ApplicationMgr.TopAlg = {"FluxAlg/Top","ExposureAlg","FluxTestAlg"};
 FluxSvc.source_lib ={"$(FLUXROOT)/xml/source_library.xml"};
 FluxSvc.source_lib +={"$(FLUXSVCROOT)/src/test/test_source.xml"};
 FluxSvc.source_lib +={"$(GRBROOT)/xml/GRB_user_library.xml"};
+
+FluxSvc.StartDate = "2004-09-03 18:00:01.1";
 
 //For ExposureAlg, here are lines to uncomment to:
 //write all the timetick particles out to a pointing information file:
