@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.10 2002/09/17 00:33:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.11 2002/10/29 07:17:01 srobinsn Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
@@ -156,8 +156,8 @@ public:
         virtual ~GPS();
         
         // only class/subclasses have access
-        void    lat ( double );         // set latitude
-        void    lon ( double );         // set longitude
+        //void    lat ( double );         // set latitude
+        //void    lon ( double );         // set longitude
         void    time ( GPStime );       // set time
         GPStime orbittime () const;     // access to orbit time
         void    orbittime ( GPStime );  // set orbit time

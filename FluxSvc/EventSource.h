@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.9 2002/10/07 23:42:18 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.10 2002/10/30 20:08:10 burnett Exp $
 
 
 #ifndef EventSource_h
@@ -11,7 +11,7 @@
 * what Glastsim uses as a data source.  This can constitute GISMO based 
 * event generation, reading in from a file, etc...
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.10 2002/10/30 20:08:10 burnett Exp $
 */
 
 
@@ -73,7 +73,7 @@ public:
     static void	totalArea ( double value );
     
     ///    makeOrbit - creates an orbit appropriate for this source       
-    virtual Orbit*    makeOrbit () const;
+    //virtual Orbit*    makeOrbit () const;
     
     /// virtual event number: should be filled in by subclass
     virtual int eventNumber()const{return -1;} 

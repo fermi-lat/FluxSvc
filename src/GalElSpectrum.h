@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.6 2002/07/23 19:00:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.7 2002/07/25 05:18:58 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 
 /*
@@ -36,9 +36,9 @@ is something else.  Can someone look it up?
 
 
 #include "Spectrum.h"
-#include "CHIMESpectrum.h"
 #include "facilities/Observer.h"
 #include <string>
+#include "CHIMESpectrum.h"
 
 class GalElSpectrum : public Spectrum
 {

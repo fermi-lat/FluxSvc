@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.30 2002/10/14 15:00:31 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.31 2002/10/30 20:08:11 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -6,14 +6,13 @@
 #include "SpectrumFactoryTable.h"
 #include "GPS.h"
 #include "FluxException.h" // defines FATAL_MACRO
-#include "CompositeDiffuse.h"
 
 #include "dom/DOM_Document.hpp"
 #include "dom/DOM_Element.hpp"
 #include "xml/Dom.h"
 #include "xml/IFile.h"
 
-#include "Orbit.h"
+//#include "Orbit.h"
 
 
 #define DLL_DECL_SPECTRUM(x)   extern const ISpectrumFactory& x##Factory; x##Factory.addRef();
@@ -151,12 +150,8 @@ EventSource*  FluxMgr::getSourceFromXML(const DOM_Element& src)
         // for that in the code
         
         CompositeSource* cs;
-        if(flux == 1.0){
             cs = new CompositeSource();
-        }else{ cs = new CompositeDiffuse(flux);
-        }
         do { 
-            //        DOM_Element sourceChild = (DOM_Element &) childNode;
             DOM_Element selem = 
                 getLibrarySource(sname.getAttribute("sourceRef"));
             if (selem == DOM_Element()) {
