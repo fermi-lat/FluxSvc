@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul 29 10:59:45 PDT 2004
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx mainpage.h 
+Log Message:
+Implement property to describe start time as a user-friendly absolute date.
+    *
+------------------------------------------------------------
 User: hansl  Wed Jul 21 18:16:24 PDT 2004
 FluxSvc/doc
 
