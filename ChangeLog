@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: xchen  Tue Mar 25 14:00:09 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+modify surface_muons source so that it can generate muons according to an analytic spectrum
+
+    *
+------------------------------------------------------------
 User: xchen  Tue Mar 25 13:58:49 PST 2003
 FluxSvc/src
 
