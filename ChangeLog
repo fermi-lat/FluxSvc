@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jun  5 01:53:01 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+made rocking angle modes as a function of orbits an option in the algorithm.  Tweaked aitoff-projection shading to be more realistic.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jun  5 01:06:50 PDT 2002
 FluxSvc/xml
 
