@@ -2,12 +2,12 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.74 2004/08/13 18:14:30 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.75 2004/08/13 22:47:51 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
 #include "FluxSvc/IRegisterSource.h"
-#include "facilities/TimeStamp.h"
+#include "facilities/Timestamp.h"
 
 #include "flux/rootplot.h"
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.74 2004/08/13 18:14:30 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.75 2004/08/13 22:47:51 burnett Exp $
 */
 
 // includes
