@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Apr  6 14:15:46 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx mainpage.h 
+Log Message:
+fix problem that resulted in extra tuple rows: but allow overriding it, see doxygen
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr  6 14:15:46 PDT 2005
 FluxSvc/doc
 
 Modified Files:
