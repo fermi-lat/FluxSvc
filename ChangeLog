@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: omodei  Wed Mar  6 10:05:21 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove any dependences from root in the GRB source program: GRBTest in FluxDiplay!
+    *
+------------------------------------------------------------
 User: als  Mon Feb 25 17:12:58 PST 2002
 FluxSvc/cmt
 
