@@ -1,7 +1,7 @@
 /** @file FluxMgr.cxx
     @brief Implementation of FluxMgr
 
-  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.44 2003/03/02 06:30:57 burnett Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.45 2003/03/02 17:49:00 burnett Exp $
 */
 
 #include "FluxMgr.h"
@@ -358,13 +358,15 @@ HepRotation FluxMgr::transformGlastToGalactic(double time){
 }
 
 ///this sets the rocking mode in GPS.
-void FluxMgr::setRockType(GPS::RockType rockType){
+void FluxMgr::setRockType(GPS::RockType rockType, double rockAngle){
    GPS::instance()->setRockType(rockType);
+   GPS::instance()->rockingDegrees(rockAngle);
 }
 
 ///this sets the rocking mode in GPS.
-void FluxMgr::setRockType(int rockType){
+void FluxMgr::setRockType(int rockType, double rockAngle){
    GPS::instance()->setRockType(rockType);
+   GPS::instance()->rockingDegrees(rockAngle);
 }
 
 std::string FluxMgr::writeXmlFile(const std::vector<std::string>& fileList) {
