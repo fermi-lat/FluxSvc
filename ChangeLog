@@ -1,4 +1,23 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun 24 15:37:16 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.h 
+	CompositeDiffuse.cxx CompositeDiffuse.h CompositeSource.cxx 
+	CompositeSource.h EventSource.cxx FILESpectrum.cxx 
+	FILESpectrum.h Flux.cxx Flux.h FluxAlg.cxx FluxAlg.h 
+	FluxException.h FluxMgr.cxx FluxMgr.h FluxSource.cxx 
+	FluxSvc.cxx FluxSvc.h GPS.cxx GPS.h GalElSpectrum.cxx 
+	GalElSpectrum.h Geomag.cxx Geomag.h HeSpectrum.cxx 
+	HeSpectrum.h MapSpectrum.cxx MapSpectrum.h Orbit.cxx Orbit.h 
+	SimpleSpectrum.cxx SimpleSpectrum.h Spectrum.cxx Spectrum.h 
+	SpectrumFactoryTable.cxx SpectrumFactoryTable.h StaticOrbit.h 
+Log Message:
+huge reformatting of code to be self-consistent in format, several function names altered to conform to capitalization standards.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun 24 15:37:15 PDT 2002
 FluxSvc/FluxSvc
 
