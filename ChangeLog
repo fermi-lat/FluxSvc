@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct 15 21:06:59 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx 
+Log Message:
+patch to fix the side patch illumination
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Oct 14 12:46:13 PDT 2002
 FluxSvc/src
 
