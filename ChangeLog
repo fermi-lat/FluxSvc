@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sun Oct 20 16:06:34 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+fix Irunable problem if reading digi input.
+tag v4r14p2
+    *
+------------------------------------------------------------
+User: burnett  Sun Oct 20 16:06:34 PDT 2002
 FluxSvc/doc
 
 Modified Files:
