@@ -2,7 +2,7 @@
 * @file SurfaceMuons.cxx
 * @brief declaration and definition of SurfaceMuons
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.2 2003/03/01 23:26:48 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.3 2003/03/02 06:32:25 burnett Exp $
 */
 #include "Spectrum.h"
 #include "SpectrumFactory.h"
@@ -19,7 +19,7 @@
 * \brief Spectrum representing cosmic ray muon flux at the Earth's surface
 * \author T. Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.2 2003/03/01 23:26:48 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.3 2003/03/02 06:32:25 burnett Exp $
 */
 //
 
@@ -66,11 +66,10 @@ private:
     std::map<double,double> m_ispec; // integral spectrum, for sampling
     double m_flux;
     double m_index;
-    double m_E0, m_emax;
+    double m_emax;
     double m_cosmin, m_cosmax;
     double m_costh;
     double m_total;
-    bool m_vertical;
     
 };
 
@@ -81,7 +80,6 @@ const ISpectrumFactory& SurfaceMuonsFactory = factory;
 SurfaceMuons::SurfaceMuons(const std::string& paramstring)
 : m_index(2.71)
 , m_emax(1000)
-, m_E0(5) 
 {
     //Purpose: Initializes parameters during construction
     
@@ -126,8 +124,7 @@ static inline double cube(double x){return x*x*x;}
 double SurfaceMuons::energy( double )
 {
     using namespace std;
-    // first choose the angle for the dir function
-    // if doing vertical, don't!
+    // first choose the angle for the dir function, assuming cos**2 distribution
     static double third=1.0/3.0;
     double r = RandFlat::shoot();
     m_costh = pow(r*cube(m_cosmax)+(1-r)*cube(m_cosmin), third);

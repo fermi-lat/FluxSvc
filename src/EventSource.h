@@ -1,6 +1,7 @@
 /** @file EventSource.h
    @brief Declaration of EventSource
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.15 2003/02/22 14:38:02 burnett Exp $
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.h,v 1.1 2003/03/02 06:30:57 burnett Exp $
 */
 
 #ifndef EventSource_h
@@ -13,7 +14,7 @@
 
 This the abstract base class for source, (FluxSource) or a list of sources (CompositeSource)
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.15 2003/02/22 14:38:02 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.h,v 1.1 2003/03/02 06:30:57 burnett Exp $
 */
 
 

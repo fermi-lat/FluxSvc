@@ -1,6 +1,7 @@
 /** @file FluxMgr.h
     @brief declaration of FluxMgr
- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.15 2003/03/01 23:14:56 burnett Exp $
+
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.16 2003/03/02 06:30:57 burnett Exp $
 
   */
 #ifndef FLUX_MGR_H

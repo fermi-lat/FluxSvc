@@ -1,6 +1,7 @@
 /** @file EventSource.cxx
     @brief Implementation of class EventSource
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.13 2003/02/22 05:42:25 burnett Exp $
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.14 2003/03/02 06:30:57 burnett Exp $
 */
 
 #include "EventSource.h"
