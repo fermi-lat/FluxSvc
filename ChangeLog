@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 20 13:39:02 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h FluxSource.h 
+Log Message:
+big fix to simplify specification of sources
+    *
+------------------------------------------------------------
 User: burnett  Wed Feb 12 07:53:12 PST 2003
 FluxSvc/src/test
 
