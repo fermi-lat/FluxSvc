@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Oct 10 18:28:49 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+string include statement back into ISpectrum for the sake of linux, extraaneous output removed, compositeDiffuse output upgraded.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Oct 10 18:28:49 PDT 2002
 FluxSvc/src
 
 Modified Files:
