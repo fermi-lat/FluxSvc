@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.59 2005/03/22 14:48:51 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.60 2005/03/22 19:20:37 burnett Exp $
 
 */
 
@@ -59,7 +59,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.59 2005/03/22 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.59 2005/03/22 14:48:51 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.60 2005/03/22 19:20:37 burnett Exp $
 */
 
 
@@ -105,6 +105,8 @@ private:
 
     PointingInfo m_pointing_info;
     StringProperty m_root_tree;
+    BooleanProperty m_save_tuple; // set true to save
+
     INTupleWriterSvc* m_rootTupleSvc;;
 
 };
@@ -130,6 +132,7 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
     declareProperty("pointing_history_input_file",  m_pointing_history_input_file="");
 
     declareProperty("pointing_info_tree_name",  m_root_tree="MeritTuple");
+    declareProperty("save_pointing_info",  m_save_tuple=false);
 
 }
 //------------------------------------------------------------------------
@@ -356,7 +359,7 @@ StatusCode FluxAlg::execute()
     
     // put pointing stuff into the root tree
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
-        m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), true);
+        m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), m_save_tuple);
     }
 
     if( m_initialTime==0) m_initialTime=currentTime;
