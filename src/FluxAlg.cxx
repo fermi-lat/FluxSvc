@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.53 2003/11/24 21:51:04 srobinsn Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.54 2003/12/03 14:00:17 burnett Exp $
 
 */
 
@@ -50,8 +50,11 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.53 2003/11/24 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.53 2003/11/24 21:51:04 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.54 2003/12/03 14:00:17 burnett Exp $
 */
+
+ISpectrumFactory & GRBmanagerFactory();
+ISpectrumFactory & GRBobsFactory();
 
 class FluxAlg : public Algorithm {
 public:
@@ -170,8 +173,14 @@ StatusCode FluxAlg::initialize(){
 		log << MSG::INFO << "no rocking mode called, rocking disabled for this run." << endreq;
 	}
 
+	//////////////////////////////////////////////////
+	// Adding GRB Factory!
+	log << MSG::INFO << "Register GRB models!" << endreq;
+	GRBmanagerFactory();
+	GRBobsFactory();
+	//////////////////////////////////////////////////
 
-
+	
 	if( !m_source_list.value().empty()){
 		log << MSG::INFO << "loading sources " << endreq;
 		std::vector<std::string> sources=m_source_list.value();
