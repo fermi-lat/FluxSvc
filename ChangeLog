@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Dec 13 00:47:01 PST 2001
+FluxSvc/FluxSvc
+
+Modified Files:
+	mainpage.h 
+Log Message:
+
+Cleaned up mainpage.h, moved default for source library xml file to reside 
+in joboptions.txt
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Dec  7 15:20:16 PST 2001
 FluxSvc/src/test
 
