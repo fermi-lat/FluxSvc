@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.5 2001/07/14 22:56:40 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.6 2001/08/23 21:08:42 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -53,8 +53,7 @@ StatusCode FluxTestAlg::initialize() {
 
     MsgStream log(msgSvc(), name());
     log << MSG::INFO << "initializing..." << endreq;
-  //  log << MSG::INFO << sean->instance()->particleName() << endreq;
-    
+   
     // Use the Job options service to set the Algorithm's parameters
     setProperties();
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.7 2001/08/20 22:25:40 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.8 2001/09/28 04:38:05 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -45,9 +45,6 @@ FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
 {
     // declare the properties and set defaults
     
-    //declareProperty ("size", m_default_name);
-    //declareProperty("source_library" , m_source_library);
-	//declareProperty("user_library" , m_user_library);
     declareProperty("source_lib" , m_source_lib);
     declareProperty("source_lib_default" , m_source_lib_default);
     

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.5 2001/07/30 03:58:15 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.6 2001/08/23 21:08:41 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -14,39 +14,39 @@ class FluxSource;
 
 class Flux : public IFlux {
 public:
-        // ctor, select the name
+        /// ctor, select the name
     Flux(std::string name);
     virtual ~Flux();
 
-    // name of the flux
+    /// name of the flux
     virtual std::string name()const;
 
     /// full title of the flux
     virtual std::string title()const;
 
-    // generate a new entry trajectory
+    /// generate a new entry trajectory
     virtual void generate();
 
-    // the particle generated 
+    /// the particle generated 
     virtual std::string particleName()const;
 
-    // its kinetic energy
+    /// its kinetic energy
     virtual double energy()const;
 
-    // starting point 
+    /// starting point 
     virtual HepPoint3D launchPoint()const;
 
-    // direction
+    /// direction
     virtual HepVector3D launchDir()const;
 
-	// time
+	/// time
 	virtual double time()const;
 
 
-    // rate ( /mm**2 /s)
+    /// rate ( /mm**2 /s)
     virtual double rate()const;
 
-    // set the static pointer 
+    /// set the static pointer 
     static void mgr(FluxMgr* );
  
     /// set the area of the target
