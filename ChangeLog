@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu Mar 20 11:55:33 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+restore proper rates for power-law spectra;
+remove FluxSource from interface
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 20 11:55:33 PST 2003
 FluxSvc/src/rootplot
 
 Modified Files:
