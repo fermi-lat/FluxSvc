@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon May 13 14:14:25 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source.dtd 
+Log Message:
+defaults on "patch" attribute in DTD multiplied by 10 to be in millimeters.
+
+    *
+------------------------------------------------------------
 User: richard  Fri May 10 11:01:55 PDT 2002
 FluxSvc/src/test
 
