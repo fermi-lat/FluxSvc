@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.4 2001/12/13 08:47:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.5 2002/04/04 19:10:28 srobinsn Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -10,6 +10,10 @@
   it also holds the standard set of strings representing xml filenames, thus allowing multiple 
   xml files to be used. <a href="../FluxSvcDoc2.htm">More Documentation</a>
   <br>
+  <h2> Defining an external source </h2>
+    See the interface definition IRegisterSource.
+    
+
   <hr>
   \section notes release notes
   \include release.notes
