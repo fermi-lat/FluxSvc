@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May 30 14:33:01 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+"Standard Time Candle" source put into algorithm to advance the satellite a set amount of time each measurement.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May 30 02:36:21 PDT 2002
 FluxSvc/src/test
 
