@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.10 2002/02/07 23:51:02 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.11 2002/04/16 18:20:57 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -129,7 +129,7 @@ StatusCode FluxTestAlg::execute() {
     //only make a new source if one does not already exist.
     if(pcol==0){
         m_flux->generate();
-        p = m_flux->launchPoint();
+        p = m_flux->launchPoint()*10.;
         d = m_flux->launchDir();
         energy = m_flux->energy();
         partName = m_flux->particleName();
