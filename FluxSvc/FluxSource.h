@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.15 2002/05/08 16:59:07 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.16 2002/05/09 21:39:15 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -23,7 +23,7 @@ class FluxSource : public EventSource
       ///  constructor
       FluxSource ( ISpectrum* aSpec = 0, double aFlux = /*1*/0 );
       FluxSource ( const DOM_Element& xelem );
-      FluxSource::FluxSource(double aFlux, ISpectrum* aSpec,  Vector* direction);
+      FluxSource::FluxSource(double aFlux, ISpectrum* aSpec,  double l, double b);
 
       ///    destructor
       virtual ~FluxSource();

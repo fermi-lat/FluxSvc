@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.19 2002/05/20 23:19:27 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.20 2002/05/22 08:21:52 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -179,7 +179,7 @@ StatusCode FluxTestAlg::execute() {
         return sc;
     }
     
-    HepVector3D pointingin(0,0,1);
+    HepVector3D pointingin = d;//(0,0,1);
     pointingin = (fsvc->transformGlastToGalactic(m_flux->time()))*pointingin;
     
     //log << MSG::INFO
@@ -224,7 +224,7 @@ StatusCode FluxTestAlg::finalize() {
 
 std::vector<FluxTestAlg::exposureSet> FluxTestAlg::findExposed(double l,double b,double deltat){
     std::vector<exposureSet> returned;
-    double angularRadius = 30;
+    double angularRadius = 10;
     for(int i= l-angularRadius ; i<=l+angularRadius ; i+=2){
         for(int j= b-angularRadius ; j<=b+angularRadius ; j+=2){
             
