@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 29 16:13:25 PDT 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+move source stuff to flux
+    *
+------------------------------------------------------------
 User: burnett  Fri Jul 18 14:15:58 PDT 2003
 FluxSvc/xml
 
