@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.24 2002/09/05 02:23:59 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.25 2002/09/06 21:14:46 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
 /** 
@@ -76,6 +76,9 @@ public:
     /// this sets the rocking mode in GPS.
     virtual void setRockType(GPS::RockType rockType)=0;
     virtual void setRockType(int rockType)=0;
+
+    ///this should return the source file names, along with the contained sources.
+    std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
     
     
 };
