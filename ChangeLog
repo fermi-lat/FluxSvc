@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sun May 19 14:39:20 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+FluxTestAlg altered to find galactic directions (primitive exposure map) and generate a rather silly display.  This should and will be redone with root, and the exposure altered to reflect the real characteristics of the spacecraft.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sat May 18 14:21:34 PDT 2002
 FluxSvc/src
 
