@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Dec  3 06:00:17 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+catch unrecognized souirce name error, new branch tag p2
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Nov 24 13:51:04 PST 2003
 FluxSvc/src
 
