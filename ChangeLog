@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Aug 22 09:38:04 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx GPS.cxx GPS.h 
+Added Files:
+	ExposureAlg.cxx ExposureAlg.h 
+Log Message:
+
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Aug 22 09:38:04 PDT 2002
 FluxSvc/cmt
 
 Modified Files:
