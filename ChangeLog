@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Oct  7 16:42:20 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+extra output in exposurealg, slewing angle optimized from requirements, file output (and associated functions) for writing the characteristics of teh diffuse source model.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Oct  7 16:42:20 PDT 2002
 FluxSvc/src
 
 Modified Files:
