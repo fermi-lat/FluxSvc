@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.19 2002/04/05 23:40:22 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.20 2002/04/06 00:05:45 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -62,6 +62,7 @@ StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
         return StatusCode::FAILURE;
     
     flux =  new Flux(name);
+    m_currentFlux = flux;
     
     return StatusCode::SUCCESS;
 }
@@ -154,7 +155,10 @@ void FluxSvc::rootDisplay(std::vector<char*> arguments){
 rootplot abc(arguments);
 }
 
-
+///return the pointer to the current IFlux object
+IFlux* FluxSvc::currentFlux(){
+return m_currentFlux;
+}
 
 void WARNING (const char * text ){  std::cerr << "WARNING: " << text << '\n';}
 void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
