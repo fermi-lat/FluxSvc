@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Oct 20 00:21:11 PDT 2001
+FluxSvc/src Flux.h
+
+Modified Files:
+	Flux.h 
+Log Message:
+
+Added more commenting.
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Oct 20 00:21:11 PDT 2001
 FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
 
 Modified Files:
