@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.4 2002/06/24 22:37:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.5 2002/07/23 19:00:56 srobinsn Exp $
 #ifndef FluxAlg_h
 #define FluxAlg_h
 /** 
@@ -16,11 +16,11 @@
 // Include files
 // Gaudi system includes
 #include "GaudiKernel/Algorithm.h"
+#include "GaudiKernel/Property.h"
 
 class IFlux;
 class IFluxSvc;
 class IparticlePropertySvc;
-class McVertex;
 
 
 class FluxAlg : public Algorithm {
@@ -35,17 +35,16 @@ public:
 private: 
     
     StringProperty m_source_name;
+
     IFluxSvc*   m_fluxSvc;
     IFlux *     m_flux;
     
     
-    unsigned long m_run;      // run number
-    unsigned long m_event;    // event number
+    UnsignedIntegerProperty m_run;      // run number
+    unsigned int m_sequence;  // sequence number
     
-    McVertex*       m_root; // 
     
     IDataProviderSvc* m_eds;
-    //    mc::McParticleCol* m_plist;
     
     IParticlePropertySvc * m_partSvc;
     
