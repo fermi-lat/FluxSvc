@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.60 2003/08/12 06:03:20 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.61 2003/08/24 01:17:00 hierath Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -10,7 +10,7 @@
 #include "facilities/Observer.h"
 
 #include "flux/rootplot.h"
-#include "flux/orbitavg.h"
+
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
@@ -36,7 +36,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.60 2003/08/12 06:03:20 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.61 2003/08/24 01:17:00 hierath Exp $
 */
 
 // includes
