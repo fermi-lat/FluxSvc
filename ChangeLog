@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: hansl  Wed Jul 21 18:16:23 PDT 2004
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-correct requirements, FluxSvc_dll.cxx
-    *
-------------------------------------------------------------
 User: hansl  Wed Jul 21 18:02:37 PDT 2004
 FluxSvc/src/Dll
 
