@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.11 2001/10/31 23:21:04 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.12 2001/10/31 23:35:29 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -85,8 +85,10 @@ StatusCode FluxSvc::initialize ()
     setProperties ();
     
     //set a default source library, which the user can add to or change
+    if(m_source_lib.begin()==m_source_lib.end()){
     m_source_lib.push_back("$(FLUXROOT)/xml/source_library.xml");
-    
+    }
+
     // open the message log
     MsgStream log( msgSvc(), name() );
      
