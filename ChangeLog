@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Mon Mar 21 15:43:15 PST 2005
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx 
+Added Files:
+	PointingInfo.cxx 
+Log Message:
+Move pointing and history stuff to new class, PointingInfo, which fills FT1 and Pt tuples.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r19p1, operation: add
 Package: FluxSvc
