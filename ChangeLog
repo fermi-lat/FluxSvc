@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Jul 16 06:26:13 PDT 2001
+FluxSvc/src/Dll FluxSvc_load.cxx
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+
+Restrict list of sources.
+    *
+------------------------------------------------------------
 User: igable  Sun Jul 15 13:48:31 PDT 2001
 FluxSvc/cmt requirements
 
