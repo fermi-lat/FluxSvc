@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Feb 13 13:03:18 PST 2002
+FluxSvc/src
+
+Modified Files:
+	Spectrum.cxx 
+Log Message:
+potential error in Spectrum::dir default implementation fixed, RandFlat used instead of rand().
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Feb 13 13:03:18 PST 2002
 FluxSvc/cmt
 
 Modified Files:
