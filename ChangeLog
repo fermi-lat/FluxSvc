@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul  4 18:06:19 PDT 2002
+FluxSvc/FluxSvc
+
+Added Files:
+	IRegisterSource.h 
+Log Message:
+New interface for registering external sources
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jul  4 02:11:31 PDT 2002
 FluxSvc/xml
 
