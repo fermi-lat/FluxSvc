@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.18 2002/06/16 22:52:16 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.19 2002/06/21 05:10:37 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -129,7 +129,7 @@ class FluxSource : public EventSource
           GeV         //! GeV
       } m_energyscale;
 
-
+/*
           //! Denotes what coordinate system the coordinates
           //! of incoming particles are in
 	  enum FrameType { 
@@ -137,7 +137,7 @@ class FluxSource : public EventSource
           GLAST,        //! relative to the glast satellite(differs from EARTH by the angle GLAST is rotated off zenith)
           GALAXY      //! relative to the galactic origin
       } m_frametype;
-
+*/
 
  
           //! whether or not the current particle is occluded by the earth
