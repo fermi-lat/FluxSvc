@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Jun  3 01:14:55 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+orbit dynamics altered, point-spread function simulated in FLuxTestAlg.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Jun  3 01:14:55 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
