@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Mar 13 20:00:32 PST 2005
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix start time processing to handle initial date
+    *
+------------------------------------------------------------
+User: burnett  Sun Mar 13 20:00:32 PST 2005
 FluxSvc/src
 
 Modified Files:
