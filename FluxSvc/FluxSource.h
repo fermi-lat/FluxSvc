@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.8 2002/04/03 21:26:11 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.9 2002/04/16 22:51:57 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -131,8 +131,6 @@ class FluxSource : public EventSource
           GLAST,        //! relative to the glast satellite(differs from EARTH by the angle GLAST is rotated off zenith)
           GALAXY      //! relative to the galactic origin
       } m_frametype;
-
-
 
 
       virtual int eventNumber()const;
