@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Oct  6 12:47:57 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Change to use GlastSvc converters for EventHeader, MCEvent
+    *
+------------------------------------------------------------
 User: burnett  Sat Oct  5 10:24:34 PDT 2002
 FluxSvc/src
 
