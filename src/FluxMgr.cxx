@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.40 2003/02/25 00:38:40 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.41 2003/02/27 05:00:38 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -309,11 +309,11 @@ void FluxMgr::addFactory(std::string name, const ISpectrumFactory* factory ) {
     SpectrumFactoryTable::instance()->addFactory(name,factory);
 }
 
-void FluxMgr::setOrientation(std::pair<double,double> ang){
+void FluxMgr::setExplicitRockingAngles(std::pair<double,double> ang){
     GPS::instance()->rotateAngles(ang);
 }
 
-std::pair<double,double> FluxMgr::getOrientation(){
+std::pair<double,double> FluxMgr::getExplicitRockingAngles(){
     return GPS::instance()->rotateAngles();
 }
 
