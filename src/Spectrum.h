@@ -1,19 +1,12 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.9 2002/10/30 20:08:11 burnett Exp $
-
+/** @file Spectrum.h
+    @brief declaration of Spectrum
+ 
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.10 2003/02/23 02:08:22 burnett Exp $
+*/
 
 #ifndef GLAST_SPECTRUM_H
 #define GLAST_SPECTRUM_H
 
-/** 
-* \class Spectrum
-*
-* \brief base class for energy spectrum objects
-*
-* Spectrum is the base class for all of the particle sources 
-* internal to FluxSvc.
-* 
-* $Header $
-*/
 
 #include <string>
 #include <utility>
@@ -21,8 +14,17 @@
 #include "FluxSvc/ISpectrum.h"
 
 
-//!  Class for holding function definitions of Spectrums - i.e. HeSpectrum, SimpleSpectrum, etc...
-//!  Basically an abstract base class for these classes.
+/** 
+* \class Spectrum
+* \brief base class for energy spectrum objects
+*
+* Spectrum is the base class for all of the particle sources 
+* internal to FluxSvc.
+ Class for holding function definitions of Spectrums - i.e. HeSpectrum, SimpleSpectrum, etc...
+ Basically an abstract base class for these classes.
+* 
+* $Header: $
+*/
 class Spectrum : public ISpectrum {
 public:
     

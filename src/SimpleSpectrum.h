@@ -1,14 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.3 2002/06/24 22:37:16 srobinsn Exp $
+/** @file SimpleSpectrum.h
+    @brief declaration of SimpleSpectrum
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
+*/
 #ifndef SIMPLESPECTRUM_H
 #define SIMPLESPECTRUM_H
-/** 
-* \class SimpleSpectrum
-*
-* Spectrum: base class for energy spectrum objects
-* SimpleSpectrum: define a particle and spectral index
-* 
-* $Header $
-*/
 
 #include "Spectrum.h"
 #include <string>
@@ -16,11 +12,12 @@
 class DOM_Element;
 
 
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//!  a convenient Spectrum : a single particle at a particular energy, 
-//!  or a power-law spectrum
-
+/** 
+* \class SimpleSpectrum
+* @brief define a particle and spectral index
+* 
+* $Header: $
+*/
 class SimpleSpectrum : public Spectrum {
 public: 
     SimpleSpectrum(const char* name,float E0, float index=0.0);

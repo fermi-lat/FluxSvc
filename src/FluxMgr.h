@@ -1,5 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.13 2003/02/25 00:38:40 srobinsn Exp $
+/** @file FluxMgr.h
+    @brief declaration of FluxMgr
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.14 2003/02/28 01:47:39 srobinsn Exp $
 
+  */
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
 
@@ -15,7 +18,6 @@
 * $Header $
 */
 
-#include "CompositeSource.h"
 #include "GPS.h"
 
 #include "FluxSvc/FluxSource.h"
@@ -81,13 +83,13 @@ public:
     
     
     ///get the transformation matrix due to orientation of the Galaxy
-    Rotation CELTransform(double time);
+    HepRotation CELTransform(double time);
     
     ///get the transformation matrix due to orientation of the spacecraft.
-    Rotation orientTransform(double time);
+    HepRotation orientTransform(double time);
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-    Rotation FluxMgr::transformGlastToGalactic(double time);
+    HepRotation FluxMgr::transformGlastToGalactic(double time);
 
     ///this sets the rocking mode in GPS.
     void setRockType(GPS::RockType rockType);

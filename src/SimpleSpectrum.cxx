@@ -1,4 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.7 2002/10/31 00:23:40 burnett Exp $
+/** @file SimpleSpectrum.cxx
+    @brief definition of SimpleSpectrum
+
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
+*/
 
 
 #include "SimpleSpectrum.h"
