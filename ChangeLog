@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed May 22 17:44:36 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	GPS.cxx Orbit.cxx 
+Log Message:
+default time expansion in GPS changed to 1, so now orbittime is the same as time, and the lat/lon functions aren't wonky.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed May 22 16:09:07 PDT 2002
 FluxSvc/src/test
 
