@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jul  8 12:27:05 PDT 2002
+FluxSvc/doc
+
+Removed Files:
+	bremss_skymap_41p_222111 test.txt 
+Log Message:
+MapSpectrum removed, to be given own package "MapFlux".
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul  4 20:02:29 PDT 2002
 FluxSvc/src
 
