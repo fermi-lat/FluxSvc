@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Oct 30 05:56:58 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+fix run status output
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Oct 29 12:59:05 PST 2003
 FluxSvc/src
 
