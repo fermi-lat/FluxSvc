@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.52 2003/11/24 18:48:12 srobinsn Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.53 2003/11/24 21:51:04 srobinsn Exp $
 
 */
 
@@ -50,7 +50,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.52 2003/11/24 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.52 2003/11/24 18:48:12 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.53 2003/11/24 21:51:04 srobinsn Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -194,7 +194,8 @@ StatusCode FluxAlg::initialize(){
 			return sc;
 		}
 	}
-	log << MSG::INFO << "Source title: " << m_flux->title() << endreq;
+        std::string title(m_flux->title()); if(title.length()>100) title = title.substr(0,100)+"...";
+	log << MSG::INFO << "Source title: " << title << endreq;
 	log << MSG::INFO << "        area: " << m_flux->targetArea() << endreq;
 	log << MSG::INFO << "        rate: " << m_flux->rate() << endreq;
 
