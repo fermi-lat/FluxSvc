@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Aug 23 14:08:42 PDT 2001
+FluxSvc/src/Dll FluxSvc_load.cxx
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+
+start of new interface for Iflux. not implemented fully.
+    *
+------------------------------------------------------------
 User: burnett  Thu Aug 23 14:08:41 PDT 2001
 FluxSvc/src Flux.h
 
