@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.7 2002/02/14 16:00:06 cohen Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.8 2002/04/03 21:26:11 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -115,6 +115,14 @@ class FluxSource : public EventSource
           SINGLE,        //! fixed point
           PATCH   //! , fixed surface
       } m_pointtype;
+
+          //! Denotes what Energy Units the energy
+          //! of incoming particles are in
+	  enum EnergyScale { 
+          MeV,        //! MeV
+          GeV         //! GeV
+      } m_energyscale;
+
 
           //! Denotes what coordinate system the coordinates
           //! of incoming particles are in
