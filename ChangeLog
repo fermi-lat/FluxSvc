@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Oct  6 12:47:57 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+Change to use GlastSvc converters for EventHeader, MCEvent
+    *
+------------------------------------------------------------
+User: burnett  Sun Oct  6 12:47:57 PDT 2002
 FluxSvc/src
 
 Modified Files:
