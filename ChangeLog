@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Jun 24 15:37:16 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx 
+Log Message:
+huge reformatting of code to be self-consistent in format, several function names altered to conform to capitalization standards.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Jun 24 15:37:16 PDT 2002
 FluxSvc/src
 
 Modified Files:
