@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.32 2002/07/05 01:07:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.33 2002/07/25 05:18:58 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -217,6 +217,11 @@ std::string FluxSvc::fluxName()const{
 
 void FluxSvc::setOrientation(std::pair<double,double> ang){
     m_fluxMgr->setOrientation(ang);
+}
+
+/// get the angular values of the satellite
+std::pair<double,double> FluxSvc::getOrientation(){
+    return m_fluxMgr->getOrientation();
 }
 
 Rotation FluxSvc::transformGlastToGalactic(double time)const{
