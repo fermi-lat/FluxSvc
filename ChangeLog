@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu May 16 22:15:01 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+diffuse altered to take a single source and expand to add more point sources, a single diffuse source is set up to do so in user_library.xml
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu May 16 22:15:01 PDT 2002
 FluxSvc/src
 
 Modified Files:
