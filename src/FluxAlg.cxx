@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.37 2003/03/02 19:11:16 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.38 2003/03/04 00:04:32 srobinsn Exp $
 
 */
 
@@ -53,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.37 2003/03/02 19:11:16 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.38 2003/03/04 00:04:32 srobinsn Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -124,9 +124,12 @@ StatusCode FluxAlg::initialize(){
         log << MSG::ERROR << "Couldn't find the FluxSvc!" << endreq;
         return StatusCode::FAILURE;
     }
-    
-    //m_fluxSvc->setExplicitRockingAngles(m_rocking_angle*M_PI/180,0);
+    //this line sets the explicit rocking angles to be used IF the 
+    //rocking type is "explicit." Note that it uses the m_rocking_angle also.
+    m_fluxSvc->setExplicitRockingAngles(m_rocking_angle*M_PI/180,0);
     //m_fluxSvc->setRockingAngle(m_rocking_angle);
+
+    //then this line sets the rocking type, as well as the rocking angle.
     m_fluxSvc->setRockType(m_pointing_mode,m_rocking_angle);
 
     log << MSG::INFO << "loading source..." << endreq;
