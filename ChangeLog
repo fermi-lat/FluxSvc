@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu May 23 17:16:54 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx GalacticHist.cxx jobOptions.txt 
+Log Message:
+Flux can now return pointers to the current FluxSource and EventSource, for the sake of the GRB test function.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu May 23 17:16:54 PDT 2002
 FluxSvc/src
 
 Modified Files:
