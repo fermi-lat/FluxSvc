@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.7 2002/08/28 07:26:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.8 2002/09/05 02:24:01 srobinsn Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
@@ -147,7 +147,8 @@ public:
     Orbit*  orbit ();               // access the orbit (for manipulation)
 
     void setRockType(RockType rockType){m_rockType = rockType;}
-    
+    void setRockType(int rockType);//{m_rockType = rockType;}
+
     double RAX()const{return m_RAX;}
     double RAZ()const{return m_RAZ;}
     double DECX()const{return m_DECX;}

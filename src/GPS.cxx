@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.12 2002/08/28 07:26:56 srobinsn Exp $
+// $Id: GPS.cxx,v 1.13 2002/09/05 02:24:01 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -426,4 +426,11 @@ void GPS::getPointingCharacteristics(double seconds){
     //a test - to ensure the rotation went properly
     //std::cout << " degrees between xhat and zhat directions: " <<
     //    dirZ.difference(dirX)*180./M_PI << std::endl;
+}
+
+void GPS::setRockType(int rockType){
+    m_rockType = NONE;
+    if(rockType == 1) m_rockType = UPDOWN;
+    if(rockType == 2) m_rockType = SLEWING;
+    if(rockType == 3) m_rockType = ONEPERORBIT;
 }

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.8 2002/08/04 00:52:45 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.9 2002/09/05 02:24:01 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -91,7 +91,7 @@ public:
 
     ///this sets the rocking mode in GPS.
     void setRockType(GPS::RockType rockType);
-
+    void setRockType(int rockType);
 private:
     
     /// source library lookup.  Each source is uniquely identified
