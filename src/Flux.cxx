@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.17 2002/05/09 19:59:29 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.18 2002/05/09 21:39:15 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -138,4 +138,9 @@ return s_mgr->CELTransform(time);
 
 Rotation Flux::orientTransform(double time)const{
 return s_mgr->orientTransform(time);
+}
+
+Rotation Flux::transformGlastToGalactic(double time)const{
+
+    return s_mgr->transformGlastToGalactic(time);
 }

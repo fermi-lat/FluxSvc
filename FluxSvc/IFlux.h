@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.19 2002/05/09 19:59:29 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.20 2002/05/09 21:39:15 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -76,6 +76,9 @@ public:
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 
     virtual /*int*/double gpsTime()const=0;
+
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    virtual Rotation transformGlastToGalactic(double time)const=0;
 
 #if 0
     // get a description of the parameters that can be modified, and reference to a list of them

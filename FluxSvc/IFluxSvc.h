@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.15 2002/05/08 16:59:07 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.16 2002/05/09 19:59:29 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -11,6 +11,7 @@
 #include <string>
 #include <list>
 #include <vector>
+#include "geometry/CoordTransform.h"
 //#include "flux/SpectrumFactoryTable.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
@@ -56,6 +57,9 @@ public:
 
     /// set the glast tilt angles.
     virtual void setOrientation(std::pair<double,double> ang)=0;
+
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    virtual Rotation transformGlastToGalactic(double time)const=0;
 
 
 

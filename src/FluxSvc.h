@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.5 2002/05/08 16:59:08 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.6 2002/05/09 19:59:30 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -49,6 +49,9 @@ public:
 
     /// set the glast tilt angles.
     void setOrientation(std::pair<double,double> ang);
+
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    Rotation transformGlastToGalactic(double time)const;
 
     
     //------------------------------------------------------------------
