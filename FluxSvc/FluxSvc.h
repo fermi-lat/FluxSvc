@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.9 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.10 2001/10/20 07:21:11 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -62,6 +62,7 @@ private:
     
     FluxMgr * m_fluxMgr;
     /// the user-defined list of acceptable XML sources (from JobOptions.txt)
+    //std::string m_source_lib;
     std::vector<std::string> m_source_lib;
     /// the default XML file name (from JobOptions.txt)
     std::string m_source_lib_default;
