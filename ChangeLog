@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Feb  1 17:33:25 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h 
+Removed Files:
+	CompositeSource.h FluxMgr.h FluxSvc.h SimpleSpectrum.h 
+Log Message:
+JobOptions now holds proper source name variable, files relocated to conform to schema, electrons,protons.cxx removed, FluxMgr assert problem fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 31 01:55:20 PST 2002
 FluxSvc/src/test/flux
 
