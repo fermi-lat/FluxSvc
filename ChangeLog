@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Apr 22 17:09:13 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Orbit.cxx 
+Log Message:
+Fixing galactic calculation.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Apr 22 13:50:14 PDT 2002
 FluxSvc/src
 
