@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Aug 28 00:26:58 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+TimeCandle source added as a class with a cxx file, GPS rocking method 
+changed to use appropriate astro methods, exposureAlg set up to use new inserted particle type "timetick"...
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Aug 28 00:26:57 PDT 2002
 FluxSvc/src
 
