@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hierath  Fri Jun 13 16:25:01 PDT 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+Removed line giving false solid angle in the text output.  This didn't affect the graphs in root.
+    *
+------------------------------------------------------------
 User: xchen  Thu Jun 12 16:20:57 PDT 2003
 FluxSvc/xml
 
