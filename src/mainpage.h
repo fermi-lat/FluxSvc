@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.7 2003/03/01 23:14:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.8 2003/03/02 02:08:45 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -107,6 +107,10 @@ vela
 vertical_muons
 vertical_surface_muons
 @endverbatim
+
+This is extracted from 
+@verbinclude "source_library.xml"
+
   <br>
   <h2> Defining an external source </h2>
     See the interface definition IRegisterSource for information on how to link code external to this package.
