@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.3 2001/05/17 00:31:09 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.4 2001/07/07 01:27:10 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -7,7 +7,6 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/AlgFactory.h"
 #include "GaudiKernel/Algorithm.h"
-#include "FluxSvc/PencilBeam.h"
 #include <list>
 #include <string>
 /*! \class FluxTestAlg
@@ -72,11 +71,6 @@ StatusCode FluxTestAlg::initialize() {
         return sc;
     }
 
-
-   ///PencilBeam Testing
-    static PencilBeam* sean=PencilBeam::instance();
-    fsvc->addFactory("testsean", sean);
-   ///End Testing
 
     log << MSG::INFO << "loading source..." << endreq;
 
