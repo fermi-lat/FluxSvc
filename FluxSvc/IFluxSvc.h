@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.30 2002/10/30 20:08:10 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.31 2003/02/23 02:08:21 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -65,10 +65,10 @@ public:
     virtual std::string fluxName()const=0;
     
     /// set the glast tilt angles.
-    virtual void setOrientation(std::pair<double,double> ang)=0;
+    virtual void setExplicitRockingAngles(double ang1,double ang2)=0;
 
     /// get the angular values of the satellite
-    virtual std::pair<double,double> getOrientation()=0;
+    virtual std::pair<double,double> getExplicitRockingAngles()=0;
     
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors

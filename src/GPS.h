@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.12 2002/10/30 20:43:54 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.13 2003/02/25 00:38:40 srobinsn Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
@@ -49,7 +49,8 @@ public:
             NONE,  //!  No rocking rotation done at all.
             UPDOWN, //! Satellite will be rocked toward the north pole in the northern hemisphere, opposite in the south.
             SLEWING, //! (experimental) like UPDOWN, except that rotation at equator happens gradually.
-            ONEPERORBIT //! LAT rocked northward for one orbit, southward for the next.
+            ONEPERORBIT, //! LAT rocked northward for one orbit, southward for the next.
+            EXPLICIT //!  Explicit angles given - this is used only if rotAngles get set.
         };
 
     class Coords {

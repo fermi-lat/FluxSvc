@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.12 2003/02/22 14:38:02 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.13 2003/02/25 00:38:40 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -51,10 +51,10 @@ public:
     void test(std::ostream& out, std::string source_name, int count);
     
     /// set the angular (off-zenith) values of the GLAST satellite
-    void setOrientation(std::pair<double,double> ang);
+    void setExplicitRockingAngles(std::pair<double,double> ang);
 
     /// get the angular values of the satellite
-    std::pair<double,double> getOrientation();
+    std::pair<double,double> getExplicitRockingAngles();
 
     ///this should return the source file names, along with the contained sources.
     std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
