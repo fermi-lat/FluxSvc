@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.69 2003/10/30 13:56:58 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.70 2003/11/03 09:44:21 srobinsn Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.69 2003/10/30 13:56:58 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.70 2003/11/03 09:44:21 srobinsn Exp $
 */
 
 // includes
@@ -223,6 +223,7 @@ StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
 
 StatusCode FluxSvc::compositeSource(std::vector<std::string> names, IFlux*& flux) {
     flux =  new Flux(names);
+    if( flux->currentEvent()==0) return StatusCode::FAILURE;
     m_currentFlux = flux;    
     return StatusCode::SUCCESS;
 }
