@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.13 2003/02/22 05:42:25 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.14 2003/02/23 02:08:22 burnett Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -207,7 +207,7 @@ void CHIMESpectrum::setPosition(double lat, double lon) {
     
     // Integrated flux in the power law tail above the table.
     m_upper = -0.115*1000.*m_en.back()*m_normfact*fluxes[74]
-        * pow(1.+.5*0.115,m_expo)/(0.115*m_expo);
+        * pow(1.+.5*0.115,(double)m_expo)/(0.115*m_expo);
     
     m_cutoff = findCutoff();
     

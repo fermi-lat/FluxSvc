@@ -2,7 +2,7 @@
 * @file SurfaceMuons.cxx
 * @brief declaration and definition of SurfaceMuons
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.5 2003/03/19 18:50:48 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.6 2003/03/25 21:58:49 xchen Exp $
 */
 #include "Spectrum.h"
 #include "SpectrumFactory.h"
@@ -19,7 +19,7 @@
 * \brief Spectrum representing cosmic ray muon flux at the Earth's surface
 * \author T. Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.5 2003/03/19 18:50:48 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SurfaceMuons.cxx,v 1.6 2003/03/25 21:58:49 xchen Exp $
 */
 //
 
@@ -112,7 +112,7 @@ SurfaceMuons::SurfaceMuons(const std::string& paramstring)
         
       for( int i=0; i< n; ++i){
         double 
-	  e = pow(10, 0.025*i),
+	  e = pow(10.0, 0.025*i),
 	  f= e*spectrum(e);
         
         m_ispec[m_total +=f] =e;

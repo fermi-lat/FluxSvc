@@ -1,7 +1,7 @@
 /** @file SimpleSpectrum.cxx
     @brief definition of SimpleSpectrum
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.11 2003/04/03 19:44:50 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.12 2003/06/12 22:01:29 xchen Exp $
 */
 
 
@@ -90,18 +90,18 @@ SimpleSpectrum::operator()(float f)const
     float temp = RandFlat::shoot();
 
     // ratio between two gamma intensities
-    float ratio = 100. / 49.7;
+    double ratio = 100. / 49.7;
 
     if(temp <= ratio/(ratio+1) ) {
-      return 0.017619;
+      return (float)0.017619;
     }
     else {
       for(; ;) {
 	float ene = RandBreitWigner::shoot(0.014586, 0.0015);
 
 	//arbitrary 3 sigma cut
-	float low = 0.014586 - 3. * 0.0015;
-	float high = 0.014586 + 3. * 0.0015;
+	double low = 0.014586 - 3. * 0.0015;
+	double high = 0.014586 + 3. * 0.0015;
 	if(ene > low && ene < high) return ene;
       }
     }
