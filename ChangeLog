@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Wed Nov 20 21:23:46 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+put particle definitions here; tagging v5r16.
+
+    *
+------------------------------------------------------------
+User: burnett  Wed Nov 20 21:23:46 PST 2002
 FluxSvc/cdf
 
 Added Files:
