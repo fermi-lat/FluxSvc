@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: cohen  Thu Mar 21 01:54:22 PST 2002
+FluxSvc/src/GRB
+
+Modified Files:
+	GRBConstants.cxx GRBConstants.h GRBShell.cxx GRBShock.cxx 
+	GRBSim.cxx GRBSim.h GRBSpectrum.cxx 
+Log Message:
+clean up + new patches for Windows compilation
+    *
+------------------------------------------------------------
+User: cohen  Thu Mar 21 01:54:22 PST 2002
 FluxSvc/cmt
 
 Modified Files:
