@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.43 2002/10/14 15:00:31 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.44 2002/10/14 17:49:12 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -295,6 +295,11 @@ StatusCode FluxSvc::run(){
     
     // loop over the events
     IFlux* flux=currentFlux();
+    if( flux==0 ) {
+        log << MSG::WARNING 
+            << "FluxSvc is being used for the event loop, but there is no IFlux object for access to the elapsed time"
+            << endreq;
+    }
     int eventNumber= 0;
     double currentTime=m_startTime;
     
@@ -320,7 +325,9 @@ StatusCode FluxSvc::run(){
         }
         
         if( status.isFailure()) break;
-        currentTime = flux->gpsTime();
+        if(flux!=0){
+            currentTime = flux->gpsTime();
+        }
         eventNumber ++;
     }
     if( status.isFailure()){
