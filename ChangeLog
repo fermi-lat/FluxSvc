@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Aug 26 21:44:54 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+set the starting time
+    *
+------------------------------------------------------------
 User: hierath  Sat Aug 23 18:20:41 PDT 2003
 FluxSvc/src
 
