@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Aug  7 17:02:39 PDT 2002
+FluxSvc/xml
+
+Added Files:
+	FluxSvcParams.dtd FluxSvcParams.xml 
+Log Message:
+FluxSource::flux altered to avoid possible "low-flux-from'spectrum" glitch, xml files added to encapsulate necessary data for fluxSvc(now holding logN/logS characteristic for diffuse emission model),diffuse model expanded and fixed, more documentation.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Aug  7 17:02:39 PDT 2002
 FluxSvc/src
 
 Modified Files:
