@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.29 2002/09/13 16:12:04 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.30 2002/09/13 20:57:18 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -133,14 +133,20 @@ StatusCode FluxAlg::execute()
     
     // Here the TDS is prepared to receive hits vectors
     // Check for the MC branch - it will be created if it is not available
-    
+#if 0    
     DataObject *mc = new Event::MCEvent;
     sc=eventSvc()->registerObject(EventModel::MC::Event , mc);
     if(sc.isFailure()) {
         log << MSG::WARNING << EventModel::MC::Event  <<" could not be registered on data store" << endreq;
         return sc;
     }
-    
+    SmartDataPtr<Event::MCEvent> mc(eventSvc, EventModel::MC::Event);
+    if (mcevt == 0) {
+        log << MSG::ERROR << "Error accessing MCEvent" << endreq;
+        return StatusCode::FAILURE;
+    }
+#endif
+
     
     Event::McParticleCol* pcol = new Event::McParticleCol;
     sc = eventSvc()->registerObject(EventModel::MC::McParticleCol, pcol);
@@ -177,7 +183,8 @@ StatusCode FluxAlg::execute()
     SmartDataPtr<Event::MCEvent> mcheader(eventSvc(), EventModel::MC::Event);
     if(mcheader) {
         Event::MCEvent& h = mcheader;
-        h.initialize(m_run, m_flux->numSource(), m_sequence++);
+
+        h.initialize(h.getRunNumber(), m_flux->numSource(), h.getSequence());
         
     } else { 
         log << MSG::WARNING << " could not find the mc event header" << endreq;
