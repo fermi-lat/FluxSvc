@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Jun 21 12:54:24 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+MapSpectrum now works through the polymorphic method.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Jun 21 12:54:24 PDT 2002
 FluxSvc/src
 
 Modified Files:
