@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: omodei  Fri Feb 15 07:59:59 PST 2002
+FluxSvc/src/test/flux
+
+Added Files:
+	GRBTest.cxx 
+Log Message:
+Added Gamma Ray Burst Spectrum for testing time dipendent spectrum
+    *
+------------------------------------------------------------
+User: omodei  Fri Feb 15 07:59:59 PST 2002
 FluxSvc/src/GRB
 
 Added Files:
