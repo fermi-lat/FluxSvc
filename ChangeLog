@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 23 05:55:52 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx ExposureAlg.h 
+Log Message:
+reorganized a bit, especially control over output text file
+    *
+------------------------------------------------------------
 User: burnett  Sun Oct 20 16:06:34 PDT 2002
 FluxSvc/src
 
