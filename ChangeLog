@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Jul 24 22:18:59 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+mainpage now points to location of additional web documentation, more documentation about the tool structure, many updates made to documentation code blocks within implemenation of methods package-wide, diffuse model updated to take a file input for a logN/logS characteristic , test file added, test sources changed accordingly.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Jul 24 22:18:59 PDT 2002
 FluxSvc/src/test/flux
 
 Modified Files:
