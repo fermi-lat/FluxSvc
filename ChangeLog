@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri Nov  1 13:53:16 PST 2002
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootHist.cxx 
+Log Message:
+
+fix endpoint problem by putting under/overflow in end bins.
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 20:33:31 PST 2002
 FluxSvc/xml
 
