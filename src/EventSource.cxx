@@ -1,12 +1,12 @@
 /** @file EventSource.cxx
     @brief Implementation of class EventSource
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.15 2003/03/02 19:11:16 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.16 2003/03/20 19:55:32 burnett Exp $
 */
 
 #include "EventSource.h"
 
-#include "dom/DOM_Element.hpp"
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xml/Dom.h"
 #include "FluxException.h"
 

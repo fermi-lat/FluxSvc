@@ -1,7 +1,7 @@
 /** @file FluxMgr.h
     @brief declaration of FluxMgr
 
- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.18 2003/03/04 00:04:32 srobinsn Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.19 2003/03/19 06:31:04 srobinsn Exp $
 
   */
 #ifndef FLUX_MGR_H
@@ -23,8 +23,8 @@
 
 #include "FluxSource.h"
 
-#include "dom/DOM_Document.hpp"
-#include "dom/DOM_Element.hpp"
+#include <xercesc/dom/DOM_Document.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xml/XmlParser.h"
 #include "FluxSvc/ISpectrumFactory.h"
 #include <map>
