@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Sep 19 17:29:03 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source.dtd user_library.xml 
+Log Message:
+code cleanup, "galactic_spread" particle direction type entered and tested.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Sep 19 17:29:02 PDT 2002
 FluxSvc/src/test
 
