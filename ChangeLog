@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Oct 30 17:36:55 PST 2002
+FluxSvc/src
+
+Removed Files:
+	GalElSpectrum.cxx GalElSpectrum.h 
+Log Message:
+GalElSpectrum removed, jobOptions altered to remove other source libraries.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Oct 30 17:31:01 PST 2002
 FluxSvc/src
 
