@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed May  1 15:33:06 PDT 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.h testMgr.cxx 
+Log Message:
+BFEM sources removed, put into BFEMflux package
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed May  1 15:33:06 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
