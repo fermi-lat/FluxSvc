@@ -1,4 +1,25 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 04:25:39 PST 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx FluxAlg.cxx FluxSvc.cxx 
+Added Files:
+	CrElectronPrimary.h CrElectronReentrant.cxx 
+	CrElectronReentrant.h CrElectronSplash.cxx CrElectronSplash.h 
+	CrProton.cxx CrProton.h CrProtonPrimary.cxx CrProtonPrimary.h 
+	CrProtonReentrant.cxx CrProtonReentrant.h CrProtonSplash.cxx 
+	CrProtonSplash.h CrSpectrum.cxx CrSpectrum.h EventSource.cxx 
+	ExtraGalacticDiffuse.h FILESpectrum.cxx FILESpectrum.h GPS.cxx 
+	GalElSpectrum.cxx Geomag.cxx Geomag.inc HeSpectrum.cxx 
+	HeSpectrum.inc Orbit.cxx SimpleSpectrum.cxx Spectrum.cxx 
+	SpectrumFactoryTable.cxx fluxException.h fluxMgr.cxx 
+	fluxSource.cxx 
+Log Message:
+
+flux migration
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 04:25:34 PST 2002
 FluxSvc/cmt
 
