@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Wed May 16 17:31:09 PDT 2001
+FluxSvc/src/test FluxTestAlg.cxx jobOptions.txt
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+added electron source
+
+    *
+------------------------------------------------------------
+User: burnett  Wed May 16 17:31:09 PDT 2001
 FluxSvc/src/Dll FluxSvc_load.cxx
 
 Modified Files:
