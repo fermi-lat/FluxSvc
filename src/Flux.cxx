@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.2 2001/04/19 15:01:37 burnett Exp $
 
 // Original author: T. Burnett
 
@@ -79,3 +79,16 @@ double Flux::targetArea()const
     return m_event->totalArea();
 }
 
+
+/// find which spectrum created the current particle
+std::string Flux::findSource()const
+{
+	return m_event->findSource();
+}
+
+/// return a unique number correcponding to that spectrum
+int Flux::numSource()const
+{
+    return m_event->numSource();
+
+}
