@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxMgr.h,v 1.1 2002/01/16 11:58:13 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxMgr.h,v 1.2 2002/01/24 10:03:46 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
 
-#include "FluxSvc/CompositeSource.h"
+#include "CompositeSource.h"
 
 #include "FluxSvc/FluxSource.h"
 
