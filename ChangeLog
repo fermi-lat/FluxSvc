@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 30 16:20:31 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+allow for environment variable root in filenames
+    *
+------------------------------------------------------------
 User: burnett  Sun Sep 28 17:38:02 PDT 2003
 FluxSvc/doc
 
