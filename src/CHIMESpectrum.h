@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.1 2002/01/16 11:54:48 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.1 2002/01/17 08:38:49 srobinsn Exp $
 
 
 // File: CHIMESpectrum.h
@@ -53,7 +53,7 @@ class CHIMESpectrum : public Spectrum
     virtual double calculate_rate(double old_rate);
 
     /// calculate flux for the current cutoff
-    virtual double flux() const;
+    virtual double flux(double) const;
 
     /// calcualte effective solid angle for the given energy 
     virtual double solidAngle()const;

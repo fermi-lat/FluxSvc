@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.h,v 1.1 2002/01/16 11:52:43 srobinsn Exp $
+// $Id: AlbedoPSpectrum.h,v 1.1 2002/01/17 08:38:49 srobinsn Exp $
 
 
 // File: AlbedoPSpectrum.h
@@ -43,7 +43,7 @@ class AlbedoPSpectrum : public Spectrum
     virtual double calculate_rate(double old_rate);
 
     /// calculate flux for the current position
-    virtual double flux() const;
+    virtual double flux(double) const;
 
     /// effective solid angle for the given energy
     virtual double solidAngle()const;

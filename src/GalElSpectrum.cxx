@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.2 2002/01/17 08:38:50 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 #ifdef __GNUG__
@@ -37,7 +37,7 @@ double GalElSpectrum::calculate_rate(double old_rate) {
     return flux(GPS::instance()->lat(), GPS::instance()->lon());
 }
 
-double GalElSpectrum::flux() const {
+double GalElSpectrum::flux(double) const {
     return -m_normfact * (m_norm / m_expo) * pow(m_cutoff, m_expo);
 }
 

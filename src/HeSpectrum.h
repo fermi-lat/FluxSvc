@@ -1,4 +1,4 @@
-// $Id: HeSpectrum.h,v 1.1 2002/01/16 12:01:49 srobinsn Exp $
+// $Id: HeSpectrum.h,v 1.1 2002/01/17 08:38:50 srobinsn Exp $
 
 // File: HeSpectrum.h
 //
@@ -50,7 +50,7 @@ class HeSpectrum : public Spectrum
     virtual double calculate_rate(double old_rate);
 
     /// calculate flux for the current cutoff
-    virtual double flux() const;
+    virtual double flux(double) const;
 
     /// calcualte effective solid angle for the given energy 
     virtual double solidAngle()const;

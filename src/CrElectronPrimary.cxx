@@ -6,7 +6,7 @@
  *    separate the primary component from the all-in-one code.
  * 2001-04-26 comments are added by T. Mizuno
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrElectronPrimary.cxx,v 1.1 2001/05/14 16:37:50 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectronPrimary.cxx,v 1.1 2002/01/16 12:14:54 srobinsn Exp $
  */
 
 #include <math.h>
@@ -285,7 +285,7 @@ double CrElectronPrimary::energySrc(HepRandomEngine* engine) const
 }
 
 
-double CrElectronPrimary::flux() const
+double CrElectronPrimary::flux(double) const
 {
   /*****
   // Integrated over the upper (sky-side) hemisphere.
@@ -326,13 +326,13 @@ double CrElectronPrimary::calculate_rate(double old_rate)
 
 float CrElectronPrimary::flux(float latitude, float longitude) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 
 float CrElectronPrimary::flux(std::pair<double,double> coords) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 

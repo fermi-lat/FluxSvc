@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.1 2002/01/16 12:11:35 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -146,7 +146,7 @@ float CHIMESpectrum::flux(float cut) const {
 
 //-------------------------- flux() (current cutoff value)
 
-double CHIMESpectrum::flux() const {
+double CHIMESpectrum::flux(double) const {
     // calculate flux for the current cutoff
     return m_flux;
 }

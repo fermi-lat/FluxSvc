@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.cxx,v 1.1 2002/01/16 12:10:57 srobinsn Exp $
+// $Id: AlbedoPSpectrum.cxx,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
 
 
 #include "AlbedoPSpectrum.h"
@@ -70,7 +70,7 @@ void AlbedoPSpectrum::setParticleName(std::string name)
 //-------------------------- flux() (current position)
 
 /// calculate flux for the current position
-double AlbedoPSpectrum::flux() const {
+double AlbedoPSpectrum::flux(double) const {
     return m_flux;
 }
 

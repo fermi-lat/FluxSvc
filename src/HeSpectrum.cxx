@@ -1,4 +1,4 @@
-// $Id: HeSpectrum.cxx,v 1.1 2002/01/16 12:25:38 srobinsn Exp $
+// $Id: HeSpectrum.cxx,v 1.2 2002/01/17 08:38:50 srobinsn Exp $
 
 #include "HeSpectrum.h"
 
@@ -147,7 +147,7 @@ float HeSpectrum::flux(float cut) const {
 
 //-------------------------- flux() (current cutoff value)
 
-double HeSpectrum::flux() const {
+double HeSpectrum::flux(double) const {
     // calculate flux for the current cutoff
     return m_flux;
 }

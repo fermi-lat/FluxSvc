@@ -9,7 +9,7 @@
  *   model function is based on AMS data)
  *   spectrum and angular distribution are the same as those of splash electron
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrElectronReentrant.cxx,v 1.1 2001/05/14 16:37:50 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectronReentrant.cxx,v 1.1 2002/01/16 12:25:35 srobinsn Exp $
  */
 
 #include <math.h>
@@ -196,7 +196,7 @@ double CrElectronReentrant::energySrc(HepRandomEngine* engine) const
 }
 
 
-double CrElectronReentrant::flux() const
+double CrElectronReentrant::flux(double) const
 {
   /*****
   // Integrated over the upper (sky-side) hemisphere.
@@ -239,13 +239,13 @@ double CrElectronReentrant::calculate_rate(double old_rate)
 
 float CrElectronReentrant::flux(float latitude, float longitude) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 
 float CrElectronReentrant::flux(std::pair<double,double> coords) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 

@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.h,v 1.1 2002/01/16 12:14:08 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.h,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
 
 #ifndef CrElectron_H
 #define CrElectron_H
@@ -25,7 +25,7 @@ public:
   CrSpectrum* component() const;
 
   //! calculate the flux, particles/m^2/sr.
-  virtual double    flux ( ) const;
+  virtual double    flux (double time ) const;
 
   virtual const char * particleName()const{ return "e-";}
   virtual std::string title()const{return "CrElectron";}
