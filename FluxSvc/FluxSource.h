@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.16 2002/05/09 21:39:15 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.17 2002/05/22 23:09:07 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -91,7 +91,8 @@ class FluxSource : public EventSource
       ISpectrum* spectrum() const{ return m_spectrum; }
 
 
-      double interval (double time);
+      double calculateInterval (double time);
+      double interval(double time){return m_interval;}
 
       void FluxSource::getGalacticDir(double l,double b);
 
@@ -180,6 +181,7 @@ class FluxSource : public EventSource
       // fanBeam == false means polar beam
       bool sidePatch, fanBeam;
       Box* illumBox;
+      double m_interval; //the current value of the interval in time to the next particle.
       
 
       //! transform the current m_launchDir into GLAST-relative coordinates
