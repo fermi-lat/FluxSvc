@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.25 2002/10/07 23:42:18 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.26 2003/03/01 23:26:48 burnett Exp $
 
 #ifndef _H_IFlux_
 #define _H_IFlux_
@@ -22,12 +22,12 @@ class ISpectrumFactory;
 * 
   Abstract interface for an object that generates particles, Flux
 
-  * $Header: $
+  * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.26 2003/03/01 23:26:48 burnett Exp $
 */
 class IFlux {
 public:
     /// ctor, select the name
-    IFlux(std::string name=""){};
+    IFlux(std::string =""){};
     virtual ~IFlux(){}
     
     /// name of the flux
@@ -95,13 +95,6 @@ public:
     /// write the characteristics of the current source distribution to a stream
     virtual void writeSourceCharacteristic(std::ostream& out)=0;
     
-#if 0
-    // get a description of the parameters that can be modified, and reference to a list of them
-    virtual std::string paramlist(std::vector<double>& params)=0; 
-    
-    // set the parameters
-    virtual void setParams(std::vector<double>& params)=0;
-#endif
 };
 
 
