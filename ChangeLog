@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue May 14 12:30:22 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx Orbit.cxx 
+Log Message:
+x-axis of GLAST now faces east, and the y-axis points north.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon May 13 14:14:25 PDT 2002
 FluxSvc/xml
 
