@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.10 2001/10/20 07:21:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.11 2001/10/31 23:21:03 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -15,6 +15,7 @@
 template <class TYPE> class SvcFactory;
 class IFlux;  // interface
 class FluxMgr;  // actual manager
+class IParticlePropertySvc; 
 
 //!  Service that implements the IFluxSvc interface, to return an IFlux object.
 //!  FluxSvc handles the creation and interfacing with Flux objects.  
@@ -28,12 +29,13 @@ public:
     /// return a list of possible names
     std::list<std::string> fluxNames()const;
     
-    /// add a new source
+    /// add a new SpectrumFactory
     virtual void addFactory(std::string name, const ISpectrumFactory* factory );
     
-    /// access to the local random engine (testing)
+    /// access to the local random engine 
     virtual HepRandomEngine* getEngine();
     
+
     
     //------------------------------------------------------------------
     //  stuff required by a Service
@@ -57,6 +59,9 @@ protected:
     virtual ~FluxSvc ();
     
 private:
+
+    IParticlePropertySvc* m_partSvc;
+
     /// Allow SvcFactory to instantiate the service.
     friend class SvcFactory<FluxSvc>;
     
