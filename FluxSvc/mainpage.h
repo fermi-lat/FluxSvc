@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.2 2001/10/13 22:40:36 srobinsn Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -9,6 +9,8 @@
   the file /src/test/jobOptions.txt holds information used for the implementation of FluxSvc.
   it also holds the standard set of strings representing xml filenames, thus allowing multiple 
   xml files to be used.
+  <br>
+  <A HREF="../FluxSvc_doc.html">More Information</A>
   <hr>
   \section notes release notes
   \include release.notes
