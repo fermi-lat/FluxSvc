@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.13 2002/09/05 02:24:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.15 2003/02/20 22:04:11 srobinsn Exp $
 
 #include "../../FluxMgr.h"
 #include "FluxSvc/EventSource.h"
@@ -66,9 +66,6 @@ int main(int argn, char * argc[]) {
     using std::cout;
     using std::endl;
     flux_load();
-    //testing 
-    std::string test("23class");
-    int ss = test.find_first_not_of("0123456789");
     
     int count = default_count;
     std::string source_name(default_source);

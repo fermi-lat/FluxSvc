@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.10 2002/11/01 23:27:54 burnett Exp $
+// $Id: CHIMESpectrum.h,v 1.11 2002/12/12 22:48:46 srobinsn Exp $
 #ifndef CHIME_SPECTRUM_H
 #define CHIME_SPECTRUM_H
 
@@ -51,8 +51,7 @@ class CHIMESpectrum : public Spectrum
 public:
     CHIMESpectrum(const std::string& params);
     
-    virtual double calculate_rate(double old_rate);
-    
+   
     /// calculate flux for the current cutoff
     virtual double flux(double) const;
     
@@ -67,8 +66,7 @@ public:
     
     /// Flux as a function of latitude and longitude in a 600 km orbit.
     /// Linear interpolate in a table with a 5 degree sampling grid.
-    virtual float flux(float lat, float lon) const;
-    virtual float flux(std::pair<double, double> coords) const;
+    virtual float flux() const;
     
     virtual float operator() (float)const;
     
@@ -83,9 +81,8 @@ public:
     /// determine the cutoff value which will produce the desired flux
     float findCutoff(float rflux) const;
     
-    /// determine the cutoff value at a geographical location
-    float findCutoff(float lat, float lon) const;
-    float findCutoff(std::pair<double,double> coords) const;
+    /// determine the cutoff value at the current geographical location
+    float findCutoff() const;
     
     /// return solid angle pair (costh, phi) for the given energy
     virtual std::pair<float,float> dir(float energy)const;

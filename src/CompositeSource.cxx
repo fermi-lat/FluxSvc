@@ -1,13 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.15 2002/10/30 19:05:17 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.16 2002/10/31 01:31:00 srobinsn Exp $
 
 
 #include "CompositeSource.h"  
 
-#include "facilities/Scheduler.h"
-#include "facilities/SimpleEvent.h"
 #include "FluxSvc/FluxSource.h"
-
-// see coment below: #include "control/EventLoop.h"
 
 
 #include <strstream>
@@ -65,7 +61,6 @@ FluxSource* CompositeSource::event (double time)
     }else {
         
         // more than one:: choose on basis of relative rates
-        // NOT used? THB  double  x = RandFlat::shoot(mr), y = 0;
         std::vector<EventSource*>::iterator  now = m_sourceList.begin();
         std::vector<EventSource*>::iterator  it = now;
         
