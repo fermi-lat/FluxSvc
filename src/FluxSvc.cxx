@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.56 2003/03/19 06:31:04 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.57 2003/07/01 20:32:36 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -35,7 +35,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.56 2003/03/19 06:31:04 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.57 2003/07/01 20:32:36 burnett Exp $
 */
 
 // includes
@@ -445,8 +445,9 @@ StatusCode FluxSvc::run(){
         log << MSG::WARNING << "No end condition specified: will not process any events!" << endreq; 
     }
     }
-    while( m_evtMax>0 && eventNumber < m_evtMax
-        || m_endTime>0 && currentTime< m_endTime ) {
+    // loop: will quit if either limit is set, and exceeded
+    while( (m_evtMax==0  || m_evtMax>0 && eventNumber < m_evtMax)
+        && (m_endTime==0 ||m_endTime>0 && currentTime< m_endTime) ) {
         
         status =  m_appMgrUI->nextEvent(1); // currently, always success
         
@@ -470,6 +471,7 @@ StatusCode FluxSvc::run(){
     }else {
         log << MSG::INFO << "Processing loop terminated by event count" << endreq;
     }
+    log << MSG::INFO << "End after "<< eventNumber << " events, time = " << currentTime << endreq;
     return status;
 }
 
