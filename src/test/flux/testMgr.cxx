@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.17 2003/02/23 02:08:22 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.18 2003/02/25 00:38:40 srobinsn Exp $
 
 #include "FluxSvc/EventSource.h"
 #include "FluxSvc/ISpectrumFactory.h"
@@ -59,6 +59,7 @@ void flux_load() {
     DLL_DECL_SPECTRUM( AlbedoPSpectrum);
     DLL_DECL_SPECTRUM( FILESpectrum);
     DLL_DECL_SPECTRUM( GalElSpectrum);
+    DLL_DECL_SPECTRUM( SurfaceMuons);
     //  DLL_DECL_SPECTRUM( CrElectron);
     //  DLL_DECL_SPECTRUM( CrProton);
     //  DLL_DECL_SPECTRUM( GRBSpectrum);

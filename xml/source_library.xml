@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.25 2003/01/29 22:30:40 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.26 2003/02/26 01:43:47 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -93,7 +93,6 @@
 </source_library>
 
 <!-- ************************************************************************** -->
-
 <source_library title="test muons" >
 
     <!-- special source that mimics non-interacting cosmics -->
@@ -113,6 +112,34 @@
     </source>
 
 </source_library>
+
+<!-- ************************************************************************** -->
+<source_library title="cosmic ray surface muons" >
+
+    <!-- 
+        special representation of surface muons for test
+        params is the angle in degree to rotate the resulting flux
+        all angles
+    -->
+    <source name="surface_muons" flux="1.0">
+        <spectrum escale="GeV">
+            <SpectrumClass name="SurfaceMuons" params="0"/> 
+            <use_spectrum/>
+        </spectrum>
+    </source>
+
+    <!--
+        vertical muons only
+    -->
+    <source name="vertical_surface_muons" flux="1.0">
+        <spectrum escale="GeV">
+            <SpectrumClass name="SurfaceMuons" params="-1"/> 
+            <solid_angle mincos="0.99" maxcos="1.0"/>
+        </spectrum>
+    </source>
+
+</source_library>
+
 
 <!-- ************************************************************************** -->
 
