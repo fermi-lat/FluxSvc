@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Apr 19 01:17:29 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+FLuxAlg now puts particledata in proper place on TDS ; method for handling earth occultation of galactic-coordinate sources implemented, need some testing.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 18 18:10:30 PDT 2002
 FluxSvc/src
 
