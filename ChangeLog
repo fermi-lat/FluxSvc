@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Apr 16 15:51:57 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml user_library.xml 
+Added Files:
+	composite_library.xml 
+Log Message:
+xml source file added, "composite_library.xml" to hold nested sources, more sources moved to user_library.xml.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Apr 16 15:51:57 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
