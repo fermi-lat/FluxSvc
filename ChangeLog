@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul  4 20:02:29 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx 
+Log Message:
+remove MapSpectrum
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul  4 19:48:13 PDT 2002
 FluxSvc/doc
 
