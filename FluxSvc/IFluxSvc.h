@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.25 2002/09/06 21:14:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.26 2002/10/08 23:05:48 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
 /** 
@@ -78,7 +78,7 @@ public:
     virtual void setRockType(int rockType)=0;
 
     ///this should return the source file names, along with the contained sources.
-    std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
+    virtual std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const=0;
     
     
 };
