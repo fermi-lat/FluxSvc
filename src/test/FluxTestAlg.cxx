@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.47 2002/10/06 19:47:57 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.48 2002/10/07 23:42:20 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -188,10 +188,12 @@ StatusCode FluxTestAlg::execute() {
 
 //------------------------------------------------------------------------------
 StatusCode FluxTestAlg::finalize() {
-    delete m_out;
+#if 0 //enable for tests
     std::ostream& diffsources = *m_diffsources;
     m_flux->writeSourceCharacteristic(diffsources);
     delete m_diffsources;
+    delete m_out;
+#endif
     return StatusCode::SUCCESS;
 }
 
