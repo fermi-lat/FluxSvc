@@ -1,4 +1,31 @@
 ------------------------------------------------------------
+User: burnett  Thu Oct  2 17:28:39 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+see notes; tagging v6r9
+    *
+------------------------------------------------------------
+User: burnett  Thu Oct  2 17:28:39 PDT 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+see notes; tagging v6r9
+    *
+------------------------------------------------------------
+User: burnett  Thu Oct  2 17:28:39 PDT 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+see notes; tagging v6r9
+    *
+------------------------------------------------------------
 User: burnett  Thu Oct  2 17:26:46 PDT 2003
 FluxSvc/src
 
