@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.33 2002/10/31 01:19:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.34 2002/11/01 23:27:54 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -255,7 +255,7 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
     GPS::instance()->rotateAngles(std::make_pair<double,double>(0.0,0.3));
     
     FluxSource* f;
-    double totalinterval;
+    double totalinterval=0;
     for( int i = 0; i< count; ++i) {
         
         f = e->event(time);
