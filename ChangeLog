@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb  7 15:51:02 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h Spectrum.h 
+Log Message:
+Flux Average checking lines in test programs.  Composite source interval() issue solved.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Feb  1 17:33:27 PST 2002
 FluxSvc/src/test/flux
 
