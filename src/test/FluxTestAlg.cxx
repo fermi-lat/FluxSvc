@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.2 2001/04/19 02:11:35 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.3 2001/05/17 00:31:09 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -7,7 +7,9 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/AlgFactory.h"
 #include "GaudiKernel/Algorithm.h"
-
+#include "FluxSvc/PencilBeam.h"
+#include <list>
+#include <string>
 /*! \class FluxTestAlg
 \brief 
 
@@ -46,11 +48,15 @@ Algorithm(name, pSvcLocator){
 //------------------------------------------------------------------------------
 /*! */
 StatusCode FluxTestAlg::initialize() {
-    
-	static std::string source_name="backgndmix";
+    //DEFAULT
+	//static std::string source_name="backgndmix";
+	//FOR TESTING
+        static std::string source_name="chimemax";
+        
 
     MsgStream log(msgSvc(), name());
     log << MSG::INFO << "initializing..." << endreq;
+  //  log << MSG::INFO << sean->instance()->particleName() << endreq;
     
     // Use the Job options service to set the Algorithm's parameters
     setProperties();
@@ -65,7 +71,15 @@ StatusCode FluxTestAlg::initialize() {
         log << MSG::ERROR << "Could not find FluxSvc" << endreq;
         return sc;
     }
+
+
+   ///PencilBeam Testing
+    static PencilBeam* sean=PencilBeam::instance();
+    fsvc->addFactory("testsean", sean);
+   ///End Testing
+
     log << MSG::INFO << "loading source..." << endreq;
+
 
 
     sc =  fsvc->source(source_name, m_flux);
@@ -74,6 +88,7 @@ StatusCode FluxTestAlg::initialize() {
         return sc;
     }
 
+    log << MSG::INFO << "start of other loops" << endreq;
     log << MSG::INFO << "Source title: " << m_flux->title() << endreq;
     log << MSG::INFO << "       area: " << m_flux->targetArea() << endreq;
     log << MSG::INFO << "       rate: " << m_flux->rate() << endreq;

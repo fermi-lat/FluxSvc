@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.2 2001/04/19 15:01:37 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.3 2001/06/16 13:27:44 burnett Exp $
 
 // Original author: T. Burnett
 
@@ -92,3 +92,13 @@ int Flux::numSource()const
     return m_event->numSource();
 
 }
+
+
+void Flux::addFactory( const IFactory* factory ) {
+    FactoryTable::instance()->addFactory( factory );
+    }
+
+
+void Flux::addFactory(std::string name, const ISpectrumFactory* factory ) {
+    SpectrumFactoryTable::instance()->addFactory(name,factory);
+    }

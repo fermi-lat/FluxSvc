@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.2 2001/04/19 02:11:34 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.3 2001/04/19 15:01:37 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -27,6 +27,10 @@ public:
 
     /// return a list of possible names
     std::list<std::string> fluxNames()const;
+
+    /// add a new source
+    virtual void addFactory(std::string name, const ISpectrumFactory* factory );
+
 
     //------------------------------------------------------------------
     //  stuff required by a Service
