@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Aug 20 12:36:46 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+input/output error in exposureAlg fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Aug 20 11:52:21 PDT 2003
 FluxSvc/src/test
 
