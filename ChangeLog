@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Nov  4 14:11:07 PST 2002
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+rootplot now advances time to be consistent with time-varying flux/composites.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Nov  1 15:27:55 PST 2002
 FluxSvc/xml
 
