@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: omodei  Wed May 12 07:02:58 PDT 2004
+FluxSvc/src
+
+Modified Files:
+	defaultOptions.txt 
+Log Message:
+Remove GRB xml library.
+
+    *
+------------------------------------------------------------
 User: omodei  Wed May 12 03:12:00 PDT 2004
 FluxSvc/src
 
