@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.25 2003/10/29 20:59:05 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.26 2004/01/28 23:24:12 hierath Exp $
 */
 
 // Include files
@@ -47,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.25 2003/10/29 20:59:05 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.26 2004/01/28 23:24:12 hierath Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -118,7 +118,7 @@ const IAlgFactory& ExposureAlgFactory = Factory;
 //------------------------------------------------------------------------
 //! ctor
 ExposureAlg::ExposureAlg(const std::string& name, ISvcLocator* pSvcLocator)
-:Algorithm(name, pSvcLocator), m_out(0), m_tickCount(0), m_lasttime(0)
+:Algorithm(name, pSvcLocator), m_out(0),m_lasttime(0), m_tickCount(0)
 {
     // declare properties with setProperties calls
     declareProperty("source_name",  m_source_name="default");
@@ -260,7 +260,7 @@ StatusCode ExposureAlg::execute()
         rax =   gps->RAX(),        decx =  gps->DECX(),
         raz =   gps->RAZ(),        decz =  gps->DECZ(),
         razenith = gps->RAZenith(),deczenith = gps->DECZenith();
-    double check=astro::SkyDir(rax, decx)().dot(astro::SkyDir(raz, decz)());
+    //uncomment for debug check double check=astro::SkyDir(rax, decx)().dot(astro::SkyDir(raz, decz)());
 
     EarthOrbit orb; //for the following line - this should have a better implementation.
     double julianDate = orb.dateFromSeconds(m_lasttime);
