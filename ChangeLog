@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Oct 28 23:17:01 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	FluxSvcParams.xml 
+Log Message:
+compositediffuse changes, roll/pitch/yaw removed in orbit, lat/lon functions fixed to use new orbit model, compositesource fixed to allow nested composites.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Oct 28 23:17:01 PST 2002
 FluxSvc/src/test
 
 Modified Files:
