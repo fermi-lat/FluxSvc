@@ -1,4 +1,23 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jan 24 02:03:50 PST 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h CrElectron.cxx CrElectron.h CrProton.cxx 
+	CrProton.h CrSpectrum.h FILESpectrum.cxx FILESpectrum.h 
+	Flux.cxx Flux.h FluxAlg.cxx FluxMgr.cxx FluxSource.cxx 
+	GalElSpectrum.cxx GalElSpectrum.h HeSpectrum.cxx HeSpectrum.h 
+	SimpleSpectrum.cxx Spectrum.cxx SpectrumFactoryTable.cxx 
+	TimeDepSpectrum.cxx TimeDepSpectrum.h 
+Removed Files:
+	Spectrum.h SpectrumFactory.h SpectrumFactoryTable.h 
+Log Message:
+moved files to work with FLuxdisplay,
+transformation matrix can be gotten from Flux now.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 24 02:03:47 PST 2002
 FluxSvc/FluxSvc
 
