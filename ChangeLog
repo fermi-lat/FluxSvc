@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct 28 05:44:23 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add ntupleWriterSvc dependency; undo the -no_auto_imports for now
+    *
+------------------------------------------------------------
 User: burnett  Thu Oct 16 06:26:43 PDT 2003
 FluxSvc/src
 
