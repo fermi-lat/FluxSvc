@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.61 2003/08/24 01:17:00 hierath Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.62 2003/08/24 01:20:41 hierath Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -36,7 +36,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.61 2003/08/24 01:17:00 hierath Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.62 2003/08/24 01:20:41 hierath Exp $
 */
 
 // includes
@@ -452,7 +452,7 @@ StatusCode FluxSvc::run(){
     }
     int eventNumber= 0;
     double currentTime=m_startTime;
-    
+    flux->pass(currentTime); // add to zero
     { bool noend=true;
     log << MSG::INFO << "Runable interface starting event loop as :" ; 
     if( m_evtMax>0)  { log << " MaxEvt = " << m_evtMax; noend=false;  }
