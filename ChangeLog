@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sat Feb 22 06:38:02 PST 2003
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx CompositeSource.cxx FluxMgr.h 
+	FluxSource.cxx 
+Log Message:
+
+fix linux compilation issue
+    *
+------------------------------------------------------------
+User: burnett  Sat Feb 22 06:38:02 PST 2003
 FluxSvc/FluxSvc
 
 Modified Files:
