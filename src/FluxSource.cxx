@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.48 2003/02/25 00:38:40 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.49 2003/02/26 01:43:47 srobinsn Exp $
 
 #include "FluxSvc/FluxSource.h"
 
@@ -206,16 +206,15 @@ public:
         //TODO: account for transformation?
         if(m_skydir){
             m_celtoglast = GPS::instance()->transformCelToGlast(time);
-        }else{
-            Rotation celtoglast;
-            m_celtoglast = celtoglast;
         }
     }
 
     const HepVector3D& operator()()const {return dir();}
 
     virtual const HepVector3D& dir()const {
-        return m_celtoglast * m_dir;
+        static HepVector3D correctedDir;
+        correctedDir = m_celtoglast * m_dir;
+        return correctedDir;
     }
 
     void setDir(const HepVector3D& dir){m_dir=dir;}
