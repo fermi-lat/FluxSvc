@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Apr 15 12:42:56 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+Made FLuxAlg code compile - still needs work.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Apr  5 16:05:45 PST 2002
 FluxSvc/src
 
