@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.14 2002/05/07 17:54:43 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.15 2002/05/10 02:25:21 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -6,7 +6,7 @@
 
 
 // Event for creating the McEvent stuff
-#include "Event/TopLevel/Event.h"
+//#include "Event/TopLevel/Event.h"
 #include "Event/TopLevel/MCEvent.h"
 #include "Event/MonteCarlo/McParticle.h"
 #include "Event/TopLevel/EventModel.h"
