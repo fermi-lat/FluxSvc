@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Oct 10 18:28:49 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h FluxSource.cxx 
+Log Message:
+string include statement back into ISpectrum for the sake of linux, extraaneous output removed, compositeDiffuse output upgraded.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Oct 10 18:28:48 PDT 2002
 FluxSvc/FluxSvc
 
