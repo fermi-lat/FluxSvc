@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.8 2002/09/05 02:24:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.9 2002/09/06 21:14:47 srobinsn Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
@@ -156,8 +156,10 @@ public:
     double RAZenith()const{return m_RAZenith;}
     double DECZenith()const{return m_DECZenith;}
 
-    Hep3Vector position(/*double time*/)const{
-        return m_position;} //interface to EarthOrbit::position()
+    Hep3Vector position(double seconds)const{
+        double time = m_earthOrbit->dateFromSeconds(seconds);
+        return m_earthOrbit->position(time);
+        /*return m_position;*/} //interface to EarthOrbit::position()
     
     protected:
         // singleton - protect ctor/dtor
