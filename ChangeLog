@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 22:32:26 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+allow selection of range of cos theta, with rate computed appropriately
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  1 22:32:25 PST 2003
 FluxSvc/src
 
