@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.5 2002/01/30 01:36:44 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.6 2002/02/07 23:51:02 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -62,7 +62,7 @@ public:
     virtual std::pair<float,float> dir(float energy)const;
     
     /// new interface for Hirosima classes
-    virtual double energySrc(HepRandomEngine* engine);
+    virtual double energySrc(HepRandomEngine* engine, double time=0);
     virtual std::pair<double,double> dir(double energy, HepRandomEngine* engine);
     
     
