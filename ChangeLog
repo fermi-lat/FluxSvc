@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May  9 22:50:53 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+FluxAlg set up to handle external changing of sources - length issue of direction vector.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 19:25:21 PDT 2002
 FluxSvc/src/test
 
