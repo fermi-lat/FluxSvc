@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.54 2003/12/03 14:00:17 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.55 2004/05/11 15:31:28 omodei Exp $
 
 */
 
@@ -50,11 +50,9 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.54 2003/12/03 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.54 2003/12/03 14:00:17 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.55 2004/05/11 15:31:28 omodei Exp $
 */
 
-ISpectrumFactory & GRBmanagerFactory();
-ISpectrumFactory & GRBobsFactory();
 
 class FluxAlg : public Algorithm {
 public:
@@ -172,14 +170,6 @@ StatusCode FluxAlg::initialize(){
 	if(!m_pointing_mode && m_pointing_history_input_file.value().empty()){
 		log << MSG::INFO << "no rocking mode called, rocking disabled for this run." << endreq;
 	}
-
-	//////////////////////////////////////////////////
-	// Adding GRB Factory!
-	log << MSG::INFO << "Register GRB models!" << endreq;
-	GRBmanagerFactory();
-	GRBobsFactory();
-	//////////////////////////////////////////////////
-
 	
 	if( !m_source_list.value().empty()){
 		log << MSG::INFO << "loading sources " << endreq;
