@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Aug 20 15:25:40 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFluxSvc.h
+
+Modified Files:
+	FluxSvc.h IFluxSvc.h 
+Log Message:
+
+Make source_library an attribute. Default is an empty string, interpreted by FluxMgr to mean load default.
+    *
+------------------------------------------------------------
 User: burnett  Thu Aug  9 14:37:02 PDT 2001
 FluxSvc/doc release.notes
 
