@@ -1,11 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.19 2003/02/27 05:00:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.20 2003/03/02 06:30:57 burnett Exp $
 
 //#include "FluxSvc/ISpectrumFactory.h"
 
-//TODO: set proper path for these
-#include "../../EventSource.h"
-#include "../../SpectrumFactoryTable.h"
-#include "../../FluxMgr.h"
+#include "flux/EventSource.h"
+#include "flux/SpectrumFactoryTable.h"
+#include "flux/FluxMgr.h"
 
 #include <iostream>
 #include <fstream>

@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 01:20:22 kyoung Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.43 2003/07/11 23:10:38 burnett Exp $
 
 */
 
@@ -22,12 +22,12 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 
 #include "Event/TopLevel/EventModel.h"
 
 //flux
-#include "FluxSvc.h"
-#include "FluxSvc/IFlux.h"
-#include "Spectrum.h"
-#include "SpectrumFactory.h"
+#include "FluxSvc/IFluxSvc.h"
+#include "flux/IFlux.h"
+#include "flux/Spectrum.h"
+#include "flux/SpectrumFactory.h"
 
-#include "EventSource.h"
+#include "flux/EventSource.h"
 
 #include "CLHEP/Vector/LorentzVector.h"
 
@@ -41,9 +41,9 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/Property.h"
 
-class IFlux;
-class IFluxSvc;
-class IparticlePropertySvc;
+// class IFlux;
+// class IFluxSvc;
+// class IparticlePropertySvc;
 
 
 /** 
@@ -53,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 01:20:22 kyoung Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.43 2003/07/11 23:10:38 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {
