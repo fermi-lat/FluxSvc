@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Sat Feb 22 18:08:22 PST 2003
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h FluxSource.cxx FluxSvc.cxx FluxSvc.h 
+	GalElSpectrum.cxx GalElSpectrum.h Spectrum.cxx Spectrum.h 
+	TimeCandle.h 
+Log Message:
+change interface to remove random engine from ISpectrum, give access via IFluxSvc
+    *
+------------------------------------------------------------
 User: burnett  Sat Feb 22 18:08:21 PST 2003
 FluxSvc/doc
 
