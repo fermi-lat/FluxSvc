@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.8 2001/11/27 22:39:09 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.9 2002/01/02 05:00:14 burnett Exp $
 
 // Original author: T. Burnett
 
 #include "Flux.h"
 
-#include "flux/FluxSource.h"
-#include "flux/EventSource.h"
-#include "flux/FluxMgr.h"
-#include "flux/GPS.h"
+#include "FluxSvc/FluxSource.h"
+#include "FluxSvc/EventSource.h"
+#include "FluxSvc/FluxMgr.h"
+#include "FluxSvc/GPS.h"
 
 Flux::Flux(std::string name) 
 : m_time(0)

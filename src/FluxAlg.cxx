@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxAlg/src/FluxAlg.cxx,v 1.2 2001/12/17 17:38:15 latron Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.1 2002/01/02 05:00:14 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -18,8 +18,8 @@
 //flux
 #include "FluxSvc/FluxSvc.h"
 #include "FluxSvc/IFlux.h"
-#include "flux/Spectrum.h"
-#include "flux/SpectrumFactory.h"
+#include "FluxSvc/Spectrum.h"
+#include "FluxSvc/SpectrumFactory.h"
 
 #include "CLHEP/Vector/LorentzVector.h"
 
