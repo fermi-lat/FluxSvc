@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Sat May 25 16:26:06 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Removed Files:
+	GalacticHist.cxx GalacticHist.h 
+Log Message:
+Histogram infrastructure consolidated into one algorithm, aperture of exposure a joboptions variable now, also several "exposure modes" possible, to allow for sky mapping and exposure mapping.  Error regarding large aperture fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sat May 25 14:08:58 PDT 2002
 FluxSvc/xml
 
