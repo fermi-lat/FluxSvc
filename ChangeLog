@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Apr 16 15:51:57 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+xml source file added, "composite_library.xml" to hold nested sources, more sources moved to user_library.xml.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Apr 16 11:30:57 PDT 2002
 FluxSvc/src/test
 
