@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sun Dec 22 12:16:35 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+source "vela_low" removed, "vela" extends down to 30 MeV.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sat Dec 21 15:12:35 PST 2002
 FluxSvc/xml
 
