@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.11 2002/10/07 23:42:20 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.12 2002/10/29 07:17:01 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -76,7 +76,6 @@ public:
 
     
 protected:
-    virtual void setupXML (const DOM_Element&);
     
     //number of times we've iterated the front() pointer into sourcelist 
     //to get the current particle - represents the source
