@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jun  5 14:08:59 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+removed extraaneous vector-shunting formula, sped up process appreciably.  Also inplemented new exposure function, with arbitrary functions for exposure relative to angles, etc.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jun  5 01:53:02 PDT 2002
 FluxSvc/xml
 
