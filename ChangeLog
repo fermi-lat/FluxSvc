@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb  6 09:53:38 PST 2003
+FluxSvc/src
+
+Modified Files:
+	CHIMESpectrum.cxx 
+Log Message:
+longitude input offset in CHIMESpectrum fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 29 14:30:40 PST 2003
 FluxSvc/xml
 
