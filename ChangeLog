@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Sep 19 17:29:02 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx GPS.cxx 
+Log Message:
+code cleanup, "galactic_spread" particle direction type entered and tested.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Sep 19 17:29:01 PDT 2002
 FluxSvc/FluxSvc
 
