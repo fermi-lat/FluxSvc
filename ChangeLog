@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sat Oct 13 15:40:36 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h mainpage.h
+
+Modified Files:
+	FluxSvc.h IFlux.h IFluxSvc.h mainpage.h 
+Log Message:
+
+testFluxMgr now uses both user_library.xml and source_library.xml, as a test of the method.
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Sep 27 21:38:05 PDT 2001
 FluxSvc/src/test jobOptions.txt
 
