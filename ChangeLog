@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Aug  3 17:52:45 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+orientation of the satellite can now be gotten from the service, time-expansion issue fixed in orbit (package should now work entirely on seconds), real logN/logS data added for diffuse model, more documentation in mainpage, standard sources documented, also jobOptions parameters in mainpage.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Aug  3 17:52:45 PDT 2002
 FluxSvc/src
 
 Modified Files:
