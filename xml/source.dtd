@@ -1,4 +1,4 @@
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.11 2003/02/20 21:39:04 burnett Exp $
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.12 2003/06/12 22:02:10 xchen Exp $
   DTD file for flux source definitions
   -->
 <!ELEMENT source_library ((source)+ | (source_library)*) >
@@ -33,6 +33,8 @@
 
 <!ELEMENT energy EMPTY>
 <!ATTLIST energy e CDATA "0.1">
+
+<!-- vdg is used as a tag to simulate photons produced by Van de Graaff accelerator at SLAC -->
 
 <!ELEMENT vdg EMPTY>
 <!ATTLIST vdg>
