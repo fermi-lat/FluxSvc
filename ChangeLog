@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: xchen  Tue Mar 25 13:58:49 PST 2003
+FluxSvc/src
+
+Modified Files:
+	SurfaceMuons.cxx 
+Log Message:
+modify code so that it can generate muons with an analytic energy spectrum
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Mar 21 14:45:06 PST 2003
 FluxSvc/cmt
 
