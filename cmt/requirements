@@ -1,16 +1,16 @@
 package FluxSvc
 version v6r16
 
-# $Id: requirements,v 1.110 2004/08/13 18:14:30 burnett Exp $
+# $Id: requirements,v 1.111 2004/08/13 22:47:50 burnett Exp $
 author  T. Kozanecki <hansl$slac.stanford.edu> T. Burnett
 
 branches FluxSvc cmt doc cdf 
 
+use GlastPolicy v*
 # this is a Gaudi shrared component package
 apply_pattern packageShr
 apply_pattern package_include
 
-use GlastPolicy v*
 use GaudiInterface * IExternal
 use CLHEP * IExternal
 use facilities *
