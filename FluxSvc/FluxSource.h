@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.3 2002/01/18 11:22:03 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.4 2002/01/24 10:03:46 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -28,7 +28,7 @@ class FluxSource : public EventSource
       virtual ~FluxSource();
           
       ///    generate an event from a Flux object ??//.
-      virtual FluxSource* event();
+      virtual FluxSource* event(double);
       
       ///    full-length title description of this EventSource.
       virtual std::string fullTitle () const;
@@ -90,6 +90,7 @@ class FluxSource : public EventSource
       Spectrum* spectrum() const{ return m_spectrum; }
 
 
+      double interval (double time);
 
 	  void FluxSource::getGalacticDir(double l,double b);
 

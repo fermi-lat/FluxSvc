@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.11 2002/01/17 08:38:50 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.12 2002/01/24 10:03:48 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -38,9 +38,10 @@ std::string Flux::title()const
 // generate a new entry trajectory, set FluxSource, increment local time
 void Flux::generate()
 {
-    m_flux = m_event->event();
-    m_time+= m_event->interval();
-    pass(m_event->interval());
+    m_flux = m_event->event(time());
+    double timepass = m_event->interval(time());
+    m_time+= timepass;
+    pass(timepass);
 }
 
 // the particle generated 
@@ -92,7 +93,7 @@ HepVector3D Flux::launchDir()const
 // rate ( /mm**2 /s)
 double Flux::rate()const
 {
-    return m_event->rate();
+    return m_event->rate(time());
 }
 
 /// set the area of the target
