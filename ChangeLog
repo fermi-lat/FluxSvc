@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Feb 24 16:38:41 PST 2003
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+Orbit class removed, references removed from GPS, GPS cleaned up, obsolete setposition function referecing Orbit removed from FluxMgr.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Feb 24 16:38:40 PST 2003
 FluxSvc/src
 
