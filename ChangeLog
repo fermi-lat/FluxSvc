@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 30 20:33:31 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Removed Files:
+	composite_library.xml 
+Log Message:
+remove GalElSpectrum
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 17:43:57 PST 2002
 FluxSvc/doc
 
