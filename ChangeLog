@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun 17 23:41:42 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeSource.cxx 
+Log Message:
+CompositeDiffuse sources made properly diffuse.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sun Jun 16 15:52:17 PDT 2002
 FluxSvc/xml
 
