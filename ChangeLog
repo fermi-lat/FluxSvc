@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep  2 11:47:02 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+remove commented lines, cut to 10 events
+    *
+------------------------------------------------------------
 User: burnett  Sat Aug 31 13:55:59 PDT 2002
 FluxSvc/src
 
