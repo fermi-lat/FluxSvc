@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan 22 14:24:02 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+necessary to have the tool service release it.
+    *
+------------------------------------------------------------
 User: burnett  Sun Jan 19 17:48:30 PST 2003
 FluxSvc/cdf
 
