@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.30 2003/03/20 19:55:33 burnett Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.31 2003/03/25 22:00:08 xchen Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -25,6 +25,14 @@
         </spectrum>
     </source>
 
+<!-- simulation of photons produced by Van de Graaff accelerator at SLAC -->
+    <source name="vdg" flux="1.0">
+        <spectrum escale="GeV">
+            <particle name="gamma"> <vdg /> </particle>
+           <direction theta="0" phi="0" />            
+            <patch xmin="-100.9" xmax="-50.1" ymin="-145.5" ymax="-94.6" zmin="500" zmax="501"/>
+        </spectrum>
+    </source>
 
     <!-- E^-1 spectrum from 18 MeV to 18 GeV and normal incidence-->
     <source name="normal_gamma" flux="1.0">

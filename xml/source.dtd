@@ -1,4 +1,4 @@
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.10 2002/10/08 22:48:37 srobinsn Exp $
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.11 2003/02/20 21:39:04 burnett Exp $
   DTD file for flux source definitions
   -->
 <!ELEMENT source_library ((source)+ | (source_library)*) >
@@ -28,11 +28,14 @@
                         params CDATA " ">
 
 <!--- Here, the particle is declared, along with the name of the particle (we have assumed the name will not come from a Spectrum class).  See EXTLIB/LHCBDBASE/cdf/particle.cdf for a list of accepted names and their associated HEPID numbers.-->
-<!ELEMENT particle (energy | power_law)>
+<!ELEMENT particle (energy | power_law | vdg)>
 <!ATTLIST particle name CDATA "gamma" >
 
 <!ELEMENT energy EMPTY>
 <!ATTLIST energy e CDATA "0.1">
+
+<!ELEMENT vdg EMPTY>
+<!ATTLIST vdg>
 
 <!ELEMENT power_law EMPTY>
 <!ATTLIST power_law emin CDATA "0.1"  emax CDATA "100.0"  gamma CDATA "2" >

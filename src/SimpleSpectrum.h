@@ -1,7 +1,7 @@
 /** @file SimpleSpectrum.h
     @brief declaration of SimpleSpectrum
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.5 2003/03/01 23:14:56 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.6 2003/04/03 19:44:50 burnett Exp $
 */
 #ifndef SIMPLESPECTRUM_H
 #define SIMPLESPECTRUM_H
@@ -16,7 +16,7 @@ class DOM_Element;
 * \class SimpleSpectrum
 * @brief define a particle and spectral index
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.5 2003/03/01 23:14:56 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.6 2003/04/03 19:44:50 burnett Exp $
 */
 class SimpleSpectrum : public Spectrum {
 public: 
@@ -38,6 +38,8 @@ private:
     float m_index;	// spectral index: <=1 is delta function at E0
     float m_emax;
     bool m_useGeV;  // true if using GeV units, MeV otherwise
+
+    enum {VDG = -1};
 };
 
 #endif
