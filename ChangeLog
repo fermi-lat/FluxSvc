@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Fri Aug 13 11:14:30 PDT 2004
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-remove (for now) dependence on GRB, as it is moved. tagging v6r15
-    *
-------------------------------------------------------------
-User: burnett  Fri Aug 13 11:14:30 PDT 2004
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-remove (for now) dependence on GRB, as it is moved. tagging v6r15
-    *
-------------------------------------------------------------
 User: burnett  Fri Aug 13 08:14:33 PDT 2004
 FluxSvc/doc
 
