@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.22 2003/01/24 20:05:04 dnwren Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.23 2003/01/27 19:35:35 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -167,6 +167,11 @@
         <spectrum escale="GeV"> <SpectrumClass name="FILESpectrum" params="sources/glast_smin_flx.txt"/> 
             <solid_angle mincos="-0.4" maxcos="1.0"/>
         </spectrum>
+    </source>
+
+    <!-- galactic electron spectrum -->
+    <source name="electron">
+        <spectrum escale="GeV"> <SpectrumClass name="GalElSpectrum"/> <use_spectrum/> </spectrum>
     </source>
 
 

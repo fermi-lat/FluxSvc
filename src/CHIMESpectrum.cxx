@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.9 2002/12/12 22:48:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.10 2003/01/27 19:35:34 srobinsn Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -96,7 +96,7 @@ void CHIMESpectrum::init(std::string paramstring) {
             m_fluxTbl[ii][jj] = gfluxes[jj+13*ii];
         }
     }
-    // if there are parameters passed to chime, it shouuldn't move.
+    // if there are parameters passed to chime, it shouldn't move.
     m_allowMove = params.size()>1? false: true;
     // set the initial location
     /*float*/double lat =  params.size()>0? params[0]: 0.0f;
