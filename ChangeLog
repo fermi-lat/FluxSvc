@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Sep 27 14:36:51 PDT 2001
+FluxSvc/src/test TestMain.cxx
+
+Removed Files:
+	TestMain.cxx 
+Log Message:
+use pattern for test
+    *
+------------------------------------------------------------
+User: burnett  Thu Sep 27 14:36:51 PDT 2001
 FluxSvc/cmt requirements
 
 Modified Files:
