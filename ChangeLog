@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Jun  5 01:06:50 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+glast-to-galactic transformation reordered, "rocking angle simulation" redone, rocking angle transformation tested to work properly now.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Jun  5 01:06:50 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
