@@ -1,4 +1,44 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 29 16:13:26 PDT 2003
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+move source stuff to flux
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 29 16:13:26 PDT 2003
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+move source stuff to flux
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 29 16:13:26 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx FluxSvc.h 
+	defaultOptions.txt 
+Removed Files:
+      Tag: v6r5p3
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h CHIMESpectrum.inc CompositeSource.cxx 
+	CompositeSource.h EventSource.cxx EventSource.h 
+	FILESpectrum.cxx FILESpectrum.h Flux.cxx Flux.h 
+	FluxException.h FluxMgr.cxx FluxMgr.h FluxSource.cxx 
+	FluxSource.h GPS.cxx GPS.h GalElSpectrum.cxx GalElSpectrum.h 
+	Geomag.cxx Geomag.h Geomag.inc SimpleSpectrum.cxx 
+	SimpleSpectrum.h Spectrum.cxx Spectrum.h SpectrumFactory.h 
+	SpectrumFactoryTable.cxx SpectrumFactoryTable.h 
+	SurfaceMuons.cxx TimeCandle.cxx TimeCandle.h 
+Log Message:
+move source stuff to flux
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul 29 16:13:25 PDT 2003
 FluxSvc/doc
 
