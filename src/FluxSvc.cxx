@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.44 2002/10/14 17:49:12 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.45 2002/10/20 23:06:34 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -203,8 +203,8 @@ void FluxSvc::pass ( double t){
     m_fluxMgr->pass(t);
 }
 
-void FluxSvc::rootDisplay(std::vector<char*> arguments){
-    rootplot abc(arguments);
+void FluxSvc::rootDisplay(std::vector<const char*> arguments){
+    rootplot abc(arguments, m_fluxMgr);
 }
 
 ///return the pointer to the current IFlux object
