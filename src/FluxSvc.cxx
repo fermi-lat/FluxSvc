@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.13 2001/12/07 23:20:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.14 2002/01/02 05:00:15 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -142,4 +142,9 @@ void FluxSvc::addFactory(std::string name, const ISpectrumFactory* factory ){
 HepRandomEngine* FluxSvc::getEngine()
 {
     return HepRandom::getTheEngine();
+}
+
+/// pass a specific amount of time
+void FluxSvc::pass ( double t){
+m_fluxMgr->pass(t);
 }

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.11 2001/10/31 23:21:03 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.12 2002/01/02 05:00:14 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -34,6 +34,10 @@ public:
     
     /// access to the local random engine 
     virtual HepRandomEngine* getEngine();
+
+    /// pass a specific amount of time
+    virtual void pass ( double t);
+
     
 
     

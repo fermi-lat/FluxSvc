@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.9 2001/10/20 07:21:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.10 2002/01/02 05:00:14 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -17,7 +17,7 @@ class ParticleProperty;
 //!  Abstract interface for an object that generates particles, Flux
 class IFlux {
 public:
-    // ctor, select the name
+    /// ctor, select the name
     IFlux(std::string name=""){};
     virtual ~IFlux(){}
     
@@ -62,6 +62,9 @@ public:
     
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const=0;
+
+    /// pass a specific amount of time
+    virtual void pass ( double t)=0;
        
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 #if 0

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.10 2001/11/27 22:39:09 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.11 2002/01/02 05:00:14 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -50,7 +50,7 @@ public:
     virtual double time()const;
 
     /// pass a specific amount of time
-    void pass ( double t);
+    virtual void pass ( double t);
 
     /// Get the time as held by GPS
     /*GPStime*/int gpsTime () const;
