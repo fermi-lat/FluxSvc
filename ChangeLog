@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 03:52:44 PST 2002
+FluxSvc/FluxSvc
+
+Added Files:
+	AlbedoPSpectrum.h 
+Log Message:
+
+flux package migration
+    *
+------------------------------------------------------------
 User: burnett  Tue Jan 15 09:12:41 PST 2002
 FluxSvc/xml
 
