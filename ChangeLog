@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jul 14 14:14:10 PDT 2004
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_dll.cxx 
+Log Message:
+convert to use proper macro instead of explicit code for getFactoryEntries.
+    *
+------------------------------------------------------------
 User: burnett  Fri Jun 11 11:48:15 PDT 2004
 FluxSvc/doc
 
