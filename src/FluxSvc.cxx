@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.10 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.11 2001/10/31 23:21:04 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -43,17 +43,9 @@ void WARNING(const char* text){std::cerr << text << std::endl;}
 FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
 : Service(name,svc)
 {
-    // declare the properties and set defaults
-    // m_source_lib = "$(FLUXROOT)/xml/source_library.xml";
     
-    
-    declareProperty("source_lib" , m_source_lib);
-    // declareProperty("source_lib_default" , m_source_lib_default);
-    
-    
-    //set a default source library, which the user can add to or change
-    //m_source_lib.push_back("$(FLUXROOT)/xml/source_library.xml");
-    
+    declareProperty("source_lib" , m_source_lib);   
+  
     HepRandom::setTheEngine(new RanluxEngine);
 }
 
@@ -99,7 +91,7 @@ StatusCode FluxSvc::initialize ()
     MsgStream log( msgSvc(), name() );
      
     // create a FluxMgr object which will then be available.
-    m_fluxMgr = new FluxMgr(m_source_lib/*fileList*/);
+    m_fluxMgr = new FluxMgr(m_source_lib);
     
     Flux::mgr(m_fluxMgr); // tell our Flux object
     
