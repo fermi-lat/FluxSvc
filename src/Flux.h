@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.17 2002/05/09 21:39:15 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.18 2002/05/18 21:21:34 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -88,7 +88,9 @@ public:
                                                                                   
 //    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
 
-    
+    EventSource* currentEvent(){return m_event;}
+
+    FluxSource* currentFlux(){return m_flux;}
     
 private:
     
