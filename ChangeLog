@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Sun Apr 28 14:08:10 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.h FluxMgr.cxx FluxSource.cxx 
+Added Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h 
+Log Message:
+Diffuse background model designed, CompositeDiffuse.cxx, .h implemented.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sun Apr 28 14:08:09 PDT 2002
 FluxSvc/FluxSvc
 
