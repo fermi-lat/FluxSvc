@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat May 25 14:08:58 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+superfluous debug output removed, diffuse xml declaration tuned, histogram resolution increased, proper galactic coordinates output, axes labeled/title in histogram display.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sat May 25 14:08:58 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
