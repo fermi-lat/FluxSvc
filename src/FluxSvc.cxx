@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.3 2001/04/19 15:01:37 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.4 2001/06/21 00:34:26 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -52,8 +52,11 @@ std::list<std::string> FluxSvc::fluxNames()const{
 StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
 
     std::list<std::string> source_list( fluxNames() );
+    std::list<std::string> source_list2( SpectrumFactoryTable::instance()->spectrumList() );
 
-    if( std::find(source_list.begin(), source_list.end(), name) == source_list.end() )
+    if( std::find(source_list.begin(), source_list.end(), name) == source_list.end() 
+        &&(std::find(source_list2.begin(), source_list2.end(), name) == source_list2.end()))
+        //flux =  new Flux(name);
         return StatusCode::FAILURE;
     
     flux =  new Flux(name);
@@ -145,4 +148,10 @@ StatusCode FluxSvc::queryInterface(const IID& riid, void** ppvInterface)  {
   }
   addRef();
   return SUCCESS;
+}
+
+
+/// add a new source
+void FluxSvc::addFactory(std::string name, const ISpectrumFactory* factory ){
+m_fluxMgr->addFactory(name, factory);
 }

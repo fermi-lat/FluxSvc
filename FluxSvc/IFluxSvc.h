@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.2 2001/04/19 02:11:34 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.3 2001/04/19 15:01:37 burnett Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -10,6 +10,7 @@
 #include "GaudiKernel/IInterface.h"
 #include <string>
 #include <list>
+#include "flux/SpectrumFactoryTable.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_IFluxSvc(910, 1 , 0); 
@@ -31,6 +32,9 @@ public:
 
         /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }
+
+    /// add a new source
+    virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 
 
 };

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.2 2001/04/19 15:01:37 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.3 2001/06/16 13:27:44 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -56,6 +56,12 @@ public:
 
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const;
+
+    virtual void addFactory( const IFactory* factory );
+
+    virtual void addFactory(std::string name, const ISpectrumFactory* factory );/* {
+        insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
+    }*/
 
 private:
 
