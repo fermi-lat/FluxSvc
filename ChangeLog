@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Fri Aug 13 19:42:23 PDT 2004
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-fix capitaztinon some gcc warnings; p1 tag
-    *
-------------------------------------------------------------
 User: burnett  Fri Aug 13 15:59:23 PDT 2004
 FluxSvc/cmt
 
