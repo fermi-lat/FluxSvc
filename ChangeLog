@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Apr 15 14:54:24 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+remove McVertex, fix (almost) FluxAlg.
+    *
+------------------------------------------------------------
 User: burnett  Mon Apr 15 14:54:23 PDT 2002
 FluxSvc/src
 
