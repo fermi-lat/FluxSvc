@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.21 2002/07/23 19:00:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.22 2002/10/07 23:42:20 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -15,7 +15,7 @@
 */
 
 #include "FluxSvc/IFlux.h"
-#include "geometry/CoordTransform.h"
+#include "CLHEP/Vector/Rotation.h"
 
 // forward declarations
 class FluxMgr;
@@ -91,7 +91,7 @@ public:
     virtual Rotation orientTransform(double time)const;
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-    Rotation Flux::transformGlastToGalactic(double time)const;
+    HepRotation Flux::transformGlastToGalactic(double time)const;
     
     //    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
     
