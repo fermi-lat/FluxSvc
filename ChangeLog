@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: omodei  Fri Feb 15 07:38:33 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx 
+Log Message:
+Added the GRBSpectrum as example of time dependent spectrum
+    *
+------------------------------------------------------------
 User: omodei  Fri Feb 15 07:38:32 PST 2002
 FluxSvc/cmt
 
