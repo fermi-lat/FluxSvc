@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.9 2001/10/20 07:21:11 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -11,7 +11,6 @@
 class FluxMgr;
 class EventSource;
 class FluxSource;
-
 
 
 //!  The class holding the interface with FluxMgr, EventSource, and FluxSource of the flux package.
@@ -46,7 +45,12 @@ public:
     
     /// return the time
     virtual double time()const;
-    
+
+    /// pass a specific amount of time
+    void pass ( double t);
+
+    /// Get the time as held by GPS
+    /*GPStime*/int gpsTime () const;
     
     /// rate ( /mm**2 /s)
     virtual double rate()const;

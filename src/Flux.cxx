@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.6 2001/07/30 04:15:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.7 2001/10/18 03:31:12 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -63,6 +63,19 @@ double Flux::time()const
 {
     return m_time ;
 }
+
+
+/// pass a specific amount of time    
+void Flux::pass ( double t){
+    s_mgr->pass(t);
+}
+
+/// Get the time as held by GPS    
+/*GPStime*/int Flux::gpsTime () const{
+    return s_mgr->time();
+}
+
+
 // direction
 HepVector3D Flux::launchDir()const
 {
