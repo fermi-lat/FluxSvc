@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.4 2002/04/28 21:08:09 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -30,7 +30,6 @@ public:
     
     /// flux into 1 m^2 integrated over angles
     virtual double flux(double time)const{
-        //m_time=time; 
         return rate(time)/totalArea();}
     
     ///    full-length title description of this EventSource.

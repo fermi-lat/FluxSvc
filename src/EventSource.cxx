@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.4 2002/01/31 09:55:20 srobinsn Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
 
 #include "../FluxSvc/EventSource.h"
 
@@ -67,21 +67,6 @@ void   EventSource::setFlux (double value) {
     m_flux = value;
 }
 
-/*
-double EventSource::interval (double)
-{
-return -1.; //flag that there is no proper function working
-}*/
-
-/*double  EventSource::rate ( double solid_angle, double fluxval )
-{
-double  r = solid_angle*fluxval*s_total_area;   
-// integral of the flux*cross-sectional-area over
-// the solid angle (which is passed in as an integral)
-m_solid_angle = solid_angle;
-flux( fluxval );
-return  r;
-}*/
 
 double  EventSource::rate (double time )const
 {
@@ -97,7 +82,6 @@ Orbit*  EventSource::makeOrbit () const
 {
     return new Orbit;
 }
-
 
 
 // UI titles

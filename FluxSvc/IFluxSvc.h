@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.19 2002/05/20 23:40:53 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.20 2002/06/24 22:37:15 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -12,7 +12,6 @@
 #include <list>
 #include <vector>
 #include "geometry/CoordTransform.h"
-//#include "flux/SpectrumFactoryTable.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_IFluxSvc(910, 1 , 0); 
