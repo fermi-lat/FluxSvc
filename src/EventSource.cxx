@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.3 2002/01/30 01:36:45 srobinsn Exp $
 
 #include "../FluxSvc/EventSource.h"
 
@@ -67,10 +67,11 @@ void   EventSource::setFlux (double value) {
   m_flux = value;
 }
 
+/*
 double EventSource::interval (double)
 {
   return -1.; //flag that there is no proper function working
-}
+}*/
 
 /*double  EventSource::rate ( double solid_angle, double fluxval )
 {
