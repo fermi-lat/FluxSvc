@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.4 2001/07/07 01:27:10 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.5 2001/07/14 22:56:40 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -26,6 +26,7 @@ public:
 
 private:
     IFlux* m_flux;
+    std::string m_source_name;
 };
 
 
@@ -41,16 +42,13 @@ void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
 FluxTestAlg::FluxTestAlg(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator){
  
+    declareProperty("source_name", m_source_name="default");
 }
 
 
 //------------------------------------------------------------------------------
 /*! */
 StatusCode FluxTestAlg::initialize() {
-    //DEFAULT
-	//static std::string source_name="backgndmix";
-	//FOR TESTING
-        static std::string source_name="chimemax";
         
 
     MsgStream log(msgSvc(), name());
@@ -76,9 +74,9 @@ StatusCode FluxTestAlg::initialize() {
 
 
 
-    sc =  fsvc->source(source_name, m_flux);
+    sc =  fsvc->source(m_source_name, m_flux);
     if( sc.isFailure()) {
-        log << MSG::ERROR << "Could not find flux " << source_name << endreq;
+        log << MSG::ERROR << "Could not find flux " << m_source_name << endreq;
         return sc;
     }
 

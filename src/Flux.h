@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.4 2001/07/07 01:27:10 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.5 2001/07/30 03:58:15 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -66,6 +66,7 @@ public:
     virtual void addFactory(std::string name, const ISpectrumFactory* factory );/* {
         insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
     }*/
+
 
 private:
 
