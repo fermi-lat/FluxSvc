@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jul 24 22:18:58 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IRegisterSource.h 
+Log Message:
+mainpage now points to location of additional web documentation, more documentation about the tool structure, many updates made to documentation code blocks within implemenation of methods package-wide, diffuse model updated to take a file input for a logN/logS characteristic , test file added, test sources changed accordingly.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jul 23 12:00:58 PDT 2002
 FluxSvc/xml
 
