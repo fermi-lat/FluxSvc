@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.15 2002/01/10 17:35:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.16 2002/01/14 23:22:40 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -21,7 +21,7 @@
 
 #include "Flux.h"
 
-#include "flux/FluxMgr.h"
+#include "FluxSvc/FluxMgr.h"
 #include <algorithm>
 
 // declare the service factories for the FluxSvc
@@ -148,3 +148,6 @@ HepRandomEngine* FluxSvc::getEngine()
 void FluxSvc::pass ( double t){
 m_fluxMgr->pass(t);
 }
+
+void WARNING (const char * text ){  std::cerr << "WARNING: " << text << '\n';}
+void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
