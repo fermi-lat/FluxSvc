@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 29 08:49:16 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+add run-time executioin status info output
+    *
+------------------------------------------------------------
 User: burnett  Tue Oct 28 05:45:26 PST 2003
 FluxSvc/src
 
