@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Feb 26 16:15:49 PST 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+make the test a little more inclusive.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r17p0, operation: add
 Package: FluxSvc
