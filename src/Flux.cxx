@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.14 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.15 2002/05/05 23:58:57 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -135,3 +135,4 @@ void Flux::addFactory(std::string name, const ISpectrumFactory* factory ) {
 Rotation Flux::CELTransform(double time)const{
 return s_mgr->CELTransform(time);
 }
+

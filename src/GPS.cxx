@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
+// $Id: GPS.cxx,v 1.2 2002/01/17 08:38:50 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -320,6 +320,17 @@ void GPS::rotateAngles(std::pair<double,double> coords){
     m_rotangles=coords;
 }
 
+
+Rotation GPS::rockingAngleTransform(double time){
+    
+    Rotation gal;   
+    //and here we construct the rotation matrix
+    double zenithPhase = m_rotangles.first;
+    double offZenith = m_rotangles.second;
+    gal.rotateZ(zenithPhase).rotateX(offZenith);
+ 
+    return gal;
+}
 
 
 
