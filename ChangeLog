@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sun Oct 13 12:13:47 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+compositediffuse algorithm altered, compilation error with destruction of ostream fixed.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sun Oct 13 12:13:47 PDT 2002
 FluxSvc/src
 
 Modified Files:
