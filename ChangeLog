@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Jul  1 13:32:36 PDT 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootEnergyHist.cxx rootplot.cxx 
+Log Message:
+vc8 fixes
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul  1 13:32:36 PDT 2003
 FluxSvc/src
 
 Modified Files:
