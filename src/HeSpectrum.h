@@ -1,4 +1,4 @@
-// $Id: HeSpectrum.h,v 1.2 2002/01/18 11:22:07 srobinsn Exp $
+// $Id: HeSpectrum.h,v 1.3 2002/01/24 10:03:48 srobinsn Exp $
 
 // File: HeSpectrum.h
 //
@@ -35,7 +35,7 @@
 #ifndef HE_SPECTRUM_H
 #define HE_SPECTRUM_H
 
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 #include "facilities/Observer.h"
 #include <vector>
 #include <string>

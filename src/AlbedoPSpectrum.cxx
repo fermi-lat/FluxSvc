@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.cxx,v 1.3 2002/01/18 11:22:03 srobinsn Exp $
+// $Id: AlbedoPSpectrum.cxx,v 1.4 2002/01/24 10:03:47 srobinsn Exp $
 
 
 #include "AlbedoPSpectrum.h"
@@ -9,7 +9,7 @@
 #include "CLHEP/Random/Random.h"
 #include "GPS.h"
 #include "Geomag.h"
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<AlbedoPSpectrum> factory;
 const ISpectrumFactory& AlbedoPSpectrumFactory = factory;

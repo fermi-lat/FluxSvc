@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.3 2002/01/24 10:03:48 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.4 2002/02/02 01:33:25 srobinsn Exp $
 
 
 #include "SimpleSpectrum.h"
@@ -10,7 +10,7 @@
 #include <utility>
 #include <strstream>
 #include <cmath>
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<SimpleSpectrum> factory;
 

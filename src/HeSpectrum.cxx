@@ -1,4 +1,4 @@
-// $Id: HeSpectrum.cxx,v 1.3 2002/01/18 11:22:07 srobinsn Exp $
+// $Id: HeSpectrum.cxx,v 1.4 2002/01/24 10:03:48 srobinsn Exp $
 
 #include "HeSpectrum.h"
 
@@ -10,7 +10,7 @@
 #include "CLHEP/Random/Random.h"
 #include "GPS.h"
 
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<HeSpectrum> factory;
 const ISpectrumFactory& HeSpectrumFactory = factory;

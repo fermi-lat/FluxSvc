@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.6 2002/02/07 23:51:02 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.7 2002/02/14 16:00:06 cohen Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -11,14 +11,14 @@
 #include <string>
 #include <utility>
 #include <vector>
-
+#include "FluxSvc/ISpectrum.h"
 //forward declaration
 class HepRandomEngine;
 
 
 //!  Class for holding function definitions of Spectrums - i.e. HeSpectrum, SimpleSpectrum, etc...
 //!  Basically an abstract base class for these classes.
-class Spectrum {
+class Spectrum : public ISpectrum {
 public:
     
     //    class  Direction : public std::pair<float,float> {
@@ -65,6 +65,8 @@ public:
     virtual double energySrc(HepRandomEngine* engine, double time=0);
     virtual std::pair<double,double> dir(double energy, HepRandomEngine* engine);
     
+
+  
     
 protected:
     Spectrum(const std::vector<float>& /*params*/){};

@@ -1,7 +1,7 @@
 // SpectrumFactory.h: interface for the SpectrumFactory class.
 //
 //////////////////////////////////////////////////////////////////////
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SpectrumFactory.h,v 1.1 2002/01/17 08:38:51 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/SpectrumFactory.h,v 1.3 2002/01/24 10:03:47 srobinsn Exp $
 
 #if !defined(AFX_SPECTRUMFACTORY_H__211C2F25_9111_44B9_B357_0762789222AF__INCLUDED_)
 #define AFX_SPECTRUMFACTORY_H__211C2F25_9111_44B9_B357_0762789222AF__INCLUDED_
@@ -11,7 +11,7 @@
 #endif // _MSC_VER > 1000
 
 #include "FluxSvc/ISpectrumFactory.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
+#include "SpectrumFactoryTable.h"
 #include <typeinfo>
 #include <vector>
 
@@ -32,10 +32,12 @@ public:
         SpectrumFactoryTable::instance()->addFactory(classname, this); 
     }
     //! return a new Spectrum object
-    virtual Spectrum* instantiate(const std::string& params) const{return new T(params);}
+    virtual ISpectrum* instantiate(const std::string& params) const{return new T(params);}
     
     //! dummy to follow Gaudi model
     virtual void addRef()const{}
 };
+
+
 
 #endif // !defined(AFX_SPECTRUMFACTORY_H__211C2F25_9111_44B9_B357_0762789222AF__INCLUDED_)
