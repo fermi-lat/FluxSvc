@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jan 19 15:48:56 PST 2003
+FluxSvc/cdf
+
+Modified Files:
+	particle.cdf 
+Log Message:
+copy some preliminary heavy ions info from EXTLIB
+    *
+------------------------------------------------------------
 User: burnett  Wed Jan 15 21:58:56 PST 2003
 FluxSvc/src
 
