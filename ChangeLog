@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: hierath  Thu Nov 14 13:05:46 PST 2002
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootAngleHist.cxx rootEnergyHist.cxx rootHist.cxx rootHist.h 
+	rootplot.cxx rootplot.h 
+Log Message:
+Minor changes to variable names and added histogram incrementing
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Nov  6 11:51:48 PST 2002
 FluxSvc/xml
 
