@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: omodei  Fri Mar 22 06:38:37 PST 2002
+FluxSvc/src/test
+
+Modified Files:
+	GRBParam.txt 
+Log Message:
+The flux at time 0 is now correct
+    *
+------------------------------------------------------------
 User: omodei  Fri Mar 22 06:38:36 PST 2002
 FluxSvc/src/GRB
 
