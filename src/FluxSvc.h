@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.2 2002/04/05 23:40:22 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -41,6 +41,9 @@ public:
     /// create a set of display windows using rootplot.
     void rootDisplay(std::vector<char*> arguments);
 
+    ///return the pointer to the current IFlux object
+    IFlux* currentFlux();
+
     
     //------------------------------------------------------------------
     //  stuff required by a Service
@@ -77,7 +80,8 @@ private:
     std::string m_source_lib_default;
     /// set dtd to use.
     std::string m_dtd_file;
-    
+    /// the "current" flux object
+    IFlux* m_currentFlux;
 };
 
 
