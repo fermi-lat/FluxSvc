@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.7 2001/10/13 22:40:37 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.8 2002/01/02 05:00:15 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -72,7 +72,6 @@ StatusCode FluxTestAlg::initialize() {
     log << MSG::INFO << "loading source..." << endreq;
 
 
-
     sc =  fsvc->source(m_source_name, m_flux);
     if( sc.isFailure()) {
         log << MSG::ERROR << "Could not find flux " << m_source_name << endreq;
@@ -107,7 +106,7 @@ StatusCode FluxTestAlg::execute() {
         << "(" << d.x() <<", "<< d.y() <<", "<<d.z()<<")" 
         << endreq;
 
-
+    //m_flux->pass(10.);
     return sc;
 }
 
