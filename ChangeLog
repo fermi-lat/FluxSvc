@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: burnett  Mon Jun 24 05:57:24 PDT 2002
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v5r7p1
+    *
+------------------------------------------------------------
+User: burnett  Mon Jun 24 05:57:24 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v5r7p1
+    *
+------------------------------------------------------------
 User: burnett  Mon Jun 24 05:48:04 PDT 2002
 FluxSvc/src
 
