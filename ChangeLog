@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Mar 22 11:20:37 PST 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+fix return code when RootTupleSvc not found.
+    *
+------------------------------------------------------------
 User: burnett  Tue Mar 22 09:04:19 PST 2005
 FluxSvc/cdf
 
