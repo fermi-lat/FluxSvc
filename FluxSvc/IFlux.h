@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.2 2001/04/19 15:01:37 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -51,6 +51,11 @@ public:
     /// get the target area
     virtual double targetArea()const =0;
 
+    /// find which spectrum created the current particle
+    virtual std::string findSource()const=0;
+
+    /// return a unique number correcponding to that spectrum
+    virtual int numSource()const=0;
 };
 
 
