@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.10 2003/01/27 19:35:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.11 2003/01/28 20:28:34 srobinsn Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -208,7 +208,7 @@ void CHIMESpectrum::setPosition(double lat, double lon) {
     // fluxes
 
     m_lat = lat;
-    m_lon = lon;
+    m_lon = lon>0? lon : lon+360.;
     
     // Integrated flux in the power law tail above the table.
     m_upper = -0.115*1000.*m_en.back()*m_normfact*fluxes[74]
