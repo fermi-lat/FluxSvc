@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Feb 22 18:08:21 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h ISpectrum.h ISpectrumFactory.h 
+Log Message:
+change interface to remove random engine from ISpectrum, give access via IFluxSvc
+    *
+------------------------------------------------------------
+User: burnett  Sat Feb 22 18:08:21 PST 2003
 FluxSvc
 
 Modified Files:
