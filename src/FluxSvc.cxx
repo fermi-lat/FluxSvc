@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.67 2003/10/16 13:26:43 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.68 2003/10/29 16:49:15 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.67 2003/10/16 13:26:43 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.68 2003/10/29 16:49:15 burnett Exp $
 */
 
 // includes
@@ -486,17 +486,15 @@ StatusCode FluxSvc::run(){
     while( (m_evtMax==0  || m_evtMax>0 &&  eventNumber < m_evtMax)
         && (m_endTime==0 ||m_endTime>0 && currentTime< m_endTime) ) {
 
-            int percent_complete= static_cast<int>(
-                std::max(  
-                    (m_evtMax>0? 100.*eventNumber/m_evtMax: 0.0),  
-                    (m_endTime>0? 100.*(currentTime-m_endTime)/(m_endTime-m_startTime) : 0.0) 
-                    )
-                );
+            double efrac =   (m_evtMax>0? 100.*eventNumber/m_evtMax: 0.0), 
+                tfrac =   (m_endTime>0? 100.*(currentTime-m_startTime)/(m_endTime-m_startTime) : 0.0) ;
+
+            int percent_complete= static_cast<int>(  std::max( efrac, tfrac)  );
             if( percent_complete!=last_fraction){
                 last_fraction=percent_complete;
                 if( percent_complete<10 || percent_complete%10 ==0){
                     log << MSG::INFO <<   percent_complete << "% complete: "
-                        << ", event "<< eventNumber<<",  time "<< currentTime << endreq;
+                        << " event "<< eventNumber<<",  time "<< currentTime << endreq;
                 }
 
             }
