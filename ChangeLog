@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Apr 18 19:11:35 PDT 2001
+FluxSvc/src FluxSvc.cxx
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+switching to new Gaudi
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 18 19:11:35 PDT 2001
 FluxSvc/cmt requirements setup.bat
 
 Modified Files:
