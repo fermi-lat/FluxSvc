@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jan 10 09:35:02 PST 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+
+properly.  THis allows time to pe passed explicitly from the client to FluxSvc.
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 10 09:35:01 PST 2002
 FluxSvc/src
 
