@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May 16 22:15:01 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h 
+Log Message:
+diffuse altered to take a single source and expand to add more point sources, a single diffuse source is set up to do so in user_library.xml
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May 16 13:34:10 PDT 2002
 FluxSvc/src
 
