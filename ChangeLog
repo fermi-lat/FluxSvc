@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jul 11 16:08:57 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+Fix  ending logic to stop either for time or event count
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul  1 13:34:46 PDT 2003
 FluxSvc/doc
 
