@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/TimeCandle.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/TimeCandle.h,v 1.1 2002/08/28 07:26:56 srobinsn Exp $
 #ifndef TimeCandle_H
 #define TimeCandle_H
 /** 
@@ -41,7 +41,7 @@ public:
     
     double interval (double time)
     {        
-        return /*m_T0*/5.0;
+        return m_T0;
     }
 private:
     float parseParamList(std::string input, int index);
