@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sat Oct 13 15:40:37 PDT 2001
+FluxSvc/src/test FluxTestAlg.cxx jobOptions.txt
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+
+testFluxMgr now uses both user_library.xml and source_library.xml, as a test of the method.
+    *
+------------------------------------------------------------
 User: srobinsn  Sat Oct 13 15:40:36 PDT 2001
 FluxSvc/src Flux.h FluxSvc.cxx
 
