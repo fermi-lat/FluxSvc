@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May  9 12:59:30 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx Flux.h FluxMgr.cxx FluxMgr.h FluxSvc.cxx FluxSvc.h 
+Log Message:
+setGlasAngles function changed to SetOrientation function, also getOrientationTransform available from IFlux.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May  9 12:59:29 PDT 2002
 FluxSvc/FluxSvc
 
