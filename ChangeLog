@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jan 19 17:48:30 PST 2003
+FluxSvc/cdf
+
+Modified Files:
+	particle.cdf 
+Log Message:
+change He number to agree with G4Generator convention
+    *
+------------------------------------------------------------
 User: burnett  Sun Jan 19 15:48:56 PST 2003
 FluxSvc/cdf
 
