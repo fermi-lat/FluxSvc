@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jul  8 13:55:59 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx 
+Log Message:
+problem fixed in compositesource - "running" intervals now decrement in each call of the "event" function by the returned interval.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jul  8 12:27:05 PDT 2002
 FluxSvc/xml
 
