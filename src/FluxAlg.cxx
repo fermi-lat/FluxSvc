@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.12 2002/04/16 18:30:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.13 2002/04/18 04:17:07 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -118,8 +118,9 @@ StatusCode FluxAlg::execute()
 
     // Here the TDS is prepared to receive hits vectors
     // Check for the MC branch - it will be created if it is not available
-    DataObject *mc;
+    DataObject *mc=0;
     eventSvc()->retrieveObject("/Event/MC", mc);
+    if( mc==0) sc=eventSvc()->registerObject("/Event/MC", mc);
 
     //log << MSG::DEBUG << "TDS ready" << endreq;
 
