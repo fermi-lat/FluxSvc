@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Sat May 18 14:21:34 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx Flux.h FluxMgr.cxx FluxMgr.h FluxSvc.cxx FluxSvc.h 
+	GPS.cxx GPS.h 
+Log Message:
+transformGlastToGalactic function created, usable from service.  This function handles the transformation from glast-local coordinates into galactic coordinates.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sat May 18 14:21:33 PDT 2002
 FluxSvc/FluxSvc
 
