@@ -1,7 +1,7 @@
 package FluxSvc
-version v6r13p6
+version v6r16p2
 
-# $Id: requirements,v 1.113 2004/08/14 02:42:23 burnett Exp $
+# $Id: requirements,v 1.114 2004/08/27 17:43:25 jrb Exp $
 author  T. Kozanecki <hansl$slac.stanford.edu> T. Burnett
 
 branches FluxSvc cmt doc cdf 
