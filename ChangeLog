@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Sat Jul 14 15:56:40 PDT 2001
+FluxSvc/src/test FluxTestAlg.cxx
+
+Modified Files:
+	FluxTestAlg.cxx 
+Log Message:
+remove pencil test.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Jul  6 18:27:10 PDT 2001
 FluxSvc/src/test FluxTestAlg.cxx
 
