@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.40 2003/03/07 21:44:50 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.41 2003/05/15 20:34:42 burnett Exp $
 
 */
 
@@ -53,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.40 2003/03/07 21:44:50 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.41 2003/05/15 20:34:42 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -223,7 +223,7 @@ StatusCode FluxAlg::execute()
     }else mch = mcheader;
 
 
-    mch->initialize(mch->getRunNumber(), m_flux->numSource(), mch->getSequence()+1);
+    mch->initialize(mch->getRunNumber(), m_flux->numSource(), mch->getSequence());
 
 
     
