@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: burnett  Wed Oct 30 12:08:11 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxException.h FluxMgr.cxx FluxSvc.cxx Spectrum.h 
+	defaultOptions.txt mainpage.h 
+Removed Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h CHIMESpectrum.inc Geomag.cxx Geomag.h 
+	Geomag.inc HeSpectrum.cxx HeSpectrum.h HeSpectrum.inc 
+	StaticOrbit.h 
+Log Message:
+clean up, removing unsupported spectra, moving rootplots
+    *
+------------------------------------------------------------
+User: burnett  Wed Oct 30 12:08:11 PST 2002
 FluxSvc/cmt
 
 Modified Files:
