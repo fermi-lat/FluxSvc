@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Feb 24 16:38:40 PST 2003
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx FluxMgr.cxx FluxMgr.h FluxSource.cxx GPS.cxx GPS.h 
+Removed Files:
+	Orbit.cxx Orbit.h 
+Log Message:
+Orbit class removed, references removed from GPS, GPS cleaned up, obsolete setposition function referecing Orbit removed from FluxMgr.
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Feb 22 18:08:22 PST 2003
 FluxSvc/src/test/flux
 
