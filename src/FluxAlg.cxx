@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.50 2003/10/16 13:26:43 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.51 2003/10/29 20:59:05 srobinsn Exp $
 
 */
 
@@ -50,7 +50,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.50 2003/10/16 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.50 2003/10/16 13:26:43 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.51 2003/10/29 20:59:05 srobinsn Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -142,9 +142,14 @@ StatusCode FluxAlg::initialize(){
     //then this line sets the rocking type, as well as the rocking angle.
     m_fluxSvc->setRockType(m_pointing_mode,m_rocking_angle);
 
+	//output to record the pointing settings
+	log << MSG::INFO << "rocking Mode: " << m_pointing_mode << endreq;
+	log << MSG::INFO << "rocking Angle: " << m_rocking_angle << " degrees" << endreq;
+
     //set the input file to be used as the pointing database, if used
     if(! m_pointing_history_input_file.value().empty() ){
         m_fluxSvc->setPointingHistoryFile(m_pointing_history_input_file.value().c_str());
+		log << MSG::INFO << "Pointing History File used, using rocking mode 6: " << m_pointing_history_input_file.value() << endreq;
     }
 
     if( !m_source_list.value().empty()){
