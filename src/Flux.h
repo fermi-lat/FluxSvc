@@ -1,4 +1,4 @@
-// $Header:$
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -50,6 +50,7 @@ public:
 
     /// retrieve the area (a static, same for all fluxes)
     double targetArea()const;
+
 
 private:
 

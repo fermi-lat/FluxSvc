@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.2 2001/04/19 02:11:34 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -9,6 +9,7 @@
 #include "GaudiKernel/Service.h"
 #include "FluxSvc/IFluxSvc.h"
 #include <list>
+
 
 //forward declarations
 template <class TYPE> class SvcFactory;
@@ -35,7 +36,11 @@ public:
     
     /// 
     virtual StatusCode finalize ();
- 
+
+      
+   /// Query interface
+   virtual StatusCode queryInterface( const IID& riid, void** ppvUnknown );
+
 protected: 
 
     /// Standard Constructor
