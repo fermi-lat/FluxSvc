@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.54 2003/03/02 06:30:57 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.55 2003/03/04 00:04:32 srobinsn Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -34,7 +34,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.54 2003/03/02 06:30:57 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.55 2003/03/04 00:04:32 srobinsn Exp $
 */
 
 // includes
@@ -106,7 +106,7 @@ public:
     ///2=SLEWING(like updown, but not discontinuous at the equator),
     ///3=ONEPERORBIT (rock norh one orbit, south the next,
     ///4=EXPLICIT (use the internal rotangles rotation angles (this should be set through setOrientation)).
-    void setRockType(int rockType, double rockAngle = 35.);
+    std::vector<double> setRockType(int rockType, double rockAngle = 35.);
 
     ///this should return the source file names, along with the contained sources.
     std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
@@ -373,8 +373,8 @@ std::pair<double,double> FluxSvc::location(){
     return m_fluxMgr->location();
 }
 /// this sets the rocking mode in GPS.
-void FluxSvc::setRockType(int rockType, double rockAngle){
-   m_fluxMgr->setRockType(rockType, rockAngle);
+std::vector<double> FluxSvc::setRockType(int rockType, double rockAngle){
+   return m_fluxMgr->setRockType(rockType, rockAngle);
 }
 
 std::vector<std::pair< std::string ,std::list<std::string> > > FluxSvc::sourceOriginList() const{

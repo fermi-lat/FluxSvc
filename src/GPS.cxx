@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.24 2003/03/01 23:14:56 burnett Exp $
+// $Id: GPS.cxx,v 1.25 2003/03/02 17:49:00 burnett Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -330,10 +330,34 @@ void GPS::getPointingCharacteristics(double seconds){
     //    dirZ.difference(dirX)*180./M_PI << std::endl;
 }
 
-void GPS::setRockType(int rockType){
+int GPS::setRockType(int rockType){
+    //get the current state
+    int ret;
+    if(m_rockType == NONE)ret = 0;
+    if(m_rockType == UPDOWN)ret = 1;
+    if(m_rockType == SLEWING)ret = 2;
+    if(m_rockType == ONEPERORBIT)ret = 3;
+    if(m_rockType == EXPLICIT)ret = 4;
+
+
     m_rockType = NONE;
     if(rockType == 1) m_rockType = UPDOWN;
     if(rockType == 2) m_rockType = SLEWING;
     if(rockType == 3) m_rockType = ONEPERORBIT;
     if(rockType == 4) m_rockType = EXPLICIT;
+
+    return ret;
+}
+
+int GPS::setRockType(RockType rockType){
+    //get the current state
+    int ret;
+    if(m_rockType == NONE)ret = 0;
+    if(m_rockType == UPDOWN)ret = 1;
+    if(m_rockType == SLEWING)ret = 2;
+    if(m_rockType == ONEPERORBIT)ret = 3;
+    if(m_rockType == EXPLICIT)ret = 4;
+
+    m_rockType = rockType;
+    return ret;
 }
