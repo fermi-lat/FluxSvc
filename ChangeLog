@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Jul  8 12:27:05 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+MapSpectrum removed, to be given own package "MapFlux".
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Jul  8 12:27:05 PDT 2002
 FluxSvc/src
 
 Removed Files:
