@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.10 2002/08/08 00:02:39 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.11 2002/10/07 23:42:20 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -84,6 +84,7 @@ protected:
     
     //private: 
     std::vector< EventSource* > m_sourceList;
+    std::vector< FluxSource* > m_eventList;
     //vector of flags, holds whether or not the current source has a remaining unused particle.
     std::vector<int> m_unusedSource;
     //vector of recorded intervals of held sources.
