@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrElectronPrimary.h,v 1.3 2001/10/20 07:20:35 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectronPrimary.h,v 1.1 2002/01/16 12:25:34 srobinsn Exp $
 #ifndef CrElectronPrimary_H
 #define CrElectronPrimary_H
 
@@ -22,7 +22,7 @@ public:
   double energySrc(HepRandomEngine* engine) const;
   /// flux returns the value integrated over whole energy and direction
   /// and devided by 4pi Sr: then the unit is [s**-1 m**-2 Sr**-1]
-  double flux() const;
+  double flux(double) const;
   double solidAngle() const;
   const char* particleName() const;
 

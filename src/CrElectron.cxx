@@ -8,7 +8,7 @@
  *
  * Ver 1.0 on 2001-04-18 by Masanobu Ozaki <ozaki@astro.isas.ac.jp>
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.cxx,v 1.1 2002/01/16 12:13:11 srobinsn Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.cxx,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
  */
 
 #include <math.h>
@@ -67,7 +67,7 @@ CrSpectrum* CrElectron::selectComponent(HepRandomEngine* engine)
   double                             total_flux = 0;
   std::vector<CrSpectrum*>::iterator i;
   for (i = m_subComponents.begin(); i != m_subComponents.end(); i++){
-    total_flux += (*i)->flux();
+    total_flux += (*i)->flux(0.);
     integ_flux[*i] = total_flux;
   }
 
@@ -105,12 +105,12 @@ CrSpectrum* CrElectron::component() const
   return m_component;
 }
 
-double CrElectron::flux ( ) const
+double CrElectron::flux (double time ) const
 {
   double          total_flux = 0;
   std::vector<CrSpectrum*>::const_iterator i;
   for (i = m_subComponents.begin(); i != m_subComponents.end(); i++){
-    total_flux += (*i)->flux();
+    total_flux += (*i)->flux(0.);
   }
   return total_flux;
 }

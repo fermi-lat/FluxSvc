@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/GalElSpectrum.h,v 1.1 2002/01/16 11:59:55 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.1 2002/01/17 08:38:50 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 //! A quick and dirty implementation of the high-energy (galactic) cosmic
@@ -46,7 +46,7 @@ class GalElSpectrum : public Spectrum
     virtual double calculate_rate(double old_rate);
 
     /// calculate flux for the current cutoff
-    virtual double flux() const;
+    virtual double flux(double) const;
     
     /// calcualte effective solid angle for the given energy 
     virtual double solidAngle()const;

@@ -7,7 +7,7 @@
  *   separate the splash component from the all-in-one code.
  * 2001-04-26 comments are added by T. Mizuno
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrElectronSplash.cxx,v 1.2 2001/10/12 07:57:22 srobinsn Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectronSplash.cxx,v 1.1 2002/01/16 12:25:35 srobinsn Exp $
  */
 
 #include <math.h>
@@ -197,7 +197,7 @@ double CrElectronSplash::energySrc(HepRandomEngine* engine) const
 }
 
 
-double CrElectronSplash::flux() const
+double CrElectronSplash::flux(double) const
 {
   /*****
   // Integrated over the upper (sky-side) hemisphere.
@@ -240,13 +240,13 @@ double CrElectronSplash::calculate_rate(double old_rate)
 
 float CrElectronSplash::flux(float /*latitude*/, float /*longitude*/) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 
 float CrElectronSplash::flux(std::pair<double,double> /*coords*/) const
 {
-  return  flux();
+  return  flux(0.);
 }
 
 
