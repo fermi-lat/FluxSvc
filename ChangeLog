@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb 26 21:00:39 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxException.h FluxMgr.cxx FluxSource.cxx 
+Added Files:
+	SurfaceMuons.cxx 
+Log Message:
+new surface muon source
+    *
+------------------------------------------------------------
 User: burnett  Wed Feb 26 21:00:38 PST 2003
 FluxSvc/doc
 
