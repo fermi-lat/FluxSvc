@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Aug 11 23:03:21 PDT 2003
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+"history" pointing mode created, with ASCII file interface.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Aug 11 23:03:20 PDT 2003
 FluxSvc/src
 
