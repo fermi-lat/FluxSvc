@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Apr 19 08:01:37 PDT 2001
+FluxSvc/src Flux.cxx Flux.h FluxSvc.cxx
+
+Modified Files:
+	Flux.cxx Flux.h FluxSvc.cxx 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 19 08:01:37 PDT 2001
 FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
 
 Modified Files:
