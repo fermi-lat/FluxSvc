@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sun Jun 30 13:57:26 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h IFluxSvc.h 
+Log Message:
+code cleanup, additional d0xygen parameters explaining lat/lon and directional syntax.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jun 27 14:56:51 PDT 2002
 FluxSvc/src
 
