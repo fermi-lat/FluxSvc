@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.5 2002/04/03 21:26:13 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.6 2002/06/24 22:37:16 srobinsn Exp $
 
 
 #include "SimpleSpectrum.h"
@@ -51,7 +51,10 @@ SimpleSpectrum::SimpleSpectrum(const DOM_Element& xelem){
         m_emax = 100.0;
         m_index = 0.0;
     }
-    else FATAL_MACRO("Unknown particle spectrum!");
+    else {
+        std::cerr << "Unknown name: " << m_name << std::endl;
+        FATAL_MACRO("Unknown particle spectrum!");
+    }
 }
 
 
