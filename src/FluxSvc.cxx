@@ -2,14 +2,14 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.57 2003/07/01 20:32:36 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.58 2003/07/11 23:08:57 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
 #include "FluxSvc/IRegisterSource.h"
 
 
-#include "rootplot/rootplot.h"
+#include "flux/rootplot.h"
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
@@ -23,9 +23,9 @@
 
 #include "CLHEP/Random/Random.h"
 
-#include "Flux.h"
+#include "flux/Flux.h"
 
-#include "FluxMgr.h"
+#include "flux/FluxMgr.h"
 #include <algorithm>
 #include <sstream>
 /** 
@@ -35,7 +35,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.57 2003/07/01 20:32:36 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.58 2003/07/11 23:08:57 burnett Exp $
 */
 
 // includes
@@ -168,8 +168,8 @@ static SvcFactory<FluxSvc> a_factory;
 const ISvcFactory& FluxSvcFactory = a_factory;
 
 
-static std::string default_source_library("$(FLUXSVCROOT)/xml/source_library.xml");
-static std::string default_dtd_file("$(FLUXSVCROOT)/xml/source.dtd");
+static std::string default_source_library("$(FLUXROOT)/xml/source_library.xml");
+static std::string default_dtd_file("$(FLUXROOT)/xml/source.dtd");
 
 // ------------------------------------------------
 // Implementation of the FluxSvc class
