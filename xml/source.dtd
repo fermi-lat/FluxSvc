@@ -1,4 +1,4 @@
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.3 2002/04/29 21:26:03 srobinsn Exp $
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.4 2002/05/13 21:14:24 srobinsn Exp $
   DTD file for flux source definitions
   -->
 <!ELEMENT source_library ((source)+ | (source_library)*) >
@@ -47,8 +47,11 @@
 <!ATTLIST solid_angle mincos CDATA "-0.4"  maxcos CDATA "1.0"
                       theta  CDATA "0" phi CDATA "0">
 
-<!-- if this element exists, the Spectrum object will generate the angles -->
+<!-- if this element exists, the Spectrum object will generate the angles - "earth" means we expect the spectrum to send an earth-based
+direction (costh,phi), and "galaxy" means we expect galactic coordinates (l,b) -->
 <!ELEMENT use_spectrum EMPTY>
+<!ATTLIST use_spectrum frame CDATA "earth">
+
 
 <!-- optional launch point description - factors given in millimeters -->
 <!ELEMENT launch_point EMPTY>
