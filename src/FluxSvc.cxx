@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.76 2004/08/14 02:42:24 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.77 2005/03/14 04:00:32 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.76 2004/08/14 02:42:24 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.77 2005/03/14 04:00:32 burnett Exp $
 */
 
 // includes
@@ -267,6 +267,7 @@ StatusCode FluxSvc::initialize ()
     setProperties ();
     // set the starting time from date if set
     m_startTime = startTime();
+    GPS::instance()->time(m_startTime.value());
 //    if(! m_startDate.value().empty() && m_endTime>0) m_endTime += m_startTime; 
 
     // open the message log
