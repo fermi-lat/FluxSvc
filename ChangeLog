@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 20 13:39:04 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source.dtd 
+Log Message:
+big fix to simplify specification of sources
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 20 13:39:03 PST 2003
 FluxSvc/src/test/flux
 
