@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Jun 20 17:34:26 PDT 2001
+FluxSvc/src FluxSvc.cxx
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+Initialize local CLHEP random engine from Gaudi's random number service.
+    *
+------------------------------------------------------------
 User: kyoung  Wed Jun 20 15:07:08 PDT 2001
 FluxSvc/src/Dll FluxSvc_load.cxx
 
