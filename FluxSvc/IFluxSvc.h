@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.16 2002/05/09 19:59:29 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.17 2002/05/18 21:21:33 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -61,7 +61,8 @@ public:
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     virtual Rotation transformGlastToGalactic(double time)const=0;
 
-
+    /// get the current satellite location
+    std::pair<double,double> location();
 
  
 };

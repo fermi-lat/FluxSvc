@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.25 2002/05/10 05:50:53 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.26 2002/05/18 21:21:34 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -174,6 +174,9 @@ Rotation FluxSvc::transformGlastToGalactic(double time)const{
     return m_fluxMgr->transformGlastToGalactic(time);
 }
 
+std::pair<double,double> FluxSvc::location(){
+    return m_fluxMgr->location();
+}
 
 void WARNING (const char * text ){  std::cerr << "WARNING: " << text << '\n';}
 void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
