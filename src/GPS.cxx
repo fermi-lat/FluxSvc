@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.5 2002/05/18 21:21:34 srobinsn Exp $
+// $Id: GPS.cxx,v 1.6 2002/05/23 00:44:35 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -334,6 +334,6 @@ Rotation GPS::rockingAngleTransform(double time){
 }
 
 Rotation GPS::transformGlastToGalactic(double time){
-    return (rockingAngleTransform(time).inverse())*(m_orbit->CELtransform(time).inverse());
+    return (m_orbit->CELtransform(time).inverse())*(rockingAngleTransform(time).inverse());
 }
 
