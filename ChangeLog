@@ -1,5 +1,21 @@
 ------------------------------------------------------------
 User: burnett  Sat Mar  1 22:30:57 PST 2003
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx CompositeSource.h EventSource.cxx 
+	ExposureAlg.cxx Flux.cxx FluxMgr.cxx FluxMgr.h FluxSource.cxx 
+	FluxSvc.cxx FluxSvc.h Spectrum.h SpectrumFactoryTable.h 
+	mainpage.h 
+Added Files:
+	EventSource.h FluxSource.h 
+Log Message:
+move header files from interface directory;  
+more doc changes, clean out unused methods.
+
+    *
+------------------------------------------------------------
+User: burnett  Sat Mar  1 22:30:57 PST 2003
 FluxSvc/doc
 
 Modified Files:
