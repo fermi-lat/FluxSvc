@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxAlg/src/FluxAlg.h,v 1.1.1.1 2001/12/17 16:35:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.1 2002/01/02 05:00:14 burnett Exp $
 #ifndef FluxAlg_h
 #define FluxAlg_h
 
@@ -39,8 +39,7 @@ private:
     McVertex*       m_root; // 
     
     IDataProviderSvc* m_eds;
-    McVertexCol*   m_vlist;
-    McParticleCol* m_plist;
+    mc::McParticleCol* m_plist;
 
     IParticlePropertySvc * m_partSvc;
     

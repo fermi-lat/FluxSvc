@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.4 2002/01/24 10:03:48 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.6 2002/03/27 18:41:24 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -13,7 +13,7 @@
 #include "GlastEvent/TopLevel/Event.h"
 #include "GlastEvent/TopLevel/MCEvent.h"
 #include "GlastEvent/MonteCarlo/McParticle.h"
-#include "GlastEvent/MonteCarlo/McVertex.h"
+
 
 //flux
 #include "FluxSvc.h"
@@ -91,6 +91,7 @@ StatusCode FluxAlg::execute()
 {
     StatusCode  sc = StatusCode::SUCCESS;
     MsgStream   log( msgSvc(), name() );
+#if 0 // TODO: make this work
     
     //
     // have the flux service create parameters of an incoming particle 
@@ -162,7 +163,6 @@ StatusCode FluxAlg::execute()
     
     v1->setMotherMcParticle( 0);
 
-#if 0
     p1->setParticleID(p->idCode()); //TODO: is this right?
     p1->setParticleProperty(p->idCode());//TODO: is this right?
     p1->setPrimaryParticleFlag(true);
