@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue May  7 10:54:44 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+direction vector stored on TDS normalized when gotten, in FluxDisplayTest.  Maybe this should be looked at when it is put in in FluxDisplay.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon May  6 18:13:11 PDT 2002
 FluxSvc/src
 
