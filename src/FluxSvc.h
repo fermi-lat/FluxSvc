@@ -1,9 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.8 2002/05/20 23:19:27 srobinsn Exp $
-// 
-//  Original author: Toby Burnett tburnett@u.washington.edu
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.9 2002/06/24 22:37:16 srobinsn Exp $ 
 
 #ifndef _H_FluxSvc_
 #define _H_FluxSvc_
+/** 
+* \class FluxSvc
+*
+* \brief Service that implements the IFluxSvc interface, to return an IFlux object.
+*  FluxSvc handles the creation and interfacing with Flux objects.  
+* \author Toby Burnett tburnett@u.washington.edu
+* 
+* $Header $
+*/
 
 // includes
 #include "GaudiKernel/Service.h"
@@ -17,8 +24,6 @@ class IFlux;  // interface
 class FluxMgr;  // actual manager
 class IParticlePropertySvc; 
 
-//!  Service that implements the IFluxSvc interface, to return an IFlux object.
-//!  FluxSvc handles the creation and interfacing with Flux objects.  
 class FluxSvc : virtual public Service, virtual public IFluxSvc
 {  
 public:

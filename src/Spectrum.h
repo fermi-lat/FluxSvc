@@ -1,12 +1,19 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.5 2002/06/24 22:37:16 srobinsn Exp $
-//
-//
-// Spectrum: base class for energy spectrum objects
-// SimpleSpectrum: define a particle and spectral index
-//
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.6 2002/06/30 20:57:26 srobinsn Exp $
+
 
 #ifndef GLAST_SPECTRUM_H
 #define GLAST_SPECTRUM_H
+
+/** 
+* \class Spectrum
+*
+* \brief base class for energy spectrum objects
+*
+* Spectrum is the base class for all of the particle sources 
+* internal to FluxSvc.
+* 
+* $Header $
+*/
 
 #include <string>
 #include <utility>

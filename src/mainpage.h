@@ -1,8 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.6 2002/07/05 01:46:32 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.1 2002/07/12 18:23:33 srobinsn Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
 
+   \authors Toby Burnett, Sean Robinson, Theodore Hierath, and others.
+
+ \section intro Introduction
   This package implements a Gaudi service, encapsulating the flux package. Its only
   function is to return an IFlux object, whose methods are implemented by the flux package.
   <br>
@@ -16,11 +19,12 @@
 
   <hr>
   \section notes release notes
-  \include release.notes
+  release.notes
   \section requirements requirements
   \include requirements
-  \section ChangeLog ChangeLog
-  \include ChangeLog
+  <hr> 
+  \todo Complete and recalibrate the CompositeDiffuse structure
+  \todo Overhaul time handling to use the TimeStamp class.
 
 */
 

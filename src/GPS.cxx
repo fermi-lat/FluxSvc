@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.7 2002/06/05 08:06:49 srobinsn Exp $
+// $Id: GPS.cxx,v 1.8 2002/06/24 22:37:16 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -327,8 +327,8 @@ Rotation GPS::rockingAngleTransform(double time){
     //and here we construct the rotation matrix
     double zenithPhase = m_rotangles.first;
     double offZenith = m_rotangles.second;
-    //gal.rotateZ(zenithPhase).rotateX(offZenith);
-    gal.rotateX(offZenith).rotateZ(zenithPhase);
+    gal.rotateZ(zenithPhase).rotateX(offZenith);
+    //gal.rotateX(offZenith).rotateZ(zenithPhase);
     
     return gal;
 }

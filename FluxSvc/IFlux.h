@@ -1,10 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.22 2002/05/24 00:16:53 srobinsn Exp $
-// 
-//  Original author: Toby Burnett tburnett@u.washington.edu
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.23 2002/06/24 22:37:15 srobinsn Exp $
 
 #ifndef _H_IFlux_
 #define _H_IFlux_
-
+/** 
+* \class IFlux
+*
+* \brief The virtual interface for Flux-type objects.
+*
+* \author Toby Burnett tburnett@u.washington.edu
+* 
+* $Header $
+*/
 
 // includes
 #include <string>

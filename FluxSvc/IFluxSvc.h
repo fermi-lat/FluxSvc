@@ -1,10 +1,15 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.20 2002/06/24 22:37:15 srobinsn Exp $
-// 
-//!  \author: T. Burnett
-//
-
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.21 2002/06/30 20:57:25 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
+/** 
+* \class IFluxSvc
+*
+* \brief The virtual interface for FluxSvc-type objects.
+*
+* \author Toby Burnett tburnett@u.washington.edu
+* 
+* $Header $
+*/
 
 // includes
 #include "GaudiKernel/IInterface.h"

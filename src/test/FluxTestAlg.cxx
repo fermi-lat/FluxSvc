@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.41 2002/06/18 07:14:19 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.42 2002/06/24 22:37:16 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -27,7 +27,9 @@
 //#include "FluxAlg.h"
 /*! \class FluxTestAlg
 \brief 
-
+In addition to the normal Gaudi JobOptions requirements, there are:
+FluxSvc.source_lib, which should contain the relevant xml files to be used. and
+FluxTestAlg.source_name, which holds the name of the desired spectrum.
 */
 //class ParticleProperty;
 
