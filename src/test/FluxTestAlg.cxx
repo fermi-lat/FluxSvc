@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.2 2001/04/19 02:11:35 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -47,6 +47,8 @@ Algorithm(name, pSvcLocator){
 /*! */
 StatusCode FluxTestAlg::initialize() {
     
+	static std::string source_name="backgndmix";
+
     MsgStream log(msgSvc(), name());
     log << MSG::INFO << "initializing..." << endreq;
     
@@ -66,9 +68,9 @@ StatusCode FluxTestAlg::initialize() {
     log << MSG::INFO << "loading source..." << endreq;
 
 
-    sc =  fsvc->source("default", m_flux);
+    sc =  fsvc->source(source_name, m_flux);
     if( sc.isFailure()) {
-        log << MSG::ERROR << "Could not find flux" << "default" << endreq;
+        log << MSG::ERROR << "Could not find flux " << source_name << endreq;
         return sc;
     }
 
