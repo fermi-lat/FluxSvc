@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Nov 20 12:09:54 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FILESpectrum.cxx FILESpectrum.h 
+Log Message:
+flux method with time input added to FILESpectrum to fix spectrum::flux default bug.
+
+    *
+------------------------------------------------------------
 User: hierath  Thu Nov 14 13:05:46 PST 2002
 FluxSvc/src/rootplot
 
