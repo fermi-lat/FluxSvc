@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Sep  4 19:23:59 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+non-shareable static library defined to clean up requirements file, rocking-angle modes added to GPS, controllable via the service interface, example in TestFluxSvc.  Rotation methods ghanged in GPS, SkyDir used in getGalacticDirection structure in FluxSource, extra "TestOptions" file for alternate joboptions, all(?) references to the internal orbit class migrated to GPS, which uses the astro package for the orbit model.
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Sep  2 12:34:49 PDT 2002
 FluxSvc/src
 
