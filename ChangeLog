@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Sat Oct  5 10:24:34 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+Assume that run and sequence number are set elsewhere. Use smartptr to access the MCEvent,
+so that the converter is now creating the object.
+
+    *
+------------------------------------------------------------
 User: kyoung  Fri Oct  4 11:36:34 PDT 2002
 FluxSvc/cmt
 
