@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Apr  5 16:05:45 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+rootplot can be called through FluxSvc from external packages.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Apr  5 15:40:24 PST 2002
 FluxSvc/src/test/flux
 
