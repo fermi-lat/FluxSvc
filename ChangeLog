@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 31 18:27:29 PST 2001
+FluxSvc/src/test jobOptions.txt
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+Have the test program demonstrate the extensibility of the XML description
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 31 18:27:28 PST 2001
 FluxSvc/cmt requirements
 
