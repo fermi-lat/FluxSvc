@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Wed May 22 01:21:53 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Added Files:
+	GalacticHist.cxx GalacticHist.h 
+Log Message:
+crude 2D histogram display now in FluxTestAlg.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue May 21 15:26:52 PDT 2002
 FluxSvc/doc
 
