@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Wed Oct 30 12:08:12 PST 2002
+FluxSvc/src/test/flux
+
+Removed Files:
+	rootAngleHist.cxx rootAngleHist.h rootEnergyHist.cxx 
+	rootEnergyHist.h rootHist.cxx rootHist.h rootplot.cxx 
+	rootplot.h 
+Log Message:
+clean up, removing unsupported spectra, moving rootplots
+    *
+------------------------------------------------------------
+User: burnett  Wed Oct 30 12:08:12 PST 2002
 FluxSvc/src/rootplot
 
 Added Files:
