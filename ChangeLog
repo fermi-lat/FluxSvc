@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hierath  Fri May  9 18:48:15 PDT 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+Fixed a normalization problem when plotting time dependent sources.  
+    *
+------------------------------------------------------------
 User: hierath  Fri May  9 13:48:31 PDT 2003
 FluxSvc/src
 
