@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Oct 30 12:43:54 PST 2002
+FluxSvc/src
+
+Modified Files:
+	EventSource.cxx FluxMgr.cxx FluxSource.cxx GPS.cxx GPS.h 
+	GalElSpectrum.h Spectrum.cxx 
+Removed Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h 
+Log Message:
+GPS orbit cleanup (further), wired-in '6' removed, replaced with EventSource::totalArea(), solid angle fixed in ISpectrum, compositeDiffuse structure removed.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Oct 30 12:43:54 PST 2002
 FluxSvc/FluxSvc
 
 Modified Files:
