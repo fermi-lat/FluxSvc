@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Oct 30 12:08:11 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	composite_library.xml source_library.xml 
+Log Message:
+clean up, removing unsupported spectra, moving rootplots
+    *
+------------------------------------------------------------
+User: burnett  Wed Oct 30 12:08:11 PST 2002
 FluxSvc/src
 
 Modified Files:
