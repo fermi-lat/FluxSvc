@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/src/test/testMgr.cxx,v 1.20 2002/01/02 04:55:30 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.1 2002/01/16 12:25:40 srobinsn Exp $
 
 #include "FluxSvc/FluxMgr.h"
 #include "FluxSvc/EventSource.h"
@@ -117,5 +117,3 @@ int main(int argn, char * argc[]) {
     
 }
 
-void WARNING (const char * text ){  std::cerr << "WARNING: " << text << '\n';}
-void FATAL(const char* s){std::cerr << "\nERROR: "<< s;}
