@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Aug 29 20:34:47 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+wildcard missing
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Aug 29 13:30:00 PDT 2002
 FluxSvc/xml
 
