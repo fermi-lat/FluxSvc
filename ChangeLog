@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Jan 27 11:35:35 PST 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+chimemin added, spectrum interval defaulted to aviod "solid angle=1" error.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Jan 27 11:35:35 PST 2003
 FluxSvc/src
 
 Modified Files:
