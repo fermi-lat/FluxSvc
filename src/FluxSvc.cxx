@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.35 2002/08/08 00:02:39 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.36 2002/08/09 17:23:06 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -57,7 +57,6 @@ std::list<std::string> FluxSvc::fluxNames()const{
 }
 
 StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
-    
     std::list<std::string> source_list( fluxNames() );
     std::list<std::string> source_list2( SpectrumFactoryTable::instance()->spectrumList() );
     
