@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: burnett  Tue Jan 14 18:20:29 PST 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix for vsnet, tagging
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan 14 18:20:29 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix for vsnet, tagging
+    *
+------------------------------------------------------------
 User: als  Thu Jan  9 20:58:37 PST 2003
 FluxSvc/cmt
 
