@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.4 2001/07/07 01:27:09 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.5 2001/07/30 03:58:15 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -65,7 +65,13 @@ public:
     virtual void addFactory( const IFactory* factory )=0;
 
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
+#if 0
+    // get a description of the parameters that can be modified, and reference to a list of them
+    virtual std::string paramlist(std::vector<double>& params)=0; 
 
+    // set the parameters
+    virtual void setParams(std::vector<double>& params)=0;
+#endif
 };
 
 
