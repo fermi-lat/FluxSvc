@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jun 20 22:10:38 PDT 2002
+FluxSvc/doc
+
+Added Files:
+	test.txt 
+Log Message:
+Map Spectrum, with test case, added - right now only works with TestMgr.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jun 20 22:10:37 PDT 2002
 FluxSvc/FluxSvc
 
