@@ -1,7 +1,7 @@
 package FluxSvc
-version v5r16
+version v5r17
 
-# $Id: requirements,v 1.63 2002/11/04 22:53:48 srobinsn Exp $
+# $Id: requirements,v 1.65 2002/11/29 18:36:43 burnett Exp $
 
 branches FluxSvc cmt doc
 
@@ -12,7 +12,7 @@ use Event   *
 use GlastSvc *
 
 use xml
-use CLHEP
+use CLHEP v2* IExternal
 use astro v0r*
 
 
