@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.14 2003/02/28 01:47:39 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.15 2003/03/01 23:14:56 burnett Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
@@ -23,7 +23,7 @@
 * \class GPS
 * \brief Models the Global Positoning System for a spacecraft. Handles time, position, and orientation for the instrument as a whole.
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.15 2003/03/01 23:14:56 burnett Exp $
  Represents the Global Positioning System on-board the spacecraft. An Orbit
   object is used to compute the spacecraft's position and pointing characteristics.
 Time is tracked through this object, and synchronized with the Scheduler for 
@@ -119,11 +119,12 @@ public:
 
     HepRotation GPS::transformCelToGlast(double seconds);
 
-    void rockingDegrees(double rockDegrees){m_rockDegrees = rockDegrees;}
+    double rockingDegrees(double rockDegrees){double ret=m_rockDegrees;
+                                              m_rockDegrees = rockDegrees;
+                                              return ret;}
     
-
-    void setRockType(RockType rockType){m_rockType = rockType;}
-    void setRockType(int rockType);//{m_rockType = rockType;}
+    int setRockType(RockType rockType);//{m_rockType = rockType;}
+    int setRockType(int rockType);//{m_rockType = rockType;}
 
     double RAX()const{return m_RAX;}
     double RAZ()const{return m_RAZ;}

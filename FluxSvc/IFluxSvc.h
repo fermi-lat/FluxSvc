@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.33 2003/03/01 23:26:48 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.34 2003/03/04 00:04:32 srobinsn Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -30,7 +30,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.33 2003/03/01 23:26:48 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.34 2003/03/04 00:04:32 srobinsn Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -81,7 +81,7 @@ public:
     ///2 = SLEWING : (experimental) like UPDOWN, except that rotation at equator happens gradually.
     ///3 = ONEPERORBIT : (needs work) LAT rocked northward for one orbit, southward for the next.
     ///4 = EXPLICIT :  Explicit angles given - this should be used only through the setExplicit... function.
-    virtual void setRockType(int rockType, double rockAngle)=0;
+    virtual std::vector<double> setRockType(int rockType, double rockAngle)=0;
 
     ///this should return the source file names, along with the contained sources.
     virtual std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const=0;
