@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Mar  5 16:53:16 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+extra comments into ISpectrum, explicit rocking declarable through joboptions (rocking mode "4".)
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Mar  5 16:53:16 PST 2003
 FluxSvc/FluxSvc
 
 Modified Files:
