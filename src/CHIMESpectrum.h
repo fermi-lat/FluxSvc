@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.6 2002/06/27 21:56:51 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.7 2002/07/23 19:00:56 srobinsn Exp $
 #ifndef CHIME_SPECTRUM_H
 #define CHIME_SPECTRUM_H
 
@@ -34,9 +34,9 @@
 * from the east, +pi/2 from the north, -pi/2 from the south.  At
 * energies near the cutoff, particles come mainly from the west.
 
-* \author Patrick Nolan, Stanford University, 1998
-* 
-* $Header $
+  * \author Patrick Nolan, Stanford University, 1998
+  * 
+  * $Header $
 */
 
 #include "Spectrum.h"

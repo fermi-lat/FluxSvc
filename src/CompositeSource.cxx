@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.10 2002/07/04 09:11:31 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.11 2002/07/08 20:55:58 srobinsn Exp $
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -183,9 +183,9 @@ std::string CompositeSource::findSource()const
     return m_recent->fullTitle();
 }
 
-/// return a unique number correcponding to that spectrum
 int CompositeSource::numSource()const
 {
+    ///Purpose: Return a unique number correcponding to the current spectrum.
     return m_numofiters;
 }
 
