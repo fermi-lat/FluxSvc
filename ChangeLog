@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed May 22 16:09:07 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+A problem with setting the proper direction when using the diffuse mechanism in FluxSource fixed.  ALso, sky mapping progressing.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed May 22 01:21:53 PDT 2002
 FluxSvc/src/test
 
