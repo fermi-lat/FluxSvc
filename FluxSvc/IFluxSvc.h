@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.38 2003/10/03 00:26:46 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.39 2003/10/16 13:26:43 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -11,6 +11,7 @@
 #include "GaudiKernel/IInterface.h"
 #include "CLHEP/Vector/Rotation.h"
 #include "facilities/Observer.h"
+#include "flux/GPS.h"
 
 #include <string>
 #include <list>
@@ -31,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.38 2003/10/03 00:26:46 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.39 2003/10/16 13:26:43 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -78,6 +79,8 @@ public:
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     virtual HepRotation transformGlastToGalactic(double time)const=0;
+
+    virtual HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const=0;
 
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
