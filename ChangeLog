@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jan 29 17:36:44 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	CompositeSource.h EventSource.h FluxSource.h Spectrum.h 
+Log Message:
+interval function put into Spectrum definition,
+generate(), flux() and rate() functions now take a time,
+further FluxMgr::test() output.  EventSource now holds current
+elapsed time.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jan 25 01:02:26 PST 2002
 FluxSvc/src
 
