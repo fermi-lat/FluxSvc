@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 30 17:28:31 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+Have it provide current info if partilce is not a Tick. 
+    *
+------------------------------------------------------------
 User: burnett  Tue Sep 30 16:20:31 PDT 2003
 FluxSvc/src
 
