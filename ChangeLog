@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Mar 20 11:55:32 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFlux.h 
+Log Message:
+restore proper rates for power-law spectra;
+remove FluxSource from interface
+    *
+------------------------------------------------------------
 User: burnett  Wed Mar 19 11:15:33 PST 2003
 FluxSvc/doc
 
