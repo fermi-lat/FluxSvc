@@ -1,7 +1,7 @@
 package FluxSvc
-version v6r16p3
+version v6r17p2
 
-# $Id: requirements,v 1.116 2004/09/09 00:10:48 burnett Exp $
+# $Id: requirements,v 1.117 2004/12/16 21:28:54 usher Exp $
 author  T. Kozanecki <hansl$slac.stanford.edu> T. Burnett
 
 branches FluxSvc cmt doc cdf 
@@ -54,7 +54,7 @@ library  FluxSvc   -import=flux -import=GRB \
 
 #  build the test 
 apply_pattern  package_test  import=flux 
-macro_append   jobOptions ""    WIN32 " test/*.xml"
+macro_append   jobOptions ""    WIN32 " test/*.xml test/*.txt"
 
 
 
