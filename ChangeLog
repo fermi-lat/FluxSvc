@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Jul 29 16:13:25 PDT 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+move source stuff to flux
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 29 16:13:25 PDT 2003
 FluxSvc/cmt
 
 Modified Files:
