@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Sep 27 21:38:05 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h
+
+Modified Files:
+	FluxSvc.h 
+Log Message:
+
+xml calling method updated, multiple files now possible.
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 27 14:36:51 PDT 2001
 FluxSvc/src/test TestMain.cxx
 
