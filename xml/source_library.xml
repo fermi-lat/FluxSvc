@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.15 2002/10/31 04:33:31 burnett Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.16 2002/11/01 23:27:55 burnett Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -139,6 +139,10 @@
     <source name="chime" >
         <spectrum escale="GeV"> <SpectrumClass name="CHIMESpectrum"/> <use_spectrum/> </spectrum>
     </source>
+     <!-- the CHIME spectrum at Maximum flux. angular dependence and rate are from the CHIME spectrum object -->
+    <source name="chimemax" >
+        <spectrum escale="GeV"> <SpectrumClass name="CHIMESpectrum" params="-28.5,110"/> <use_spectrum/> </spectrum>
+    </source>
 
 
   <!-- default creme is the orbit average -->   
@@ -257,6 +261,8 @@
         <nestedSource sourceRef="albedo_electronpositronlow"/>
         <nestedSource sourceRef="albedo_electronpositronhi"/>
     </source>
+
+
 
 
 </source_library>
