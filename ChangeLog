@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 30 17:19:56 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx 
+Added Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h Geomag.cxx Geomag.h 
+	Geomag.inc 
+Log Message:
+restore Pat's AlbedoP 
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 16:23:41 PST 2002
 FluxSvc/xml
 
