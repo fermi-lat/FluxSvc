@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Feb 21 21:42:24 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h FluxSource.h 
+Log Message:
+refactoring, phase 2
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 20 15:12:00 PST 2003
 FluxSvc/src
 
