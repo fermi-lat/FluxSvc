@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Oct  8 16:05:48 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+IFluxSvc now knows about new source returning function also.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Oct  8 15:48:37 PDT 2002
 FluxSvc/xml
 
