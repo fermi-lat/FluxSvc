@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri Mar  7 13:44:50 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSource.cxx mainpage.h 
+Log Message:
+
+implement phi angle for fixed orientation. wired-in backoff distance to 1.5 m
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar  6 20:32:12 PST 2003
 FluxSvc/xml
 
