@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Sep 16 11:26:07 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+added celestial direction declaration for xml sources, mandated declaration of energy scale for sources, no maximum source energy in FluxSource, exposureAlg properly implement rocking.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 13 13:57:18 PDT 2002
 FluxSvc/src
 
