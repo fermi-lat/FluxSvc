@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: omodei  Fri Feb 15 07:38:33 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx testMgr.cxx 
+Log Message:
+Added the GRBSpectrum as example of time dependent spectrum
+    *
+------------------------------------------------------------
+User: omodei  Fri Feb 15 07:38:33 PST 2002
 FluxSvc/src
 
 Modified Files:
