@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.7 2002/02/15 15:38:33 omodei Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.8 2002/04/03 21:26:14 srobinsn Exp $
 
 #include "../../FluxMgr.h"
 #include "FluxSvc/EventSource.h"
@@ -10,7 +10,7 @@
 #include "../../Orbit.h"
 
 
-static int default_count = 200 ;
+static int default_count = 20000 ;
 //Testing
 static const char * default_source="default";
 //Default
