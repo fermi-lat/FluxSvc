@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Oct 29 12:59:05 PST 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx 
+Log Message:
+filterpassed issue fixed to stop errant stopping of timetick runs.
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 29 08:49:16 PST 2003
 FluxSvc/src
 
