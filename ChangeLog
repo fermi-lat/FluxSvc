@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Oct 14 10:49:12 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix loop condition
+    *
+------------------------------------------------------------
+User: burnett  Mon Oct 14 10:49:12 PDT 2002
 FluxSvc/src
 
 Modified Files:
