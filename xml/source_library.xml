@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.24 2003/01/28 20:28:34 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.25 2003/01/29 22:30:40 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -321,6 +321,14 @@
             <solid_angle mincos="-0.4" maxcos="1.0"/>
         </spectrum>
     </source>
+
+	 <!-- Test source at the galactic origin -->
+     <source name="galcenter" flux="0.05">
+          <spectrum escale="GeV">
+              <particle name="gamma"> <energy e="0.1"/> </particle>
+               <galactic_dir l="0" b="0"/>
+          </spectrum>
+     </source>
 
     <!-- diffuse extraglactic from 100 MeV: see above for numbers-->
     <source name="diffuse-100mev" flux="0.145">
