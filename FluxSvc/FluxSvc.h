@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.12 2002/01/02 05:00:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.13 2002/01/10 17:35:01 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -75,6 +75,8 @@ private:
     std::vector<std::string> m_source_lib;
     /// the default XML file name (from JobOptions.txt)
     std::string m_source_lib_default;
+    /// set dtd to use.
+    std::string m_dtd_file;
     
 };
 
