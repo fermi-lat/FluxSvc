@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 22:30:57 PST 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+move header files from interface directory;  
+more doc changes, clean out unused methods.
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  1 22:30:56 PST 2003
 FluxSvc/FluxSvc
 
