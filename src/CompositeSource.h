@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.6 2002/06/30 20:57:26 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -71,10 +71,13 @@ protected:
     //number of times we've iterated the front() pointer into sourcelist 
     //to get the current particle - represents the source
     int m_numofiters;
-    
-    
+        
     //private: 
     std::vector< EventSource* > m_sourceList;
+    //vector of flags, holds whether or not the current source has a remaining unused particle.
+    std::vector<int> m_unusedSource;
+    //vector of recorded intervals of held sources.
+    std::vector<double> m_sourceInterval;
     EventSource*  m_recent;
 };
 
