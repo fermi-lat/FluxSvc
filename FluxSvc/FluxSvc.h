@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.3 2001/04/19 15:01:37 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.4 2001/07/07 01:27:09 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -30,6 +30,9 @@ public:
 
     /// add a new source
     virtual void addFactory(std::string name, const ISpectrumFactory* factory );
+
+	/// access to the local random engine (testing)
+	virtual HepRandomEngine* getEngine();
 
 
     //------------------------------------------------------------------

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.3 2001/06/16 13:27:44 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.4 2001/07/07 01:27:10 burnett Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -39,6 +39,10 @@ public:
     // direction
     virtual HepVector3D launchDir()const;
 
+	// time
+	virtual double time()const;
+
+
     // rate ( /mm**2 /s)
     virtual double rate()const;
 
@@ -66,6 +70,7 @@ public:
 private:
 
     EventSource* m_event;  
+	double m_time;  // elapsed time: here for now.
     FluxSource* m_flux; // actual FluxSource used 
 
     static FluxMgr* s_mgr;

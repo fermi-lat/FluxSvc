@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.3 2001/06/16 13:27:44 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.4 2001/07/07 01:27:09 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -43,6 +43,9 @@ public:
 
     /// direction
     virtual HepVector3D launchDir()const=0;
+
+	/// time (s) (absolute or elapsed??)
+	virtual double time()const=0;
 
     /// return rate ( /mm**2 /s)
     virtual double rate()const=0;
