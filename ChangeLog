@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: burnett  Thu May  2 05:41:28 PDT 2002
+FluxSvc/src
+
+Removed Files:
+	CrElectron.cxx CrElectron.h CrElectronPrimary.cxx 
+	CrElectronPrimary.h CrElectronReentrant.cxx 
+	CrElectronReentrant.h CrElectronSplash.cxx CrElectronSplash.h 
+	CrProton.cxx CrProton.h CrProtonPrimary.cxx CrProtonPrimary.h 
+	CrProtonReentrant.cxx CrProtonReentrant.h CrProtonSplash.cxx 
+	CrProtonSplash.h CrSpectrum.cxx CrSpectrum.h 
+Log Message:
+removed Cr routines
+    *
+------------------------------------------------------------
 User: burnett  Wed May  1 19:55:50 PDT 2002
 FluxSvc/src
 
