@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: omodei  Wed May 12 03:12:00 PDT 2004
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+GRB factories are now registered in FluxSvc instead of FluxAlg
+
+    *
+------------------------------------------------------------
 User: burnett  Tue May 11 18:23:50 PDT 2004
 FluxSvc/doc
 
