@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun 24 15:37:15 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h FluxSource.h IFlux.h IFluxSvc.h ISpectrum.h 
+	ISpectrumFactory.h 
+Log Message:
+huge reformatting of code to be self-consistent in format, several function names altered to conform to capitalization standards.
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Jun 24 05:57:24 PDT 2002
 FluxSvc/doc
 
