@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: als  Mon Feb 25 17:12:58 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+      Tag: v5r1-fix
+	requirements 
+Log Message:
+branch v5r1-fix, remove private declaration for linux compilation
+
+
+    *
+------------------------------------------------------------
 User: omodei  Fri Feb 15 07:59:59 PST 2002
 FluxSvc/src/test/flux
 
