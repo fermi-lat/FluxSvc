@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Tue Jan  1 21:00:15 PST 2002
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+Start defining new alg to setup TDS from service.
+Define a default job options to be included.
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 21:00:15 PST 2002
 FluxSvc/src
 
 Modified Files:
