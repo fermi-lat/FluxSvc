@@ -1,16 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.1.1.1 2001/01/04 01:03:32 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
 
 #include "FluxSvc/FluxSvc.h"
 
-#include "Gaudi/Kernel/SvcFactory.h"
-#include "Gaudi/MessageSvc/MsgStream.h"
+#include "GaudiKernel/SvcFactory.h"
+#include "GaudiKernel/MsgStream.h"
 
-#include "Gaudi/Kernel/Incident.h"
-#include "Gaudi/Interfaces/IIncidentSvc.h"
-#include "Gaudi/JobOptionsSvc/Property.h"
+#include "GaudiKernel/Incident.h"
+#include "GaudiKernel/IIncidentSvc.h"
+#include "GaudiKernel/Property.h"
 
 #include "Flux.h"
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.1.1.1 2001/01/04 01:03:32 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -6,7 +6,7 @@
 #define _H_FluxSvc_
 
 // includes
-#include "Gaudi/Kernel/Service.h"
+#include "GaudiKernel/Service.h"
 #include "FluxSvc/IFluxSvc.h"
 #include <list>
 
