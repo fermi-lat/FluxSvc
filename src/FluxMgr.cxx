@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.26 2002/08/28 07:26:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.27 2002/09/05 02:24:01 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -341,6 +341,11 @@ Rotation FluxMgr::transformGlastToGalactic(double time){
 
 ///this sets the rocking mode in GPS.
 void FluxMgr::setRockType(GPS::RockType rockType){
+   GPS::instance()->setRockType(rockType);
+}
+
+///this sets the rocking mode in GPS.
+void FluxMgr::setRockType(int rockType){
    GPS::instance()->setRockType(rockType);
 }
 

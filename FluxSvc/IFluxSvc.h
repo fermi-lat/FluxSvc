@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.23 2002/08/04 00:52:44 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.24 2002/09/05 02:23:59 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
 /** 
@@ -75,6 +75,7 @@ public:
 
     /// this sets the rocking mode in GPS.
     virtual void setRockType(GPS::RockType rockType)=0;
+    virtual void setRockType(int rockType)=0;
     
     
 };

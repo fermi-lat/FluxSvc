@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.38 2002/09/02 19:34:49 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.39 2002/09/05 02:24:01 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -245,5 +245,10 @@ std::pair<double,double> FluxSvc::location(){
 
 /// this sets the rocking mode in GPS.
 void FluxSvc::setRockType(GPS::RockType rockType){
+   m_fluxMgr->setRockType(rockType);
+}
+
+/// this sets the rocking mode in GPS.
+void FluxSvc::setRockType(int rockType){
    m_fluxMgr->setRockType(rockType);
 }
