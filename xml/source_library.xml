@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.28 2003/03/02 06:32:25 burnett Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.29 2003/03/07 04:32:12 burnett Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -298,20 +298,20 @@
 
     <!--average flux for pdr studies -->
     <source name="backgndavgpdr">
-		<nestedSource sourceRef="cremeavg" /> 
-		<nestedSource sourceRef="albedo_proton_avg" /> 
-		<nestedSource sourceRef="albedo_gamma" /> 
-		<!-- TODO: restore nestedSource sourceRef="electronavg" / --> <!-- will be implemented soon --> 
-		<nestedSource sourceRef="albedo_electronpositronavg_total"/> 
+	<nestedSource sourceRef="cremeavg" /> 
+	<nestedSource sourceRef="albedo_proton_avg" /> 
+	<nestedSource sourceRef="albedo_gamma" /> 
+	<nestedSource sourceRef="electronavg" />  
+	<nestedSource sourceRef="albedo_electronpositronavg_total"/> 
     </source>
 
     <!-- background mixture - maximum for PDR studies-->
     <source name="backgndmaxpdr">
         <nestedSource sourceRef="chimemax"/>
-		<nestedSource sourceRef="albedo_proton_max"/>
-		<nestedSource sourceRef="albedo_gamma"/>
-		<!-- nestedSource sourceRef="electronmax"/ --> <!-- will be implemented soon -->
-		<nestedSource sourceRef="albedo_electronpositron_total"/>
+	<nestedSource sourceRef="albedo_proton_max"/>
+	<nestedSource sourceRef="albedo_gamma"/>
+	<nestedSource sourceRef="electronmax"/> 
+	<nestedSource sourceRef="albedo_electronpositron_total"/>
     </source>
 
     <!-- 'standard' background mixture -->
