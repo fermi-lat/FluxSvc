@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Oct 17 20:31:12 PDT 2001
+FluxSvc/src Flux.cxx Flux.h FluxSvc.cxx
+
+Modified Files:
+	Flux.cxx Flux.h FluxSvc.cxx 
+Log Message:
+
+added and fixed documentation
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Oct 17 20:31:12 PDT 2001
 FluxSvc/doc used_packages.html
 
 Modified Files:
