@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed May  1 19:55:50 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+clean up comments. 
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed May  1 15:33:06 PDT 2002
 FluxSvc/src/test/flux
 
