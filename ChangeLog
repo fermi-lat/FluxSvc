@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jun 20 22:10:37 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+Map Spectrum, with test case, added - right now only works with TestMgr.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jun 18 00:14:19 PDT 2002
 FluxSvc/src/test
 
