@@ -1,7 +1,7 @@
 package FluxSvc
 version v6r8
 
-# $Id: requirements,v 1.89 2003/08/30 19:22:15 burnett Exp $
+# $Id: requirements,v 1.90 2003/09/29 00:38:02 burnett Exp $
 
 branches FluxSvc cmt doc
 
@@ -11,7 +11,7 @@ use Event   *
 
 use GlastSvc *
 use astro v0r*
-use flux v7*
+use flux * -no_auto_imports
 
 apply_pattern packageShr
 apply_pattern package_include
@@ -33,7 +33,7 @@ macro source "*.cxx" WIN32 "*.h *.cxx *.txt"
 
 macro interface_headers "" WIN32 "-s=../FluxSvc/ *.h"
 
-library FluxSvc \
+library FluxSvc -import=flux\
  $(interface_headers)\
  -s=Dll *.cxx\
  -s=../src $(source)
