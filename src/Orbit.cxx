@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Orbit.cxx,v 1.6 2002/05/14 19:30:22 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Orbit.cxx,v 1.7 2002/05/23 00:44:36 srobinsn Exp $
 
 #include "Orbit.h"
 
@@ -102,7 +102,9 @@ Rotation Orbit::CELtransform(double time){
     cel4.rotateY((time/m_precessPeriod)*M_2PI);
 
     //so gal*cel should be the matrix that makes local coordiates into galactic ones.
-    Rotation glstToGal = gal*cel1*cel2*cel3*cel4;
+    //Rotation glstToGal = gal*cel1*cel2*cel3*cel4;
+      Rotation glstToGal = gal*cel4*cel3*cel2*cel1;
+
 
     //displayRotation(glstToGal);
 
