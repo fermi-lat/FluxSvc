@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jan 17 00:38:48 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h FluxSource.h IFlux.h ISpectrumFactory.h 
+	SimpleSpectrum.h 
+Removed Files:
+	AlbedoPSpectrum.h CHIMESpectrum.h GPS.h GalElSpectrum.h 
+	Geomag.h HeSpectrum.h Orbit.h Spectrum.h SpectrumFactory.h 
+	SpectrumFactoryTable.h StaticOrbit.h 
+Log Message:
+moved definition files into src directory, made necessary "include" changes
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 15:37:15 PST 2002
 FluxSvc/src/flux
 
