@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr  3 11:44:50 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx SimpleSpectrum.cxx SimpleSpectrum.h 
+Log Message:
+fix up SimpleSpectrum label
+    *
+------------------------------------------------------------
 User: xchen  Tue Mar 25 14:00:09 PST 2003
 FluxSvc/xml
 
