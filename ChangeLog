@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Dec 16 23:43:12 PST 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h ExposureAlg.cxx 
+	FluxAlg.cxx FluxAlg.h 
+Log Message:
+"fixed lat/lon" issue fixed in albedoP, exposureAlg output changed so time is readable, collected rate function added to fluxAlg output.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Dec 12 14:48:47 PST 2002
 FluxSvc/xml
 
