@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.11 2002/08/04 00:52:45 srobinsn Exp $ 
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.12 2002/08/08 00:02:39 srobinsn Exp $ 
 
 #ifndef _H_FluxSvc_
 #define _H_FluxSvc_
@@ -16,7 +16,6 @@
 #include "GaudiKernel/Service.h"
 #include "FluxSvc/IFluxSvc.h"
 #include <list>
-
 
 //forward declarations
 template <class TYPE> class SvcFactory;
@@ -66,7 +65,9 @@ public:
 
     /// return a string which uniquely identifies the source
     std::string uniqueIDString()const;
-    
+
+    /// this sets the rocking mode in GPS.
+    void setRockType(GPS::RockType rockType);
     
     //------------------------------------------------------------------
     //  stuff required by a Service

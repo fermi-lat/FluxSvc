@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.20 2002/06/24 22:37:15 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.21 2002/07/25 05:18:58 srobinsn Exp $
 
 // Original author: T. Burnett
 

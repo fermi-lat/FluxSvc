@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.25 2002/08/08 00:02:39 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.26 2002/08/28 07:26:56 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -326,7 +326,7 @@ std::pair<double,double> FluxMgr::location(){
 
 //get the transformation matrix.
 Rotation FluxMgr::CELTransform(double time){
-    return GPS::instance()->orbit()->CELTransform(time);
+    return GPS::instance()->CELTransform(time);
 }
 
 //get the transformation matrix.
@@ -339,6 +339,10 @@ Rotation FluxMgr::transformGlastToGalactic(double time){
     return GPS::instance()->transformGlastToGalactic(time);
 }
 
+///this sets the rocking mode in GPS.
+void FluxMgr::setRockType(GPS::RockType rockType){
+   GPS::instance()->setRockType(rockType);
+}
 
 std::string FluxMgr::writeXmlFile(const std::vector<std::string>& fileList) {
 /** purpose: creates a document of the form

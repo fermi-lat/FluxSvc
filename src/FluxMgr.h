@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.7 2002/07/23 19:00:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.8 2002/08/04 00:52:45 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -88,6 +88,10 @@ public:
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     Rotation FluxMgr::transformGlastToGalactic(double time);
+
+    ///this sets the rocking mode in GPS.
+    void setRockType(GPS::RockType rockType);
+
 private:
     
     /// source library lookup.  Each source is uniquely identified

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.37 2002/08/28 07:26:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.38 2002/09/02 19:34:49 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -241,4 +241,9 @@ Rotation FluxSvc::transformGlastToGalactic(double time)const{
 
 std::pair<double,double> FluxSvc::location(){
     return m_fluxMgr->location();
+}
+
+/// this sets the rocking mode in GPS.
+void FluxSvc::setRockType(GPS::RockType rockType){
+   m_fluxMgr->setRockType(rockType);
 }
