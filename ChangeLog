@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sat Jun 22 13:00:33 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+vestigial "frametype" method entirely commented/removed from FluxSource and the xml.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jun 21 12:54:24 PDT 2002
 FluxSvc/src/test
 
