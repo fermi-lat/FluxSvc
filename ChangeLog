@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Fri Mar 12 12:51:11 PST 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+re-acticate  -no_auto_imports for  flux
+    *
+------------------------------------------------------------
 User: hansl  Fri Mar  5 18:29:26 PST 2004
 FluxSvc/cmt
 
