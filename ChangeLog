@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Thu Mar  6 20:32:12 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Tagging documentation changes by Sean; 
+Fixed transformation when launch point is the target sphere.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar  6 20:25:11 PST 2003
 FluxSvc/src/test
 
