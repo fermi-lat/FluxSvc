@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Feb 13 13:03:18 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+potential error in Spectrum::dir default implementation fixed, RandFlat used instead of rand().
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb  7 15:51:03 PST 2002
 FluxSvc/xml
 
