@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.13 2002/04/28 21:08:10 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.14 2002/05/01 22:33:06 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -326,6 +326,7 @@ std::pair<double,double> FluxMgr::location(){
 Rotation FluxMgr::CELTransform(double time){
     return GPS::instance()->orbit()->CELtransform(time);
 }
+
 
 
 /** creates a document of the form

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/GPS.h,v 1.1 2002/01/16 12:01:02 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.1 2002/01/17 08:38:50 srobinsn Exp $
 // GPS.h: interface for the GPS class.
 //
 //	Models the Global Positoning System for a spacecraft. Handles time
@@ -16,7 +16,7 @@
 #include "facilities/Observer.h"
 #include "geometry/Point.h"
 #include "geometry/Vector.h"
-
+#include "geometry/CoordTransform.h"
 
 #include <iostream>
 
@@ -119,6 +119,9 @@ public:
     Vector earthToGlast(Vector launchDir);
     Vector galaxyToGlast(Vector launchDir);
 
+    /// return the rotation for compensation for the rocking angles.
+    Rotation rockingAngleTransform(double time);
+
 
         
     Orbit*  orbit ();               // access the orbit (for manipulation)
@@ -137,7 +140,7 @@ public:
         GPStime orbittime () const;     // access to orbit time
         void    orbittime ( GPStime );  // set orbit time
         void    setState ( const GPS::Coords& ); // set the orbital parameters
-        std::pair<double,double> m_rotangles;  //angles for coordinate rotation
+        std::pair<double,double> m_rotangles;  //angles for coordinate rotation (rocking angle)
         
         
         

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.13 2002/04/06 00:05:44 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.14 2002/05/07 01:13:11 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -53,6 +53,10 @@ public:
 
     /// name of the flux
     virtual std::string fluxName()const=0;
+
+    /// set the glast tilt angles.
+    virtual void setGlastAngles(std::pair<double,double> ang)=0;
+
 
 
  
