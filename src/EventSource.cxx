@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.6 2002/06/30 20:57:26 srobinsn Exp $
 
 #include "../FluxSvc/EventSource.h"
 
@@ -60,6 +60,9 @@ EventSource::~EventSource()
 
 double EventSource::flux (double time) const
 {
+  // Purpose and Method: This method returns the flux of the particular source.
+  // Inputs  - current time
+  // Outputs - flux, in units of (particles/(m^2*sr*sec))
     return m_flux;  // default if not overridden
 }
 
@@ -70,6 +73,9 @@ void   EventSource::setFlux (double value) {
 
 double  EventSource::rate (double time )const
 {
+  // Purpose and Method: This method returns the rate of particles entering the detector.
+  // Inputs  - current time
+  // Outputs - rate, in units of (particles/sec)
     return enabled()? (solidAngle()*flux(time)*s_total_area) :0;
 }
 

@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.h,v 1.5 2002/06/24 22:37:15 srobinsn Exp $
+// $Id: AlbedoPSpectrum.h,v 1.6 2002/07/23 19:00:56 srobinsn Exp $
 // File: AlbedoPSpectrum.h
 #ifndef ALBEDO_P_SPECTRUM_H
 #define ALBEDO_P_SPECTRUM_H
@@ -25,9 +25,9 @@
 * The dir() member returns a sampled particle's direction.  The 
 * argument is the particle energy, as produced by ().
 
-* \author Patrick Nolan, Stanford University, 1999
-* 
-* $Header $
+  * \author Patrick Nolan, Stanford University, 1999
+  * 
+  * $Header $
 */
 
 #include "Spectrum.h"

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.1 2002/07/12 18:23:33 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.2 2002/07/23 19:00:57 srobinsn Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -11,7 +11,7 @@
   <br>
   the file /src/test/jobOptions.txt holds information used for the implementation of FluxSvc.
   it also holds the standard set of strings representing xml filenames, thus allowing multiple 
-  xml files to be used. <a href="../FluxSvcDoc2.htm">More Documentation</a>
+  xml files to be used. <a href="http://d0.phys.washington.edu/~srobinsn/FluxSvc/">More Documentation</a>
   <br>
   <h2> Defining an external source </h2>
     See the interface definition IRegisterSource.

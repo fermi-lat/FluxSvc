@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.6 2002/06/30 20:57:26 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.7 2002/07/23 19:00:57 srobinsn Exp $
 
 
 #ifndef GLAST_SPECTRUM_H
@@ -70,10 +70,10 @@ public:
     
     /// new interface for Hirosima classes
     virtual double energySrc(HepRandomEngine* engine, double time=0);
-
+    
     /*! 
     \param dir direction is either in the format (cos theta, phi)
-       (zenith-local coordinates, or (l,b) (galactic coordinates).
+    (zenith-local coordinates, or (l,b) (galactic coordinates).
     */
     virtual std::pair<double,double> dir(double energy, HepRandomEngine* engine);
     

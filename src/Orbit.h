@@ -1,4 +1,4 @@
-// $Id: Orbit.h,v 1.3 2002/06/30 20:57:26 srobinsn Exp $
+// $Id: Orbit.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
 
 
 #ifndef ORBIT_H
@@ -48,7 +48,7 @@ public:
     
     ///returns position as a pair using  specified time
     std::pair<double,double> coords(double time) const;
-
+    
     /*! 
     \param latitude Latitude is in the range (-180,180)
     */
