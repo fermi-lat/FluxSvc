@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jun  4 17:58:45 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+hammer-aitoff usage fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jun  4 17:28:35 PDT 2002
 FluxSvc/src/test
 
