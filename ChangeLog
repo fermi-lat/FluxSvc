@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Mon Aug 20 15:25:40 PDT 2001
+FluxSvc/src FluxSvc.cxx
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+Make source_library an attribute. Default is an empty string, interpreted by FluxMgr to mean load default.
+    *
+------------------------------------------------------------
+User: burnett  Mon Aug 20 15:25:40 PDT 2001
 FluxSvc/cmt requirements
 
 Modified Files:
