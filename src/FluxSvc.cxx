@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.40 2002/09/06 21:14:47 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.41 2002/09/16 18:26:08 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -251,4 +251,8 @@ void FluxSvc::setRockType(GPS::RockType rockType){
 /// this sets the rocking mode in GPS.
 void FluxSvc::setRockType(int rockType){
    m_fluxMgr->setRockType(rockType);
+}
+
+std::vector<std::pair< std::string ,std::list<std::string> > > FluxSvc::sourceOriginList() const{
+    return m_fluxMgr->sourceOriginList();
 }

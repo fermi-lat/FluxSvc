@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.13 2002/09/05 02:24:01 srobinsn Exp $ 
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.14 2002/09/06 21:14:47 srobinsn Exp $ 
 
 #ifndef _H_FluxSvc_
 #define _H_FluxSvc_
@@ -70,6 +70,9 @@ public:
     void setRockType(GPS::RockType rockType);
     ///0=NONE, 1=UPDOWN, 2=SLEWING, 3=ONEPERORBIT
     void setRockType(int rockType);
+
+    ///this should return the source file names, along with the contained sources.
+    std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
     
     //------------------------------------------------------------------
     //  stuff required by a Service
