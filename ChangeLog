@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Aug  8 09:47:34 PDT 2004
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tagging v6r14 (despite glast-ts build failure)
+    *
+------------------------------------------------------------
+User: burnett  Sun Aug  8 09:47:34 PDT 2004
 FluxSvc/cmt
 
 Modified Files:
