@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.20 2002/05/10 05:50:53 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.21 2002/05/10 18:01:33 richard Exp $
 
 // Include files
 // Gaudi system includes
@@ -155,7 +155,7 @@ StatusCode FluxAlg::execute()
     // so initial momentum and final one are the same
     parent->initialize(parent, partID, 
         Event::McParticle::PRIMARY,
-        pin);
+        pin,p);
     parent->finalize(pin, p);
 
     return sc;
