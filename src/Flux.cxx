@@ -1,4 +1,4 @@
-// $Header:$
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
 
 // Original author: T. Burnett
 
@@ -78,3 +78,4 @@ double Flux::targetArea()const
 {
     return m_event->totalArea();
 }
+

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.2 2001/04/19 02:11:35 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -95,3 +95,14 @@ StatusCode FluxSvc::finalize ()
     return status;
 }
 
+/// Query interface
+StatusCode FluxSvc::queryInterface(const IID& riid, void** ppvInterface)  {
+  if ( IID_IFluxSvc.versionMatch(riid) )  {
+    *ppvInterface = (IFluxSvc*)this;
+  }
+  else  {
+    return Service::queryInterface(riid, ppvInterface);
+  }
+  addRef();
+  return SUCCESS;
+}
