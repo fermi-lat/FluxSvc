@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hierath  Sat Aug 23 18:16:32 PDT 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+Added a method to allow an external package to attach itself as a GPS observer.
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Aug 20 12:36:46 PDT 2003
 FluxSvc/src
 
