@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.58 2003/07/11 23:08:57 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.59 2003/07/29 23:13:25 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -35,7 +35,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.58 2003/07/11 23:08:57 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.59 2003/07/29 23:13:25 burnett Exp $
 */
 
 // includes
@@ -107,7 +107,12 @@ public:
     ///2=SLEWING(like updown, but not discontinuous at the equator),
     ///3=ONEPERORBIT (rock norh one orbit, south the next,
     ///4=EXPLICIT (use the internal rotangles rotation angles (this should be set through setOrientation)).
+	///5 = POINT:  Explicit pointing direction given - setExplicitRockingAngles are (l,b).
+	///6 = HISTORY - Filename given to stand for a pre-recorded pointing history.  Use the setPointingHistoryFile function.
     std::vector<double> setRockType(int rockType, double rockAngle = 35.);
+
+	/// set the desired pointing history file to use:
+	void setPointingHistoryFile(std::string fileName);
 
     ///this should return the source file names, along with the contained sources.
     std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
@@ -364,6 +369,10 @@ void FluxSvc::setExplicitRockingAngles(double ang1, double ang2){
 /// get the angular values of the satellite
 std::pair<double,double> FluxSvc::getExplicitRockingAngles(){
     return m_fluxMgr->getExplicitRockingAngles();
+}
+
+void FluxSvc::setPointingHistoryFile(std::string fileName){
+	m_fluxMgr->setPointingHistoryFile(fileName);
 }
 
 HepRotation FluxSvc::transformGlastToGalactic(double time)const{

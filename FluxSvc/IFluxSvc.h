@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.34 2003/03/04 00:04:32 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.35 2003/03/19 06:31:03 srobinsn Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -30,7 +30,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.34 2003/03/04 00:04:32 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.35 2003/03/19 06:31:03 srobinsn Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -67,7 +67,9 @@ public:
 
     /// get the angular values of the satellite
     virtual std::pair<double,double> getExplicitRockingAngles()=0;
-    
+
+	/// set the desired pointing history file to use:
+	virtual void setPointingHistoryFile(std::string fileName)=0;
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     virtual HepRotation transformGlastToGalactic(double time)const=0;
@@ -80,7 +82,9 @@ public:
     ///1 = UPDOWN : Satellite will be rocked toward the north pole in the northern hemisphere, opposite in the south.
     ///2 = SLEWING : (experimental) like UPDOWN, except that rotation at equator happens gradually.
     ///3 = ONEPERORBIT : (needs work) LAT rocked northward for one orbit, southward for the next.
-    ///4 = EXPLICIT :  Explicit angles given - this should be used only through the setExplicit... function.
+    ///4 = EXPLICIT :  Explicit angles given - this should be used with the setExplicit... function.
+	///5 = POINT:  Explicit pointing direction given - setExplicitRockingAngles are (l,b).
+	///6 = HISTORY - Filename given to stand for a pre-recorded pointing history.  Use the setPointingHistoryFile function.
     virtual std::vector<double> setRockType(int rockType, double rockAngle)=0;
 
     ///this should return the source file names, along with the contained sources.
