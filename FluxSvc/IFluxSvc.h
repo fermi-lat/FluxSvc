@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.35 2003/03/19 06:31:03 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.36 2003/08/12 06:03:20 srobinsn Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -10,6 +10,7 @@
 // includes
 #include "GaudiKernel/IInterface.h"
 #include "CLHEP/Vector/Rotation.h"
+#include "facilities/Observer.h"
 
 #include <string>
 #include <list>
@@ -30,7 +31,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.35 2003/03/19 06:31:03 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.36 2003/08/12 06:03:20 srobinsn Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -52,6 +53,9 @@ public:
     
     /// create a set of display windows using rootplot.
     virtual void rootDisplay(std::vector<const char*> arguments)=0;
+
+    /// allow an external observer to attach to gps
+    virtual void attachGpsObserver(Observer* anObserver)=0;
     
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }
