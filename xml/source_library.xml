@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.6 2002/06/04 01:34:34 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.7 2002/07/12 18:23:33 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -178,6 +178,27 @@
         </spectrum>
     </source>
 
+    <!-- the TimeCandle spectrum  -->
+    <source name="timetick15s">
+         <spectrum> <SpectrumClass name="TimeCandle" params="30."/>  
+		 <use_spectrum/><launch_point />
+         </spectrum>
+    </source>
 
+
+	<!-- test mixture of timeticks and photons.-->
+    <source name="d2tester">
+        <nestedSource sourceRef="timetick15s"/>
+        <nestedSource sourceRef="default_test"/>
+    </source>
+
+	
+   <!-- standard particle generater used as a default -->
+    <source name="default_test" flux="1.0">
+          <spectrum>
+              <particle name="gamma"> <energy e="0.1"/> </particle>
+               <direction/>
+          </spectrum>
+     </source>
 
 </source_library>

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.26 2002/07/25 05:18:58 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.27 2002/08/28 07:26:56 srobinsn Exp $
 
 // Include files
 // Gaudi system includes
@@ -106,7 +106,8 @@ StatusCode FluxAlg::execute()
     //if it's a "timeTick, then ExposureAlg should take care of it, and no othe algorithms should care about it.
     if(particleName == "TimeTick"){
         log << MSG::DEBUG << particleName << " particle found, will exit particle creation/reconstruction loops" << endreq;
-        particleName = "gamma"; //no need to return - we want the time record on the TDS.  the ExposureAlg will handle the rest.
+        particleName = "gamma"; 
+        setFilterPassed( false );//no need to return - we want the time record on the TDS.  the ExposureAlg will handle the rest.
     }
     
     
