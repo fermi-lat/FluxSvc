@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.13 2003/02/20 22:04:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.14 2003/02/22 05:42:24 burnett Exp $
 #ifndef EventSource_h
 #define EventSource_h 1
 
@@ -7,14 +7,11 @@
 *
 * \brief  Base class for managing  sources.
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.13 2003/02/20 22:04:11 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.14 2003/02/22 05:42:24 burnett Exp $
 */
 
 
 #include <string>
-
-#include "GPS.h"
-
 
 class DOM_Element;
 class FluxSource;

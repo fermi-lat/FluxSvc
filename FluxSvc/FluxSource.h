@@ -5,7 +5,8 @@
 #define FluxSource_h 1
 
 #include "FluxSvc/EventSource.h"
-#include "CLHEP/Vector/ThreeVector.h"
+#include "CLHEP/Geometry/Point3D.h"
+#include "CLHEP/Geometry/Vector3D.h"
 
 // forward declarations
 class DOM_Element;
@@ -14,7 +15,7 @@ class ISpectrum;
 // 
 /** @class FluxSource
     @brief class which manages to compute flux from various particle source configurations
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.27 2003/02/20 21:39:02 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.28 2003/02/22 05:42:24 burnett Exp $
 */
 class FluxSource : public EventSource  
 {
@@ -69,8 +70,6 @@ public:
     double energy()const { return m_energy;}
     const HepVector3D& launchDir()const {return m_correctedDir;}
     const HepPoint3D&  launchPoint()const { return m_launchPoint;}
-
-    static	double	s_radius;
 
 private:
 

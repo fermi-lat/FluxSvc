@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.16 2002/10/31 01:31:00 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.17 2003/02/22 05:42:25 burnett Exp $
 
 
 #include "CompositeSource.h"  
@@ -13,7 +13,7 @@
 #include <iomanip>
 
 CompositeSource::CompositeSource (double aRate)
-: EventSource(aRate), m_recent(0),m_numofiters(0)//,m_time(0)
+: EventSource(aRate),m_numofiters(0), m_recent(0)
 {
 }
 
