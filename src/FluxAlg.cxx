@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.58 2005/03/21 23:43:15 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.59 2005/03/22 14:48:51 burnett Exp $
 
 */
 
@@ -59,7 +59,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.58 2005/03/21 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.58 2005/03/21 23:43:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.59 2005/03/22 14:48:51 burnett Exp $
 */
 
 
@@ -219,7 +219,7 @@ StatusCode FluxAlg::initialize(){
     }
 
     // get a pointer to RootTupleSvc, use only if available 
-    if( (sc = service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
+    if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
         log << MSG::WARNING << " RootTupleSvc is not available, will not write Pt tuple" << endreq;
         m_rootTupleSvc=0;
     }else if( !m_root_tree.value().empty() ) {
