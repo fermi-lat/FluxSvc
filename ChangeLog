@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jul 24 22:18:59 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.h CHIMESpectrum.cxx CHIMESpectrum.h 
+	CompositeDiffuse.cxx CompositeDiffuse.h CompositeSource.cxx 
+	CompositeSource.h EventSource.cxx FILESpectrum.cxx Flux.cxx 
+	FluxAlg.cxx FluxMgr.cxx FluxSource.cxx FluxSvc.cxx GPS.cxx 
+	GalElSpectrum.h HeSpectrum.cxx Orbit.cxx Orbit.h Spectrum.cxx 
+	Spectrum.h mainpage.h 
+Added Files:
+	lognlogs.txt 
+Log Message:
+mainpage now points to location of additional web documentation, more documentation about the tool structure, many updates made to documentation code blocks within implemenation of methods package-wide, diffuse model updated to take a file input for a logN/logS characteristic , test file added, test sources changed accordingly.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jul 24 22:18:58 PDT 2002
 FluxSvc/FluxSvc
 
