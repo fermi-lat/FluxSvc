@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: omodei  Wed Mar  6 10:05:22 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx 
+Removed Files:
+	GRBTest.cxx 
+Log Message:
+Remove any dependences from root in the GRB source program: GRBTest in FluxDiplay!
+    *
+------------------------------------------------------------
+User: omodei  Wed Mar  6 10:05:22 PST 2002
 FluxSvc/src/test
 
 Modified Files:
