@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 25 12:40:01 PDT 2004
+FluxSvc/cmt
+
+Modified Files:
+      Tag: v6r13p5-em-branch
+	requirements 
+Log Message:
+just fix the version from GR v4r4
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 25 09:20:13 PDT 2004
 FluxSvc/cmt
 
