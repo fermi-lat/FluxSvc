@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Mar 17 18:08:03 PST 2005
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+update pointing history processings, set proper time for mission elapsed time.
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 17 18:08:03 PST 2005
 FluxSvc/src
 
 Modified Files:
