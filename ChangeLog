@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jan 29 17:36:45 PST 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx EventSource.cxx Flux.cxx FluxMgr.cxx 
+	FluxSource.cxx Spectrum.cxx 
+Log Message:
+interval function put into Spectrum definition,
+generate(), flux() and rate() functions now take a time,
+further FluxMgr::test() output.  EventSource now holds current
+elapsed time.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jan 29 17:36:44 PST 2002
 FluxSvc/FluxSvc
 
