@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.16 2002/04/03 21:26:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.17 2002/05/03 17:26:57 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -72,7 +72,7 @@ public:
        
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 
-    virtual int gpsTime()const=0;
+    virtual /*int*/double gpsTime()const=0;
 
 #if 0
     // get a description of the parameters that can be modified, and reference to a list of them
