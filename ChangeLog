@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 25 09:20:13 PDT 2004
+FluxSvc/cmt
+
+Modified Files:
+      Tag: v6r14p1-em-branch
+	requirements 
+Log Message:
+make use GRB public on this branch
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 24 23:31:47 PDT 2004
 FluxSvc/src
 
