@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Orbit.cxx,v 1.1 2002/01/16 12:25:38 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Orbit.cxx,v 1.2 2002/01/17 08:38:50 srobinsn Exp $
 
 #include "Orbit.h"
 
@@ -89,7 +89,8 @@ Rotation Orbit::CELtransform(double time){
     gal.rotateZ(-282.25/m_degsPerRad).rotateX(-62.6/m_degsPerRad).rotateZ(33./m_degsPerRad);
     //cel.rotateZ(phase(time)).rotateX(m_inclination/m_degsPerRad).rotateZ(/*(time/m_precessPeriod)*M_2PI*/0.);
 
-    cel.rotateZ(phase(time)).rotateX(m_inclination*M_2PI/360.).rotateZ((time/m_precessPeriod)*M_2PI);
+    //cel.rotateZ(phase(time)).rotateX(m_inclination*M_2PI/360.).rotateZ((time/m_precessPeriod)*M_2PI);
+    cel.rotateZ((time/m_precessPeriod)*M_2PI).rotateX(m_inclination*M_2PI/360.).rotateZ(phase(time));
     Rotation glstToGal = gal*cel;
 
     //displayRotation(glstToGal);
