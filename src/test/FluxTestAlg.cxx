@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.20 2002/05/22 08:21:52 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.21 2002/05/22 23:09:07 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -261,7 +261,7 @@ void FluxTestAlg::addToTotalExposure(std::vector<FluxTestAlg::exposureSet> toBeA
 
 void FluxTestAlg::displayExposure(){
     //make the file
-    std::ofstream out_file("data.dat", std::ios::app);
+    std::ofstream out_file("data.dat", std::ios::ate);
 
     int i,j;
     for(i=0 ; i<180 ; i++){
