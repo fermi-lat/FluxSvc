@@ -1,6 +1,6 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.52 2003/03/01 23:14:56 burnett Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.53 2003/03/02 06:30:57 burnett Exp $
 
-#include "FluxSvc/FluxSource.h"
+#include "FluxSource.h"
 
 #include "dom/DOM_Element.hpp"
 #include "dom/DOM_NodeList.hpp"
