@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.8 2002/07/25 05:18:58 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.10 2002/11/01 23:27:54 burnett Exp $
 #ifndef CHIME_SPECTRUM_H
 #define CHIME_SPECTRUM_H
 
@@ -132,6 +132,7 @@ private:
     float cosomega(float E) const;  // Opening angle of Størmer cone
     static const float m_rearth;    // radius of earth in km
     static const float m_altitude;  // altitude of circular orbit
+    bool m_allowMove;   //whether or not the flux will be allowed to change position.
     
     std::string m_particle_name;
     ObserverAdapter< CHIMESpectrum > m_observer; //obsever tag
