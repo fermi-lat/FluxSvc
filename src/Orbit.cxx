@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/src/Orbit.cxx,v 1.7 2001/12/20 09:54:48 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Orbit.cxx,v 1.1 2002/01/16 12:25:38 srobinsn Exp $
 
-#include "FluxSvc/Orbit.h"
+#include "Orbit.h"
 
 #include "CLHEP/Random/RandFlat.h"
-#include "FluxSvc/GPS.h"
+#include "GPS.h"
 
 #include <cmath>
 #include <cassert>

@@ -1,7 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/src/CHIMESpectrum.cxx,v 1.13 2001/12/17 13:39:05 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.1 2002/01/16 12:11:35 srobinsn Exp $
 
 
-#include "FluxSvc/CHIMESpectrum.h"
+#include "CHIMESpectrum.h"
 
 #include "CHIMESpectrum.inc"  // numerical data: energies, fluxes, gfluxes
 
@@ -9,10 +9,10 @@
 #include <algorithm>
 #include <functional>
 #include "CLHEP/Random/Random.h"
-#include "FluxSvc/GPS.h"
+#include "GPS.h"
 
 // this is needed to include in the executable or dll
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<CHIMESpectrum> factory;
 const ISpectrumFactory& CHIMESpectrumFactory = factory;

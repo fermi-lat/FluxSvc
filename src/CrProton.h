@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrProton.h,v 1.8 2001/10/20 07:20:35 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrProton.h,v 1.1 2002/01/16 12:25:35 srobinsn Exp $
 
 #ifndef CrProton_H
 #define CrProton_H
@@ -10,7 +10,7 @@
 #include <vector>
 #include <utility>
 #include <string>
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 
 class CrSpectrum;
 

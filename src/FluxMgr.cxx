@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/src/FluxMgr.cxx,v 1.22 2002/01/14 23:23:16 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.1 2002/01/16 12:25:39 srobinsn Exp $
 
 
 #include "FluxSvc/FluxMgr.h"
 #include "FluxSvc/FluxSource.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
-#include "FluxSvc/GPS.h"
+#include "SpectrumFactoryTable.h"
+#include "GPS.h"
 #include "FluxException.h" // defines FATAL_MACRO
 
 #include "dom/DOM_Document.hpp"
@@ -12,7 +12,7 @@
 #include "xml/Dom.h"
 #include "xml/IFile.h"
 
-#include "FluxSvc/Orbit.h"
+#include "Orbit.h"
 
 
 #define DLL_DECL_SPECTRUM(x)   extern const ISpectrumFactory& x##Factory; x##Factory.addRef();

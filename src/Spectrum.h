@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/flux/Spectrum.h,v 1.10 2001/10/20 07:20:35 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/Spectrum.h,v 1.1 2002/01/16 12:06:10 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects

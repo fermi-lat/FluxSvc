@@ -1,17 +1,17 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/src/GalElSpectrum.cxx,v 1.7 2001/12/17 13:39:06 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 #ifdef __GNUG__
 #pragma implementation
 #endif
 
-#include "FluxSvc/GalElSpectrum.h"
-#include "FluxSvc/GPS.h"
+#include "GalElSpectrum.h"
+#include "GPS.h"
 
 #include <cmath>
 #include "CLHEP/Random/Random.h"
 
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<GalElSpectrum> factory;
 const ISpectrumFactory& GalElSpectrumFactory = factory;

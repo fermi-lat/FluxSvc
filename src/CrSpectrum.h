@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/flux/src/CrSpectrum.h,v 1.3 2001/10/20 07:20:35 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrSpectrum.h,v 1.1 2002/01/16 12:25:37 srobinsn Exp $
 
 #ifndef CrSpectrum_H
 #define CrSpectrum_H
@@ -14,7 +14,7 @@
 
 
 #include <utility>
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 class HepRandomEngine;
 
 class CrSpectrum : public Spectrum

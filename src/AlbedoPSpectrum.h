@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.h,v 1.9 2001/10/18 03:30:16 srobinsn Exp $
+// $Id: AlbedoPSpectrum.h,v 1.1 2002/01/16 11:52:43 srobinsn Exp $
 
 
 // File: AlbedoPSpectrum.h
@@ -29,7 +29,7 @@
 #ifndef ALBEDO_P_SPECTRUM_H
 #define ALBEDO_P_SPECTRUM_H
 
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 #include "facilities/Observer.h"
 #include <string>
 
