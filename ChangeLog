@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Feb 27 17:47:39 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx FluxMgr.h FluxSvc.cxx FluxSvc.h GPS.cxx GPS.h 
+Log Message:
+SetExplicitRotationAngles put in as a fluxSvc method, sets an explicitly declared set of rocking angles.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Feb 27 17:47:39 PST 2003
 FluxSvc/FluxSvc
 
 Modified Files:
