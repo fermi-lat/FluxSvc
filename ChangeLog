@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 18 17:36:51 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+fix setting Event/MC when no converter.
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 18 11:02:21 PDT 2002
 FluxSvc/cmt
 
