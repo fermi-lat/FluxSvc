@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 15:26:48 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFlux.h IFluxSvc.h 
+Log Message:
+
+clean up, prepare for tag
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  1 15:14:56 PST 2003
 FluxSvc/src/test
 
