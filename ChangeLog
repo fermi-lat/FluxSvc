@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Feb  1 17:33:26 PST 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx Flux.cxx FluxAlg.cxx FluxMgr.cxx 
+	FluxSource.cxx FluxSvc.cxx SimpleSpectrum.cxx 
+Added Files:
+	CompositeSource.h FluxMgr.h FluxSvc.h SimpleSpectrum.h 
+Removed Files:
+	TimeDepSpectrum.cxx TimeDepSpectrum.h 
+Log Message:
+JobOptions now holds proper source name variable, files relocated to conform to schema, electrons,protons.cxx removed, FluxMgr assert problem fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Feb  1 17:33:25 PST 2002
 FluxSvc/FluxSvc
 
