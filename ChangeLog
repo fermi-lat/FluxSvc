@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May 30 02:36:21 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+actual equal-area cutoff angle created, gaussian falloff for exposure, hammer-aitoff equal-area projection possible for output.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed May 29 02:16:23 PDT 2002
 FluxSvc/xml
 
