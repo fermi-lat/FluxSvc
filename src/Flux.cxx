@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.22 2002/09/05 02:24:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.23 2002/10/07 23:42:20 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -41,7 +41,6 @@ void Flux::generate()
     // Purpose and Method: generate a new entry trajectory, set FluxSource, increment local time
     // Inputs  - none
     // Outputs - none
-    
     m_flux = m_event->event(time());
     double timepass = m_event->interval(time());
     m_time+= timepass;
