@@ -1,8 +1,8 @@
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.8 2002/09/16 18:26:08 srobinsn Exp $
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source.dtd,v 1.9 2002/09/20 00:29:03 srobinsn Exp $
   DTD file for flux source definitions
   -->
 <!ELEMENT source_library ((source)+ | (source_library)*) >
-
+<!ATTLIST source_library title CDATA "user" >
 
 <!-- a source has a spectrum (generated) or a list of sources  -->
 
