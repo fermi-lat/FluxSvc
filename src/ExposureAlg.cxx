@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.26 2004/01/28 23:24:12 hierath Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.27 2004/08/14 02:42:24 burnett Exp $
 */
 
 // Include files
@@ -47,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.26 2004/01/28 23:24:12 hierath Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.27 2004/08/14 02:42:24 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -118,7 +118,11 @@ const IAlgFactory& ExposureAlgFactory = Factory;
 //------------------------------------------------------------------------
 //! ctor
 ExposureAlg::ExposureAlg(const std::string& name, ISvcLocator* pSvcLocator)
-:Algorithm(name, pSvcLocator), m_out(0),m_lasttime(0), m_tickCount(0)
+: Algorithm(name, pSvcLocator)
+, m_pointing_tree(0)
+, m_out(0)
+, m_lasttime(0)
+, m_tickCount(0)
 {
     // declare properties with setProperties calls
     declareProperty("source_name",  m_source_name="default");
