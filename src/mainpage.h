@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.9 2003/03/02 06:30:57 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.10 2003/03/07 21:44:50 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -27,7 +27,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
 
     @param FluxAlg.source_name  ["default"] source name, name must be in the source_lib files
     @param FluxAlg.MCrun        [100] Initial run number
-    @param FluxAlg.area         [5.0] target area in m^2
+    @param FluxAlg.area         [6.0] target area in m^2
     @param FluxAlg.pointing_mode [0]  Corresponds to the following, from GPS
         - 0 No rocking rotation done at all.
         - 1 Satellite will be rocked toward the north pole in the northern hemisphere, opposite in the south.
