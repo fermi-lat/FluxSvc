@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Mar 21 14:45:06 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix bad file spec
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 21 12:00:46 PST 2003
 FluxSvc/doc
 
