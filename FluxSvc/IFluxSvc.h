@@ -1,4 +1,4 @@
-// $Header:  $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.1.1.1 2001/01/31 04:47:48 burnett Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -7,7 +7,7 @@
 #define _H_IFluxSvc
 
 // includes
-#include "Gaudi/Interfaces/IInterface.h"
+#include "GaudiKernel/IInterface.h"
 #include <string>
 #include <list>
 
