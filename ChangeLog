@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Nov 24 10:48:12 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+rocking mode INFO outputs.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Nov 11 16:01:03 PST 2003
 FluxSvc/cmt
 
