@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jan 15 14:30:09 PST 2004
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFlux.h IFluxSvc.h 
+Log Message:
+try hiding flux a bit.
+    *
+------------------------------------------------------------
 User: burnett  Wed Dec  3 06:00:17 PST 2003
 FluxSvc/src
 
