@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.15 2002/05/10 02:25:21 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.16 2002/05/10 18:01:55 richard Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -141,7 +141,7 @@ StatusCode FluxTestAlg::execute() {
             log << MSG::ERROR << "Couldn't find the ParticlePropertySvc!" << endreq;
             return StatusCode::FAILURE;
         }
-        partName = m_partSvc->find(pID)->particle();
+        partName = m_partSvc->findByStdHepID(pID)->particle();
     }   
    
     log << MSG::INFO << partName
