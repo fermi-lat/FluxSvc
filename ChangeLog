@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Jan 24 02:03:50 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx testMgr.cxx 
+Log Message:
+moved files to work with FLuxdisplay,
+transformation matrix can be gotten from Flux now.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Jan 24 02:03:50 PST 2002
 FluxSvc/src
 
 Modified Files:
