@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.11 2002/10/30 20:43:54 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.12 2003/02/20 21:39:02 burnett Exp $
 #ifndef EventSource_h
 #define EventSource_h 1
 
@@ -7,7 +7,7 @@
 *
 * \brief  Base class for managing  sources.
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.11 2002/10/30 20:43:54 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.12 2003/02/20 21:39:02 burnett Exp $
 */
 
 
@@ -104,6 +104,7 @@ private:
     
     static unsigned int  s_id;    // id for new EventSources...
     static double s_total_area;   // total area for flux generation (in square meters)
+    double m_solid_angle;
 };
 
 // inline function declarations:

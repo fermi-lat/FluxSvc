@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.36 2003/01/28 20:28:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.37 2003/02/20 21:39:03 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -302,7 +302,7 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
         //  countIter++;
     }
     
-    delete e;
+    //delete e;
     
 }
 
