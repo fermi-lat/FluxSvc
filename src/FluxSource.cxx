@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.47 2003/02/23 02:08:22 burnett Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.48 2003/02/25 00:38:40 srobinsn Exp $
 
 #include "FluxSvc/FluxSource.h"
 
@@ -8,6 +8,8 @@
 #include "CLHEP/Random/RandFlat.h"
 
 #include "astro/SkyDir.h"
+
+#include "geometry/CoordTransform.h"
 
 #include "SpectrumFactoryTable.h"
 #include "SimpleSpectrum.h"
@@ -202,11 +204,20 @@ public:
         */
     virtual void execute(double KE, double time){
         //TODO: account for transformation?
+        if(m_skydir){
+            m_celtoglast = GPS::instance()->transformCelToGlast(time);
+        }else{
+            Rotation celtoglast;
+            m_celtoglast = celtoglast;
+        }
     }
 
     const HepVector3D& operator()()const {return dir();}
 
-    virtual const HepVector3D& dir()const { return m_dir;}
+    virtual const HepVector3D& dir()const {
+        return m_celtoglast * m_dir;
+    }
+
     void setDir(const HepVector3D& dir){m_dir=dir;}
 
 
@@ -223,6 +234,7 @@ public:
     }
 
 private:
+    Rotation m_celtoglast;
     HepVector3D m_dir;
     bool  m_skydir;
 };
