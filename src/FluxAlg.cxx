@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.22 2002/05/15 12:01:33 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.23 2002/05/31 19:16:23 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -107,9 +107,14 @@ StatusCode FluxAlg::execute()
     
     
     //here's where we get the particleID and mass for later.
+    if( particleName=="p") particleName="proton";
     ParticleProperty* prop = m_partSvc->find(particleName);
     
-    assert(prop);
+    if( prop==0) {
+        log << MSG::ERROR << "Particle name " << particleName << " not found by particle properties" << endreq;
+        return StatusCode::FAILURE;
+    }
+
     int partID = prop->jetsetID(); // same as stdhep id
     
     log << MSG::DEBUG << particleName
