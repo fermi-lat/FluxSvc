@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Sep  6 14:14:47 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx FluxMgr.h FluxSvc.cxx FluxSvc.h GPS.cxx GPS.h 
+Log Message:
+extra "setrockingangle" function usable through the service for sending an integer flag instead of enum.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Sep  6 14:14:46 PDT 2002
 FluxSvc/FluxSvc
 
