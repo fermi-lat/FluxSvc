@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Jan 31 01:55:20 PST 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx EventSource.cxx FluxMgr.cxx FluxSource.cxx 
+	Spectrum.cxx 
+Log Message:
+fixed time-dependent errors
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Jan 31 01:55:20 PST 2002
 FluxSvc/FluxSvc
 
 Modified Files:
