@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 31 18:27:28 PST 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+
+Have the test program demonstrate the extensibility of the XML description
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Oct 31 15:35:30 PST 2001
 FluxSvc/src FluxSvc.cxx
 
