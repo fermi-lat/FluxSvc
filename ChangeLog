@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Mar 18 22:31:03 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+rocking mode methods given facility to return current state.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Mar  7 14:16:02 PST 2003
 FluxSvc/doc
 
