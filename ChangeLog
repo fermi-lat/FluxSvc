@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed May  1 15:33:05 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+BFEM sources removed, put into BFEMflux package
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Apr 29 14:26:03 PDT 2002
 FluxSvc/xml
 
