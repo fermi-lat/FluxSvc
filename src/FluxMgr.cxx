@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.22 2002/07/05 03:02:29 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.23 2002/07/25 05:18:58 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -288,6 +288,9 @@ void FluxMgr::setOrientation(std::pair<double,double> ang){
     GPS::instance()->rotateAngles(ang);
 }
 
+std::pair<double,double> FluxMgr::getOrientation(){
+    return GPS::instance()->rotateAngles();
+}
 
 void FluxMgr::setGlastPosition(std::pair<double,double> pos){
     GPS::instance()->ascendingLon(pos.first);

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.9 2002/06/24 22:37:16 srobinsn Exp $ 
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.10 2002/07/23 19:00:57 srobinsn Exp $ 
 
 #ifndef _H_FluxSvc_
 #define _H_FluxSvc_
@@ -54,6 +54,9 @@ public:
     
     /// set the glast tilt angles.
     void setOrientation(std::pair<double,double> ang);
+
+    /// get the angular values of the satellite
+    std::pair<double,double> getOrientation();
     
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     Rotation transformGlastToGalactic(double time)const;
