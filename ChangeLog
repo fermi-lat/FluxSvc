@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Tue May 28 12:47:23 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+Another change to the galactic cartesian vector, more display modes added, geometry mapping fixed.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue May 28 12:47:23 PDT 2002
 FluxSvc/src
 
 Modified Files:
