@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Nov  3 01:44:21 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+transformToGalactic now the new (only) transformation function to be used outside of GPS.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Nov  3 01:44:20 PST 2003
 FluxSvc/FluxSvc
 
