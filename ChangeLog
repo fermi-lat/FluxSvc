@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Dec 16 23:43:13 PST 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+"fixed lat/lon" issue fixed in albedoP, exposureAlg output changed so time is readable, collected rate function added to fluxAlg output.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Dec 16 23:43:12 PST 2002
 FluxSvc/src
 
