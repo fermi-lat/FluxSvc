@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.3 2002/05/09 19:59:30 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.4 2002/05/09 21:39:15 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -78,6 +78,8 @@ public:
      ///get the transformation matrix due to orientation of the spacecraft.
     Rotation orientTransform(double time);
     
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    Rotation FluxMgr::transformGlastToGalactic(double time);
 private:
     
     // source library lookup.  Each source is uniquely identified

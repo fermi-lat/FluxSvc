@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.1 2002/01/17 08:38:50 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.2 2002/05/08 16:59:08 srobinsn Exp $
 // GPS.h: interface for the GPS class.
 //
 //	Models the Global Positoning System for a spacecraft. Handles time
@@ -115,12 +115,16 @@ public:
 
     ///return galactic-pointing coordinates of the GLAST satellite
     std::pair<double,double> GPS::galPositionOfGlast();
+
     /// transform functions using galPositionOfGlast.  This infrastructure is no longer used.
     Vector earthToGlast(Vector launchDir);
     Vector galaxyToGlast(Vector launchDir);
 
     /// return the rotation for compensation for the rocking angles.
     Rotation rockingAngleTransform(double time);
+
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    Rotation GPS::transformGlastToGalactic(double time);
 
 
         

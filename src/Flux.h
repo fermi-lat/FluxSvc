@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.16 2002/05/09 19:59:29 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.17 2002/05/09 21:39:15 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -82,6 +82,9 @@ public:
 
     ///get the transformation matrix due to orientation of the spacecraft.
     virtual Rotation orientTransform(double time)const;
+
+    ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
+    Rotation Flux::transformGlastToGalactic(double time)const;
                                                                                   
 //    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
 
