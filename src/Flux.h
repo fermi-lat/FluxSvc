@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.7 2001/10/13 22:40:36 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -14,10 +14,9 @@ class FluxSource;
 
 
 
-/*!  The class holding the interface with FluxMgr, EventSource, and FluxSource of the flux package.
-Flux is used to get the actual information(energy, name, etc) about the current particle, and to generate
-new ones, through this interface.
-*/
+//!  The class holding the interface with FluxMgr, EventSource, and FluxSource of the flux package.
+//!  Flux is used to get the actual information(energy, name, etc) about the current particle, and to generate
+//!  new ones, through this interface.
 class Flux : public IFlux {
 public:
     /// ctor, select the name

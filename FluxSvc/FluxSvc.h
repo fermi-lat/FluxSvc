@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.8 2001/10/13 22:40:36 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.9 2001/10/18 03:31:12 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -16,9 +16,8 @@ template <class TYPE> class SvcFactory;
 class IFlux;  // interface
 class FluxMgr;  // actual manager
 
-/*! Service that implements the IFluxSvc interface, to return an IFlux object.
-FluxSvc handles the creation and interfacing with Flux objects.  
-*/
+//!  Service that implements the IFluxSvc interface, to return an IFlux object.
+//!  FluxSvc handles the creation and interfacing with Flux objects.  
 class FluxSvc : virtual public Service, virtual public IFluxSvc
 {  
 public:
