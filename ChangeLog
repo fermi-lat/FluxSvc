@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jul 29 10:59:45 PDT 2004
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Implement property to describe start time as a user-friendly absolute date.
+    *
+------------------------------------------------------------
+User: burnett  Thu Jul 29 10:59:45 PDT 2004
 FluxSvc/src
 
 Modified Files:
