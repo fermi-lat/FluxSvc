@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.38 2003/02/20 22:04:11 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.39 2003/02/22 05:42:25 burnett Exp $
 
 
 #include "FluxMgr.h"
@@ -11,8 +11,6 @@
 #include "dom/DOM_Element.hpp"
 #include "xml/Dom.h"
 #include "xml/IFile.h"
-
-//#include "Orbit.h"
 
 
 #define DLL_DECL_SPECTRUM(x)   extern const ISpectrumFactory& x##Factory; x##Factory.addRef();
@@ -314,11 +312,6 @@ void FluxMgr::setOrientation(std::pair<double,double> ang){
 
 std::pair<double,double> FluxMgr::getOrientation(){
     return GPS::instance()->rotateAngles();
-}
-
-void FluxMgr::setGlastPosition(std::pair<double,double> pos){
-    GPS::instance()->ascendingLon(pos.first);
-    GPS::instance()->ascendingLon(pos.second);
 }
 
 void FluxMgr::setExpansion (double p){

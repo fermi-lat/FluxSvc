@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.46 2003/02/22 14:38:02 burnett Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.47 2003/02/23 02:08:22 burnett Exp $
 
 #include "FluxSvc/FluxSource.h"
 
@@ -539,7 +539,6 @@ FluxSource* FluxSource::event(double time)
     // Outputs - pointer to the "current" fluxSource object.
     m_interval = calculateInterval(time);
     computeLaunch(time+m_interval);
-
     //now set the actual interval to be what FluxMgr will get
     EventSource::setTime(time+m_interval);
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.11 2002/10/08 22:48:37 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.12 2003/02/22 14:38:02 burnett Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -58,9 +58,6 @@ public:
 
     ///this should return the source file names, along with the contained sources.
     std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const;
-    
-    /// set the orbital (position) values of the GLAST satellite
-    void setGlastPosition(std::pair<double,double> pos);
     
     void addFactory(std::string name, const ISpectrumFactory* factory );
     

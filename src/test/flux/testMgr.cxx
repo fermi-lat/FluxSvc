@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.16 2003/02/22 05:42:25 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.17 2003/02/23 02:08:22 burnett Exp $
 
 #include "FluxSvc/EventSource.h"
 #include "FluxSvc/ISpectrumFactory.h"
@@ -75,7 +75,8 @@ int main(int argn, char * argc[]) {
 
     //TESTING MULTIPLE XML INPUT
     std::vector<std::string> fileList;
-    fileList.push_back("$(FLUXSVCROOT)/src/test/flux/test_library.xml");	
+    //fileList.push_back("$(FLUXSVCROOT)/src/test/flux/test_library.xml");
+    fileList.push_back("$(FLUXSVCROOT)/xml/source_library.xml");
     FluxMgr fm(fileList);
 
     //FluxMgr fm;
