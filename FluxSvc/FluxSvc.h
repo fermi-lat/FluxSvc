@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.5 2001/07/30 03:58:15 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.6 2001/08/20 22:25:39 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -61,7 +61,11 @@ private:
     friend class SvcFactory<FluxSvc>;
     
     FluxMgr * m_fluxMgr;
-    std::string m_source_library;
+    //std::string m_source_library;
+	//std::string m_user_library;
+	std::vector<std::string> m_source_lib;
+	std::string m_source_lib_default;
+
 };
 
 
