@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.7 2001/10/13 22:40:36 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -14,8 +14,7 @@
 #include "flux/SpectrumFactoryTable.h"
 
 
-/*!  Abstract interface for an object that generates particles, Flux
-*/
+//!  Abstract interface for an object that generates particles, Flux
 class IFlux {
 public:
     // ctor, select the name

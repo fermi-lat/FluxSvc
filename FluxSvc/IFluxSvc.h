@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.7 2001/10/13 22:40:36 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.8 2001/10/18 03:31:12 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -19,9 +19,7 @@ static const InterfaceID IID_IFluxSvc(910, 1 , 0);
 class IFlux;
 class HepRandomEngine;
 
-/*! Abstract interface for the flux service, FluxSvc.
-*/
-
+//! Abstract interface for the flux service, FluxSvc.
 class  IFluxSvc : virtual public IInterface {
 public:
     
