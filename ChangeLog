@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Sep 28 17:35:34 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+try to deal with DC condition with reading in.
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 26 13:50:49 PDT 2003
 FluxSvc/src
 
