@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Jan 25 01:02:26 PST 2002
+FluxSvc/src
+
+Modified Files:
+	Spectrum.cxx 
+Log Message:
+cleaned up extra variables/functions in Spectrum
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jan 25 01:02:25 PST 2002
 FluxSvc/FluxSvc
 
