@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.24 2003/10/28 13:45:26 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.25 2003/10/29 20:59:05 srobinsn Exp $
 */
 
 // Include files
@@ -27,7 +27,7 @@
 //flux
 #include "FluxSvc/IFluxSvc.h"
 #include "FluxSvc/IFlux.h"
-#include "flux/GPS.h"
+#include "astro/GPS.h"
 
 // to write a Tree with entryosure info
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
@@ -47,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.24 2003/10/28 13:45:26 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.25 2003/10/29 20:59:05 srobinsn Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
