@@ -3,7 +3,7 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.74 2003/07/29 23:13:26 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.75 2003/08/12 06:03:21 srobinsn Exp $
 
 ApplicationMgr.DLLs   = { "GlastSvc", "FluxSvc"};
 ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
@@ -27,6 +27,12 @@ ApplicationMgr.TopAlg = {"FluxAlg/Top","ExposureAlg","FluxTestAlg"};
 // Set the default for a source library document
 FluxSvc.source_lib ={"$(FLUXROOT)/xml/source_library.xml"};
 FluxSvc.source_lib +={"$(FLUXSVCROOT)/src/test/test_source.xml"};
+
+//For ExposureAlg, here are lines to uncomment to:
+//write all the timetick particles out to a pointing information file:
+//ExposureAlg.pointing_history_output_file="pointingData.out";
+//and read that file back in to be the pointing database:
+//ExposureAlg.pointing_history_input_file="pointingData.out";
 
 // test the various FluxAlg properties
 Top.area= 6.0;
