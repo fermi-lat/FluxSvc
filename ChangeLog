@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 21 11:14:38 PST 2003
+FluxSvc/src
+
+Modified Files:
+	EventSource.cxx FluxMgr.cxx FluxMgr.h FluxSource.cxx 
+	SimpleSpectrum.cxx 
+Log Message:
+Change Xerces include references to new style, compatible with Xerces 1.7.0
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar 20 13:45:04 PST 2003
 FluxSvc/doc
 
