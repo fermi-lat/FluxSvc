@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Oct  8 15:48:37 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx FluxMgr.h FluxSvc.cxx FluxSvc.h 
+Log Message:
+FluxMgr now knows about the file responsible for declaring a particular source.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Oct  7 16:42:21 PDT 2002
 FluxSvc/xml
 
