@@ -1,7 +1,7 @@
 /** @file FluxSource.cxx
     @brief Implementation of FluxSource
 
-  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.56 2003/03/04 00:04:32 srobinsn Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.57 2003/03/07 04:25:10 burnett Exp $
 
   */
 #include "FluxSource.h"
@@ -23,7 +23,7 @@
 #include <sstream>
 namespace {
     // this is the (wired-in) distance to back off from the target sphere.
-    double backoff_distance=1000.;
+    const double backoff_distance=1500.;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

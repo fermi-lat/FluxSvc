@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.8 2003/03/02 02:08:45 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.9 2003/03/02 06:30:57 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -34,7 +34,8 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
         - 2 (experimental) like UPDOWN, except that rotation at equator happens gradually.
         - 3 LAT rocked northward for one orbit, southward for the next.
         - 4 fixed.
-    @param FluxAlg.rocking_angle [0 deg] Rotation angle for Glast, about x-axis.
+    @param FluxAlg.rocking_angle [0 deg] Rotation angle for Glast, about x-axis. 
+    @param FluxAlg.rocking_angle_z [0 deg] Rotation angle for Glast, about z-axis.
 
  <hr>
   @section Basic_XML_Sources Sources
