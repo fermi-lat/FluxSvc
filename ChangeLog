@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jul 29 21:15:39 PDT 2001
+FluxSvc/src Flux.cxx
+
+Modified Files:
+	Flux.cxx 
+Log Message:
+have to know what GPSTime is
+    *
+------------------------------------------------------------
 User: burnett  Sun Jul 29 20:58:15 PDT 2001
 FluxSvc/src Flux.cxx Flux.h FluxSvc.cxx
 
