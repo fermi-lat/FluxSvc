@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Feb 21 21:42:25 PST 2003
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+refactoring, phase 2
+    *
+------------------------------------------------------------
+User: burnett  Fri Feb 21 21:42:25 PST 2003
 FluxSvc/src
 
 Modified Files:
