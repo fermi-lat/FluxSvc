@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May  2 15:09:02 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx 
+Log Message:
+BFEM lines commented in joboptions to make work, external spectrums can now go to flux=0 without breaking things (though not forever)
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May  2 15:09:01 PDT 2002
 FluxSvc/FluxSvc
 
