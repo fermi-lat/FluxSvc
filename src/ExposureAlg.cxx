@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.10 2002/10/23 12:55:52 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.11 2002/12/17 07:43:12 srobinsn Exp $
 */
 
 // Include files
@@ -43,7 +43,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.10 2002/10/23 12:55:52 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.11 2002/12/17 07:43:12 srobinsn Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -163,8 +163,8 @@ StatusCode ExposureAlg::execute()
     //..and reset the time of this event to be the "last time" for next time.
     m_lasttime = intrvalend;
 
-    intrvalstart = orb.dateFromSeconds(intrvalstart);
-    intrvalend = orb.dateFromSeconds(intrvalend);
+    //intrvalstart = orb.dateFromSeconds(intrvalstart);
+    //intrvalend = orb.dateFromSeconds(intrvalend);
 
     //and here the pointing characteristics of the LAT.
     GPS::instance()->getPointingCharacteristics(currentTime);
