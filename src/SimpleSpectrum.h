@@ -1,7 +1,7 @@
 /** @file SimpleSpectrum.h
     @brief declaration of SimpleSpectrum
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.5 2003/03/01 23:14:56 burnett Exp $
 */
 #ifndef SIMPLESPECTRUM_H
 #define SIMPLESPECTRUM_H
@@ -16,13 +16,13 @@ class DOM_Element;
 * \class SimpleSpectrum
 * @brief define a particle and spectral index
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.5 2003/03/01 23:14:56 burnett Exp $
 */
 class SimpleSpectrum : public Spectrum {
 public: 
     SimpleSpectrum(const char* name,float E0, float index=0.0);
     SimpleSpectrum(const char* name,float Emin, float Emax, float index);
-    SimpleSpectrum(const DOM_Element& xelem);
+    SimpleSpectrum(const DOM_Element& xelem, bool useGeV=true);
     SimpleSpectrum(const std::string& params);
     
     SimpleSpectrum();
@@ -37,6 +37,7 @@ private:
     std::string m_name;	// particle name to generate ("P", "gamma", ...)
     float m_index;	// spectral index: <=1 is delta function at E0
     float m_emax;
+    bool m_useGeV;  // true if using GeV units, MeV otherwise
 };
 
 #endif
