@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jul  3 02:41:55 PDT 2002
+FluxSvc/doc
+
+Added Files:
+	bremss_skymap_41p_222111 
+Log Message:
+MapSpectrum alteres to take input from a FITS file image, bremsstrahlung data file from EGRET used as default.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jul  3 02:41:54 PDT 2002
 FluxSvc/cmt
 
