@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 20 13:39:03 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+big fix to simplify specification of sources
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 20 13:39:02 PST 2003
 FluxSvc/FluxSvc
 
