@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Feb 20 14:04:11 PST 2003
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Added Files:
+	test_library.xml 
+Log Message:
+testMgr altered to allow many source-checking, output to a file.
+lines added to eventsource for functionality.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Feb 20 14:04:11 PST 2003
 FluxSvc/src
 
 Modified Files:
