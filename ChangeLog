@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Apr  5 15:40:24 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	TimeDepSpectrum.cxx TimeDepSpectrum.h rootplot.cxx 
+Added Files:
+	rootplot.h roottest.cxx 
+Log Message:
+rootplot able to be called remotely.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Apr  5 15:40:23 PST 2002
 FluxSvc/src/test
 
