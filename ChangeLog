@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Sat Jun 16 06:36:28 PDT 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+
+remove explicit flux version
+    *
+------------------------------------------------------------
 User: burnett  Sat Jun 16 06:27:44 PDT 2001
 FluxSvc/src Flux.cxx Flux.h
 
