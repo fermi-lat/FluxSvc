@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.15 2002/09/16 18:26:08 srobinsn Exp $
+// $Id: GPS.cxx,v 1.16 2002/09/17 00:33:46 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -282,8 +282,8 @@ Rotation GPS::rockingAngleTransform(double seconds){
     }else if(m_rockType == SLEWING){
         //slewing is experimental
         if(m_DECZenith <= 0) rockNorth *= -1.;
-        if(m_DECZenith <= 10 || m_DECZenith <= 10){
-            rockNorth -= rockNorth*(m_DECZenith/10.);
+        if(m_DECZenith >= -10 && m_DECZenith <= 10){
+            rockNorth -= rockNorth*((10.-fabs(m_DECZenith))/10.);
         }
     }else if(m_rockType == ONEPERORBIT){
         //this needs an implementation - it only rocks one way now!
