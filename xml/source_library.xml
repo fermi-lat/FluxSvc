@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.19 2002/12/21 23:12:35 srobinsn Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.20 2002/12/22 20:16:35 srobinsn Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -147,12 +147,17 @@
         <spectrum escale="GeV"> <SpectrumClass name="CHIMESpectrum"/> <use_spectrum/> </spectrum>
     </source>
 
-     <!-- the CHIME spectrum at Maximum flux. angular dependence and rate are from the CHIME spectrum object -->
+    <!-- the CHIME spectrum at Maximum flux. angular dependence and rate are from the CHIME spectrum object -->
     <source name="chimemax" >
         <spectrum escale="GeV"> <SpectrumClass name="CHIMESpectrum" params="-28.5,110"/> <use_spectrum/> </spectrum>
     </source>
 
-  <!-- default creme is the orbit average -->   
+    <!-- the CHIME spectrum at average flux. angular dependence and rate are from the CHIME spectrum object -->
+    <source name="chimeavg" >
+        <spectrum escale="GeV"> <SpectrumClass name="CHIMESpectrum" params="13.8, 24.9"/> <use_spectrum/> </spectrum>
+    </source>
+
+    <!-- default creme is the orbit average -->   
     <source name="cremeavg" >
         <spectrum escale="GeV"> <SpectrumClass name="FILESpectrum" params="sources/glast_smin_flx.txt"/> 
             <solid_angle mincos="-0.4" maxcos="1.0"/>
