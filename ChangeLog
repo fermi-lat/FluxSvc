@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Apr  3 13:26:14 PST 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h CrElectron.cxx CrElectron.h CrProton.cxx 
+	CrProton.h CrSpectrum.h FILESpectrum.cxx FILESpectrum.h 
+	FluxAlg.cxx FluxAlg.h FluxMgr.cxx FluxSource.cxx 
+	GalElSpectrum.cxx GalElSpectrum.h HeSpectrum.cxx HeSpectrum.h 
+	SimpleSpectrum.cxx SimpleSpectrum.h Spectrum.cxx 
+	SpectrumFactoryTable.cxx 
+Added Files:
+	Spectrum.h SpectrumFactory.h SpectrumFactoryTable.h 
+Log Message:
+Added RemoteSpectrumFactory, external Spectrum declarations working.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Apr  3 13:26:12 PST 2002
 FluxSvc/FluxSvc
 
