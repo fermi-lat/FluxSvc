@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.2 2002/03/27 18:41:25 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.3 2002/04/03 21:26:13 srobinsn Exp $
 #ifndef FluxAlg_h
 #define FluxAlg_h
 
@@ -14,8 +14,8 @@ class McVertex;
 //------------------------------------------------------------------------------
 /** 
 
-
-
+  
+    
 */
 class FluxAlg : public Algorithm {
 public:
@@ -39,8 +39,8 @@ private:
     McVertex*       m_root; // 
     
     IDataProviderSvc* m_eds;
-//    mc::McParticleCol* m_plist;
-
+    //    mc::McParticleCol* m_plist;
+    
     IParticlePropertySvc * m_partSvc;
     
 };
