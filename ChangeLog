@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Jul 12 11:23:33 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+more code cleanup, mainpage moved to comply w/standards.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Jul 12 11:23:33 PDT 2002
 FluxSvc/src
 
 Modified Files:
