@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.49 2002/10/13 19:13:47 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.50 2003/02/20 21:39:03 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -99,7 +99,9 @@ StatusCode FluxTestAlg::initialize() {
         log << MSG::ERROR << "Could not find FluxSvc" << endreq;
         return sc;
     }
-    
+	//uncomment this to set an explicit pointing/livetime history file
+	fsvc->setPointingHistoryFile("exposdata.txt");
+
     //uncomment this to set the rocking method.
     //fsvc->setRockType(GPS::UPDOWN);
     
