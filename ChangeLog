@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Oct 17 20:31:13 PDT 2001
+FluxSvc/src/Dll FluxSvc_dll.cxx FluxSvc_load.cxx
+
+Modified Files:
+	FluxSvc_dll.cxx FluxSvc_load.cxx 
+Log Message:
+
+added and fixed documentation
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Oct 17 20:31:12 PDT 2001
 FluxSvc/src Flux.cxx Flux.h FluxSvc.cxx
 
