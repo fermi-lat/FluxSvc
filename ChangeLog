@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun  3 18:34:34 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+crab-galactic source introduced, "rocking angle" test put into FluxTestAlg to rock the craft north for an orbit, south the next, and so forth.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun  3 01:14:55 PDT 2002
 FluxSvc/xml
 
