@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jun  6 19:19:54 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+Algorithm now is faster, can have arbitrary functions with respect to azimuth, zenith and energy, ands also has a facility for taking histograms of angular distance from GLAST to a galactic point to be watched, effectively generating differential exposure versus zenith angle for that direction.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jun  5 14:08:59 PDT 2002
 FluxSvc/src/test
 
