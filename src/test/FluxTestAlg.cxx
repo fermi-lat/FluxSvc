@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.12 2002/04/16 18:30:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.13 2002/04/19 08:17:29 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -132,7 +132,7 @@ StatusCode FluxTestAlg::execute() {
         partName = m_flux->particleName();
     }else{
         mc::McParticleCol::iterator elem = (*pcol).begin();
-        d = (*elem)->initialFourMomentum().v();
+        d = (*elem)->initialFourMomentum().v()*10;
         p = (*elem)->finalPosition();
 
         energy = (*elem)->initialFourMomentum().e();
