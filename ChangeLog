@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: srobinsn  Wed May  8 09:59:08 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx FluxMgr.cxx FluxSource.cxx FluxSvc.cxx FluxSvc.h 
+	GPS.cxx GPS.h 
+Log Message:
+GLAST satellite tilting angles now reflected in output from fluxsource. documentation to follow.  demonstration use in FluxDisplay.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed May  8 09:59:08 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
