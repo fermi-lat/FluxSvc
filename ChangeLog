@@ -1,4 +1,50 @@
 ------------------------------------------------------------
+TAG
+Tag name: v6r19, operation: add
+Package: FluxSvc
+User: burnett  Thu Mar 17 18:11:13 2005
+Files:
+  FluxSvc/.cvsignore  1.3
+  FluxSvc/ChangeLog  1.1.1.830
+  FluxSvc/FluxSvc/ISpectrum.h  1.9
+  FluxSvc/FluxSvc/IFluxSvc.h  1.42
+  FluxSvc/FluxSvc/IFlux.h  1.30
+  FluxSvc/FluxSvc/ISpectrumFactory.h  1.7
+  FluxSvc/FluxSvc/IRegisterSource.h  1.3
+  FluxSvc/cdf/particle.cdf  1.3
+  FluxSvc/cmt/.cvsignore  1.2
+  FluxSvc/cmt/requirements  1.121
+  FluxSvc/cmt/Makefile  1.1.1.1
+  FluxSvc/doc/.cvsignore  1.1.1.1
+  FluxSvc/doc/FluxSvcFig2.jpg  1.1
+  FluxSvc/doc/release.notes  1.68
+  FluxSvc/doc/FluxSvcFig1.jpg  1.1
+  FluxSvc/doc/FluxSvcDoc2.htm  1.2
+  FluxSvc/doc/Doxyfile  1.1
+  FluxSvc/src/FluxSvc.h  1.21
+  FluxSvc/src/FluxSvc.cxx  1.78
+  FluxSvc/src/FluxAlg.h  1.8
+  FluxSvc/src/ExposureAlg.cxx  1.29
+  FluxSvc/src/FluxAlg.cxx  1.57
+  FluxSvc/src/mainpage.h  1.12
+  FluxSvc/src/ExposureAlg.h  1.6
+  FluxSvc/src/defaultOptions.txt  1.12
+  FluxSvc/src/FluxSvcRandom.cxx  1.1
+  FluxSvc/src/Dll/FluxSvc_load.cxx  1.13
+  FluxSvc/src/Dll/FluxSvc_dll.cxx  1.5
+  FluxSvc/src/test/testOptions.txt  1.1
+  FluxSvc/src/test/FluxTestAlg.cxx  1.52
+  FluxSvc/src/test/test_source.xml  1.4
+  FluxSvc/src/test/jobOptions.txt  1.84
+  FluxSvc/src/test/RegisterTest.cxx  1.3
+  FluxSvc/src/test/flux/testMgr.cxx  1.21
+  FluxSvc/src/test/flux/roottest.cxx  1.5
+  FluxSvc/src/test/flux/TimeDepSpectrum.cxx  1.2
+  FluxSvc/src/test/flux/TimeDepSpectrum.h  1.2
+  FluxSvc/src/test/flux/test_library.xml  1.1
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar 17 18:10:26 PST 2005
 FluxSvc/doc
 
