@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Mar 22 09:04:19 PST 2005
+FluxSvc/cdf
+
+Modified Files:
+	particle.cdf 
+Log Message:
+Change ion numbering to correspond to standard (from Benoit)
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r20p1, operation: add
 Package: FluxSvc
