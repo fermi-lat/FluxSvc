@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.50 2003/02/20 21:39:03 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.51 2003/08/12 06:03:20 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
 #include "FluxSvc/IFlux.h"
-
+#include "flux/ISpectrumFactory.h"
 
 // Event for creating the McEvent stuff
 //#include "Event/TopLevel/Event.h"
@@ -25,6 +25,9 @@
 #include <string>
 #include <vector>
 #include "GaudiKernel/ParticleProperty.h"
+
+   
+
 
 //#include "FluxAlg.h"
 /*! \class FluxTestAlg
