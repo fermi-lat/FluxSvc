@@ -1,1 +1,36 @@
+------------------------------------------------------------
+User: burnett  Tue Jan 30 20:47:49 PST 2001
+FluxSvc - Imported sources
+
+Log Message:
+Import new package to access the glastsim particle generator.
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v1
+		
+N FluxSvc/.cvsignore
+N FluxSvc/ChangeLog
+N FluxSvc/cmt/Makefile
+N FluxSvc/cmt/requirements
+N FluxSvc/cmt/setup.bat
+N FluxSvc/doc/.cvsignore
+N FluxSvc/doc/used_packages.html
+N FluxSvc/FluxSvc/FluxSvc.h
+N FluxSvc/FluxSvc/IFlux.h
+N FluxSvc/FluxSvc/IFluxSvc.h
+N FluxSvc/FluxSvc/mainpage.h
+N FluxSvc/src/Flux.cxx
+N FluxSvc/src/Flux.h
+N FluxSvc/src/FluxSvc.cxx
+N FluxSvc/src/Dll/FluxSvc_dll.cxx
+N FluxSvc/src/Dll/FluxSvc_load.cxx
+N FluxSvc/src/test/FluxTestAlg.cxx
+N FluxSvc/src/test/jobOptions.txt
+N FluxSvc/src/test/TestMain.cxx
+
+No conflicts created by this import
+
+    *
 Initial version.
