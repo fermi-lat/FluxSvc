@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Apr 16 11:30:57 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx 
+Log Message:
+output of test functions kludged to give position in millimeters - this needs proper fixing.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Apr 16 11:30:57 PDT 2002
 FluxSvc/src
 
 Modified Files:
