@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Sep 23 13:39:37 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	ISpectrum.h 
+Log Message:
+ISpectrum streamlined, rootplot energy plotting error temporarily fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Sep 20 11:38:36 PDT 2002
 FluxSvc/src
 
