@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.11 2002/07/08 20:55:58 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.12 2002/07/25 05:18:58 srobinsn Exp $
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -73,7 +73,8 @@ FluxSource* CompositeSource::event (double time)
         std::vector<EventSource*>::iterator  it = now;
         
         double intrval=0.,intrmin=100000.;
-        for (int q=0 ; now != m_sourceList.end(); ++now) {
+	int q;
+        for (q=0 ; now != m_sourceList.end(); ++now) {
             if(m_unusedSource[i]==1){
                 intrval=m_sourceInterval[i];
                 //std::cout << i << " is unused, interval is "<< intrval << std::endl;
