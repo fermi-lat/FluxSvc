@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Feb 22 06:56:44 PST 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+refactoring consequence
+    *
+------------------------------------------------------------
 User: burnett  Sat Feb 22 06:38:02 PST 2003
 FluxSvc/src
 
