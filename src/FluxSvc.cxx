@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.23 2002/05/08 16:59:08 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.24 2002/05/09 19:59:30 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -38,7 +38,7 @@ static std::string default_dtd_file("$(FLUXSVCROOT)/xml/source.dtd");
 // ------------------------------------------------
 /// Standard Constructor
 FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
-: Service(name,svc)
+: Service(name,svc), m_currentFlux(0)
 {
     
     declareProperty("source_lib" , m_source_lib); 
@@ -63,6 +63,7 @@ StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
     
     flux =  new Flux(name);
     m_currentFlux = flux;
+    std::cout << "currentFluxPointer = " << flux << std::endl;
     
     return StatusCode::SUCCESS;
 }
