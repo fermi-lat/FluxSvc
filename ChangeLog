@@ -1,1 +1,35 @@
+------------------------------------------------------------
+User: burnett  Tue Jan 30 21:44:39 PST 2001
+FluxSvc - Imported sources
+
+Log Message:
+Initial version of package that defines a service to generate particle input to gismo or Geant4.
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v1
+		
+U FluxSvc/.cvsignore
+U FluxSvc/ChangeLog
+U FluxSvc/cmt/Makefile
+U FluxSvc/cmt/requirements
+U FluxSvc/cmt/setup.bat
+U FluxSvc/doc/.cvsignore
+U FluxSvc/FluxSvc/FluxSvc.h
+U FluxSvc/FluxSvc/IFlux.h
+U FluxSvc/FluxSvc/IFluxSvc.h
+U FluxSvc/FluxSvc/mainpage.h
+U FluxSvc/src/Flux.cxx
+U FluxSvc/src/Flux.h
+U FluxSvc/src/FluxSvc.cxx
+U FluxSvc/src/Dll/FluxSvc_dll.cxx
+U FluxSvc/src/Dll/FluxSvc_load.cxx
+U FluxSvc/src/test/FluxTestAlg.cxx
+U FluxSvc/src/test/jobOptions.txt
+U FluxSvc/src/test/TestMain.cxx
+
+No conflicts created by this import
+
+    *
 Initial version.
