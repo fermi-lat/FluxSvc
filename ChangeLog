@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Apr 18 19:11:35 PDT 2001
+FluxSvc/src/test FluxTestAlg.cxx TestMain.cxx
+
+Modified Files:
+	FluxTestAlg.cxx TestMain.cxx 
+Log Message:
+switching to new Gaudi
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 18 19:11:35 PDT 2001
 FluxSvc/src/Dll FluxSvc_dll.cxx FluxSvc_load.cxx
 
 Modified Files:
