@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.12 2002/07/25 05:18:59 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.13 2002/09/05 02:24:01 srobinsn Exp $
 
 #include "../../FluxMgr.h"
 #include "FluxSvc/EventSource.h"
@@ -10,7 +10,7 @@
 //#include "../../Orbit.h"
 
 
-static int default_count = 200 ;
+static int default_count = 10 ;
 //Testing
 static const char * default_source="default";
 //Default
@@ -51,7 +51,7 @@ void flux_load() {
     // these are the spectra that we want to make available
     DLL_DECL_SPECTRUM( CHIMESpectrum);
     DLL_DECL_SPECTRUM( AlbedoPSpectrum);
-    DLL_DECL_SPECTRUM( HeSpectrum);
+    //DLL_DECL_SPECTRUM( HeSpectrum);
     DLL_DECL_SPECTRUM( GalElSpectrum);
     //  DLL_DECL_SPECTRUM( CrElectron);
     //  DLL_DECL_SPECTRUM( CrProton);
@@ -73,7 +73,6 @@ int main(int argn, char * argc[]) {
     
     //TESTING MULTIPLE XML INPUT
     std::vector<std::string> fileList;
-    fileList.push_back("$(FLUXSVCROOT)/xml/user_library.xml");
     fileList.push_back("$(FLUXSVCROOT)/xml/source_library.xml");	
     FluxMgr fm(fileList);
     

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.35 2003/01/16 05:58:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.36 2003/01/28 20:28:34 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -115,8 +115,11 @@ EventSource* FluxMgr::source(std::string name)
     if( m_sources.find(name)==m_sources.end() ) {
         // nope. Maybe a Spectrum object
         ISpectrum* s = SpectrumFactoryTable::instance()->instantiate(name);
-        
+#if 0 //TODO: reenable     
         return s? new FluxSource(s) : (EventSource*)0;
+#else
+        return 0;
+#endif
     }
     return getSourceFromXML(m_sources[name].first);
 }
@@ -277,7 +280,9 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
         }else{counts[sourceNumber]++;}
         
         totalinterval+=interval;
+#if 0 //TODO: provide info
         cout << "LaunchType = " << f->refLaunch() << " , Pointtype = " << f->refPoint() <<std::endl;
+#endif
         cout << f->spectrum()->particleName();
         cout << "(" << f->energy();
         cout << " GeV), Launch: " << f->launchPoint() 
