@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Feb 22 18:08:22 PST 2003
+FluxSvc/src/test
+
+Modified Files:
+	RegisterTest.cxx jobOptions.txt test_source.xml 
+Log Message:
+change interface to remove random engine from ISpectrum, give access via IFluxSvc
+    *
+------------------------------------------------------------
+User: burnett  Sat Feb 22 18:08:22 PST 2003
 FluxSvc/src
 
 Modified Files:
