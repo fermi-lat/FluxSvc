@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.20 2002/06/24 22:37:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.21 2002/06/30 20:57:26 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -92,10 +92,7 @@ void FluxMgr::init(const std::vector<std::string>& fileList){
     DLL_DECL_SPECTRUM( AlbedoPSpectrum);
     DLL_DECL_SPECTRUM( HeSpectrum);
     DLL_DECL_SPECTRUM( GalElSpectrum);
-    //    DLL_DECL_SPECTRUM( CrElectron);
-    //    DLL_DECL_SPECTRUM( CrProton);
     DLL_DECL_SPECTRUM( FILESpectrum);
-    DLL_DECL_SPECTRUM( MapSpectrum);
     
 }
 
