@@ -1,7 +1,7 @@
 package FluxSvc
 version v6r4p2
 
-# $Id: requirements,v 1.78 2003/03/20 21:45:04 burnett Exp $
+# $Id: requirements,v 1.79 2003/03/21 20:00:03 jrb Exp $
 
 branches FluxSvc cmt doc
 
@@ -54,7 +54,7 @@ library flux -no_share\
  Spectrum.cxx\
  SpectrumFactoryTable.cxx\
  SurfaceMuons.cxx\
- TimeCandle.cxx*.cxx \
+ TimeCandle.cxx \
  -s=rootplot $(headers) *.cxx\
  $(xml_files) 
 
