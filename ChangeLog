@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Jul 12 11:23:32 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+more code cleanup, mainpage moved to comply w/standards.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Jul 12 11:23:32 PDT 2002
 FluxSvc/FluxSvc
 
 Removed Files:
