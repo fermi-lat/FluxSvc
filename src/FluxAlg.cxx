@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.41 2003/05/15 20:34:42 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 01:20:22 kyoung Exp $
 
 */
 
@@ -53,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.41 2003/05/15 20:34:42 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.42 2003/05/22 01:20:22 kyoung Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -214,16 +214,17 @@ StatusCode FluxAlg::execute()
     SmartDataPtr<Event::MCEvent> mcheader(eventSvc(), EventModel::MC::Event);
     if (mcheader == 0) {
         sc=eventSvc()->registerObject(EventModel::MC::Event , mch= new Event::MCEvent);
-        mch->initialize(0,0,m_sequence);
+        mch->initialize(0,0,m_sequence, m_flux->time());
         if(sc.isFailure()) {
             log << MSG::WARNING << EventModel::MC::Event  <<" could not be registered on data store" << endreq;
+            delete mch;
             return sc;
         }
         
     }else mch = mcheader;
 
 
-    mch->initialize(mch->getRunNumber(), m_flux->numSource(), mch->getSequence());
+    mch->initialize(mch->getRunNumber(), m_flux->numSource(), mch->getSequence(), m_flux->time());
 
 
     
