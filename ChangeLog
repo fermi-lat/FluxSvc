@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Feb 20 13:39:03 PST 2003
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+big fix to simplify specification of sources
+    *
+------------------------------------------------------------
+User: burnett  Thu Feb 20 13:39:03 PST 2003
 FluxSvc/src/test
 
 Modified Files:
