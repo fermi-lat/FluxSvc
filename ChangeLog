@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 15:37:15 PST 2002
+FluxSvc/src/flux
+
+Removed Files:
+	AlbedoSpectrum.cxx ExtraGalacticDiffuse.cxx ProtonSpectrum.cxx 
+	TrappedProtonSpectrum.cxx TrappedProtonSpectrum.inc mainpage.h 
+Log Message:
+file pruning.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 15:37:14 PST 2002
 FluxSvc/FluxSvc
 
