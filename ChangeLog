@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Mar  6 20:25:11 PST 2003
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix tilting calculation to properly deal with the target sphere
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar  6 20:25:10 PST 2003
 FluxSvc/src
 
