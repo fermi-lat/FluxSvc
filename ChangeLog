@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Mar 19 09:23:30 PST 2002
+FluxSvc/src/GRB
+
+Modified Files:
+	GRBSim.cxx GRBSpectrum.cxx 
+Log Message:
+fixed last windows incompatibilities and replaced an exit() call by an exception handling
+    *
+------------------------------------------------------------
 User: cohen  Fri Mar 15 02:06:18 PST 2002
 FluxSvc/src/GRB
 
