@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Mar 19 10:50:48 PST 2003
+FluxSvc/src
+
+Modified Files:
+	SurfaceMuons.cxx 
+Log Message:
+fix bug that suppressed low energies
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Mar 18 22:31:04 PST 2003
 FluxSvc/src
 
