@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 03:59:09 PST 2002
+FluxSvc/FluxSvc
+
+Added Files:
+	FluxSource.h 
+Log Message:
+
+flux package migration
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 03:58:13 PST 2002
 FluxSvc/FluxSvc
 
