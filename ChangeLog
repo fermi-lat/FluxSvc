@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed May 29 02:16:23 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+Geometry altered for projection into galactic coordinates, extra test source added, display type altered for resolution and minimization of artifacts, extra check against exceptions put into algorithm, extra "gaussian with cutoff" exposure method put in to approximate real exposure.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed May 29 02:16:23 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
