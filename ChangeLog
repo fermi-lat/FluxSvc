@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Jan 15 09:12:41 PST 2002
+FluxSvc/xml
+
+Added Files:
+	source.dtd source_library.xml 
+Log Message:
+move xml files to here
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan 15 09:12:41 PST 2002
 FluxSvc/cmt
 
 Modified Files:
