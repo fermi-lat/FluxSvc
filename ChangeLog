@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon May 20 16:40:53 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+error fixed in IFluxSvc
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon May 20 16:19:27 PDT 2002
 FluxSvc/src/test
 
