@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Sep 13 09:12:04 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+setting sequence number in MCEvent
+    *
+------------------------------------------------------------
+User: burnett  Fri Sep 13 09:12:04 PDT 2002
 FluxSvc/src
 
 Modified Files:
