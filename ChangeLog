@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Sep 27 21:38:05 PDT 2001
+FluxSvc/src/test jobOptions.txt
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+xml calling method updated, multiple files now possible.
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Sep 27 21:38:05 PDT 2001
 FluxSvc/src FluxSvc.cxx
 
 Modified Files:
