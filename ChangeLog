@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jul  6 18:27:09 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
+
+Modified Files:
+	FluxSvc.h IFlux.h IFluxSvc.h 
+Log Message:
+mods to add sources external to this package
+    *
+------------------------------------------------------------
 User: burnett  Wed Jun 20 17:34:26 PDT 2001
 FluxSvc/src FluxSvc.cxx
 
