@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun 24 15:37:17 PDT 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootAngleHist.cxx rootEnergyHist.cxx rootHist.cxx rootplot.cxx 
+	roottest.cxx 
+Log Message:
+huge reformatting of code to be self-consistent in format, several function names altered to conform to capitalization standards.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun 24 15:37:16 PDT 2002
 FluxSvc/src/test
 
