@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Sun Jul 29 20:58:15 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h
+
+Modified Files:
+	FluxSvc.h IFlux.h IFluxSvc.h 
+Log Message:
+Provide access to the random number engine, so it can be shared with other algorithms.
+Undo attempt to impose the Gaudi version on flux.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul 24 21:36:30 PDT 2001
 FluxSvc/src/Dll FluxSvc_load.cxx
 
