@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Nov 27 14:39:09 PST 2001
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx Flux.h 
+Log Message:
+
+Passed-through time functions from FluxMgr.
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 31 18:27:29 PST 2001
 FluxSvc/src/test jobOptions.txt
 
