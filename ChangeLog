@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Jul  4 02:11:31 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	composite_library.xml 
+Log Message:
+CompositeSpectrum altered to keep each particle until it is used before generating a new one from the associated spectrum.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Jul  4 02:11:31 PDT 2002
 FluxSvc/src/test
 
 Modified Files:
