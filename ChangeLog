@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Jan 18 03:22:03 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+returned flux is time-dependent.  added a TimeDepSpectrum for tests.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 17 00:38:52 PST 2002
 FluxSvc/src/test/flux
 
