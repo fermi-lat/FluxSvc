@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.31 2002/06/04 01:34:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.32 2002/06/05 00:28:35 srobinsn Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
@@ -420,10 +420,10 @@ std::vector<FluxTestAlg::exposureSet> FluxTestAlg::findExposed(double l,double b
                     if(correctedl > 360)correctedl-=360;
                     if(correctedb > /*90*/180)correctedb-=180;
                     
-                    std::pair<double,double> abc = hammerAitoff(correctedl,correctedb);
+                    std::pair<double,double> abc = hammerAitoff(correctedl-180.,correctedb-90.);
                     point.x = abc.first; //yes, this is doing an implicit cast.
                     point.y = abc.second;
-                    point.amount = deltat*pow(cos((point.y-90.)*M_PI/180.),2);;
+                    point.amount = deltat*pow(cos((point.y-90.)*M_PI/180.),1);;
                     returned.push_back(point);
                 }
             }
@@ -514,7 +514,7 @@ std::vector<FluxTestAlg::exposureSet> FluxTestAlg::findExposed(double l,double b
                     
                     /// apply a projection, if desired.
                     if(m_projectionType){
-                        std::pair<double,double> abc = hammerAitoff(correctedl,correctedb);
+                        std::pair<double,double> abc = hammerAitoff(correctedl-180.,correctedb-90.);
                         point.x = abc.first+lshift; //yes, this is doing an implicit cast.
                         point.y = abc.second+bshift;
                         point.amount = exposure*deltat*pow(cos((point.y-90.)*M_PI/180.),2);
