@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 29 14:30:40 PST 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+electronmax, avg reinstated, exposurealg output now has time in elapsed seconds.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jan 28 12:28:34 PST 2003
 FluxSvc/xml
 
