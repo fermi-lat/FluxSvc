@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.68 2003/10/29 16:49:15 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.69 2003/10/30 13:56:58 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.68 2003/10/29 16:49:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.69 2003/10/30 13:56:58 burnett Exp $
 */
 
 // includes
@@ -103,6 +103,8 @@ public:
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     HepRotation transformGlastToGalactic(double time)const;
+
+    HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const;
 
     /// get the current satellite location
     std::pair<double,double> location();
@@ -392,6 +394,10 @@ std::pair<double,double> FluxSvc::getExplicitRockingAngles(){
 
 void FluxSvc::setPointingHistoryFile(std::string fileName){
     m_fluxMgr->setPointingHistoryFile(fileName);
+}
+
+HepRotation FluxSvc::transformToGlast(double seconds,GPS::CoordSystem index)const{
+    return m_fluxMgr->transformToGlast(seconds,index);
 }
 
 HepRotation FluxSvc::transformGlastToGalactic(double time)const{
