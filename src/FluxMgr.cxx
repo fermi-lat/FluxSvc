@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.7 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.8 2002/02/07 23:51:02 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -257,7 +257,7 @@ void FluxMgr::test(std::ostream& cout, std::string source_name, int count)
         << "Average rate = " << count/totalinterval <<std::endl;
 
     cout << "Source Statistics: " << std::endl;
-    for(q=0 ; q<howMany ; q++){
+    for(int q=0 ; q<howMany ; q++){
         cout << "source #" << q+1 << ": " << counts[q] << " events counted." << std::endl;
       //  countIter++;
     }
