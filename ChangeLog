@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: igable  Sun Jul 15 13:48:31 PDT 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+headers pattern
+    *
+------------------------------------------------------------
 User: burnett  Sat Jul 14 15:56:40 PDT 2001
 FluxSvc/src/test FluxTestAlg.cxx
 
