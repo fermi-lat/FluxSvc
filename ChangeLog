@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Fri Oct 18 09:37:43 PDT 2002
+FluxSvc/sources
+
+Added Files:
+	albedop.txt chimefile.txt glast_smax_flx.txt 
+	glast_smin_flx.txt glast_wday_flx.txt glast_wweek_flx.txt 
+Log Message:
+Restore tablular flux generation from old flux package
+    *
+------------------------------------------------------------
+User: burnett  Fri Oct 18 09:37:43 PDT 2002
 FluxSvc/src
 
 Modified Files:
