@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.5 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.6 2002/03/27 18:41:24 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -13,7 +13,7 @@
 #include "GlastEvent/TopLevel/Event.h"
 #include "GlastEvent/TopLevel/MCEvent.h"
 #include "GlastEvent/MonteCarlo/McParticle.h"
-#include "GlastEvent/MonteCarlo/McVertex.h"
+
 
 //flux
 #include "FluxSvc.h"
