@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sun Apr 28 14:08:10 PDT 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+Diffuse background model designed, CompositeDiffuse.cxx, .h implemented.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sun Apr 28 14:08:10 PDT 2002
 FluxSvc/src
 
 Modified Files:
