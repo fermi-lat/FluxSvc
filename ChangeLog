@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sun Jun 16 15:52:16 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+differential exposure histogram made prettier, problem with reconstruction of placement of galactic sources fixed by having FluxSource::event() implicitly find and set the interval to the next particle.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jun  6 19:19:54 PDT 2002
 FluxSvc/src/test
 
