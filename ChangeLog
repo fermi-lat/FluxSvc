@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jun 27 14:56:51 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CHIMESpectrum.h FluxSource.cxx MapSpectrum.cxx 
+Log Message:
+galactic spectrum direction glitch fixed in FluxSource, extraneous sources CHIMEMin, Max, and Avg removed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jun 27 14:56:50 PDT 2002
 FluxSvc/doc
 
