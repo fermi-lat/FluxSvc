@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 15:14:56 PST 2003
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx Flux.h FluxAlg.cxx FluxAlg.h FluxMgr.cxx FluxMgr.h 
+	FluxSource.cxx GPS.cxx GPS.h SimpleSpectrum.cxx 
+	SimpleSpectrum.h Spectrum.h TimeCandle.cxx TimeCandle.h 
+	mainpage.h 
+Log Message:
+mostly fixing doxygen comments;
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb 27 17:47:39 PST 2003
 FluxSvc/src
 
