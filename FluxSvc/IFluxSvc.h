@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.26 2002/10/08 23:05:48 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.27 2002/10/09 02:48:30 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
 /** 
@@ -20,7 +20,7 @@
 #include "src/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc(910, 1 , 0); 
+static const InterfaceID IID_IFluxSvc(910, 2 , 0); 
 
 // forward declarations
 class IFlux;
