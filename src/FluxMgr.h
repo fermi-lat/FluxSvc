@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.2 2002/03/11 16:55:06 cohen Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.3 2002/05/09 19:59:30 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -76,7 +76,7 @@ public:
     Rotation CELTransform(double time);
 
      ///get the transformation matrix due to orientation of the spacecraft.
-    Rotation OrientTransform(double time);
+    Rotation orientTransform(double time);
     
 private:
     

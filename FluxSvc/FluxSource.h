@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.14 2002/05/02 22:09:01 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.15 2002/05/08 16:59:07 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -144,7 +144,7 @@ class FluxSource : public EventSource
       virtual int eventNumber()const;
 
       double energy()const { return m_energy;}
-       //const Vector& rawDir()const {return m_launchDir;}
+      const Vector& rawDir()const {return m_launchDir;}
       const Vector& launchDir()const {return m_correctedDir;}//m_correctForTilt*m_launchDir;}
       const Point&  launchPoint()const { return m_launchPoint;}
 

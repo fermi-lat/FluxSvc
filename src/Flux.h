@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.15 2002/05/05 23:58:57 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.16 2002/05/09 19:59:29 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -81,7 +81,7 @@ public:
     virtual Rotation CELTransform(double time)const;
 
     ///get the transformation matrix due to orientation of the spacecraft.
-    virtual Rotation OrientTransform(double time)const;
+    virtual Rotation orientTransform(double time)const;
                                                                                   
 //    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.15 2002/05/08 16:59:08 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.16 2002/05/09 19:59:29 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -328,7 +328,7 @@ Rotation FluxMgr::CELTransform(double time){
 }
 
 //get the transformation matrix.
-Rotation FluxMgr::OrientTransform(double time){
+Rotation FluxMgr::orientTransform(double time){
     return GPS::instance()->rockingAngleTransform(time);
 }
 
