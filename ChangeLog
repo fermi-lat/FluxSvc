@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Apr  5 07:16:11 PST 2002
+FluxSvc/src/GRB
+
+Removed Files:
+	GRBConstants.cxx GRBConstants.h GRBShell.cxx GRBShell.h 
+	GRBShock.cxx GRBShock.h GRBSim.cxx GRBSim.h GRBSpectrum.cxx 
+	GRBSpectrum.h 
+Log Message:
+GRB files put into FluxDisplay.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Apr  5 07:16:09 PST 2002
 FluxSvc/cmt
 
