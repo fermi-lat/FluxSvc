@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jul 23 12:00:56 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h FluxSource.h IFlux.h IFluxSvc.h ISpectrum.h 
+	ISpectrumFactory.h 
+Log Message:
+Possible "transcode" memory leak in FluxSource fixed, file with list of possible particles referenced in DTD, rocking angle transformation now works in opposite direction, mainpage.h changed to produce better output, JobOptions elements documented in FluxTestAlg, Class headers brought up to code across the board.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jul 12 11:23:33 PDT 2002
 FluxSvc/xml
 
