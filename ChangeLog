@@ -1,4 +1,27 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Jan 18 03:22:07 PST 2002
+FluxSvc/src
+
+Modified Files:
+	AlbedoPSpectrum.cxx AlbedoPSpectrum.h CHIMESpectrum.cxx 
+	CHIMESpectrum.h CrElectron.cxx CrElectron.h 
+	CrElectronPrimary.cxx CrElectronPrimary.h 
+	CrElectronReentrant.cxx CrElectronReentrant.h 
+	CrElectronSplash.cxx CrElectronSplash.h CrProton.cxx 
+	CrProton.h CrProtonPrimary.cxx CrProtonPrimary.h 
+	CrProtonReentrant.cxx CrProtonReentrant.h CrProtonSplash.cxx 
+	CrProtonSplash.h FluxMgr.cxx FluxSource.cxx GalElSpectrum.cxx 
+	GalElSpectrum.h HeSpectrum.cxx HeSpectrum.h Spectrum.cxx 
+	Spectrum.h 
+Added Files:
+	TimeDepSpectrum.cxx TimeDepSpectrum.h 
+Removed Files:
+	ExtraGalacticDiffuse.h 
+Log Message:
+returned flux is time-dependent.  added a TimeDepSpectrum for tests.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Jan 18 03:22:03 PST 2002
 FluxSvc/FluxSvc
 
