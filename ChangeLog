@@ -1,4 +1,33 @@
 ------------------------------------------------------------
+User: burnett  Tue Aug 20 06:43:35 PDT 2002
+FluxSvc/src/test
+
+Removed Files:
+	RockingTransform.cxx 
+Log Message:
+don't need this here: removing will hopefully fix unix run error
+    *
+------------------------------------------------------------
+User: burnett  Wed Aug 14 14:04:32 PDT 2002
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v5r10
+    *
+------------------------------------------------------------
+User: burnett  Wed Aug 14 14:04:32 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v5r10
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Aug 12 11:56:54 PDT 2002
 FluxSvc/src/test
 
