@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: xchen  Thu Jun 12 16:20:57 PDT 2003
+FluxSvc/xml
+
+Modified Files:
+	source.dtd 
+Log Message:
+add <vdg>, new child element of <particle>
+    *
+------------------------------------------------------------
 User: xchen  Thu Jun 12 15:03:20 PDT 2003
 FluxSvc/xml
 
