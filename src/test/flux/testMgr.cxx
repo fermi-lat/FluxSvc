@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.5 2002/02/02 01:33:27 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.6 2002/02/07 23:51:02 srobinsn Exp $
 
 #include "../../FluxMgr.h"
 #include "FluxSvc/EventSource.h"
@@ -47,19 +47,20 @@ void listSpectra() {
 #define DLL_DECL_SPECTRUM(x)   extern const ISpectrumFactory& x##Factory; x##Factory.addRef();
 
 void flux_load() {
-    
-    // these are the spectra that we want to make available
-    DLL_DECL_SPECTRUM( CHIMESpectrum);
-    DLL_DECL_SPECTRUM( AlbedoPSpectrum);
-    DLL_DECL_SPECTRUM( HeSpectrum);
-    DLL_DECL_SPECTRUM( GalElSpectrum);
-    DLL_DECL_SPECTRUM( CrElectron);
-    DLL_DECL_SPECTRUM( CrProton);
-    //  DLL_DECL_SPECTRUM( CREMESpectrum);
+  
+  // these are the spectra that we want to make available
+  DLL_DECL_SPECTRUM( CHIMESpectrum);
+  DLL_DECL_SPECTRUM( AlbedoPSpectrum);
+  DLL_DECL_SPECTRUM( HeSpectrum);
+  DLL_DECL_SPECTRUM( GalElSpectrum);
+  DLL_DECL_SPECTRUM( CrElectron);
+  DLL_DECL_SPECTRUM( CrProton);
+  //  DLL_DECL_SPECTRUM( GRBSpectrum);
+  //  DLL_DECL_SPECTRUM( CREMESpectrum);
 }
 
 int main(int argn, char * argc[]) {
-    using std::cout;
+  using std::cout;
     using std::endl;
     flux_load();
     //testing 
