@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed May 22 18:00:36 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx 
+Log Message:
+input file now refreshes properly with every run of the exposure program.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed May 22 17:44:36 PDT 2002
 FluxSvc/src
 
