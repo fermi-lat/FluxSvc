@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.23 2002/06/24 22:37:15 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.24 2002/07/23 19:00:55 srobinsn Exp $
 
 #ifndef _H_IFlux_
 #define _H_IFlux_
@@ -91,6 +91,9 @@ public:
     virtual EventSource* currentEvent()=0;
     
     virtual FluxSource* currentFlux()=0;
+
+    /// write the characteristics of the current source distribution to a stream
+    virtual void writeSourceCharacteristic(std::ostream& out)=0;
     
 #if 0
     // get a description of the parameters that can be modified, and reference to a list of them

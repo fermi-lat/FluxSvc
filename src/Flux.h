@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.20 2002/06/24 22:37:15 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.21 2002/07/23 19:00:56 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -98,6 +98,9 @@ public:
     EventSource* currentEvent(){return m_event;}
     
     FluxSource* currentFlux(){return m_flux;}
+
+    /// write the characteristics of the current source distribution to a stream
+    void writeSourceCharacteristic(std::ostream& out);
     
 private:
     
