@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sun Oct 13 12:13:47 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx 
+Log Message:
+compositediffuse algorithm altered, compilation error with destruction of ostream fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Oct 10 18:28:49 PDT 2002
 FluxSvc/xml
 
