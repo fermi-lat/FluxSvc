@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.23 2002/10/07 23:42:20 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.24 2003/02/25 00:38:40 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -7,6 +7,7 @@
 #include "FluxSvc/FluxSource.h"
 #include "FluxSvc/EventSource.h"
 #include "FluxMgr.h"
+#include "SpectrumFactory.h"
 #include "GPS.h"
 
 Flux::Flux(std::string name) 
@@ -118,26 +119,19 @@ int Flux::numSource()const
     
 }
 
-#if 0
-void Flux::addFactory( const IFactory* factory ) {
-    FactoryTable::instance()->addFactory( factory );
-}
-#endif
 
 void Flux::addFactory(std::string name, const ISpectrumFactory* factory ) {
     SpectrumFactoryTable::instance()->addFactory(name,factory);
 }
 
-
-Rotation Flux::CELTransform(double time)const{
+HepRotation Flux::CELTransform(double time)const{
     return s_mgr->CELTransform(time);
 }
-
-Rotation Flux::orientTransform(double time)const{
+HepRotation Flux::orientTransform(double time)const{
     return s_mgr->orientTransform(time);
 }
 
-Rotation Flux::transformGlastToGalactic(double time)const{
+HepRotation Flux::transformGlastToGalactic(double time)const{
     
     return s_mgr->transformGlastToGalactic(time);
 }

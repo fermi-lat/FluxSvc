@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.50 2003/02/26 22:26:00 srobinsn Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.51 2003/02/27 05:00:38 burnett Exp $
 
 #include "FluxSvc/FluxSource.h"
 
@@ -8,8 +8,6 @@
 #include "CLHEP/Random/RandFlat.h"
 
 #include "astro/SkyDir.h"
-
-#include "geometry/CoordTransform.h"
 
 #include "SpectrumFactoryTable.h"
 #include "SimpleSpectrum.h"
@@ -233,7 +231,7 @@ public:
     }
 
 private:
-    Rotation m_celtoglast;
+    HepRotation m_celtoglast;
     HepVector3D m_dir;
     bool  m_skydir;
     HepVector3D m_t;
