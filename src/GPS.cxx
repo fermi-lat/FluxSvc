@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.23 2003/02/28 01:47:39 srobinsn Exp $
+// $Id: GPS.cxx,v 1.24 2003/03/01 23:14:56 burnett Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -16,13 +16,13 @@
 GPS*	GPS::s_instance = 0;
 
 GPS::GPS() 
-:m_rockDegrees(35.),
-m_rockType(NONE),
+:m_rotangles(std::make_pair<double,double>(0.,0.)),
 m_earthOrbit(new astro::EarthOrbit),
 m_expansion(1.),    // default expansion:regular orbit for now
 m_time(0.), 
 m_sampleintvl(0.001),
-m_rotangles(std::make_pair<double,double>(0.,0.))
+m_rockDegrees(35.),
+m_rockType(NONE)
 {}
 
 GPS::Coords::Coords( double alat, double alon, double apitch
