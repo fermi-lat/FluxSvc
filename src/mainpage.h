@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.5 2002/04/04 19:10:28 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/mainpage.h,v 1.6 2002/07/05 01:46:32 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
