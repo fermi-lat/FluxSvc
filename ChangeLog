@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 04:01:49 PST 2002
+FluxSvc/FluxSvc
+
+Added Files:
+	HeSpectrum.h 
+Log Message:
+
+flux package migration
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 04:01:02 PST 2002
 FluxSvc/FluxSvc
 
