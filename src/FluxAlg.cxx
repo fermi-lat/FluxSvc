@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.47 2003/08/28 19:23:18 srobinsn Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.48 2003/08/29 07:52:43 srobinsn Exp $
 
 */
 
@@ -53,7 +53,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.47 2003/08/28 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.47 2003/08/28 19:23:18 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.48 2003/08/29 07:52:43 srobinsn Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -179,7 +179,7 @@ StatusCode FluxAlg::execute()
     
     if(m_fluxSvc->currentFlux() == m_flux){
         m_flux->generate();
-    }else{
+            }else{
         m_flux = m_fluxSvc->currentFlux();
         m_flux->generate();
     }
