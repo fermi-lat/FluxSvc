@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Oct 30 12:08:11 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h IFluxSvc.h 
+Log Message:
+clean up, removing unsupported spectra, moving rootplots
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 11:27:25 PST 2002
 FluxSvc/src/test/flux
 
