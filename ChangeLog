@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jun 27 14:56:50 PDT 2002
+FluxSvc/doc
+
+Modified Files:
+	test.txt 
+Log Message:
+galactic spectrum direction glitch fixed in FluxSource, extraneous sources CHIMEMin, Max, and Avg removed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun 24 15:37:17 PDT 2002
 FluxSvc/src/test/flux
 
