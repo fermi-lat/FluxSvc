@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Aug 13 11:14:30 PDT 2004
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx defaultOptions.txt 
+Log Message:
+remove (for now) dependence on GRB, as it is moved. tagging v6r15
+    *
+------------------------------------------------------------
+User: burnett  Fri Aug 13 11:14:30 PDT 2004
 FluxSvc/doc
 
 Modified Files:
