@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Aug 28 00:26:57 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxMgr.cxx FluxSource.cxx 
+	FluxSvc.cxx GPS.cxx GPS.h 
+Added Files:
+	TimeCandle.cxx TimeCandle.h 
+Log Message:
+TimeCandle source added as a class with a cxx file, GPS rocking method 
+changed to use appropriate astro methods, exposureAlg set up to use new inserted particle type "timetick"...
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Aug 22 09:38:05 PDT 2002
 FluxSvc/xml
 
