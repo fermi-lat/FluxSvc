@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Jun 11 11:43:46 PDT 2004
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tagging v6r13p2 after update use astro
+    *
+------------------------------------------------------------
+User: burnett  Fri Jun 11 11:43:46 PDT 2004
 FluxSvc/cmt
 
 Modified Files:
