@@ -2,14 +2,15 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.59 2003/07/29 23:13:25 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.60 2003/08/12 06:03:20 srobinsn Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
 #include "FluxSvc/IRegisterSource.h"
-
+#include "facilities/Observer.h"
 
 #include "flux/rootplot.h"
+#include "flux/orbitavg.h"
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
@@ -35,7 +36,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.59 2003/07/29 23:13:25 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.60 2003/08/12 06:03:20 srobinsn Exp $
 */
 
 // includes
@@ -79,6 +80,9 @@ public:
 
     /// create a set of display windows using rootplot.
     void rootDisplay(std::vector<const char*> arguments);
+
+    /// attach an external observer to GPS
+    void attachGpsObserver(Observer* anObserver);
     
     ///return the pointer to the current IFlux object
     IFlux* currentFlux();
@@ -342,6 +346,11 @@ void FluxSvc::pass ( double t){
 
 void FluxSvc::rootDisplay(std::vector<const char*> arguments){
     rootplot abc(arguments, m_fluxMgr);
+}
+
+void FluxSvc::attachGpsObserver(Observer* anObserver)
+{
+   GPS::instance()->notification().attach( anObserver );
 }
 
 ///return the pointer to the current IFlux object
