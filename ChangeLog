@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hierath  Tue Jul 15 13:26:17 PDT 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+Minor changes to rootplot text output to make it more readable.
+    *
+------------------------------------------------------------
 User: burnett  Fri Jul 11 16:10:38 PDT 2003
 FluxSvc/src
 
