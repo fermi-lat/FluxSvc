@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.12 2002/01/14 23:22:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.13 2002/04/06 00:05:44 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -47,6 +47,14 @@ public:
     
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }
+
+    ///return the pointer to the current IFlux object
+    virtual IFlux* currentFlux()=0;
+
+    /// name of the flux
+    virtual std::string fluxName()const=0;
+
+
  
 };
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.2 2002/04/05 23:40:22 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.3 2002/05/03 00:00:19 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -43,6 +43,9 @@ public:
 
     ///return the pointer to the current IFlux object
     IFlux* currentFlux();
+
+    /// name of the flux
+    std::string fluxName()const;
 
     
     //------------------------------------------------------------------
