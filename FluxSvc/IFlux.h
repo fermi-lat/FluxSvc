@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.13 2002/01/17 08:38:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.14 2002/01/24 10:03:46 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
