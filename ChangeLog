@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue May 28 12:47:23 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx FluxSource.cxx 
+Log Message:
+Another change to the galactic cartesian vector, more display modes added, geometry mapping fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Sat May 25 16:26:06 PDT 2002
 FluxSvc/src/test
 
