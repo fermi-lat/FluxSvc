@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.6 2001/08/20 22:25:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.7 2001/09/28 04:38:05 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -41,7 +41,7 @@ public:
     /// perform initializations for this service. 
     virtual StatusCode initialize ();
     
-    /// 
+    /// perform the finalization, as required for a service.
     virtual StatusCode finalize ();
     
     
@@ -57,13 +57,13 @@ protected:
     virtual ~FluxSvc ();
     
 private:
-    // Allow SvcFactory to instantiate the service.
+    /// Allow SvcFactory to instantiate the service.
     friend class SvcFactory<FluxSvc>;
     
     FluxMgr * m_fluxMgr;
-    //std::string m_source_library;
-	//std::string m_user_library;
+	/// the user-defined list of acceptable XML sources (from JobOptions.txt)
 	std::vector<std::string> m_source_lib;
+	/// the default XML file name (from JobOptions.txt)
 	std::string m_source_lib_default;
 
 };

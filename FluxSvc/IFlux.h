@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.5 2001/07/30 03:58:15 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.6 2001/08/23 21:08:41 burnett Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -12,7 +12,6 @@
 #include "CLHEP/Geometry/Vector3D.h"
 #include "GaudiKernel/FactoryTable.h"
 #include "flux/SpectrumFactoryTable.h"
-//#include "flux/TrappedProtonSpectrum.h"
 
 
 /*!  Abstract interface for an object that generates particles
