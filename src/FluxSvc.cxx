@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.47 2002/10/30 20:08:11 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.48 2003/01/22 22:24:02 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -151,19 +151,14 @@ StatusCode FluxSvc::initialize ()
         if( status.isSuccess() ) {
 
             IAlgTool* itool;
-            status = tsvc->retrieveTool(tooltype, itool);
-            if( status.isSuccess()) { 
-                status =itool->queryInterface( IRegisterSource::interfaceID(), (void**)&itool);
-                if( status.isSuccess() ){
-                    log << MSG::INFO << "Registering sources in " << tooltype << endreq;
-                    dynamic_cast<IRegisterSource*>(itool)->registerMe(this);
-                }else{
-                    itool->release();
-                    tsvc->releaseTool(itool);
-		}
-
-            }
-            
+			std::string fullname = "ToolSvc."+tooltype;
+			itool = toolfactory->instantiate(fullname,  tsvc );
+			status =itool->queryInterface( IRegisterSource::interfaceID(), (void**)&itool);
+			if( status.isSuccess() ){
+				log << MSG::INFO << "Registering sources in " << tooltype << endreq;
+				dynamic_cast<IRegisterSource*>(itool)->registerMe(this);
+			}
+			itool->release();
         }
         
     }
