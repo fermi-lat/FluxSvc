@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Aug 13 15:59:23 PDT 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+trivial reorder -move the tag
+    *
+------------------------------------------------------------
 User: burnett  Fri Aug 13 15:47:51 PDT 2004
 FluxSvc/src/test
 
