@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb  7 15:51:03 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	testMgr.cxx 
+Log Message:
+Flux Average checking lines in test programs.  Composite source interval() issue solved.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb  7 15:51:02 PST 2002
 FluxSvc/src/test
 
