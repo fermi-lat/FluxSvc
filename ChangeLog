@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jan 27 11:35:35 PST 2003
+FluxSvc/src
+
+Modified Files:
+	CHIMESpectrum.cxx FluxSource.cxx Spectrum.cxx 
+Log Message:
+chimemin added, spectrum interval defaulted to aviod "solid angle=1" error.
+
+    *
+------------------------------------------------------------
 User: dnwren  Fri Jan 24 12:05:04 PST 2003
 FluxSvc/xml
 
