@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: omodei  Thu Mar  7 03:25:49 PST 2002
+FluxSvc/src/GRB
+
+Added Files:
+	GRBConstants.cxx 
+Log Message:
+Added GRBConstant.cxx
+    *
+------------------------------------------------------------
 User: omodei  Wed Mar  6 10:05:22 PST 2002
 FluxSvc/src/test/flux
 
