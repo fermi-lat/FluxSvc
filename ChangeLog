@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Feb 22 18:08:21 PST 2003
+FluxSvc
+
+Modified Files:
+	.cvsignore 
+Log Message:
+change interface to remove random engine from ISpectrum, give access via IFluxSvc
+    *
+------------------------------------------------------------
 User: burnett  Sat Feb 22 08:14:02 PST 2003
 FluxSvc/cmt
 
