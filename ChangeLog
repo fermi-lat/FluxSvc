@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon May  6 18:13:11 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx FluxSvc.h 
+Log Message:
+There is now a method for getting the name of the current flux directly from the service.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon May  6 18:13:11 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
