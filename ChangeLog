@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 29 21:22:36 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+let user know what the name was in the log.
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul 29 20:54:15 PDT 2003
 FluxSvc/xml
 
