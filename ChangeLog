@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu May  2 12:05:05 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+small fix to rootplot def
+    *
+------------------------------------------------------------
 User: burnett  Thu May  2 05:41:28 PDT 2002
 FluxSvc/src
 
