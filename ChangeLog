@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: riccardo  Wed May 15 05:01:34 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+Small fix to FluxAlg for the new McParticle
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue May 14 17:04:12 PDT 2002
 FluxSvc/src/test
 
