@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.4 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.cxx,v 1.5 2002/02/07 23:51:02 srobinsn Exp $
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -62,7 +62,7 @@ FluxSource* CompositeSource::event (double time)
     }else {
         
         // more than one:: choose on basis of relative rates
-        double  x = RandFlat::shoot(mr), y = 0;
+      // NOT used? THB  double  x = RandFlat::shoot(mr), y = 0;
         std::vector<EventSource*>::iterator  now = m_sourceList.begin();
         std::vector<EventSource*>::iterator  it = now;
         
