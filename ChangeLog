@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  1 22:35:58 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSource.cxx Spectrum.cxx 
+Log Message:
+final fix for moving headers
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  1 22:32:26 PST 2003
 FluxSvc/xml
 
