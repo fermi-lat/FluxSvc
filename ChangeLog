@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Feb  1 17:33:27 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx testMgr.cxx 
+Added Files:
+	TimeDepSpectrum.cxx TimeDepSpectrum.h 
+Removed Files:
+	electrons.cxx protons.cxx 
+Log Message:
+JobOptions now holds proper source name variable, files relocated to conform to schema, electrons,protons.cxx removed, FluxMgr assert problem fixed.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Feb  1 17:33:27 PST 2002
 FluxSvc/src/test
 
 Modified Files:
