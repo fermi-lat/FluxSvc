@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Apr 18 19:11:34 PDT 2001
+FluxSvc/FluxSvc FluxSvc.h IFluxSvc.h
+
+Modified Files:
+	FluxSvc.h IFluxSvc.h 
+Log Message:
+switching to new Gaudi
+    *
+------------------------------------------------------------
 User: burnett  Tue Jan 30 21:44:39 PST 2001
 FluxSvc - Imported sources
 
