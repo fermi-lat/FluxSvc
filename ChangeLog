@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Oct  8 15:48:37 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	composite_library.xml source.dtd source_library.xml 
+	user_library.xml 
+Log Message:
+FluxMgr now knows about the file responsible for declaring a particular source.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Oct  8 15:48:37 PDT 2002
 FluxSvc/src
 
 Modified Files:
