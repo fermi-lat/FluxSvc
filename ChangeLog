@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Fri May 10 11:01:55 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx 
+Log Message:
+GlastEvent namespace change
+    *
+------------------------------------------------------------
 User: richard  Fri May 10 11:01:33 PDT 2002
 FluxSvc/src
 
