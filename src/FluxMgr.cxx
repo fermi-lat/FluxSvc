@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.28 2002/09/06 21:14:47 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.29 2002/10/08 22:48:37 srobinsn Exp $
 
 
 #include "FluxMgr.h"
@@ -362,7 +362,7 @@ Rotation FluxMgr::orientTransform(double time){
 }
 
 ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-Rotation FluxMgr::transformGlastToGalactic(double time){
+HepRotation FluxMgr::transformGlastToGalactic(double time){
     return GPS::instance()->transformGlastToGalactic(time);
 }
 
