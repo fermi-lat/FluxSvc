@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jul 11 16:10:38 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx 
+Log Message:
+Convert to set simplified TDS Exposure class.
+    *
+------------------------------------------------------------
 User: burnett  Fri Jul 11 16:09:33 PDT 2003
 FluxSvc/src/Dll
 
