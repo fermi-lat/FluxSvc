@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Oct 14 08:00:31 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.h FluxMgr.cxx FluxSvc.cxx FluxSvc.h defaultOptions.txt 
+Log Message:
+Clean interface a little; remove geometry package, use CLHEP instead; implement IRunable interface.
+    *
+------------------------------------------------------------
+User: burnett  Mon Oct 14 08:00:31 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
