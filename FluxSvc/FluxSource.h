@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.4 2002/01/24 10:03:46 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.5 2002/01/30 01:36:44 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -28,7 +28,7 @@ class FluxSource : public EventSource
       virtual ~FluxSource();
           
       ///    generate an event from a Flux object ??//.
-      virtual FluxSource* event(double);
+      virtual FluxSource* event(double time);
       
       ///    full-length title description of this EventSource.
       virtual std::string fullTitle () const;
@@ -180,5 +180,7 @@ class FluxSource : public EventSource
     void randomLaunchPoint(); 
     // calculate a random launch point in a plane perpendicular to _launchDir
 
+    ///interval function to be used by non-spectrum sources
+    double FluxSource::explicitInterval (double time);
 };
 #endif

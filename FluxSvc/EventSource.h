@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.2 2002/01/17 08:38:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.3 2002/01/30 01:36:44 srobinsn Exp $
 
 
 #ifndef EventSource_h
@@ -25,7 +25,7 @@ class EventSource
       virtual ~EventSource();
 
       ///    a randomized interval to the next event - default is 1/rate()
-      double interval (double);
+      virtual double interval (double) = 0;
 
       ///    calculate the rate for a given flux/solid angle integral (NOTE: integral of solid angle)
      // virtual double  rate ( double solid_angle, double flux );	
@@ -77,7 +77,7 @@ class EventSource
       /// return a unique number correcponding to that spectrum
       virtual int numSource()const{return -1;}
 
-      double m_time;    // elapsed time
+      double m_time;    // elapsed time, really only needed for EventSource
   private:							    
       bool m_enabled;           // toggle that it is enabled
       double m_flux;		// representative flux for this event source...

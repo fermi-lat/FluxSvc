@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/CompositeSource.h,v 1.1 2002/01/16 11:55:31 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/CompositeSource.h,v 1.2 2002/01/30 01:36:44 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -57,7 +57,14 @@ public:
     const std::vector< EventSource* >& sourceList () const;
     void sourceList (const std::vector< EventSource* >& value);
 
+    /// interval to the next event
+    double interval (double){return m_interval;}
+
+    /// set the interval to the next event
+    double setInterval (double interval){m_interval = interval;}
+
    // double m_time; 
+    double m_interval;
 
 protected:
     virtual void setupXML (const DOM_Element&);
