@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Jun 17 23:41:42 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+CompositeDiffuse sources made properly diffuse.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Jun 17 23:41:42 PDT 2002
 FluxSvc/src
 
 Modified Files:
