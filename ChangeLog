@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 20 15:12:00 PST 2003
+FluxSvc/src
+
+Modified Files:
+	EventSource.cxx FluxSource.cxx 
+Log Message:
+consequence of refactorization
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb 20 14:04:11 PST 2003
 FluxSvc/src/test/flux
 
