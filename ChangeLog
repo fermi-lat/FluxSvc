@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jan 28 12:28:34 PST 2003
+FluxSvc/src
+
+Modified Files:
+	CHIMESpectrum.cxx FluxMgr.cxx 
+Added Files:
+	GalElSpectrum.cxx GalElSpectrum.h 
+Log Message:
+GalElSpectrum added back in, rootplot "delete e" issue fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jan 27 11:35:35 PST 2003
 FluxSvc/xml
 
