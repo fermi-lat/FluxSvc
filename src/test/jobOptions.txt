@@ -3,7 +3,7 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.85 2005/03/20 00:47:54 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.86 2005/03/21 23:46:58 burnett Exp $
 ApplicationMgr.DLLs+= { "GaudiAlg", "GaudiAud"};
 ApplicationMgr.DLLs+= { "GlastSvc"};
 ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
@@ -53,6 +53,8 @@ ApplicationMgr.EvtMax = 1000000; // needs to be set,
 MessageSvc.OutputLevel      = 3;
 ExposureAlg.OutputLevel=2;
 FluxAlg.sources={"timetick30s","default"};
+// uncomment next to test saving all pointing info entries
+//FluxAlg.save_pointing_info=true;
 
 // this to set up the DC2 standard.
 //FluxSvc.StartDate=""; // actually 1-may-07 00:00??

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.13 2005/03/20 00:47:54 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.14 2005/03/22 14:53:33 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -38,6 +38,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxAlg.rocking_angle [0 deg] Rotation angle for Glast, about x-axis. 
     @param FluxAlg.rocking_angle_z [0 deg] Rotation angle for Glast, about z-axis.
     @param FluxAlg.pointing_info_tree_name ["MeritTuple"] If set, copy "Pt" values to it. See point_info for definitions.
+    @param FluxAlg.save_pointing_info [false] Set true to save all entries in the pointing tuple. Normally saved by merit.
 
   @section exposurealg_jobOptions ExposureAlg jobOptions
     @param ExposureAlg.root_tree ["pointing_history"] name for the root tree to be filled if there are clock ticks
