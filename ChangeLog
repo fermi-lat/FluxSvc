@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Jan 18 03:22:07 PST 2002
+FluxSvc/xml
+
+Modified Files:
+	user_library.xml 
+Log Message:
+returned flux is time-dependent.  added a TimeDepSpectrum for tests.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Jan 18 03:22:07 PST 2002
 FluxSvc/src
 
 Modified Files:
