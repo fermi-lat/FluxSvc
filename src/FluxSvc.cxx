@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.45 2002/10/20 23:06:34 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.46 2002/10/30 19:04:33 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -10,7 +10,7 @@
 #include "FluxSvc/IRegisterSource.h"
 
 
-#include "FluxSvc/../src/test/flux/rootplot.h"
+#include "rootplot/rootplot.h"
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
@@ -94,10 +94,13 @@ StatusCode FluxSvc::initialize ()
         log << MSG::INFO << "Set source library list to " << default_source_library << endreq;
     }
     
-    
-    // create a FluxMgr object which will then be available.
-    m_fluxMgr = new FluxMgr(m_source_lib, m_dtd_file);
-    
+    try {
+      // create a FluxMgr object which will then be available.
+      m_fluxMgr = new FluxMgr(m_source_lib, m_dtd_file);
+    }catch(...){
+        return StatusCode::FAILURE;
+    }
+
     Flux::mgr(m_fluxMgr); // tell our Flux object
     
     // check that it was made properly
