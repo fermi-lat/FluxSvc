@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Jan 16 04:28:47 PST 2002
+FluxSvc/src/flux
+
+Added Files:
+	AlbedoSpectrum.cxx ExtraGalacticDiffuse.cxx ProtonSpectrum.cxx 
+	TrappedProtonSpectrum.cxx TrappedProtonSpectrum.inc mainpage.h 
+Log Message:
+
+flux migration
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jan 16 04:25:41 PST 2002
 FluxSvc/src/test/flux
 
