@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 18 11:02:00 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.h CompositeSource.cxx 
+Log Message:
+unix fix, warnings
+    *
+------------------------------------------------------------
 User: burnett  Wed Apr 17 21:17:08 PDT 2002
 FluxSvc/src
 
