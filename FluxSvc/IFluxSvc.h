@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.6 2001/08/20 22:25:39 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.7 2001/10/13 22:40:36 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -19,9 +19,9 @@ static const InterfaceID IID_IFluxSvc(910, 1 , 0);
 class IFlux;
 class HepRandomEngine;
 
-/** Abstract interface for the flux service
-
+/*! Abstract interface for the flux service, FluxSvc.
 */
+
 class  IFluxSvc : virtual public IInterface {
 public:
     
@@ -30,19 +30,19 @@ public:
     
     /// return a list of legal names
     virtual std::list<std::string> fluxNames()const=0;
-
+    
     /// add a new source
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
     
     
     /// access to the local HepRandomEngine, to allow synchronization
     virtual HepRandomEngine* getEngine()=0;
-
+    
     
     /// Retrieve interface ID
     static const InterfaceID& interfaceID() { return IID_IFluxSvc; }
     
-
+    
 };
 
 #endif  // _H_IFluxSvc
