@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Oct  7 16:42:20 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h CompositeSource.h 
+	ExposureAlg.cxx ExposureAlg.h Flux.cxx Flux.h GPS.cxx 
+Log Message:
+extra output in exposurealg, slewing angle optimized from requirements, file output (and associated functions) for writing the characteristics of teh diffuse source model.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Oct  7 16:42:18 PDT 2002
 FluxSvc/FluxSvc
 
