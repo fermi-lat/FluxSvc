@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May 23 17:16:54 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.h 
+Log Message:
+Flux can now return pointers to the current FluxSource and EventSource, for the sake of the GRB test function.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May 23 17:16:53 PDT 2002
 FluxSvc/FluxSvc
 
