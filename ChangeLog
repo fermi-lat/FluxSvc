@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 24 21:36:30 PDT 2001
+FluxSvc/src/Dll FluxSvc_load.cxx
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+
+remove obsolete Source.
+    *
+------------------------------------------------------------
 User: igable  Thu Jul 19 15:24:37 PDT 2001
 FluxSvc/cmt requirements
 
