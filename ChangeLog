@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Feb 25 17:43:46 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+galcenter source added, galactic rotation implemented in FluxSource.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Feb 24 16:38:41 PST 2003
 FluxSvc/src/test/flux
 
