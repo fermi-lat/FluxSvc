@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb 12 07:53:11 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+put it a little debug output to trace puzzling core dump
+    *
+------------------------------------------------------------
 User: burnett  Mon Feb 10 06:50:44 PST 2003
 FluxSvc/doc
 
