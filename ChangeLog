@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jan 15 14:30:09 PST 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+try hiding flux a bit.
+    *
+------------------------------------------------------------
+User: burnett  Thu Jan 15 14:30:09 PST 2004
 FluxSvc/FluxSvc
 
 Modified Files:
