@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Dec 12 13:31:18 PST 2002
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.cxx 
+Log Message:
+
+fix argument counting so a single arg is interpreted as the spectrum name
+    *
+------------------------------------------------------------
 User: burnett  Wed Nov 20 21:23:47 PST 2002
 FluxSvc/doc
 
