@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Jan 14 15:22:40 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSvc.h IFluxSvc.h 
+Log Message:
+Implement setting dtd file as a property.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 10 09:35:02 PST 2002
 FluxSvc/src/test
 
