@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.66 2003/08/30 19:20:49 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.67 2003/10/16 13:26:43 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -29,6 +29,7 @@
 #include "flux/FluxMgr.h"
 #include <algorithm>
 #include <sstream>
+#include <iomanip>
 /** 
 * \class FluxSvc
 *
@@ -36,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.66 2003/08/30 19:20:49 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.67 2003/10/16 13:26:43 burnett Exp $
 */
 
 // includes
@@ -480,9 +481,25 @@ StatusCode FluxSvc::run(){
         log << MSG::ERROR << "Start time after end time!" << endreq;
         return StatusCode::FAILURE;
     }
+    int last_fraction=0;
     // loop: will quit if either limit is set, and exceeded
-    while( (m_evtMax==0  || m_evtMax>0 && eventNumber < m_evtMax)
+    while( (m_evtMax==0  || m_evtMax>0 &&  eventNumber < m_evtMax)
         && (m_endTime==0 ||m_endTime>0 && currentTime< m_endTime) ) {
+
+            int percent_complete= static_cast<int>(
+                std::max(  
+                    (m_evtMax>0? 100.*eventNumber/m_evtMax: 0.0),  
+                    (m_endTime>0? 100.*(currentTime-m_endTime)/(m_endTime-m_startTime) : 0.0) 
+                    )
+                );
+            if( percent_complete!=last_fraction){
+                last_fraction=percent_complete;
+                if( percent_complete<10 || percent_complete%10 ==0){
+                    log << MSG::INFO <<   percent_complete << "% complete: "
+                        << ", event "<< eventNumber<<",  time "<< currentTime << endreq;
+                }
+
+            }
 
             status =  m_appMgrUI->nextEvent(1); // currently, always success
 
