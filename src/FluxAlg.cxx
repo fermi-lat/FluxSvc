@@ -1,6 +1,6 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.34 2003/02/20 21:39:03 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.35 2003/03/01 23:14:56 burnett Exp $
 
 */
 
@@ -26,7 +26,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.34 2003/02/20 
 #include "Spectrum.h"
 #include "SpectrumFactory.h"
 
-#include "FluxSvc/EventSource.h"
+#include "EventSource.h"
 
 #include "CLHEP/Vector/LorentzVector.h"
 
@@ -52,7 +52,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.35 2003/03/01 23:14:56 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {
