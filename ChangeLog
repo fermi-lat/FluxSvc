@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Aug 11 23:03:20 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+"history" pointing mode created, with ASCII file interface.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Aug 11 23:03:20 PDT 2003
 FluxSvc/FluxSvc
 
 Modified Files:
