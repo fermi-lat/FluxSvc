@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.29 2002/10/14 15:00:31 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.30 2002/10/30 20:08:10 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -25,12 +25,13 @@
 #include <vector>
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc(910, 2 , 0); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 2 , 0); 
 
 // forward declarations
 class IFlux;
 class IParticlePropertySvc;
 class ISpectrumFactory;
+class HepRandomEngine;
 
 //! Abstract interface for the flux service, FluxSvc.
 class  IFluxSvc : virtual public IInterface {
@@ -45,7 +46,9 @@ public:
     /// add a new source
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
     
-    
+    /// return pointer to the random engine that FluxSvc uses
+    virtual HepRandomEngine* getRandomEngine()=0;
+
     /// pass a specific amount of time
     virtual void pass (double t)=0;    
     

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.12 2003/02/06 17:53:38 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.13 2003/02/22 05:42:25 burnett Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -288,7 +288,7 @@ float CHIMESpectrum::exposure(float E) const {
 
 //-------------------------- dir()
 
-std::pair<float,float> CHIMESpectrum::dir(float energy)const
+std::pair<double,double> CHIMESpectrum::dir(double energy)
 {
     
     // Random particle direction from Stormer cone
@@ -312,5 +312,5 @@ std::pair<float,float> CHIMESpectrum::dir(float energy)const
     // Transform to local earth-based coordinates.
     float earthazi = atan2(sinpolar*sin(azi), cospolar);
     
-    return std::make_pair<float,float>(coszenith, earthazi);
+    return std::make_pair<double,double>(coszenith, earthazi);
 }

@@ -1,4 +1,4 @@
-// $Id: CHIMESpectrum.h,v 1.11 2002/12/12 22:48:46 srobinsn Exp $
+// $Id: CHIMESpectrum.h,v 1.12 2003/02/22 05:42:25 burnett Exp $
 #ifndef CHIME_SPECTRUM_H
 #define CHIME_SPECTRUM_H
 
@@ -85,7 +85,7 @@ public:
     float findCutoff() const;
     
     /// return solid angle pair (costh, phi) for the given energy
-    virtual std::pair<float,float> dir(float energy)const;
+    virtual std::pair<double,double> dir(double energy);
     
     virtual std::string title() const;
     virtual const char * particleName() const;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.10 2003/01/28 20:28:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.11 2003/02/06 22:55:29 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 
 /*
@@ -80,7 +80,7 @@ public:
     float findCutoff(std::pair<double,double> coords) const;
     
     /// return solid angle pair (costh, phi) for the given energy
-    virtual std::pair<float,float> dir(float energy)const;
+    virtual std::pair<double,double> dir(double energy);
     
     
     virtual std::string title() const;

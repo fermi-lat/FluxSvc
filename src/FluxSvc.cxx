@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.50 2003/02/10 14:48:22 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.51 2003/02/12 15:53:11 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -21,6 +21,8 @@
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/IAppMgrUI.h"
 #include "GaudiKernel/IParticlePropertySvc.h"
+
+#include "CLHEP/Random/Random.h"
 
 #include "Flux.h"
 
@@ -157,6 +159,12 @@ StatusCode FluxSvc::initialize ()
     
     return StatusCode::SUCCESS;
 }
+
+
+/// return pointer to the random engine
+HepRandomEngine* FluxSvc::getRandomEngine(){
+    return  HepRandom::getTheEngine();
+};
 
 // finalize
 StatusCode FluxSvc::finalize ()
@@ -329,6 +337,5 @@ StatusCode FluxSvc::run(){
         log << MSG::INFO << "Processing loop terminated by event count" << endreq;
     }
     return status;
-    
 }
 

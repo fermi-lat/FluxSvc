@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.9 2003/02/06 22:55:29 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.10 2003/02/22 05:42:25 burnett Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 #ifdef __GNUG__
@@ -97,7 +97,7 @@ float GalElSpectrum::findCutoff(std::pair<double,double> coords) const {
     return findCutoff(coords.first, coords.second);
 }
 
-std::pair<float,float> GalElSpectrum::dir(float energy) const {
+std::pair<double,double> GalElSpectrum::dir(double energy)  {
     float earthazi = 2.*M_PI* HepRandom::getTheGenerator()->flat();
     float coszenith = m_coscutoff + (1.-m_coscutoff)*
         HepRandom::getTheGenerator()->flat();
