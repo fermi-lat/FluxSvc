@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.19 2002/05/10 02:18:35 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.20 2002/05/10 05:50:53 srobinsn Exp $
 
 // Include files
 // Gaudi system includes
@@ -11,7 +11,7 @@
 #include "GaudiKernel/SmartRefVector.h"
 
 // Event for creating the McEvent stuff
-#include "Event/TopLevel/Event.h"
+//#include "Event/TopLevel/Event.h"
 #include "Event/TopLevel/MCEvent.h"
 #include "Event/MonteCarlo/McParticle.h"
 #include "Event/TopLevel/EventModel.h"
