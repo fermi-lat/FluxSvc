@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.32 2003/02/28 01:47:39 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.33 2003/03/01 23:26:48 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -30,7 +30,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.33 2003/03/01 23:26:48 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -62,7 +62,7 @@ public:
     /// name of the flux
     virtual std::string fluxName()const=0;
     
-    /// set the glast tilt angles.
+    /// set the glast tilt angles - this means glast will ALWAYS rock to these angles.
     virtual void setExplicitRockingAngles(double ang1,double ang2)=0;
 
     /// get the angular values of the satellite
@@ -75,7 +75,14 @@ public:
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
 
-    virtual void setRockType(int rockType)=0;
+    ///set the type of rocking, along with the angle to rock to.
+    ///0 = NONE : No rocking rotation done at all.
+    ///1 = UPDOWN : Satellite will be rocked toward the north pole in the northern hemisphere, opposite in the south.
+    ///2 = SLEWING : (experimental) like UPDOWN, except that rotation at equator happens gradually.
+    ///3 = ONEPERORBIT : (needs work) LAT rocked northward for one orbit, southward for the next.
+    ///4 = EXPLICIT :  Explicit angles given - this should be used only through the setExplicit... function.
+    virtual void setRockType(int rockType, double rockAngle)=0;
+
     ///this should return the source file names, along with the contained sources.
     virtual std::vector<std::pair< std::string ,std::list<std::string> > > sourceOriginList() const=0;
         

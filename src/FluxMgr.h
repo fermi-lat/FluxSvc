@@ -1,7 +1,7 @@
 /** @file FluxMgr.h
     @brief declaration of FluxMgr
 
- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.16 2003/03/02 06:30:57 burnett Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.17 2003/03/02 19:11:16 burnett Exp $
 
   */
 #ifndef FLUX_MGR_H
@@ -93,8 +93,8 @@ public:
     HepRotation FluxMgr::transformGlastToGalactic(double time);
 
     ///this sets the rocking mode in GPS.
-    void setRockType(GPS::RockType rockType);
-    void setRockType(int rockType);
+    void setRockType(GPS::RockType rockType, double rockAngle);
+    void setRockType(int rockType, double rockAngle);
 private:
     
     /// source library lookup.  Each source is uniquely identified

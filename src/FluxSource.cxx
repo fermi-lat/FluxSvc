@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.54 2003/03/02 06:35:58 burnett Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.55 2003/03/02 17:49:00 burnett Exp $
 
 #include "FluxSource.h"
 
@@ -341,7 +341,7 @@ public:
             astro::SkyDir unrotated(l,b,astro::SkyDir::GALACTIC);
             //get the transformation matrix..
             HepRotation celtoglast
-                =GPS::instance()->transformCelToGlast(GPS::instance()->time() + time);
+                =GPS::instance()->transformCelToGlast(time);
 
             //and do the transform:
             setDir(celtoglast*unrotated());

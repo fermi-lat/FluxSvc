@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.36 2003/03/02 06:35:58 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.37 2003/03/02 19:11:16 burnett Exp $
 
 */
 
@@ -53,7 +53,7 @@ class IparticlePropertySvc;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.36 2003/03/02 06:35:58 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.37 2003/03/02 19:11:16 burnett Exp $
 */
 
 class FluxAlg : public Algorithm {
@@ -125,9 +125,9 @@ StatusCode FluxAlg::initialize(){
         return StatusCode::FAILURE;
     }
     
-    m_fluxSvc->setExplicitRockingAngles(m_rocking_angle*M_PI/180,0);
-//    m_fluxSvc->setRockingAngle(m_rocking_angle);
-    m_fluxSvc->setRockType(m_pointing_mode);
+    //m_fluxSvc->setExplicitRockingAngles(m_rocking_angle*M_PI/180,0);
+    //m_fluxSvc->setRockingAngle(m_rocking_angle);
+    m_fluxSvc->setRockType(m_pointing_mode,m_rocking_angle);
 
     log << MSG::INFO << "loading source..." << endreq;
     
