@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 26 13:50:49 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+changes, suggested by Julie, to set exposure in TDS for all events.
+    *
+------------------------------------------------------------
 User: burnett  Sat Aug 30 12:22:16 PDT 2003
 FluxSvc/doc
 
