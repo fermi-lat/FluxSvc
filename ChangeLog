@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: omodei  Tue May 11 09:20:13 PDT 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove a ROOT include
+
+    *
+------------------------------------------------------------
 User: omodei  Tue May 11 08:31:29 PDT 2004
 FluxSvc/src/test
 
