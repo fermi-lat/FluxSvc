@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 13 13:57:18 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+
+setting MCEvent now. tag v5r11
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 13 13:57:17 PDT 2002
 FluxSvc/doc
 
