@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jan 31 01:55:20 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	CompositeSource.h EventSource.h FluxSource.h 
+Log Message:
+fixed time-dependent errors
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Jan 29 17:36:45 PST 2002
 FluxSvc/src
 
