@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Nov  8 02:34:27 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+isolate flux from clients
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Nov  3 01:44:21 PST 2003
 FluxSvc/src
 
