@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: burnett  Thu Mar 20 13:45:04 PST 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging after bug fix.
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 20 13:45:04 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging after bug fix.
+    *
+------------------------------------------------------------
 User: burnett  Thu Mar 20 11:55:33 PST 2003
 FluxSvc/xml
 
