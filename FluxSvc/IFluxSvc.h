@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.41 2004/01/15 22:30:09 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.42 2004/01/28 23:24:12 hierath Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -18,7 +18,7 @@
 #include "astro/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc("FluxSvc", 4 , 0); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 4 , 1); 
 
 // forward declarations
 class IFlux;
@@ -32,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.41 2004/01/15 22:30:09 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.42 2004/01/28 23:24:12 hierath Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -83,6 +83,9 @@ public:
     virtual HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const=0;
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
+
+    /// return pointer to the GPS instance of FluxSVc
+    virtual GPS* GPSinstance()=0;
 
     ///set the type of rocking, along with the angle to rock to.
     ///0 = NONE : No rocking rotation done at all.

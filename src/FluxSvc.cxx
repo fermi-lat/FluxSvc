@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.77 2005/03/14 04:00:32 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.78 2005/03/18 02:08:03 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.77 2005/03/14 04:00:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.78 2005/03/18 02:08:03 burnett Exp $
 */
 
 // includes
@@ -115,6 +115,9 @@ public:
 
     /// get the current satellite location
     std::pair<double,double> location();
+
+    /// return pointer to our GPS instance
+    GPS* GPSinstance();
 
     /// return a string which uniquely identifies the source
     std::string uniqueIDString()const;
@@ -402,6 +405,11 @@ void FluxSvc::attachGpsObserver(Observer* anObserver)
 {
     GPS::instance()->notification().attach( anObserver );
 }
+
+
+/// return pointer to the GPS instance of FluxSVc
+GPS* FluxSvc::GPSinstance(){ return GPS::instance();}
+
 
 ///return the pointer to the current IFlux object
 IFlux* FluxSvc::currentFlux(){
