@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Nov  1 15:27:54 PST 2002
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+temporarily restore CHIME
+    *
+------------------------------------------------------------
+User: burnett  Fri Nov  1 15:27:54 PST 2002
 FluxSvc/cmt
 
 Modified Files:
