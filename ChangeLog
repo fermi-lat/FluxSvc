@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Nov 11 16:01:03 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+turn -no_auto_imports back off, until we understand it
+    *
+------------------------------------------------------------
 User: burnett  Sat Nov  8 02:34:27 PST 2003
 FluxSvc/cmt
 
