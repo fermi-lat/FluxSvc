@@ -3,7 +3,7 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.79 2004/07/29 17:59:45 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.80 2004/08/13 18:14:31 burnett Exp $
 
 ApplicationMgr.DLLs   = { "GlastSvc", "FluxSvc"};
 ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
@@ -43,7 +43,7 @@ Top.area= 6.0;
 //Top.rocking_angle_z=90; // degrees about z-axis   
 Top.source_name="vertical_surface_muons";
 //Top.source_name="GRB_DC1";
-//Top.source_name="jboth";
+//Top.source_name="isotropic";
 
 
 ApplicationMgr.EvtMax = 100;
