@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Mar  3 16:04:33 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxMgr.cxx FluxMgr.h FluxSource.cxx FluxSvc.cxx 
+Log Message:
+rocking angle setting allowed for, extra rocking documentation added.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Mar  3 16:04:32 PST 2003
 FluxSvc/FluxSvc
 
