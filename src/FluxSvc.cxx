@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.39 2002/09/05 02:24:01 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.40 2002/09/06 21:14:47 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -7,7 +7,7 @@
 #include "FluxSvc/IRegisterSource.h"
 
 
-#include "./test/flux/rootplot.h"
+#include "FluxSvc/../src/test/flux/rootplot.h"
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
