@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: burnett  Thu Mar 20 11:55:32 PST 2003
+FluxSvc/src
+
+Modified Files:
+	CompositeSource.cxx CompositeSource.h EventSource.cxx 
+	EventSource.h Flux.cxx Flux.h FluxMgr.cxx FluxSource.cxx 
+	FluxSource.h 
+Log Message:
+restore proper rates for power-law spectra;
+remove FluxSource from interface
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 20 11:55:32 PST 2003
 FluxSvc/FluxSvc
 
 Modified Files:
