@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.2 2002/08/28 07:26:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.3 2002/08/29 02:13:10 srobinsn Exp $
 
 // Include files
 // Gaudi system includes
@@ -281,7 +281,7 @@ StatusCode ExposureAlg::execute()
 
 //WRITEOUT------------------------------------------------------------------------------------------------
 
-    setFilterPassed( false );
+        setFilterPassed( false );
     log << MSG::DEBUG << "ExposureAlg found a TimeTick particle, ended this execution after making a record, filterpassed = " << filterPassed() << endreq;
 
     
