@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.23 2002/05/31 19:16:23 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.24 2002/06/24 12:48:03 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -136,7 +136,7 @@ StatusCode FluxAlg::execute()
         log << MSG::ERROR << EventModel::MC::Event  <<" could not be registered on data store" << endreq;
         return sc;
     }
-        
+    
     
     Event::McParticleCol* pcol = new Event::McParticleCol;
     sc = eventSvc()->registerObject(EventModel::MC::McParticleCol, pcol);

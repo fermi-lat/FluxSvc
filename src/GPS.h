@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.2 2002/05/08 16:59:08 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.3 2002/05/18 21:21:34 srobinsn Exp $
 // GPS.h: interface for the GPS class.
 //
 //	Models the Global Positoning System for a spacecraft. Handles time
@@ -26,12 +26,12 @@ class Orbit;
 //
 //!  Represents the Global Positioning System on-board the spacecraft. An Orbit
 /*!  object is used to compute the spacecraft's position and pointing characteristics.
-  Time is tracked through this object, and synchronized with the Scheduler for 
-  discrete event simulation. An expansion factor is provided to allow for acceleration
-  or randomization of the orbit. If the expansion factor is negative, then the position
-  of the spacecraft is chosen as a random distribution over an orbit. Otherwise, the expansion
-  factor represents an acceleration of the spacecraft's orbit. Ie. an expansion factor
-  of 2 would reduce the orbit period of the spacecraft by 1/2.
+Time is tracked through this object, and synchronized with the Scheduler for 
+discrete event simulation. An expansion factor is provided to allow for acceleration
+or randomization of the orbit. If the expansion factor is negative, then the position
+of the spacecraft is chosen as a random distribution over an orbit. Otherwise, the expansion
+factor represents an acceleration of the spacecraft's orbit. Ie. an expansion factor
+of 2 would reduce the orbit period of the spacecraft by 1/2.
 */
 class GPS  
 {
@@ -112,22 +112,22 @@ public:
     // static access/destruction
     static GPS*	instance();
     static void     kill ();
-
+    
     ///return galactic-pointing coordinates of the GLAST satellite
     std::pair<double,double> GPS::galPositionOfGlast();
-
+    
     /// transform functions using galPositionOfGlast.  This infrastructure is no longer used.
     Vector earthToGlast(Vector launchDir);
     Vector galaxyToGlast(Vector launchDir);
-
+    
     /// return the rotation for compensation for the rocking angles.
     Rotation rockingAngleTransform(double time);
-
+    
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     Rotation GPS::transformGlastToGalactic(double time);
-
-
-        
+    
+    
+    
     Orbit*  orbit ();               // access the orbit (for manipulation)
     protected:
         // singleton - protect ctor/dtor

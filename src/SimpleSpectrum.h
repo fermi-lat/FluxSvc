@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.2 2002/04/03 21:26:13 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -23,8 +23,8 @@ public:
     SimpleSpectrum(const char* name,float E0, float index=0.0);
     SimpleSpectrum(const char* name,float Emin, float Emax, float index);
     SimpleSpectrum(const DOM_Element& xelem);
-	SimpleSpectrum(const std::string& params);
-
+    SimpleSpectrum(const std::string& params);
+    
     SimpleSpectrum();
     void setPosition ( float /*lat*/, float /*lon*/ ){}
     virtual double calculate_rate(double old_rate);

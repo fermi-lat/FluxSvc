@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.18 2002/05/18 21:21:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.19 2002/05/24 00:16:54 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
@@ -36,7 +36,7 @@ public:
     
     /// the particle property entry for the last particle generated 
     //virtual ParticleProperty* property()const=0;
-
+    
     /// its kinetic energy
     virtual double energy()const;
     
@@ -48,10 +48,10 @@ public:
     
     /// return the time
     virtual double time()const;
-
+    
     /// pass a specific amount of time
     virtual void pass ( double t);
-
+    
     /// Get the time as held by GPS
     /*GPStime*//*int*/double gpsTime () const;
     
@@ -73,23 +73,23 @@ public:
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const;
     
-   // virtual void addFactory( const IFactory* factory );
+    // virtual void addFactory( const IFactory* factory );
     
     virtual void addFactory(std::string name, const ISpectrumFactory* factory );
     
     ///get the transformation matrix due to orientation of the Galaxy 
     virtual Rotation CELTransform(double time)const;
-
+    
     ///get the transformation matrix due to orientation of the spacecraft.
     virtual Rotation orientTransform(double time)const;
-
+    
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     Rotation Flux::transformGlastToGalactic(double time)const;
-                                                                                  
-//    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
-
+    
+    //    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
+    
     EventSource* currentEvent(){return m_event;}
-
+    
     FluxSource* currentFlux(){return m_flux;}
     
 private:

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.7 2002/05/18 21:21:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.8 2002/05/20 23:19:27 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -34,28 +34,28 @@ public:
     
     /// access to the local random engine 
     virtual HepRandomEngine* getEngine();
-
+    
     /// pass a specific amount of time
     virtual void pass ( double t);
-
+    
     /// create a set of display windows using rootplot.
     void rootDisplay(std::vector<char*> arguments);
-
+    
     ///return the pointer to the current IFlux object
     IFlux* currentFlux();
-
+    
     /// name of the flux
     std::string fluxName()const;
-
+    
     /// set the glast tilt angles.
     void setOrientation(std::pair<double,double> ang);
-
+    
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     Rotation transformGlastToGalactic(double time)const;
-
+    
     /// get the current satellite location
     std::pair<double,double> location();
-
+    
     
     //------------------------------------------------------------------
     //  stuff required by a Service
@@ -78,9 +78,9 @@ protected:
     virtual ~FluxSvc ();
     
 private:
-
+    
     IParticlePropertySvc* m_partSvc;
-
+    
     /// Allow SvcFactory to instantiate the service.
     friend class SvcFactory<FluxSvc>;
     

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.21 2002/05/18 21:21:33 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.22 2002/05/24 00:16:53 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -35,7 +35,7 @@ public:
     
     /// the particle name of the last particle generated 
     virtual std::string particleName()const=0;
-
+    
     /// the particle property entry for the last particle generated 
     //virtual ParticleProperty* property()const=0;
     
@@ -65,27 +65,27 @@ public:
     
     /// return a unique number correcponding to that spectrum
     virtual int numSource()const=0;
-
+    
     /// pass a specific amount of time
     virtual void pass ( double t)=0;
-
+    
     ///get the transformation matrix due to orientation of the Galaxy 
     virtual Rotation CELTransform(double time)const=0;
-
+    
     ///get the transformation matrix due to orientation of the spacecraft.
     virtual Rotation orientTransform(double time)const=0;
-       
+    
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
-
+    
     virtual /*int*/double gpsTime()const=0;
-
+    
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     virtual Rotation transformGlastToGalactic(double time)const=0;
-
+    
     virtual EventSource* currentEvent()=0;
-
+    
     virtual FluxSource* currentFlux()=0;
-
+    
 #if 0
     // get a description of the parameters that can be modified, and reference to a list of them
     virtual std::string paramlist(std::vector<double>& params)=0; 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.3 2002/04/18 18:02:00 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.4 2002/04/28 21:08:09 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -27,7 +27,7 @@ public:
     /// rate - compute overall rate...
     virtual double rate (double time)const;
     virtual void   setRate ( double );
-
+    
     /// flux into 1 m^2 integrated over angles
     virtual double flux(double time)const{
         //m_time=time; 
@@ -53,28 +53,28 @@ public:
     std::vector< EventSource* >& sourceList ();
     const std::vector< EventSource* >& sourceList () const;
     void sourceList (const std::vector< EventSource* >& value);
-
+    
     /// interval to the next event
     double interval (double){return m_interval;}
-
+    
     /// set the interval to the next event
     double setInterval (double interval){return (m_interval = interval);}
-
-   // double m_time; 
+    
+    // double m_time; 
     double m_interval;
-
+    
     //return how many sources are in the sourcelist
     int howManySources(){return m_sourceList.size();}
-
+    
 protected:
     virtual void setupXML (const DOM_Element&);
-
+    
     //number of times we've iterated the front() pointer into sourcelist 
     //to get the current particle - represents the source
     int m_numofiters;
-
     
-//private: 
+    
+    //private: 
     std::vector< EventSource* > m_sourceList;
     EventSource*  m_recent;
 };
