@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.9 2002/04/16 22:51:57 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.10 2002/04/17 01:57:32 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -133,6 +133,10 @@ class FluxSource : public EventSource
       } m_frametype;
 
 
+ 
+          //! whether or not the current particle is occluded by the earth
+          bool occluded();
+
       virtual int eventNumber()const;
 
       double energy()const { return m_energy;}
@@ -182,6 +186,9 @@ class FluxSource : public EventSource
       Point  m_launchPoint;
       double m_energy;
       // associated with a specific launch
+
+      //!the "extra time" a source needs to come out of occlusion.
+      double m_extime;
 
     void randomLaunchPoint(); 
     // calculate a random launch point in a plane perpendicular to _launchDir
