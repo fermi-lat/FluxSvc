@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Aug  8 09:47:34 PDT 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging v6r14 (despite glast-ts build failure)
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul 29 10:59:45 PDT 2004
 FluxSvc/src/test
 
