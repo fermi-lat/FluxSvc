@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Apr 15 14:54:23 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+
+remove McVertex, fix (almost) FluxAlg.
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Apr 15 12:42:56 PDT 2002
 FluxSvc/src
 
