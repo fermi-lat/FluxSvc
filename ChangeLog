@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: kyoung  Fri Oct  4 11:32:48 PDT 2002
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+Add FluxSvcRandom.cxx
+    *
+------------------------------------------------------------
+User: kyoung  Fri Oct  4 11:32:48 PDT 2002
 FluxSvc/src
 
 Added Files:
