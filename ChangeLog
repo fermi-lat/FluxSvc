@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul  4 18:07:56 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+Add code to extract external source definitions from AlgTool factories
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul  4 18:06:19 PDT 2002
 FluxSvc/FluxSvc
 
