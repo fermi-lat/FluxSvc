@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.h,v 1.9 2002/10/31 01:19:56 burnett Exp $
+// $Id: AlbedoPSpectrum.h,v 1.10 2002/12/17 07:43:12 srobinsn Exp $
 // File: AlbedoPSpectrum.h
 #ifndef ALBEDO_P_SPECTRUM_H
 #define ALBEDO_P_SPECTRUM_H
@@ -62,7 +62,7 @@ public:
     int askGPS(); // this one asks the GPS for position
     
     /// sample a solid angle pair (costh,phi) from angular distribution
-    virtual std::pair<float,float> dir(float energy)const;
+    virtual std::pair<double,double> dir(double energy);
     
     virtual std::string title() const;
     virtual const char * particleName() const;

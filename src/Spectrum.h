@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.8 2002/07/25 05:18:59 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.9 2002/10/30 20:08:11 burnett Exp $
 
 
 #ifndef GLAST_SPECTRUM_H
@@ -19,8 +19,6 @@
 #include <utility>
 #include <vector>
 #include "FluxSvc/ISpectrum.h"
-//forward declaration
-class HepRandomEngine;
 
 
 //!  Class for holding function definitions of Spectrums - i.e. HeSpectrum, SimpleSpectrum, etc...
@@ -66,16 +64,15 @@ public:
     /// a randomized interval to the next event - default is 1/rate()
     virtual double interval (double time);
     
-    virtual std::pair<float,float> dir(float energy)const;
-    
+  
     /// new interface for Hirosima classes
-    virtual double energySrc(HepRandomEngine* engine, double time=0);
+    virtual double energy( double time=0);
     
     /*! 
     \param dir direction is either in the format (cos theta, phi)
     (zenith-local coordinates, or (l,b) (galactic coordinates).
     */
-    virtual std::pair<double,double> dir(double energy, HepRandomEngine* engine);
+    virtual std::pair<double,double> dir(double energy);
     
     
     
