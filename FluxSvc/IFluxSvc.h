@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.39 2003/10/16 13:26:43 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.40 2003/11/03 09:44:20 srobinsn Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -11,11 +11,11 @@
 #include "GaudiKernel/IInterface.h"
 #include "CLHEP/Vector/Rotation.h"
 #include "facilities/Observer.h"
-#include "flux/GPS.h"
 
 #include <string>
 #include <list>
 #include <vector>
+#include "flux/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_IFluxSvc("FluxSvc", 4 , 0); 
@@ -32,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.39 2003/10/16 13:26:43 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.40 2003/11/03 09:44:20 srobinsn Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -81,7 +81,6 @@ public:
     virtual HepRotation transformGlastToGalactic(double time)const=0;
 
     virtual HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const=0;
-
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
 
