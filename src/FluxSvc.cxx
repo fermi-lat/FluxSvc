@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.33 2002/07/25 05:18:58 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.34 2002/08/04 00:52:45 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -214,6 +214,14 @@ IFlux* FluxSvc::currentFlux(){
 std::string FluxSvc::fluxName()const{
     return m_currentFlux->name();
 }
+
+/// return a string which uniquely identifies the source
+std::string FluxSvc::uniqueIDString()const{
+    std::strstream t;
+    t << m_currentFlux->numSource();
+    return m_currentFlux->name() + t.str();
+}
+
 
 void FluxSvc::setOrientation(std::pair<double,double> ang){
     m_fluxMgr->setOrientation(ang);

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.10 2002/07/23 19:00:57 srobinsn Exp $ 
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.11 2002/08/04 00:52:45 srobinsn Exp $ 
 
 #ifndef _H_FluxSvc_
 #define _H_FluxSvc_
@@ -63,6 +63,9 @@ public:
     
     /// get the current satellite location
     std::pair<double,double> location();
+
+    /// return a string which uniquely identifies the source
+    std::string uniqueIDString()const;
     
     
     //------------------------------------------------------------------

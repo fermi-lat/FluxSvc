@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.8 2002/07/23 19:00:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.9 2002/07/25 05:18:58 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -26,7 +26,7 @@ public:
     
     
     ///    add a source to the list
-    void addSource (EventSource* aSource);
+    virtual void addSource (EventSource* aSource);
     void rmvSource (EventSource* aSource);
     
     /// generate an event from from one of the sources 
