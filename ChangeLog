@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Feb  1 17:33:27 PST 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+JobOptions now holds proper source name variable, files relocated to conform to schema, electrons,protons.cxx removed, FluxMgr assert problem fixed.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Feb  1 17:33:26 PST 2002
 FluxSvc/src
 
