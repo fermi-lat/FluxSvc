@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct 28 05:45:26 PST 2003
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+Implement write of root file with exposure info
+    *
+------------------------------------------------------------
 User: burnett  Tue Oct 28 05:44:23 PST 2003
 FluxSvc/cmt
 
