@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Aug 28 12:23:18 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+pointing input file directive in FluxAlg.
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Aug 27 09:41:55 PDT 2003
 FluxSvc/doc
 
