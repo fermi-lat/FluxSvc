@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Oct 19 16:20:05 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	composite_library.xml user_library.xml 
+Log Message:
+many compositediffuse changes, diffuse source for testing changed to be appropriate,pdr test sources altered to avoid crashing due to "nested composite" problem - this needs examination.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Oct 19 16:20:05 PDT 2002
 FluxSvc/src
 
 Modified Files:
