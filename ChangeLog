@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: omodei  Wed Mar  6 10:05:22 PST 2002
+FluxSvc/src/GRB
+
+Modified Files:
+	GRBConstants.h GRBShell.cxx GRBShell.h GRBShock.cxx GRBShock.h 
+	GRBSim.cxx GRBSim.h GRBSpectrum.cxx GRBSpectrum.h 
+Removed Files:
+	GRBUniverse.cxx GRBUniverse.h 
+Log Message:
+Remove any dependences from root in the GRB source program: GRBTest in FluxDiplay!
+    *
+------------------------------------------------------------
 User: omodei  Wed Mar  6 10:05:21 PST 2002
 FluxSvc/cmt
 
