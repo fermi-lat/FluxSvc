@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.12 2003/02/20 21:39:02 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.13 2003/02/20 22:04:11 srobinsn Exp $
 #ifndef EventSource_h
 #define EventSource_h 1
 
@@ -7,7 +7,7 @@
 *
 * \brief  Base class for managing  sources.
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.12 2003/02/20 21:39:02 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.13 2003/02/20 22:04:11 srobinsn Exp $
 */
 
 
@@ -67,8 +67,6 @@ public:
     static double	totalArea ();
     static void	totalArea ( double value );
     
-    ///    makeOrbit - creates an orbit appropriate for this source       
-    //virtual Orbit*    makeOrbit () const;
     
     /// virtual event number: should be filled in by subclass
     virtual int eventNumber()const{return -1;} 
@@ -93,7 +91,6 @@ public:
         out<< "default message - no sources" << std::endl;
     }
     
-    //double m_time;    // elapsed time, really only needed for EventSource
 private:
     double m_time;    // elapsed time, really only needed for EventSource
     

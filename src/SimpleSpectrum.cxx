@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.6 2002/06/24 22:37:16 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.7 2002/10/31 00:23:40 burnett Exp $
 
 
 #include "SimpleSpectrum.h"
@@ -8,7 +8,7 @@
 
 #include "FluxException.h" // for FATAL_MACRO
 #include <utility>
-#include <strstream>
+#include <sstream>
 #include <cmath>
 #include "SpectrumFactory.h"
 
@@ -60,12 +60,11 @@ SimpleSpectrum::SimpleSpectrum(const DOM_Element& xelem){
 
 std::string SimpleSpectrum::title()const
 {
-    std::strstream s;
-    s << particleName() << '(' << m_E0 << " GeV";
+    std::stringstream s;
+    s << particleName() << '(' << m_E0/1000. << " GeV";
     if( m_index >=1 ) s << ',' << m_index ;
-    s << ")" << '\0';
-    std::string t(s.str()); s.freeze(false);
-    return t;
+    s << ")";
+    return s.str();
 }
 
 float
