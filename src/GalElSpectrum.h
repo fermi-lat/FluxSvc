@@ -1,4 +1,4 @@
-// $Header: /home/cvs/SLAC/FluxSvc/src/Attic/GalElSpectrum.h,v 1.8 2002/10/30 20:43:54 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.10 2003/01/28 20:28:34 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 
 /*
@@ -100,6 +100,7 @@ private:
     float m_cutoff; // current cutoff energy
     float m_coscutoff;  // zenith angle of horizon
     float m_flux;   // current flux (set when cutoff changes)
+    float m_lat, m_lon;  //current lat, lon.
     
     static const float m_rearth;    // radius of earth in km
     static const float m_altitude;  // altitude of circular orbit
