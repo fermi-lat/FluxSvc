@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Mar 27 11:00:19 PST 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	PointingInfo.h 
+Log Message:
+Implement B,L in DC2 output
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r21, operation: add
 Package: FluxSvc
