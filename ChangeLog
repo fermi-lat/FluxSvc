@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 13 13:57:17 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+setting MCEvent now. tag v5r11
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 13 09:12:04 PDT 2002
 FluxSvc/src/test
 
