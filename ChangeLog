@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Jun  4 17:28:35 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+facility added so that options (projection type, point spreading, and exposure type) can be mixed and matched - older Exposure Mode classification should be removed soon.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun  3 18:34:34 PDT 2002
 FluxSvc/xml
 
