@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Jan 17 00:38:52 PST 2002
+FluxSvc/src/test/flux
+
+Modified Files:
+	rootplot.cxx testMgr.cxx 
+Log Message:
+moved definition files into src directory, made necessary "include" changes
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Jan 17 00:38:52 PST 2002
 FluxSvc/src
 
 Modified Files:
