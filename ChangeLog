@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Mar 19 16:47:54 PST 2005
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix up test; restore option to read in pointing history; fix altitude determination. improve mainpage doc.
+    *
+------------------------------------------------------------
+User: burnett  Sat Mar 19 16:47:54 PST 2005
 FluxSvc/src
 
 Modified Files:
