@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Oct 31 15:21:04 PST 2001
+FluxSvc/src FluxSvc.cxx
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+
+"default" xml file instantiation done - defaults to only source_library.xml
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Oct 31 15:21:04 PST 2001
 FluxSvc/FluxSvc FluxSvc.h mainpage.h
 
 Modified Files:
