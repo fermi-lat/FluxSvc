@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Aug  9 10:40:04 PDT 2002
+FluxSvc/src/test
+
+Added Files:
+	RegisterTest.cxx 
+Log Message:
+simple test, of register mechanism
+    *
+------------------------------------------------------------
 User: burnett  Fri Aug  9 10:23:06 PDT 2002
 FluxSvc/src
 
