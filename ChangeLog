@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Oct 13 15:40:36 PDT 2001
+FluxSvc/doc used_packages.html
+
+Modified Files:
+	used_packages.html 
+Log Message:
+
+testFluxMgr now uses both user_library.xml and source_library.xml, as a test of the method.
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Oct 13 15:40:36 PDT 2001
 FluxSvc/FluxSvc FluxSvc.h IFlux.h IFluxSvc.h mainpage.h
 
 Modified Files:
