@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep  2 12:34:49 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+fix a few unix warnings
+    *
+------------------------------------------------------------
+User: burnett  Mon Sep  2 12:34:48 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	FluxSource.h 
+Log Message:
+fix a few unix warnings
+    *
+------------------------------------------------------------
 User: burnett  Mon Sep  2 11:47:02 PDT 2002
 FluxSvc/src/test
 
