@@ -1,4 +1,4 @@
-//$Header: /cvs/glastsim/flux/FluxSource.cxx,v 1.20 1998/12/18 23:42:02 hsg Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.43 2003/02/20 21:39:03 burnett Exp $
 
 #include "FluxSvc/FluxSource.h"
 
@@ -549,14 +549,14 @@ FluxSource* FluxSource::event(double time)
     //the particles originate close to GLAST, and can still be incident.
     // loop through until you get a particle which is not occluded by the earth.
     
-    do{
+//THB    do{
         calculateInterval(time+m_extime);
         //std::cout << "now interal is " << m_interval << std::endl;
         computeLaunch(time+m_extime+m_interval);
         //std::cout << "Testing at time = " << time+m_extime+m_interval << " , interval = " << m_interval << std::endl;
         //std::cout << "occluded? " << occluded() << std::endl;
         m_extime+=m_interval;
-    }while(occluded() || m_interval == -1);
+//THB    }while(occluded() || m_interval == -1);
     m_extime -= m_interval;
     
     
