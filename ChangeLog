@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Tue Apr 16 11:20:58 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+TDS used to store particle information; FluxTestAlg designed to use the information stored from FLuxAlg.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Apr 16 11:20:57 PDT 2002
 FluxSvc/src
 
