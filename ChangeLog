@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Wed Aug 20 11:52:21 PDT 2003
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+pointing input/output system cleaned up, made more transparent.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Wed Aug 20 11:52:21 PDT 2003
 FluxSvc/src
 
 Modified Files:
