@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.16 2002/01/14 23:22:40 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.17 2002/01/16 12:25:37 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
 
-#include "FluxSvc/FluxSvc.h"
+#include "FluxSvc.h"
 
 #include "GaudiKernel/SvcFactory.h"
 #include "GaudiKernel/MsgStream.h"
@@ -21,7 +21,7 @@
 
 #include "Flux.h"
 
-#include "FluxSvc/FluxMgr.h"
+#include "FluxMgr.h"
 #include <algorithm>
 
 // declare the service factories for the FluxSvc

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/CompositeSource.h,v 1.2 2002/01/30 01:36:44 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/CompositeSource.h,v 1.3 2002/01/31 09:55:19 srobinsn Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1

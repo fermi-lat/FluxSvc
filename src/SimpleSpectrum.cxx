@@ -1,7 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.2 2002/01/17 08:38:51 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.3 2002/01/24 10:03:48 srobinsn Exp $
 
 
-#include "FluxSvc/SimpleSpectrum.h"
+#include "SimpleSpectrum.h"
 
 #include "dom/DOM_Element.hpp"
 #include "xml/Dom.h"
