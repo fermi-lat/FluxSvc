@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Oct 28 23:17:01 PST 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeSource.cxx CompositeSource.h 
+	GPS.cxx GPS.h 
+Log Message:
+compositediffuse changes, roll/pitch/yaw removed in orbit, lat/lon functions fixed to use new orbit model, compositesource fixed to allow nested composites.
+
+    *
+------------------------------------------------------------
 User: kuss  Thu Oct 24 09:33:29 PDT 2002
 FluxSvc/src
 
