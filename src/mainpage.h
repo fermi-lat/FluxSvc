@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.3 2002/07/25 05:18:59 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.4 2002/08/04 00:52:45 srobinsn Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -71,7 +71,6 @@
 
   <hr>
   \todo Complete and recalibrate the CompositeDiffuse structure
-  \todo Overhaul time handling to use the TimeStamp class.
 
 */
 
