@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Apr 16 18:57:33 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FluxSource.cxx 
+Log Message:
+Service outputs Energies in MeV, but sources in XML can be either (they default to GeV for backwards-compatibility).
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Apr 16 18:57:33 PDT 2002
 FluxSvc/FluxSvc
 
 Modified Files:
