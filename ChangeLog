@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Nov  4 14:53:49 PST 2002
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+ready for tag.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Nov  4 14:53:48 PST 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+ready for tag.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Nov  4 14:11:07 PST 2002
 FluxSvc/src/rootplot
 
