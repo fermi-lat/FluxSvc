@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.23 2003/10/03 00:28:39 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.24 2003/10/28 13:45:26 burnett Exp $
 */
 
 // Include files
@@ -47,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.23 2003/10/03 00:28:39 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.24 2003/10/28 13:45:26 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -354,9 +354,7 @@ StatusCode ExposureAlg::execute()
         m_rootTupleSvc->storeRowFlag(true);
     }
     //----------------------------------------------
-    setFilterPassed( false );
-    log << MSG::DEBUG << "ExposureAlg found a TimeTick particle, ended this execution after making a record, filterpassed = " << filterPassed() << endreq;
-
+    
     m_tickCount++;
     return sc;
 }
