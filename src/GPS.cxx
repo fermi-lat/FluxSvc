@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.4 2002/05/09 21:39:16 srobinsn Exp $
+// $Id: GPS.cxx,v 1.5 2002/05/18 21:21:34 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -16,7 +16,7 @@ GPS*	GPS::s_instance = 0;
 
 GPS::GPS() 
 : m_orbit(new Orbit),
-m_expansion(-1.),    // default expansion: random orbit for now
+m_expansion(1.),    // default expansion:regular orbit for now
 m_time(0.), 
 m_orbittime(m_time),
 m_sampleintvl(0.001),
