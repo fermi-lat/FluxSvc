@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.75 2004/08/13 22:47:51 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.76 2004/08/14 02:42:24 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.75 2004/08/13 22:47:51 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.76 2004/08/14 02:42:24 burnett Exp $
 */
 
 // includes
@@ -265,6 +265,9 @@ StatusCode FluxSvc::initialize ()
 
     // bind all of the properties for this service
     setProperties ();
+    // set the starting time from date if set
+    m_startTime = startTime();
+//    if(! m_startDate.value().empty() && m_endTime>0) m_endTime += m_startTime; 
 
     // open the message log
     MsgStream log( msgSvc(), name() );
@@ -519,7 +522,7 @@ StatusCode FluxSvc::run(){
         return StatusCode::FAILURE;
     }
     }
-    if( m_startTime>m_endTime){
+    if( m_startTime>m_endTime && m_endTime>0){
         log << MSG::ERROR << "Start time after end time!" << endreq;
         return StatusCode::FAILURE;
     }
