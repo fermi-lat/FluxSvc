@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: burnett  Thu May 15 13:34:43 PDT 2003
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt test_source.xml 
+Log Message:
+tagging; see release.notes
+    *
+------------------------------------------------------------
+User: burnett  Thu May 15 13:34:43 PDT 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx mainpage.h 
+Log Message:
+tagging; see release.notes
+    *
+------------------------------------------------------------
 User: burnett  Thu May 15 13:34:42 PDT 2003
 FluxSvc/doc
 
