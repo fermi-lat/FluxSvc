@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Sat Oct 19 16:20:05 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	CompositeDiffuse.cxx CompositeDiffuse.h 
+Log Message:
+many compositediffuse changes, diffuse source for testing changed to be appropriate,pdr test sources altered to avoid crashing due to "nested composite" problem - this needs examination.
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Oct 18 09:37:43 PDT 2002
 FluxSvc/sources
 
