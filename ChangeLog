@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Fri Apr  5 15:40:23 PST 2002
+FluxSvc/src/test
+
+Removed Files:
+	GRBParam.txt 
+Log Message:
+rootplot able to be called remotely.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Fri Apr  5 15:40:23 PST 2002
 FluxSvc/src
 
 Modified Files:
