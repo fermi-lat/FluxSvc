@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: omodei  Thu Mar 14 07:58:23 PST 2002
+FluxSvc/src/GRB
+
+Modified Files:
+	GRBSpectrum.cxx 
+Log Message:
+The rate could not be too low!
+    *
+------------------------------------------------------------
 User: omodei  Thu Mar 14 07:10:50 PST 2002
 FluxSvc/src/GRB
 
