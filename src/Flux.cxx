@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.13 2002/01/30 01:36:45 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.14 2002/02/02 01:33:25 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -79,7 +79,7 @@ void Flux::pass ( double t){
 }
 
 /// Get the time as held by GPS    
-/*GPStime*/int Flux::gpsTime () const{
+/*GPStime*//*int*/double Flux::gpsTime () const{
     return s_mgr->time();
 }
 
