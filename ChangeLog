@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kyoung  Wed Jun 20 15:07:08 PDT 2001
+FluxSvc/src/Dll FluxSvc_load.cxx
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+Changed IspectrumFactory.h to ISpectrumFactory.h
+    *
+------------------------------------------------------------
 User: burnett  Sat Jun 16 06:36:28 PDT 2001
 FluxSvc/cmt requirements
 
