@@ -1,11 +1,11 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.7 2002/07/25 05:18:58 srobinsn Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.8 2002/08/08 00:02:39 srobinsn Exp $
 
 #include "../FluxSvc/EventSource.h"
 
 #include "dom/DOM_Element.hpp"
 #include "xml/Dom.h"
 #include "GPS.h"
-#include "Orbit.h"
+//#include "Orbit.h"
 #include "CLHEP/Random/RandExponential.h"
 
 #include <strstream>
@@ -84,10 +84,10 @@ void    EventSource::setRate ( double rate )
     setFlux(  rate/(m_solid_angle*s_total_area) );
 }
 
-Orbit*  EventSource::makeOrbit () const
-{
-    return new Orbit;
-}
+//Orbit*  EventSource::makeOrbit () const
+//{
+//    return new Orbit;
+//}
 
 
 // UI titles

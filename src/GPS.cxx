@@ -1,5 +1,5 @@
 // GPS.cxx: implementation of the GPS class.
-// $Id: GPS.cxx,v 1.19 2002/10/14 19:46:13 srobinsn Exp $
+// $Id: GPS.cxx,v 1.20 2002/10/29 07:17:01 srobinsn Exp $
 //////////////////////////////////////////////////////////////////////
 
 #include "GPS.h"
@@ -151,15 +151,15 @@ void GPS::expansion ( double e )
     m_expansion = e; 
 }
 
-void GPS::lat ( double l )
-{
-    m_orbit->setLatitude(l);
-}
+//void GPS::lat ( double l )
+//{
+//    m_orbit->setLatitude(l);
+//}
 
-void GPS::lon ( double l )
-{
-    m_orbit->setLongitude(l);
-}
+//void GPS::lon ( double l )
+//{
+//    m_orbit->setLongitude(l);
+//}
 
 void GPS::time ( GPStime t )
 {
