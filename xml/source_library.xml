@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.13 2002/10/30 20:08:11 burnett Exp $
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/xml/source_library.xml,v 1.14 2002/10/31 00:23:41 burnett Exp $
    This is a library of sources that can be included by a source with an empty element:
    that is, <source name="chime"/> picks up the entry named "chime"
    Also, if the second command line option matches one of these names, it will be used as a source
@@ -140,13 +140,7 @@
     </source>
 
 
-	<!-- galactic electron spectrum evaluated at the CHIME  average . angular dependence and rate are from the CHIME spectrum object -->
-    <source name="electronavg" >
-        <spectrum escale="GeV"> <SpectrumClass name="GalElSpectrum" params="13.8, 24.9"/> <use_spectrum/> </spectrum>
-    </source>
-
-
-	<!-- the albedo proton spectrum, measured by AMS, implemented by AlbedoPSpectrum. isotropic for now  -->
+    <!-- the albedo proton spectrum, measured by AMS, implemented by AlbedoPSpectrum. isotropic for now  -->
     <source name="albedo_proton_max">
          <spectrum escale="GeV"> <SpectrumClass name="AlbedoPSpectrum" params="4.78,8.18"/>  <solid_angle mincos="-1.0" maxcos="1.0"/>
          </spectrum>
@@ -233,7 +227,7 @@
 		<nestedSource sourceRef="cremeavg" /> 
 		<nestedSource sourceRef="albedo_proton_avg" /> 
 		<nestedSource sourceRef="albedo_gamma" /> 
-		<nestedSource sourceRef="electronavg" /> 
+		<!-- TODO: restore nestedSource sourceRef="electronavg" /  --> 
 		<nestedSource sourceRef="albedo_electronpositronavglow"/>
         <nestedSource sourceRef="albedo_electronpositronavghi"/> 
     </source>
