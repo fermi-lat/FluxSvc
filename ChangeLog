@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Wed Oct 30 12:43:54 PST 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h ISpectrum.h 
+Log Message:
+GPS orbit cleanup (further), wired-in '6' removed, replaced with EventSource::totalArea(), solid angle fixed in ISpectrum, compositeDiffuse structure removed.
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 30 12:08:12 PST 2002
 FluxSvc/src/test/flux
 
