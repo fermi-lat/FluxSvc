@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.3 2001/04/19 15:01:37 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.4 2001/07/07 01:27:09 burnett Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -17,6 +17,7 @@ static const InterfaceID IID_IFluxSvc(910, 1 , 0);
 
 // forward declarations
 class IFlux;
+class HepRandomEngine;
 
 /** Abstract interface for the flux service
 
@@ -37,6 +38,8 @@ public:
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 
 
+	/// access to the local random engine (testing)
+	virtual HepRandomEngine* getEngine()=0;
 };
 
 #endif  // _H_IFluxSvc
