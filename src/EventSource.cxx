@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.9 2002/10/30 20:43:54 srobinsn Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/EventSource.cxx,v 1.10 2003/02/20 21:39:03 burnett Exp $
 
 #include "FluxSvc/EventSource.h"
 
@@ -88,6 +88,9 @@ void    EventSource::setRate ( double rate )
 //    return new Orbit;
 //}
 
+double	EventSource::solidAngle () const{
+    return m_solid_angle;
+}
 
 // UI titles
 std::string EventSource::fullTitle () const 
