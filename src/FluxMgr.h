@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.10 2002/09/06 21:14:47 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.11 2002/10/08 22:48:37 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -16,6 +16,7 @@
 */
 
 #include "CompositeSource.h"
+#include "GPS.h"
 
 #include "FluxSvc/FluxSource.h"
 
@@ -26,7 +27,6 @@
 #include <map>
 #include <list>
 #include <string>
-#include "geometry/CoordTransform.h"
 
 class FluxMgr 
 {

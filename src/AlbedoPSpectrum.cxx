@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.cxx,v 1.8 2002/10/31 01:19:56 burnett Exp $
+// $Id: AlbedoPSpectrum.cxx,v 1.9 2002/12/17 07:43:12 srobinsn Exp $
 
 
 #include "AlbedoPSpectrum.h"
@@ -145,7 +145,7 @@ void AlbedoPSpectrum::setPosition( std::pair<double,double> coords) {
 
 //------------------------- calculate_rate()
 ///Ask GPS where we are and find the flux at that point.
-double AlbedoPSpectrum::calculate_rate(double old_rate)
+double AlbedoPSpectrum::calculate_rate(double)
 {
     return flux(GPS::instance()->lat(), GPS::instance()->lon());
 }
@@ -153,7 +153,7 @@ double AlbedoPSpectrum::calculate_rate(double old_rate)
 //-------------------------- dir()
 ///Choose random direction for a particle.
 ///Zenith angle distribution according to 1+0.6*sin(zenith)
-std::pair<float,float> AlbedoPSpectrum::dir(float energy)const
+std::pair<float,float> AlbedoPSpectrum::dir(float /*energy*/)const
 {
     // Random particle direction
     
