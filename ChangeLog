@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct  8 23:14:54 PDT 2002
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+change interface id
+    *
+------------------------------------------------------------
 User: srobinsn  Tue Oct  8 19:48:30 PDT 2002
 FluxSvc/FluxSvc
 
