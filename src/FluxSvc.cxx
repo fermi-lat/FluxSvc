@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.46 2002/10/30 19:04:33 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.47 2002/10/30 20:08:11 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -158,7 +158,8 @@ StatusCode FluxSvc::initialize ()
                     log << MSG::INFO << "Registering sources in " << tooltype << endreq;
                     dynamic_cast<IRegisterSource*>(itool)->registerMe(this);
                 }else{
-		  tsvc->releaseTool(itool);
+                    itool->release();
+                    tsvc->releaseTool(itool);
 		}
 
             }
