@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.7 2001/09/28 04:38:05 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSvc.h,v 1.8 2001/10/13 22:40:36 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -16,7 +16,8 @@ template <class TYPE> class SvcFactory;
 class IFlux;  // interface
 class FluxMgr;  // actual manager
 
-                /*! Service that implements the IFluxSvc interface, to return an IFlux object  
+/*! Service that implements the IFluxSvc interface, to return an IFlux object.
+FluxSvc handles the creation and interfacing with Flux objects.  
 */
 class FluxSvc : virtual public Service, virtual public IFluxSvc
 {  
@@ -61,11 +62,11 @@ private:
     friend class SvcFactory<FluxSvc>;
     
     FluxMgr * m_fluxMgr;
-	/// the user-defined list of acceptable XML sources (from JobOptions.txt)
-	std::vector<std::string> m_source_lib;
-	/// the default XML file name (from JobOptions.txt)
-	std::string m_source_lib_default;
-
+    /// the user-defined list of acceptable XML sources (from JobOptions.txt)
+    std::vector<std::string> m_source_lib;
+    /// the default XML file name (from JobOptions.txt)
+    std::string m_source_lib_default;
+    
 };
 
 
