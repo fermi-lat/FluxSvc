@@ -1,7 +1,7 @@
 package FluxSvc
-version v6r4p1
+version v6r4p2
 
-# $Id: requirements,v 1.77 2003/03/19 19:15:32 burnett Exp $
+# $Id: requirements,v 1.78 2003/03/20 21:45:04 burnett Exp $
 
 branches FluxSvc cmt doc
 
