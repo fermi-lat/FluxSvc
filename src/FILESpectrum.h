@@ -2,7 +2,7 @@
 * @file FILESpectrum.h
 * @brief definition of FILESpectrum
 *
-*  $Header: $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FILESpectrum.h,v 1.7 2002/10/18 16:37:43 burnett Exp $
 */
 #ifndef FILESpectrum_H
 #define FILESpectrum_H
@@ -28,14 +28,14 @@ public:
     /// params is the filename to read
     FILESpectrum(const std::string& params);
     
-    
     /// return total flux 
     virtual double flux() const;
-    
+
+    /// flux method to conform to FluxSvc spectrum standard
+    double flux (double time ) const;
     
     /// sample a single particle energy from the spectrum
     virtual float operator() (float)const;
-    
     
     virtual std::string title() const;
     virtual const char * particleName() const;

@@ -2,7 +2,7 @@
 * @file FILESpectrum.cxx
 * @brief Implementation of FILESpectrum
 *
-*  $Header: $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FILESpectrum.cxx,v 1.7 2002/10/18 16:37:42 burnett Exp $
 */
 
 #include "FILESpectrum.h"
@@ -110,6 +110,10 @@ double FILESpectrum::flux() const
 {
     /// Purpose: Calculate flux for the current position
     return m_flux;
+}
+
+double FILESpectrum::flux (double time ) const{
+    return flux();
 }
 
 
