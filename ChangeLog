@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Mon Mar 11 08:55:07 PST 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.h FluxMgr.h FluxMgr.cxx 
+Log Message:
+added carriage return at end of files, and fixed a scope problem in FluxMgr.cxx
+    *
+------------------------------------------------------------
 User: cohen  Mon Mar 11 08:55:06 PST 2002
 FluxSvc/FluxSvc
 
