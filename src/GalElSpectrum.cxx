@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.10 2003/02/22 05:42:25 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.cxx,v 1.11 2003/02/23 02:08:22 burnett Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 #ifdef __GNUG__
@@ -83,7 +83,7 @@ int GalElSpectrum::askGPS() {
 }
 
 float GalElSpectrum::findCutoff(float rflux) const {
-    return pow(-m_expo*rflux/m_norm, 1./m_expo);
+    return pow(static_cast<double>(-m_expo*rflux/m_norm), 1./m_expo);
 }
 float GalElSpectrum::findCutoff(float lat, float lon) const {
 #if 0
