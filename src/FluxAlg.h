@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.5 2002/07/23 19:00:56 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.h,v 1.6 2002/09/13 16:12:04 burnett Exp $
 #ifndef FluxAlg_h
 #define FluxAlg_h
 /** 
@@ -26,6 +26,7 @@ class IparticlePropertySvc;
 class FluxAlg : public Algorithm {
 public:
     FluxAlg(const std::string& name, ISvcLocator* pSvcLocator);
+    double currentRate(){return m_currentRate;}
     
     StatusCode initialize();
     StatusCode execute();
@@ -33,7 +34,7 @@ public:
     
     
 private: 
-    
+    double m_currentRate;
     StringProperty m_source_name;
 
     IFluxSvc*   m_fluxSvc;

@@ -1,4 +1,4 @@
-// $Id: AlbedoPSpectrum.h,v 1.7 2002/07/25 05:18:58 srobinsn Exp $
+// $Id: AlbedoPSpectrum.h,v 1.9 2002/10/31 01:19:56 burnett Exp $
 // File: AlbedoPSpectrum.h
 #ifndef ALBEDO_P_SPECTRUM_H
 #define ALBEDO_P_SPECTRUM_H
@@ -81,7 +81,8 @@ private:
     float m_flux;   
 
     double m_lat,m_lon; // latitude, longitude
-    
+    bool m_allowMove;   //whether or not the flux will be allowed to change position.
+
     std::string m_particle_name;
     ObserverAdapter< AlbedoPSpectrum > m_observer; //obsever tag
     void fitParams(const double lat, const double lon, double& alf1, 

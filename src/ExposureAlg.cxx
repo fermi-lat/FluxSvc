@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.10 2002/10/23 12:55:52 burnett Exp $
 */
 
 // Include files
@@ -43,7 +43,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.10 2002/10/23 12:55:52 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -242,9 +242,11 @@ StatusCode ExposureAlg::execute()
     //and here's the file output.
     if( m_out !=0) {
         std::ostream& out = *m_out;
-        out<<intrvalstart <<'\t';
-        out<<intrvalend <<'\t';
-        out<< posx<<'\t';
+        out << std::setw(14) << std::setprecision(14) 
+        <<intrvalstart <<'\t'
+        <<intrvalend <<'\t';
+        out << std::setw(9) << std::setprecision(7)
+        << posx<<'\t';
         out<< posy<<'\t';
         out<< posz<<'\t';
         out<<raz<<'\t';
