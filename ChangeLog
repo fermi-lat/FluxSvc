@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: burnett  Thu Mar  6 20:32:12 PST 2003
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+Tagging documentation changes by Sean; 
+Fixed transformation when launch point is the target sphere.
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar  6 20:32:12 PST 2003
 FluxSvc/doc
 
 Modified Files:
