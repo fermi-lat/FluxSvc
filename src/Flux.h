@@ -1,11 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.11 2002/01/02 05:00:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.h,v 1.12 2002/01/10 17:35:01 srobinsn Exp $
 
 #ifndef FLUXSVC_FLUX_H
 #define FLUXSVC_FLUX_H
 
 
 #include "FluxSvc/IFlux.h"
-
+#include "geometry/CoordTransform.h"
 
 // forward declarations
 class FluxMgr;
@@ -75,9 +75,12 @@ public:
     
    // virtual void addFactory( const IFactory* factory );
     
-    virtual void addFactory(std::string name, const ISpectrumFactory* factory );/* {
-                                                                                insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
-}*/
+    virtual void addFactory(std::string name, const ISpectrumFactory* factory );
+    
+    virtual Rotation CELTransform(double time)const;
+                                                                                  
+//    insert(std::make_pair<std::string, const ISpectrumFactory*>(name, factory));
+
     
     
 private:

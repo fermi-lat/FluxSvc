@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.12 2002/01/16 12:25:34 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.13 2002/01/17 08:38:46 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -10,7 +10,8 @@
 #include <string>
 #include "CLHEP/Geometry/Point3D.h"
 #include "CLHEP/Geometry/Vector3D.h"
-#include "../src/SpectrumFactoryTable.h"
+#include "FluxSvc/SpectrumFactoryTable.h"
+#include "geometry/CoordTransform.h"
 
 class ParticleProperty;
 
@@ -65,6 +66,9 @@ public:
 
     /// pass a specific amount of time
     virtual void pass ( double t)=0;
+
+    /// get the transformation matrix
+    virtual Rotation CELTransform(double time)const=0;
        
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 #if 0

@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.2 2002/01/16 22:28:05 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/testMgr.cxx,v 1.3 2002/01/17 08:38:52 srobinsn Exp $
 
 #include "FluxSvc/FluxMgr.h"
 #include "FluxSvc/EventSource.h"
 #include "FluxSvc/ISpectrumFactory.h"
-#include "../../SpectrumFactoryTable.h"
+#include "FluxSvc/SpectrumFactoryTable.h"
 #include <iostream>
 #include <algorithm>
 #include "../../CHIMESpectrum.h"
