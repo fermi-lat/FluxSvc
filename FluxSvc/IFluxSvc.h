@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.22 2002/07/23 19:00:55 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.23 2002/08/04 00:52:44 srobinsn Exp $
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
 /** 
@@ -17,6 +17,7 @@
 #include <list>
 #include <vector>
 #include "geometry/CoordTransform.h"
+#include "src/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_IFluxSvc(910, 1 , 0); 
@@ -71,6 +72,9 @@ public:
     
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
+
+    /// this sets the rocking mode in GPS.
+    virtual void setRockType(GPS::RockType rockType)=0;
     
     
 };
