@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu May  9 14:39:16 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	Flux.cxx Flux.h FluxMgr.cxx FluxMgr.h FluxSource.cxx GPS.cxx 
+Log Message:
+Occluded() function fixed in FLuxSource, explanation given in code comments
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu May  9 14:39:15 PDT 2002
 FluxSvc/FluxSvc
 
