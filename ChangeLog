@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Mar 22 06:48:51 PST 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+allow for RootTupleSvc to not be available, issue warning only.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r20, operation: add
 Package: FluxSvc
