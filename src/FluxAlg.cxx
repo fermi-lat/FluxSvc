@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.28 2002/08/29 20:30:00 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.29 2002/09/13 16:12:04 burnett Exp $
 
 // Include files
 // Gaudi system includes
@@ -134,7 +134,7 @@ StatusCode FluxAlg::execute()
     // Here the TDS is prepared to receive hits vectors
     // Check for the MC branch - it will be created if it is not available
     
-    DataObject *mc = new Event::McParticleCol;
+    DataObject *mc = new Event::MCEvent;
     sc=eventSvc()->registerObject(EventModel::MC::Event , mc);
     if(sc.isFailure()) {
         log << MSG::WARNING << EventModel::MC::Event  <<" could not be registered on data store" << endreq;
