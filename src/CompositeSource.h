@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.2 2002/02/07 23:51:02 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CompositeSource.h,v 1.3 2002/04/18 18:02:00 burnett Exp $
 
 #ifndef CompositeSource_h
 #define CompositeSource_h 1
@@ -74,7 +74,7 @@ protected:
     int m_numofiters;
 
     
-private: 
+//private: 
     std::vector< EventSource* > m_sourceList;
     EventSource*  m_recent;
 };
