@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: dnwren  Fri Jan 24 12:05:04 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+reinserted "backgndmaxpdr" composite flux.
+backgnd(avg/max)pdr updated to use nested composite albedo_electronpositron(avg)_total
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Jan 23 15:16:14 PST 2003
 FluxSvc/xml
 
