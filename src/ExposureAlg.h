@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.h,v 1.3 2002/08/31 20:55:59 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.h,v 1.4 2002/09/16 18:26:07 srobinsn Exp $
 #ifndef ExposureAlg_h
 #define ExposureAlg_h
 /** 
@@ -51,7 +51,6 @@ private:
     unsigned long m_run;      // run number
     unsigned long m_event;    // event number
     std::ostream* m_out;  //for output that looks like the stuff from the astro orbit model test.
-    
     
     IDataProviderSvc* m_eds;
     

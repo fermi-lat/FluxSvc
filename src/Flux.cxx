@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.21 2002/07/25 05:18:58 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.22 2002/09/05 02:24:01 srobinsn Exp $
 
 // Original author: T. Burnett
 
@@ -141,4 +141,8 @@ Rotation Flux::orientTransform(double time)const{
 Rotation Flux::transformGlastToGalactic(double time)const{
     
     return s_mgr->transformGlastToGalactic(time);
+}
+
+void Flux::writeSourceCharacteristic(std::ostream& out){
+    m_event->writeSourceCharacteristic(out);
 }
