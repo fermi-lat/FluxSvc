@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sat Mar  1 22:30:57 PST 2003
+FluxSvc/src/rootplot
+
+Modified Files:
+	rootplot.h 
+Log Message:
+move header files from interface directory;  
+more doc changes, clean out unused methods.
+
+    *
+------------------------------------------------------------
+User: burnett  Sat Mar  1 22:30:57 PST 2003
 FluxSvc/src
 
 Modified Files:
