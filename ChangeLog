@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Mar 27 11:00:19 PST 2005
+FluxSvc/src
+
+Modified Files:
+	PointingInfo.cxx 
+Log Message:
+Implement B,L in DC2 output
+    *
+------------------------------------------------------------
+User: burnett  Sun Mar 27 11:00:19 PST 2005
 FluxSvc/FluxSvc
 
 Modified Files:
