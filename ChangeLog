@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Wed Apr 18 19:11:35 PDT 2001
+FluxSvc/cmt requirements setup.bat
+
+Modified Files:
+	requirements 
+Removed Files:
+	setup.bat 
+Log Message:
+switching to new Gaudi
+    *
+------------------------------------------------------------
 User: burnett  Wed Apr 18 19:11:34 PDT 2001
 FluxSvc/FluxSvc FluxSvc.h IFluxSvc.h
 
