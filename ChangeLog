@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb  6 14:55:28 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+GalElSpectrum altered to not exhibit chime "negative table index" bug.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb  6 09:53:38 PST 2003
 FluxSvc/src
 
