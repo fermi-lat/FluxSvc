@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Fri Mar  5 18:29:26 PST 2004
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+follow Gaudi recommendations for component libraries
+    *
+------------------------------------------------------------
 User: hierath  Wed Jan 28 15:24:12 PST 2004
 FluxSvc/src
 
