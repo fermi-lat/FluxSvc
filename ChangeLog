@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+TAG activity
+User: burnett  Sun Jul 29 21:15:56 2001
+Tag name: v2r7
+Tag operation: mov
+Repository: /nfs/slac/g/glast/ground/cvs/FluxSvc/src
+File(s) and revision(s): Flux.cxx
+    *
+------------------------------------------------------------
 User: burnett  Sun Jul 29 21:15:39 PDT 2001
 FluxSvc/src Flux.cxx
 
