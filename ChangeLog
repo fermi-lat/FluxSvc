@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri Mar 15 02:06:17 PST 2002
+FluxSvc/src
+
+Modified Files:
+	FluxMgr.cxx 
+Log Message:
+Tried to fix Windows compilation errors
+    *
+------------------------------------------------------------
 User: omodei  Thu Mar 14 07:59:22 PST 2002
 FluxSvc/src/GRB
 
