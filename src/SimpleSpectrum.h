@@ -1,12 +1,15 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.2 2002/04/03 21:26:13 srobinsn Exp $
-//
-//
-// Spectrum: base class for energy spectrum objects
-// SimpleSpectrum: define a particle and spectral index
-//
-
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.3 2002/06/24 22:37:16 srobinsn Exp $
 #ifndef SIMPLESPECTRUM_H
 #define SIMPLESPECTRUM_H
+/** 
+* \class SimpleSpectrum
+*
+* Spectrum: base class for energy spectrum objects
+* SimpleSpectrum: define a particle and spectral index
+* 
+* $Header $
+*/
+
 #include "Spectrum.h"
 #include <string>
 

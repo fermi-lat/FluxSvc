@@ -1,8 +1,19 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.6 2002/02/07 23:51:02 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/EventSource.h,v 1.7 2002/06/24 22:37:15 srobinsn Exp $
 
 
 #ifndef EventSource_h
 #define EventSource_h 1
+
+/** 
+* \class EventSource
+*
+* \brief  Interface to the EventSource class. Provides a generic interface to 
+* what Glastsim uses as a data source.  This can constitute GISMO based 
+* event generation, reading in from a file, etc...
+* 
+* $Header $
+*/
+
 
 #include <string>
 
@@ -13,9 +24,6 @@ class DOM_Element;
 class FluxSource;
 
 
-//! Interface to the EventSource class. Provides a generic interface to 
-//! what Glastsim uses as a data source.  This can constitute GISMO based 
-//! event generation, reading in from a file, etc...
 class EventSource
 {
 public:

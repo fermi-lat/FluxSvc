@@ -1,12 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.3 2002/05/18 21:21:34 srobinsn Exp $
-// GPS.h: interface for the GPS class.
-//
-//	Models the Global Positoning System for a spacecraft. Handles time
-//	position, and orientation for the instrument as a whole.
-//////////////////////////////////////////////////////////////////////
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GPS.h,v 1.4 2002/06/24 22:37:16 srobinsn Exp $
 
 #if !defined(_H_GPS_CLASS)
 #define _H_GPS_CLASS
+
+/** 
+* \class GPS
+*
+* \brief Models the Global Positoning System for a spacecraft. Handles time, position, and orientation for the instrument as a whole.
+* 
+* $Header $
+*/
+
 
 #if _MSC_VER > 1000
 #pragma once
