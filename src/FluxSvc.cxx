@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.29 2002/06/21 19:54:24 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.30 2002/06/24 22:37:16 srobinsn Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 //
@@ -61,9 +61,7 @@ StatusCode FluxSvc::source(std::string name, IFlux*& flux) {
         //flux =  new Flux(name);
         return StatusCode::FAILURE;
     flux =  new Flux(name);
-    m_currentFlux = flux;
-    //std::cout << "currentFluxPointer = " << flux << std::endl;
-    
+    m_currentFlux = flux;    
     return StatusCode::SUCCESS;
 }
 
@@ -75,9 +73,7 @@ FluxSvc::~FluxSvc()
 
 // initialize
 StatusCode FluxSvc::initialize () 
-{
-    //std::vector<std::string> fileList;
-    
+{   
     StatusCode  status =  Service::initialize ();
     
     // bind all of the properties for this service
