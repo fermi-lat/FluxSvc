@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Wed Jul 21 18:02:37 PDT 2004
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_dll.cxx 
+Log Message:
+replace CalDigi by FluxSvc
+    *
+------------------------------------------------------------
 User: burnett  Wed Jul 14 14:14:10 PDT 2004
 FluxSvc/src/Dll
 
