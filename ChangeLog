@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Tue Jan 28 12:28:34 PST 2003
+FluxSvc/xml
+
+Modified Files:
+	source_library.xml 
+Log Message:
+GalElSpectrum added back in, rootplot "delete e" issue fixed.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Tue Jan 28 12:28:34 PST 2003
 FluxSvc/src/rootplot
 
 Modified Files:
