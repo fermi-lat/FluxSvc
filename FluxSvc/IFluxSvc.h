@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.10 2002/01/02 05:00:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.11 2002/01/10 17:35:01 srobinsn Exp $
 // 
 //!  \author: T. Burnett
 //
@@ -10,7 +10,7 @@
 #include "GaudiKernel/IInterface.h"
 #include <string>
 #include <list>
-#include "flux/SpectrumFactoryTable.h"
+//#include "flux/SpectrumFactoryTable.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
 static const InterfaceID IID_IFluxSvc(910, 1 , 0); 
@@ -19,6 +19,7 @@ static const InterfaceID IID_IFluxSvc(910, 1 , 0);
 class IFlux;
 class HepRandomEngine;
 class IParticlePropertySvc;
+class ISpectrumFactory;
 
 //! Abstract interface for the flux service, FluxSvc.
 class  IFluxSvc : virtual public IInterface {
