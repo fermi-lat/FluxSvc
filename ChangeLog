@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: omodei  Fri Feb 15 07:59:59 PST 2002
+FluxSvc/src/GRB
+
+Added Files:
+	GRBConstants.h GRBShell.cxx GRBShell.h GRBShock.cxx GRBShock.h 
+	GRBSim.cxx GRBSim.h GRBSpectrum.cxx GRBSpectrum.h 
+	GRBUniverse.cxx GRBUniverse.h 
+Log Message:
+Added Gamma Ray Burst Spectrum for testing time dipendent spectrum
+    *
+------------------------------------------------------------
 User: omodei  Fri Feb 15 07:52:46 PST 2002
 FluxSvc/src/GRB
 
