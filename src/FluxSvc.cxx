@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.72 2004/05/12 10:12:00 omodei Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.73 2004/07/29 17:59:45 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -37,7 +37,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.72 2004/05/12 10:12:00 omodei Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.73 2004/07/29 17:59:45 burnett Exp $
 */
 
 // includes
@@ -55,8 +55,10 @@ class FluxMgr;  // actual manager
 class IParticlePropertySvc; 
 class IAppMgrUI;
 
+#if 0 //THB: these are moved now
 ISpectrumFactory & GRBmanagerFactory();
 ISpectrumFactory & GRBobsFactory();
+#endif
 
 class FluxSvc : 
     virtual public Service, 
@@ -311,12 +313,14 @@ StatusCode FluxSvc::initialize ()
     IToolFactory* toolfactory = 0;
     
     // search throught all objects (factories?)
+#if 0 // THB: GRB moved
     //////////////////////////////////////////////////
     // Adding GRB Factory!
     log << MSG::INFO << "Register GRB models!" << endreq;
     GRBmanagerFactory();
     GRBobsFactory();
     //////////////////////////////////////////////////
+#endif
     for(IObjManager::ObjIterator it = objManager->objBegin(); it !=objManager->objEnd(); ++ it){
 
         std::string tooltype= (*it)->ident();
