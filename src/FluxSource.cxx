@@ -1,13 +1,13 @@
 /** @file FluxSource.cxx
     @brief Implementation of FluxSource
 
-  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.58 2003/03/07 21:44:50 burnett Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSource.cxx,v 1.59 2003/03/20 19:55:32 burnett Exp $
 
   */
 #include "FluxSource.h"
 
-#include "dom/DOM_Element.hpp"
-#include "dom/DOM_NodeList.hpp"
+#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_NodeList.hpp>
 #include "xml/Dom.h"
 #include "CLHEP/Random/RandFlat.h"
 

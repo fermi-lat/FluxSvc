@@ -1,13 +1,13 @@
 /** @file SimpleSpectrum.cxx
     @brief definition of SimpleSpectrum
 
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.4 2002/07/23 19:00:57 srobinsn Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.cxx,v 1.9 2003/03/01 23:14:56 burnett Exp $
 */
 
 
 #include "SimpleSpectrum.h"
 
-#include "dom/DOM_Element.hpp"
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xml/Dom.h"
 
 #include "FluxException.h" // for FATAL_MACRO
