@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Sat Jun 22 13:00:33 PDT 2002
+FluxSvc/xml
+
+Modified Files:
+	source.dtd 
+Log Message:
+vestigial "frametype" method entirely commented/removed from FluxSource and the xml.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Sat Jun 22 13:00:33 PDT 2002
 FluxSvc/src
 
 Modified Files:
