@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed May 16 17:31:09 PDT 2001
+FluxSvc/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+added electron source
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 19 08:01:37 PDT 2001
 FluxSvc/src Flux.cxx Flux.h FluxSvc.cxx
 
