@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Feb  9 08:53:58 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+bypass initialize call when searching for Flux creation tools.
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Feb  6 14:55:29 PST 2003
 FluxSvc/src
 
