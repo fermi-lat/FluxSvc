@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/flux/flux/FluxMgr.h,v 1.11 2002/01/14 23:23:16 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxMgr.h,v 1.1 2002/01/16 11:58:13 srobinsn Exp $
 
 #ifndef FLUX_MGR_H
 #define FLUX_MGR_H
@@ -14,6 +14,9 @@
 #include <map>
 #include <list>
 #include <string>
+//#include "geometry/Point.h"
+#include "geometry/CoordTransform.h"
+
 //! The point of entry for interfacing with the flux package.
 /*! holds methods for creating sources and sending new particles, 
     and methods for interfacing with the satellite position, and 
@@ -67,6 +70,10 @@ public:
     
     /// get the current satellite location
     std::pair<double,double> location();
+
+
+    ///get the transformation matrix.
+    Rotation CELTransform(double time);
     
 private:
     

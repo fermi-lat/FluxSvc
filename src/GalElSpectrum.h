@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.1 2002/01/17 08:38:50 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/GalElSpectrum.h,v 1.2 2002/01/18 11:22:06 srobinsn Exp $
 // Original author: P. L. Nolan, pln@egret1.Stanford.EDU
 //
 //! A quick and dirty implementation of the high-energy (galactic) cosmic
@@ -30,7 +30,7 @@
 #define GAL_EL_SPECTRUM_H
 
 
-#include "Spectrum.h"
+#include "FluxSvc/Spectrum.h"
 #include "CHIMESpectrum.h"
 #include "facilities/Observer.h"
 #include <string>

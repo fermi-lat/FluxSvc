@@ -8,7 +8,7 @@
  *
  * Ver 1.0 on 2001-04-18 by Masanobu Ozaki <ozaki@astro.isas.ac.jp>
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.cxx,v 1.2 2002/01/17 08:38:49 srobinsn Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CrElectron.cxx,v 1.3 2002/01/18 11:22:04 srobinsn Exp $
  */
 
 #include <math.h>
@@ -27,7 +27,7 @@
 #include "CrSpectrum.h"
 
 // define a factory for anonomous instantiation
-#include "SpectrumFactory.h"
+#include "FluxSvc/SpectrumFactory.h"
 
 static SpectrumFactory<CrElectron> factory;
 const ISpectrumFactory& CrElectronFactory = factory;

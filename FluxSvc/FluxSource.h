@@ -1,4 +1,4 @@
-//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.2 2002/01/17 08:38:46 srobinsn Exp $
+//	$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/FluxSource.h,v 1.3 2002/01/18 11:22:03 srobinsn Exp $
 //	EventSource subclass to take over the functionality of the old Flux class, which implemented
 //	a GISMO based event generation scheme.
 
@@ -6,7 +6,7 @@
 #define FluxSource_h 1
 
 #include "FluxSvc/EventSource.h"
-#include "../src/Spectrum.h"
+#include "FluxSvc/Spectrum.h"
 #include "geometry/Point.h"
 
 // forward declarations
