@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Jul  4 02:11:31 PDT 2002
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+CompositeSpectrum altered to keep each particle until it is used before generating a new one from the associated spectrum.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Wed Jul  3 02:41:55 PDT 2002
 FluxSvc/src
 
