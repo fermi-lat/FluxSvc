@@ -1,7 +1,7 @@
 // Flux test program that generates a ROOT macro to plot the flux
 //
 
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/rootplot.cxx,v 1.9 2002/04/03 21:26:14 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/flux/rootplot.h,v 1.1 2002/04/05 23:40:23 srobinsn Exp $
 
 // Original author: Theodore Hierath
 
@@ -79,8 +79,8 @@ public:
         DLL_DECL_SPECTRUM( AlbedoPSpectrum);
         DLL_DECL_SPECTRUM( HeSpectrum);
         DLL_DECL_SPECTRUM( GalElSpectrum);   
-        DLL_DECL_SPECTRUM( CrElectron);
-        DLL_DECL_SPECTRUM( CrProton);
+//        DLL_DECL_SPECTRUM( CrElectron);
+//        DLL_DECL_SPECTRUM( CrProton);
         DLL_DECL_SPECTRUM( FILESpectrum);
         //   DLL_DECL_SPECTRUM( GRBSpectrum);
         
