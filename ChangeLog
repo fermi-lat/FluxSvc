@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep 12 11:25:46 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+unix mods for linking executables and shareables against static library.
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 12 11:25:45 PDT 2002
 FluxSvc/cmt
 
