@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/SimpleSpectrum.h,v 1.2 2002/01/17 08:38:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/SimpleSpectrum.h,v 1.1 2002/02/02 01:33:25 srobinsn Exp $
 //
 //
 // Spectrum: base class for energy spectrum objects
@@ -7,7 +7,7 @@
 
 #ifndef SIMPLESPECTRUM_H
 #define SIMPLESPECTRUM_H
-#include "FluxSvc/Spectrum.h"
+#include "Spectrum.h"
 #include <string>
 
 class DOM_Element;

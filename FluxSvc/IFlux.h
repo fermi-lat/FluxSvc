@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.14 2002/01/24 10:03:46 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.15 2002/03/11 16:55:06 cohen Exp $
 // 
 //  Original author: Toby Burnett tburnett@u.washington.edu
 
@@ -10,7 +10,7 @@
 #include <string>
 #include "CLHEP/Geometry/Point3D.h"
 #include "CLHEP/Geometry/Vector3D.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
+#include "../src/SpectrumFactoryTable.h"
 #include "geometry/CoordTransform.h"
 
 class ParticleProperty;

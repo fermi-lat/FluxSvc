@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.9 2002/03/11 16:55:06 cohen Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.cxx,v 1.10 2002/03/15 10:06:17 cohen Exp $
 
 
 #include "FluxMgr.h"
 #include "FluxSvc/FluxSource.h"
-#include "FluxSvc/SpectrumFactoryTable.h"
+#include "SpectrumFactoryTable.h"
 #include "GPS.h"
 #include "FluxException.h" // defines FATAL_MACRO
 
@@ -109,7 +109,7 @@ EventSource* FluxMgr::source(std::string name)
     // first check that it is in the library
     if( m_sources.find(name)==m_sources.end() ) {
         // nope. Maybe a Spectrum object
-        Spectrum* s = SpectrumFactoryTable::instance()->instantiate(name);
+        ISpectrum* s = SpectrumFactoryTable::instance()->instantiate(name);
         
         return s? new FluxSource(s) : (EventSource*)0;
     }

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.3 2002/01/18 11:22:04 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.4 2002/01/24 10:03:47 srobinsn Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -12,7 +12,7 @@
 #include "GPS.h"
 
 // this is needed to include in the executable or dll
-#include "FluxSvc/SpectrumFactory.h"
+#include "SpectrumFactory.h"
 
 static SpectrumFactory<CHIMESpectrum> factory;
 const ISpectrumFactory& CHIMESpectrumFactory = factory;
