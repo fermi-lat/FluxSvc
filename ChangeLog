@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Jun  3 01:14:55 PDT 2002
+FluxSvc/src/test
+
+Modified Files:
+	FluxTestAlg.cxx jobOptions.txt 
+Log Message:
+orbit dynamics altered, point-spread function simulated in FLuxTestAlg.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Jun  3 01:14:54 PDT 2002
 FluxSvc/src
 
