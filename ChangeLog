@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Oct 18 09:37:43 PDT 2002
+FluxSvc/src
+
+Modified Files:
+	FILESpectrum.cxx FILESpectrum.h defaultOptions.txt 
+Log Message:
+Restore tablular flux generation from old flux package
+    *
+------------------------------------------------------------
 User: burnett  Fri Oct 18 09:34:57 PDT 2002
 FluxSvc/sources
 
