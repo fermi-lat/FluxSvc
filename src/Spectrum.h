@@ -1,7 +1,7 @@
 /** @file Spectrum.h
     @brief declaration of Spectrum
  
-   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.10 2003/02/23 02:08:22 burnett Exp $
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.11 2003/03/01 23:14:56 burnett Exp $
 */
 
 #ifndef GLAST_SPECTRUM_H
@@ -23,7 +23,7 @@
  Class for holding function definitions of Spectrums - i.e. HeSpectrum, SimpleSpectrum, etc...
  Basically an abstract base class for these classes.
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Spectrum.h,v 1.11 2003/03/01 23:14:56 burnett Exp $
 */
 class Spectrum : public ISpectrum {
 public:
@@ -71,7 +71,8 @@ public:
     virtual double energy( double time=0);
     
     /*! 
-    \param dir direction is either in the format (cos theta, phi)
+    @param energy energy returned by previous call to energy
+    \return dir direction is either in the format (cos theta, phi)
     (zenith-local coordinates, or (l,b) (galactic coordinates).
     */
     virtual std::pair<double,double> dir(double energy);

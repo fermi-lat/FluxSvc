@@ -2,7 +2,7 @@
 * @file ExposureAlg.cxx
 * @brief Definition and implementation of class ExposureAlg
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.11 2002/12/17 07:43:12 srobinsn Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.12 2003/01/29 22:30:40 srobinsn Exp $
 */
 
 // Include files
@@ -25,7 +25,7 @@
 #include "Event/MonteCarlo/D2Entry.h"
 
 //flux
-#include "FluxSvc.h"
+#include "FluxSvc/IFluxSvc.h"
 #include "FluxSvc/IFlux.h"
 #include "GPS.h"
 
@@ -43,7 +43,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.11 2002/12/17 07:43:12 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.12 2003/01/29 22:30:40 srobinsn Exp $
 */
 class ExposureAlg : public Algorithm {
 public:

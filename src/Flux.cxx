@@ -1,11 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.24 2003/02/25 00:38:40 srobinsn Exp $
+/** @file Flux.cxx
+    @brief Implementation of Flux
+   $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/Flux.cxx,v 1.25 2003/03/01 23:14:56 burnett Exp $
 
-// Original author: T. Burnett
-
+  Original author: T. Burnett
+*/
 #include "Flux.h"
 
-#include "FluxSvc/FluxSource.h"
-#include "FluxSvc/EventSource.h"
+#include "FluxSource.h"
+#include "EventSource.h"
 #include "FluxMgr.h"
 #include "SpectrumFactory.h"
 #include "GPS.h"

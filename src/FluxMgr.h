@@ -1,6 +1,6 @@
 /** @file FluxMgr.h
     @brief declaration of FluxMgr
- $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.14 2003/02/28 01:47:39 srobinsn Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxMgr.h,v 1.15 2003/03/01 23:14:56 burnett Exp $
 
   */
 #ifndef FLUX_MGR_H
@@ -20,7 +20,7 @@
 
 #include "GPS.h"
 
-#include "FluxSvc/FluxSource.h"
+#include "FluxSource.h"
 
 #include "dom/DOM_Document.hpp"
 #include "dom/DOM_Element.hpp"
