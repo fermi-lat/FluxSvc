@@ -1,4 +1,34 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Nov 24 13:51:04 PST 2003
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+rocking output amended
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Nov 24 13:51:04 PST 2003
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+rocking output amended
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Nov 24 13:51:04 PST 2003
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+rocking output amended
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Nov 24 10:48:12 PST 2003
 FluxSvc/src
 
