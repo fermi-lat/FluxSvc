@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Feb 20 14:04:11 PST 2003
+FluxSvc/FluxSvc
+
+Modified Files:
+	EventSource.h 
+Log Message:
+testMgr altered to allow many source-checking, output to a file.
+lines added to eventsource for functionality.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 20 13:39:04 PST 2003
 FluxSvc/xml
 
