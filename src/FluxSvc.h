@@ -2,7 +2,7 @@
 * @file FluxSvc.h
 * @brief definition of the class FluxSvc
 *
-*  $Header:  $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.16 2002/10/14 15:00:31 burnett Exp $
 */
 
 #ifndef _H_FluxSvc_
@@ -14,7 +14,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.h,v 1.16 2002/10/14 15:00:31 burnett Exp $
 */
 
 // includes
@@ -53,7 +53,7 @@ public:
     virtual void pass ( double t);
     
     /// create a set of display windows using rootplot.
-    void rootDisplay(std::vector<char*> arguments);
+    void rootDisplay(std::vector<const char*> arguments);
     
     ///return the pointer to the current IFlux object
     IFlux* currentFlux();
