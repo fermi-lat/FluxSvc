@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.8 2002/11/01 23:27:54 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/CHIMESpectrum.cxx,v 1.9 2002/12/12 22:48:46 srobinsn Exp $
 
 
 #include "CHIMESpectrum.h"
@@ -206,7 +206,7 @@ void CHIMESpectrum::setPosition(double lat, double lon) {
     // Do the initialization necessary when moving to a new position:
     // look up cutoff energy, build a new table of integral proton
     // fluxes
-    
+
     m_lat = lat;
     m_lon = lon;
     
