@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Apr 26 10:24:11 PDT 2005
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+added  SAA avoidance capability; move external spectrum factory setup to new class.
+    *
+------------------------------------------------------------
+User: burnett  Tue Apr 26 10:24:11 PDT 2005
 FluxSvc/cmt
 
 Modified Files:
