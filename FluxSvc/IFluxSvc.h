@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.42 2004/01/28 23:24:12 hierath Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.43 2005/03/27 04:04:39 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -18,7 +18,7 @@
 #include "astro/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc("FluxSvc", 4 , 1); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 5 , 0); 
 
 // forward declarations
 class IFlux;
@@ -32,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.42 2004/01/28 23:24:12 hierath Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.43 2005/03/27 04:04:39 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -103,6 +103,8 @@ public:
     /// set pointer to a flux object, constructed from set of names
     virtual StatusCode compositeSource(std::vector<std::string> names, IFlux*& flux)=0;
 
+    /// return current SAA status
+    virtual bool insideSAA()=0;
 
 };
 
