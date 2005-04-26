@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 26 10:24:11 PDT 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+added  SAA avoidance capability; move external spectrum factory setup to new class.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r21p1, operation: add
 Package: FluxSvc
