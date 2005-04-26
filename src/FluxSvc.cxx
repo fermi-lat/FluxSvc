@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.79 2005/03/27 04:04:40 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.80 2005/04/26 17:24:12 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -29,6 +29,7 @@
 
 #include "flux/FluxMgr.h"
 #include <algorithm>
+#include <iterator>
 #include <sstream>
 #include <iomanip>
 /** 
@@ -38,7 +39,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.79 2005/03/27 04:04:40 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.80 2005/04/26 17:24:12 burnett Exp $
 */
 
 // includes
