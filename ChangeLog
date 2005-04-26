@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 26 10:24:12 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx 
+Added Files:
+	SpectrumFactoryLoader.cxx SpectrumFactoryLoader.h 
+Log Message:
+added  SAA avoidance capability; move external spectrum factory setup to new class.
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr 26 10:24:11 PDT 2005
 FluxSvc/doc
 
