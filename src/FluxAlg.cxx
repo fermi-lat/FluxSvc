@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.61 2005/04/06 21:15:46 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.62 2005/04/26 17:24:11 burnett Exp $
 
 */
 
@@ -46,7 +46,6 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.61 2005/04/06 
 #include <vector>
 
 
-
 // Include files
 // Gaudi system includes
 #include "GaudiKernel/Algorithm.h"
@@ -60,7 +59,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.61 2005/04/06 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.61 2005/04/06 21:15:46 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.62 2005/04/26 17:24:11 burnett Exp $
 */
 
 
@@ -129,7 +128,7 @@ const IAlgFactory& FluxAlgFactory = Factory;
 //! ctor
 FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
 :Algorithm(name, pSvcLocator) , m_sequence(0), m_initialTime(0)
-, m_insideSAA(false), m_SAAreject(0)
+, m_SAAreject(0), m_insideSAA(false)
 {
     // declare properties with setProperties calls
     declareProperty("source_name",  m_source_name="default");
