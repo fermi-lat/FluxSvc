@@ -1,9 +1,3 @@
-/** 
-* @file ExposureAlg.cxx
-* @brief Definition and implementation of class ExposureAlg
-*
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.30 2005/03/20 00:47:54 burnett Exp $
-*/
 
 // Include files
 #include "FluxSvc/PointingInfo.h"
@@ -43,7 +37,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.30 2005/03/20 00:47:54 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.31 2005/03/21 23:43:15 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
