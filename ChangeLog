@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 26 15:37:00 PDT 2005
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix warnings, gcc error
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr 26 15:36:59 PDT 2005
 FluxSvc/cmt
 
