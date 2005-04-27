@@ -2,15 +2,16 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.80 2005/04/26 17:24:12 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.81 2005/04/26 22:37:00 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
 #include "FluxSvc/IRegisterSource.h"
+
 #include "facilities/Timestamp.h"
 #include "facilities/Observer.h"
 
-#include "flux/rootplot.h"
+#include "celestialSources/SpectrumFactoryLoader.h"
 
 
 #include "GaudiKernel/SvcFactory.h"
@@ -26,8 +27,10 @@
 #include "CLHEP/Random/Random.h"
 
 #include "flux/Flux.h"
-
 #include "flux/FluxMgr.h"
+#include "flux/rootplot.h"
+#include "flux/ISpectrumFactory.h"
+
 #include <algorithm>
 #include <iterator>
 #include <sstream>
@@ -39,7 +42,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.80 2005/04/26 17:24:12 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.81 2005/04/26 22:37:00 burnett Exp $
 */
 
 // includes
@@ -308,8 +311,16 @@ StatusCode FluxSvc::initialize ()
 
     log << MSG::INFO << "Registering factories external to flux: ";
     SpectrumFactoryLoader externals;
-    std::copy( externals.names().begin(), externals.names().end(), 
+    std::vector<std::string> flux_names(externals.names());
+#if 1
+    std::copy( flux_names.begin(), flux_names.end(), 
         std::ostream_iterator<std::string>(log.stream(), ", "));
+#else
+    for( std::vector<std::string>::const_iterator cit = names.begin(); cit !=names.end(); ++cit){
+        const std::string& name= *cit;
+        log << name;
+    }
+#endif
     log  << endreq;
 
 
@@ -318,7 +329,7 @@ StatusCode FluxSvc::initialize ()
     // most of  the following cribbed from ToolSvc and ObjManager
 
     // look for a factory of an AlgTool that implements the IRegisterSource interface:
-    // if found, make one and call the special method 
+    // if found, make one and call the special method  
 
     // Manager of the AlgTool Objects
     IObjManager* objManager=0;             
