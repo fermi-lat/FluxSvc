@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Apr 27 15:16:39 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+now use celestialSources to load all external factories
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r22p1, operation: add
 Package: FluxSvc
