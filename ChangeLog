@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Wed Apr 27 15:16:40 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Removed Files:
+	SpectrumFactoryLoader.cxx SpectrumFactoryLoader.h 
+Log Message:
+now use celestialSources to load all external factories
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 27 15:16:40 PDT 2005
 FluxSvc/doc
 
 Modified Files:
