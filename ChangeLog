@@ -2,6 +2,14 @@
 TAG
 Tag name: v6r23p1, operation: add
 Package: FluxSvc
+User: burnett  Wed Apr 27 21:29:04 2005
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v6r23p1, operation: add
+Package: FluxSvc
 User: burnett  Wed Apr 27 21:11:45 2005
 Files:
   FluxSvc/.cvsignore  1.3
