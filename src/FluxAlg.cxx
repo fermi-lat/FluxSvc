@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.62 2005/04/26 17:24:11 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.63 2005/04/26 22:37:00 burnett Exp $
 
 */
 
@@ -59,7 +59,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.62 2005/04/26 
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.62 2005/04/26 17:24:11 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.63 2005/04/26 22:37:00 burnett Exp $
 */
 
 
@@ -101,8 +101,8 @@ private:
     DoubleProperty m_rocking_angle_z; // z-axis
 
     std::map<int, int> m_counts; //! for measuring the total number generated per code.
-    int m_SAAreject;
     TimeStamp m_initialTime;
+    int m_SAAreject;
 
     PointingInfo m_pointing_info;
     StringProperty m_root_tree;
@@ -405,7 +405,7 @@ StatusCode FluxAlg::execute()
 //! clean up, summarize
 StatusCode FluxAlg::finalize(){
     StatusCode  sc = StatusCode::SUCCESS;
-    static done = false;
+    static bool done = false;
     if( done || m_counts.empty() ) return sc;
     done=true;
     MsgStream log(msgSvc(), name());
