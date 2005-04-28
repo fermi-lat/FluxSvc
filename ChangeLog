@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Apr 28 07:56:44 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+linux warnings, error
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 28 07:56:44 PDT 2005
 FluxSvc/FluxSvc
 
 Modified Files:
