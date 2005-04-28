@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 28 06:23:41 PDT 2005
+FluxSvc/FluxSvc
+
+Added Files:
+	ISpectrumFactory.h 
+Log Message:
+restore for CRflux and userAlg
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 28 06:08:16 PDT 2005
 FluxSvc/FluxSvc
 
