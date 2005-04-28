@@ -4,6 +4,8 @@
 // includes
 #include "GaudiKernel/IAlgTool.h"
 #include "flux/ISpectrumFactory.h"
+#include <typeinfo>
+
 
 class IFluxSvc;
 
@@ -14,7 +16,7 @@ static const InterfaceID IID_IRegisterSource("IRegisterSource", 1 , 0);
 * @brief Abstract definition of a tool to be called from FluxSvc to load external ISpectrumFactory enteries
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.3 2002/07/25 05:18:58 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.4 2005/04/28 13:08:16 burnett Exp $
 * 
 * <br> Example of an implementation:
 *   <pre>
