@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 28 06:08:16 PDT 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	IRegisterSource.h 
+Log Message:
+make external registration consistent with flux factory
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r23p2, operation: add
 Package: FluxSvc
