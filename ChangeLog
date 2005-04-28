@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Wed Apr 27 21:47:11 PDT 2005
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-tagging new patch
-    *
-------------------------------------------------------------
-User: burnett  Wed Apr 27 21:47:11 PDT 2005
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-tagging new patch
-    *
-------------------------------------------------------------
 User: burnett  Wed Apr 27 21:45:29 PDT 2005
 FluxSvc/src/test
 
