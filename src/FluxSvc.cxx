@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.81 2005/04/26 22:37:00 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.82 2005/04/27 22:16:40 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -42,7 +42,7 @@
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.81 2005/04/26 22:37:00 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.82 2005/04/27 22:16:40 burnett Exp $
 */
 
 // includes
@@ -59,7 +59,6 @@ class IFlux;  // interface
 class FluxMgr;  // actual manager
 class IParticlePropertySvc; 
 class IAppMgrUI;
-#include "SpectrumFactoryLoader.h"
 
 class FluxSvc : 
     virtual public Service, 
