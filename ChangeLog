@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Apr 27 21:07:59 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+patch fix
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r23, operation: add
 Package: FluxSvc
