@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Apr 27 21:45:29 PDT 2005
+FluxSvc/src/test
+
+Removed Files:
+	RegisterTest.cxx 
+Log Message:
+not relevant
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r23p1, operation: add
 Package: FluxSvc
