@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 28 07:56:44 PDT 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	IRegisterSource.h 
+Log Message:
+linux warnings, error
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r23p3, operation: add
 Package: FluxSvc
