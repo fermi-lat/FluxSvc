@@ -3,6 +3,7 @@
 
 // includes
 #include "GaudiKernel/IAlgTool.h"
+#include "flux/ISpectrumFactory.h"
 
 class IFluxSvc;
 
@@ -13,7 +14,7 @@ static const InterfaceID IID_IRegisterSource("IRegisterSource", 1 , 0);
 * @brief Abstract definition of a tool to be called from FluxSvc to load external ISpectrumFactory enteries
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.2 2002/07/05 01:46:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.3 2002/07/25 05:18:58 srobinsn Exp $
 * 
 * <br> Example of an implementation:
 *   <pre>
@@ -80,5 +81,36 @@ public:
     /// Pass a pointer to the service to the tool. 
     virtual StatusCode registerMe(IFluxSvc*) = 0;
 };
+
+template <class T> class RemoteSpectrumFactory : public ISpectrumFactory 
+{
+public:
+    
+    RemoteSpectrumFactory(IFluxSvc* svc){
+        //Get class name using RTTI:
+        std::string m_classname = typeid(T).name();
+        int s = m_classname.find_first_of("class");
+        if( s==0 ) s=6; //found it
+        else s =m_classname.find_first_not_of("0123456789");
+        m_classname = m_classname.substr(s);
+        svc->addFactory(m_classname, this); 
+    }
+    /*! return a new Spectrum object
+    @param params String from the xml
+    @param engine random engine to use
+    */
+
+    virtual ISpectrum* instantiate(const std::string& params) const{
+        return new T(params);
+    }
+    
+    //! dummy to follow Gaudi model
+    virtual void addRef()const{}
+
+    std::string name()const{return m_classname;}
+private:
+    std::string m_classname;
+};
+
 
 #endif  // _H_IRegisterSource
