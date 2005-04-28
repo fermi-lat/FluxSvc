@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Wed Apr 27 21:07:59 PDT 2005
+FluxSvc/src/test
+
+Removed Files:
+      Tag: v6r23
+	RegisterTest.cxx 
+Log Message:
+patch fix
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 27 21:07:59 PDT 2005
 FluxSvc/src
 
 Modified Files:
