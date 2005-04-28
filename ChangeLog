@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Thu Apr 28 06:25:55 PDT 2005
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-new patch tag
-    *
-------------------------------------------------------------
-User: burnett  Thu Apr 28 06:25:55 PDT 2005
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-new patch tag
-    *
-------------------------------------------------------------
-User: burnett  Thu Apr 28 06:23:41 PDT 2005
-FluxSvc/FluxSvc
-
-Added Files:
-	ISpectrumFactory.h 
-Log Message:
-restore for CRflux and userAlg
-    *
-------------------------------------------------------------
 User: burnett  Thu Apr 28 06:08:16 PDT 2005
 FluxSvc/FluxSvc
 
