@@ -1,32 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Wed Apr 27 21:10:52 PDT 2005
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-patch tagging
-    *
-------------------------------------------------------------
-User: burnett  Wed Apr 27 21:07:59 PDT 2005
-FluxSvc/src/test
-
-Removed Files:
-      Tag: v6r23
-	RegisterTest.cxx 
-Log Message:
-patch fix
-    *
-------------------------------------------------------------
-User: burnett  Wed Apr 27 21:07:59 PDT 2005
-FluxSvc/src
-
-Modified Files:
-	FluxSvc.cxx 
-Log Message:
-patch fix
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r23, operation: add
 Package: FluxSvc
