@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu May 26 10:01:32 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+implement hook to set orbit-time expansion.
+    *
+------------------------------------------------------------
 User: burnett  Thu May 26 10:00:54 PDT 2005
 FluxSvc/src
 
