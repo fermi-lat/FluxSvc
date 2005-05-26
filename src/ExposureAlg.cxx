@@ -26,6 +26,7 @@
 #include <cassert>
 #include <vector>
 #include <fstream>
+#include <iomanip>
 
 /** 
 * \class ExposureAlg
@@ -37,7 +38,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.31 2005/03/21 23:43:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.32 2005/04/26 17:24:11 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -148,14 +149,6 @@ StatusCode ExposureAlg::execute()
     }
 
 
-    log << MSG::DEBUG ;
-    if( log.isActive() ){
-        std::stringstream t;
-        t << "tick at " << std::setprecision(10)
-        << m_lasttime - m_initial_time << " sec";
-        log << t.str();
-    }
-    log << endreq;
 
     if( m_tickCount!=0){
         double interval = m_lasttime - m_history.start_time();
@@ -164,6 +157,21 @@ StatusCode ExposureAlg::execute()
         m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), true);
     }
     m_history.set(m_lasttime);
+
+    log << MSG::INFO;
+    if( log.isActive() ){
+        std::stringstream t;
+        t   << "tick at " << std::setprecision(10)
+            << m_lasttime - m_initial_time << " sec"
+            << std::setprecision(3)
+            << ", lat, lon, B, L = " 
+            << m_history.lat_geo << ", " 
+            << m_history.lon_geo << ", "
+            << m_history.B << ", " 
+            << m_history.L;
+        log << t.str();
+    }
+    log << endreq;
 
     m_tickCount++;
     return sc;
