@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu May 26 10:02:29 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+add INFO output of orbit parameters.
+    *
+------------------------------------------------------------
 User: burnett  Thu May 26 10:01:32 PDT 2005
 FluxSvc/src
 
