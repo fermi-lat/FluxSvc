@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu May 26 10:00:54 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+introduce prescale
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r23p4, operation: add
 Package: FluxSvc
