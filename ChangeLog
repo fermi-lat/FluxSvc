@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Jun 15 14:45:18 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+adjust to GPS move;
+fix times
+    *
+------------------------------------------------------------
 User: burnett  Wed Jun 15 14:45:17 PDT 2005
 FluxSvc/FluxSvc
 
