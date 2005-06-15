@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Jun 15 14:45:17 PDT 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h PointingInfo.h 
+Log Message:
+adjust to GPS move;
+fix times
+    *
+------------------------------------------------------------
 User: burnett  Thu May 26 10:02:29 PDT 2005
 FluxSvc/src
 
