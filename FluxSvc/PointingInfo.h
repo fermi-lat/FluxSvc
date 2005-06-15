@@ -1,5 +1,5 @@
 /** @file PointingInfo.h
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.1 2005/03/21 23:43:15 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.2 2005/03/27 19:00:19 burnett Exp $
 */
 
 #ifndef PointingInfo_h
@@ -38,7 +38,7 @@ public:
 
     // return TDS object for old scheme
     Event::Exposure* forTDS()const;
-private:
+//private:
     double start, stop;
     float sc_position[3];
     float lat_geo, lon_geo;
