@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Wed Jun 15 14:45:18 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx mainpage.h 
+Log Message:
+adjust to GPS move;
+fix times
+    *
+------------------------------------------------------------
+User: burnett  Wed Jun 15 14:45:18 PDT 2005
 FluxSvc/cmt
 
 Modified Files:
