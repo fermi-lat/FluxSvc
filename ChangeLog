@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jun 16 06:49:42 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+fix test when end time not specified
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 16 06:49:42 PDT 2005
 FluxSvc/doc
 
 Modified Files:
