@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jun 16 06:49:42 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix test when end time not specified
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r24, operation: add
 Package: FluxSvc
