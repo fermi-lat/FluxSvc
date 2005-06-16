@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.65 2005/05/26 17:00:54 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.66 2005/06/15 21:45:18 burnett Exp $
 
 */
 
@@ -29,7 +29,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.65 2005/05/26 
 
 #include "facilities/Util.h"
 #include "facilities/Observer.h"
-#include "facilities/TimeStamp.h"
+#include "facilities/Timestamp.h"
 
 #include "astro/GPS.h"
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.65 2005/05/26 17:00:54 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.66 2005/06/15 21:45:18 burnett Exp $
 */
 
 
