@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jun 16 14:16:50 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+linux (captilization in file name) fix
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 16 14:16:50 PDT 2005
 FluxSvc/doc
 
 Modified Files:
