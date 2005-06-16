@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.84 2005/05/26 17:01:32 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.85 2005/06/15 21:45:18 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -43,7 +43,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.84 2005/05/26 17:01:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.85 2005/06/15 21:45:18 burnett Exp $
 */
 
 // includes
@@ -585,7 +585,7 @@ StatusCode FluxSvc::run(){
         return StatusCode::FAILURE;
     }
     }
-    if( m_times.start() > m_times.end()){
+    if( m_times.end()>0 && m_times.start() > m_times.end()){
         log << MSG::ERROR << "Start time after end time!" << endreq;
         return StatusCode::FAILURE;
     }
