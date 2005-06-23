@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Jun 23 15:55:06 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+changed interface to rootplot
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 23 15:55:06 PDT 2005
 FluxSvc/doc
 
 Modified Files:
