@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.44 2005/04/26 17:24:11 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.45 2005/06/15 21:45:17 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -18,7 +18,7 @@
 #include "astro/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc("FluxSvc", 5 , 0); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 5 , 1); 
 
 // forward declarations
 class IFlux;
@@ -32,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.44 2005/04/26 17:24:11 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.45 2005/06/15 21:45:17 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -52,9 +52,12 @@ public:
 
     /// pass a specific amount of time
     virtual void pass (double t)=0;    
-
+#if 0
     /// create a set of display windows using rootplot.
     virtual void rootDisplay(std::vector<const char*> arguments)=0;
+#endif
+    /// create a set of display windows using rootplot.
+    virtual void rootDisplay(std::vector<std::string> arguments)=0;
 
     /// allow an external observer to attach to gps
     virtual void attachGpsObserver(Observer* anObserver)=0;

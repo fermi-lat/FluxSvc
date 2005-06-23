@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.85 2005/06/15 21:45:18 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.86 2005/06/16 13:49:42 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -43,7 +43,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.85 2005/06/15 21:45:18 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.86 2005/06/16 13:49:42 burnett Exp $
 */
 
 // includes
@@ -86,9 +86,11 @@ public:
 
     /// return pointer to the random engine that FluxSvc uses
     virtual HepRandomEngine* getRandomEngine();
-
+#if 0
     /// create a set of display windows using rootplot.
     void rootDisplay(std::vector<const char*> arguments);
+#endif
+    virtual void rootDisplay(std::vector<std::string> arguments);;
 
     /// attach an external observer to GPS
     void attachGpsObserver(Observer* anObserver);
@@ -460,10 +462,16 @@ void FluxSvc::addFactory(std::string name, const ISpectrumFactory* factory ){
 void FluxSvc::pass ( double t){
     m_fluxMgr->pass(t);
 }
-
+#if 0
 void FluxSvc::rootDisplay(std::vector<const char*> arguments){
     rootplot abc(arguments, m_fluxMgr);
 }
+#endif
+
+void FluxSvc::rootDisplay(std::vector<std::string> arguments){
+    rootplot abc(arguments, m_fluxMgr);   
+}
+
 
 void FluxSvc::attachGpsObserver(Observer* anObserver)
 {
