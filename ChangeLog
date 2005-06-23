@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Thu Jun 23 15:55:05 PDT 2005
-FluxSvc/FluxSvc
-
-Modified Files:
-	IFluxSvc.h 
-Log Message:
-changed interface to rootplot
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r24p2, operation: add
 Package: FluxSvc
