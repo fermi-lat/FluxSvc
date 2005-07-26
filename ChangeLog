@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 26 10:14:06 PDT 2005
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add new property to get start time from env var; tagging
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul 26 10:14:05 PDT 2005
 FluxSvc/cmt
 
