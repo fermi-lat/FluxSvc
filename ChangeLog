@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Jul 26 10:14:06 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx mainpage.h 
+Log Message:
+add new property to get start time from env var; tagging
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 26 10:14:06 PDT 2005
 FluxSvc/doc
 
 Modified Files:
