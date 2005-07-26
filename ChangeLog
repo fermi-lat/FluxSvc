@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 26 10:14:05 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add new property to get start time from env var; tagging
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r24p3, operation: add
 Package: FluxSvc
