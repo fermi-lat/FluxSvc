@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Sep 19 15:48:30 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+work around gcc bug: tagging
+    *
+------------------------------------------------------------
+User: burnett  Mon Sep 19 15:48:30 PDT 2005
 FluxSvc/doc
 
 Modified Files:
