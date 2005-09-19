@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.68 2005/08/21 19:57:17 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.69 2005/09/19 20:18:18 burnett Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.68 2005/08/21 19:57:17 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.69 2005/09/19 20:18:18 burnett Exp $
 */
 
 
@@ -435,7 +435,7 @@ StatusCode FluxAlg::finalize(){
     log  << endreq;
 
     if( !m_source_info_filename.value().empty() ){
-        summary(std::ofstream(m_source_info_filename.value().c_str()), "\n");
+        summary(std::ofstream(m_source_info_filename.value().c_str()), std::string("\n"));
     }
 
     
