@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep 19 13:18:19 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+add option (turned on by default) to generate text file with source id, name count information.
+    *
+------------------------------------------------------------
 User: burnett  Mon Sep 19 13:18:18 PDT 2005
 FluxSvc/doc
 
