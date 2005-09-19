@@ -2,7 +2,7 @@
 @brief declaration and definition of the class PointingInfo
 
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.2 2005/03/27 19:00:19 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.3 2005/09/19 22:05:59 burnett Exp $
 
 */
 #include "FluxSvc/PointingInfo.h"
