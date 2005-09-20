@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 20 08:05:20 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Added Files:
+	PointInfoAlg.cxx 
+Log Message:
+add alg to put pointing info onto the tuple (any tree, but MeritTuple is default)
+tagging...
+    *
+------------------------------------------------------------
 User: burnett  Tue Sep 20 08:05:19 PDT 2005
 FluxSvc/src/Dll
 
