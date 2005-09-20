@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Sep 20 14:26:39 PDT 2005
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+move code to set pointing info in TDS to PointInfoAlg
+    *
+------------------------------------------------------------
+User: burnett  Tue Sep 20 14:26:39 PDT 2005
 FluxSvc/cmt
 
 Modified Files:
