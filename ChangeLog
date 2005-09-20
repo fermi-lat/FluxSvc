@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Sep 19 20:11:27 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+another gcc work-around
+    *
+------------------------------------------------------------
+User: burnett  Mon Sep 19 20:11:27 PDT 2005
 FluxSvc/doc
 
 Modified Files:
