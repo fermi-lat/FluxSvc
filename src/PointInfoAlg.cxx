@@ -1,7 +1,7 @@
 /** @file PointInfoAlg.cxx
 @brief declaration and definition of the class PointInfoAlg
 
-$Header:$
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09/20 15:05:20 burnett Exp $
 
 */
 
@@ -16,6 +16,7 @@ $Header:$
 // Event for access to time
 #include "Event/TopLevel/EventModel.h"
 #include "Event/TopLevel/Event.h"
+#include "Event/MonteCarlo/Exposure.h"
 
 // to write a Tree with pointing info
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
@@ -31,7 +32,7 @@ $Header:$
 * \brief This is an Algorithm designed to store pointing information in the tuple
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.71 2005/09/20 03:11:27 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09/20 15:05:20 burnett Exp $
 */
 
 
@@ -117,6 +118,17 @@ StatusCode PointInfoAlg::execute()
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
         m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), m_save_tuple);
     }
+
+
+    // Here the TDS receives the exposure data
+    Event::ExposureCol* exposureDBase = new Event::ExposureCol;
+    sc=eventSvc()->registerObject(EventModel::MC::ExposureCol , exposureDBase);
+    if(sc.isFailure()) {
+        log << MSG::ERROR << EventModel::MC::ExposureCol  
+            <<" could not be entered into existing data store" << endreq;
+        return sc;
+    }
+    exposureDBase->push_back(m_pointing_info.forTDS());
 
     return StatusCode::SUCCESS;
 }
