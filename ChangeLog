@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 20 08:05:19 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add alg to put pointing info onto the tuple (any tree, but MeritTuple is default)
+tagging...
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r26p2, operation: add
 Package: FluxSvc
