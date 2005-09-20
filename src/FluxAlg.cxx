@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.70 2005/09/19 22:48:30 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.71 2005/09/20 03:11:27 burnett Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.70 2005/09/19 22:48:30 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.71 2005/09/20 03:11:27 burnett Exp $
 */
 
 
@@ -128,7 +128,7 @@ private:
     IntegerProperty m_prescale;
     StringProperty m_source_info_filename;
     std::map<int, std::string> m_flux_names;
-    void summary(std::ostream& log, std::string indent);
+    void summary( std::ostream& log, std::string indent);
 
 
 };
@@ -155,7 +155,7 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
 
     declareProperty("PointingHistory",  m_pointingHistory); // doublet, filename and launch date
 
-    declareProperty("pointing_info_tree_name",  m_root_tree="MeritTuple");
+    declareProperty("pointing_info_tree_name",  m_root_tree="");
     declareProperty("save_pointing_info",  m_save_tuple=false);
     declareProperty("AvoidSAA",   m_avoidSAA=false);
     declareProperty("Prescale",   m_prescale=1);
@@ -447,7 +447,7 @@ StatusCode FluxAlg::finalize(){
     return sc;
 }
 
-void FluxAlg::summary(std::ostream& log, std::string indent)
+void FluxAlg::summary( std::ostream& log, std::string indent)
 {
     log << indent << " Source ID   Source Name                  counts";
     for(std::map<int,int>::const_iterator im=m_counts.begin(); im !=m_counts.end(); ++im) {
