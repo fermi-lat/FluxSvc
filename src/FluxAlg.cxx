@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.71 2005/09/20 03:11:27 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.72 2005/09/20 15:05:20 burnett Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.71 2005/09/20 03:11:27 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.72 2005/09/20 15:05:20 burnett Exp $
 */
 
 
@@ -395,7 +395,7 @@ StatusCode FluxAlg::execute()
     TimeStamp currentTime=m_flux->time();
 
     m_pointing_info.set(currentTime);
-
+#if 0 // moved this to PointInfoAlg --THB
     // Here the TDS receives the exposure data
     Event::ExposureCol* exposureDBase = new Event::ExposureCol;
     sc=eventSvc()->registerObject(EventModel::MC::ExposureCol , exposureDBase);
@@ -405,7 +405,7 @@ StatusCode FluxAlg::execute()
         return sc;
     }
     exposureDBase->push_back(m_pointing_info.forTDS());
-
+#endif
     
     // put pointing stuff into the root tree
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
