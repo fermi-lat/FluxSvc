@@ -1,7 +1,7 @@
 /** @file PointInfoAlg.cxx
 @brief declaration and definition of the class PointInfoAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09/20 15:05:20 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09/20 21:26:39 burnett Exp $
 
 */
 
@@ -16,6 +16,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09
 // Event for access to time
 #include "Event/TopLevel/EventModel.h"
 #include "Event/TopLevel/Event.h"
+#include "Event/TopLevel/MCEvent.h"
 #include "Event/MonteCarlo/Exposure.h"
 
 // to write a Tree with pointing info
@@ -32,7 +33,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09
 * \brief This is an Algorithm designed to store pointing information in the tuple
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.1 2005/09/20 15:05:20 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09/20 21:26:39 burnett Exp $
 */
 
 
@@ -106,11 +107,22 @@ StatusCode PointInfoAlg::execute()
 
     SmartDataPtr<Event::EventHeader> header(eventSvc(), EventModel::EventHeader);
     if(0==header) {
-            log << MSG::ERROR << " could not find or register the event header" << endreq;
+            log << MSG::ERROR << " could not be found on data store" << endreq;
      }
 
     TimeStamp currentTime=header->time();
 
+    if( currentTime==-1) { // not set!
+
+        SmartDataPtr<Event::MCEvent> mcheader(eventSvc(), EventModel::MC::Event);
+        if (mcheader == 0) {
+            log << MSG::ERROR << EventModel::MC::Event  <<" could not be found on data store" << endreq;
+            return sc;
+        }
+
+        currentTime = mcheader->time();
+
+    }
     m_pointing_info.set(currentTime);
 
     
