@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 20 17:10:11 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	PointInfoAlg.cxx 
+Log Message:
+need to get the time from the MC header. (why?)
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r27p1, operation: add
 Package: FluxSvc
