@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep 29 20:39:45 PDT 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+make celestialSources public, to allow access to same sources as used by globssim
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r27p2, operation: add
 Package: FluxSvc
