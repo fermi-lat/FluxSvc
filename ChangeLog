@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 30 05:30:21 PDT 2005
+FluxSvc/src
+
+Modified Files:
+	defaultOptions.txt 
+Log Message:
+bertter to do this here rather than exepcting client to figure it out
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r28, operation: add
 Package: FluxSvc
