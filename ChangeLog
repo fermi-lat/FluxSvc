@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Sep 29 20:39:45 PDT 2005
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+make celestialSources public, to allow access to same sources as used by globssim
+    *
+------------------------------------------------------------
+User: burnett  Thu Sep 29 20:39:45 PDT 2005
 FluxSvc/cmt
 
 Modified Files:
