@@ -1,5 +1,5 @@
 /** @file PointingInfo.h
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.2 2005/03/27 19:00:19 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.3 2005/06/15 21:45:17 burnett Exp $
 */
 
 #ifndef PointingInfo_h
@@ -46,6 +46,7 @@ public:
     float ra_zenith, dec_zenith;
     float ra_scz, dec_scz;
     float ra_scx, dec_scx;
+    float in_saa;
     float livetime;
     float L; ///< McIllwain L parameter
     float B; ///< magnetic field
