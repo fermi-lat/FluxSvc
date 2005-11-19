@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: mcenery  Sat Nov 19 08:06:33 PST 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	PointingInfo.h 
+Log Message:
+Add in_saa flag to the pointing_history tuple.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r28p1, operation: add
 Package: FluxSvc
