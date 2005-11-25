@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu Nov 24 16:42:07 PST 2005
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+fix history file initialization problem.
+    *
+------------------------------------------------------------
+User: burnett  Thu Nov 24 16:42:07 PST 2005
 FluxSvc/doc
 
 Modified Files:
