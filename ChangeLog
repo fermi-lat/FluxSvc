@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Nov 24 16:42:07 PST 2005
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix history file initialization problem.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r28p2, operation: add
 Package: FluxSvc
