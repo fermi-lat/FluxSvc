@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.72 2005/09/20 15:05:20 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.73 2005/09/20 21:26:39 burnett Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.72 2005/09/20 15:05:20 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.73 2005/09/20 21:26:39 burnett Exp $
 */
 
 
@@ -203,11 +203,11 @@ StatusCode FluxAlg::initialize(){
             facilities::Timestamp jt(m_pointingHistory.value()[1]);
             offset = (astro::JulianDate(jt.getJulian())-astro::JulianDate::missionStart())*astro::JulianDate::secondsPerDay;
         }
+
+        log << MSG::INFO << "Loading Pointing History File : " << filename 
+            << " with MET offset "<< offset <<  endreq;
+
         GPS::instance()->setPointingHistoryFile(filename, offset);
-
-        log << MSG::INFO << "Loading Pointing History File : " << filename << endreq;
-
-        m_fluxSvc->setPointingHistoryFile(filename);
         if(m_pointing_mode){
             //problem - two kinds of pointing are being used!
             log << MSG::WARNING << "Pointing History and rocking mode both specified!" << endreq;

@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.89 2005/08/21 19:57:17 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.90 2005/08/21 23:20:24 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -30,6 +30,7 @@
 #include "flux/FluxMgr.h"
 #include "flux/rootplot.h"
 #include "flux/ISpectrumFactory.h"
+#include "flux/Spectrum.h"
 
 #include <algorithm>
 #include <iterator>
@@ -43,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.89 2005/08/21 19:57:17 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.90 2005/08/21 23:20:24 burnett Exp $
 */
 
 // includes
@@ -340,10 +341,14 @@ StatusCode FluxSvc::initialize ()
     setProperties ();
 
 
+ 
     // open the message log
     MsgStream log( msgSvc(), name() );
 
     m_times.initialize(log);
+
+    // set starting, or "launch" time for easy access by sources
+    Spectrum::setStartTime(m_times.launch());
 
     status = serviceLocator()->queryInterface(IID_IAppMgrUI, (void**)&m_appMgrUI);
 
