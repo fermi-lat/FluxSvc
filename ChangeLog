@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Dec  8 12:07:30 PST 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+remove obsolete entry to set pointing history and tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r29, operation: add
 Package: FluxSvc
