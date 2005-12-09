@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: mcenery  Fri Dec  9 09:20:06 PST 2005
+FluxSvc/src
+
+Modified Files:
+	PointingInfo.cxx 
+Log Message:
+Add geomagnetic latitude to the pointing_history tuple and to the merit
+tuple.
+
+    *
+------------------------------------------------------------
 User: mcenery  Fri Dec  9 09:20:05 PST 2005
 FluxSvc/FluxSvc
 
