@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: mcenery  Fri Dec  9 09:20:05 PST 2005
+FluxSvc/FluxSvc
+
+Modified Files:
+	PointingInfo.h 
+Log Message:
+Add geomagnetic latitude to the pointing_history tuple and to the merit
+tuple.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r30, operation: add
 Package: FluxSvc
