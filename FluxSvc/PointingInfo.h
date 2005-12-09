@@ -1,5 +1,5 @@
 /** @file PointingInfo.h
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.3 2005/06/15 21:45:17 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.4 2005/11/19 16:06:33 mcenery Exp $
 */
 
 #ifndef PointingInfo_h
@@ -42,6 +42,7 @@ public:
     double start, stop;
     float sc_position[3];
     float lat_geo, lon_geo;
+    float lat_mag;
     float rad_geo;
     float ra_zenith, dec_zenith;
     float ra_scz, dec_scz;
