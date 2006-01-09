@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jan  8 18:18:02 PST 2006
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+manage SAA transitions.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r31, operation: add
 Package: FluxSvc
