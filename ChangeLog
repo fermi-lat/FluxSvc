@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan 11 12:07:44 PST 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+	PointingInfo.h 
+Log Message:
+Implement SAA breaks and livetime  in the pointing history
+    *
+------------------------------------------------------------
 User: burnett  Sun Jan  8 18:18:02 PST 2006
 FluxSvc/src
 
