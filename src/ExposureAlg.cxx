@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header$
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.36 2006/01/09 02:18:02 burnett Exp $
 
 */
 // Include files
@@ -29,6 +29,8 @@
 #include "facilities/Util.h"
 #include "facilities/Observer.h"
 
+// access to accumulated livetime
+#include "Trigger/ILivetimeSvc.h"
 
 #include <cassert>
 #include <vector>
@@ -45,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.35 2005/12/03 21:56:54 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.36 2006/01/09 02:18:02 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -60,6 +62,7 @@ public:
 private: 
 
     double m_lasttime; //time value to hold time between events;
+    double m_last_livetime;
     double m_initial_time; 
 
     StringProperty m_root_tree;
@@ -70,6 +73,7 @@ private:
 
     int         m_tickCount; // number of ticks processed
     INTupleWriterSvc* m_rootTupleSvc;;
+    ILivetimeSvc *    m_livetimeSvc;
 
     PointingInfo m_history;
 
@@ -77,6 +81,8 @@ private:
     bool m_insideSAA;
     ObserverAdapter< ExposureAlg > m_observer; //obsever tag
     int askGPS(); ///< notified when position changes
+    
+    void createEntry(); // called for tick, or SAA transition
 
 };
 //------------------------------------------------------------------------
@@ -90,6 +96,7 @@ ExposureAlg::ExposureAlg(const std::string& name, ISvcLocator* pSvcLocator)
 : Algorithm(name, pSvcLocator)
 , m_lasttime(0)
 , m_tickCount(0)
+, m_insideSAA(false)
 {
     // declare properties with setProperties calls
     declareProperty("root_tree",m_root_tree="pointing_history"); //doesn't work???
@@ -131,6 +138,11 @@ StatusCode ExposureAlg::initialize(){
             log << MSG::ERROR << " failed to get the RootTupleSvc" << endreq;
             return sc;
     }
+    // get a pointer to LivetimeSvc 
+    if( (service("LivetimeSvc", m_livetimeSvc, true) ). isFailure() ) {
+        log << MSG::ERROR << " LivetimeSvc is not available" << endreq;
+        return StatusCode::FAILURE;
+    }
 
     m_history.setFT2Tuple(m_rootTupleSvc, m_root_tree.value());
 
@@ -150,9 +162,10 @@ int ExposureAlg::askGPS()
     astro::EarthCoordinate pos = astro::GPS::instance()->earthpos();
     bool inside = pos.insideSAA();
     if( inside != m_insideSAA){
-        // changed: will notify pointingInfo
+        // changed: 
 
         m_insideSAA= inside;
+        createEntry();
     }
 
     return 0; // can't be void in observer pattern
@@ -163,27 +176,34 @@ int ExposureAlg::askGPS()
 StatusCode ExposureAlg::execute()
 {
     StatusCode  sc = StatusCode::SUCCESS;
-    MsgStream   log( msgSvc(), name() );
 
     IFlux* flux=m_fluxSvc->currentFlux();
-    m_lasttime = flux->time();
         
     std::string particleName = flux->particleName();
 
-
-    if(particleName != "TimeTick" && particleName != "Clock"){
-        return sc;
-    }
-
+    if(particleName == "TimeTick" || particleName == "Clock"){
+        createEntry();
+    } 
+    return sc;
+}
+//------------------------------------------------------------------------
+void ExposureAlg::createEntry()
+{
+    m_lasttime = astro::GPS::instance()->time();
     if( m_tickCount!=0){
         double interval = m_lasttime - m_history.start_time();
-        if( interval<=0) return sc;
-        m_history.finish( m_lasttime, interval);
-        m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), true);
+        if( interval<=1e-10) return;
+        m_history.finish( m_lasttime, m_livetimeSvc->livetime()-m_last_livetime);
+
+        m_rootTupleSvc->saveRow(this->m_root_tree.value());
     }
-    m_history.set(m_lasttime);
+    m_last_livetime = m_livetimeSvc->livetime();
+
+    // start new entry
+    m_history.set(m_lasttime, m_insideSAA);
 
     if(  m_tickCount% m_print_frequency==0){
+        MsgStream   log( msgSvc(), name() );
         log << MSG::INFO;
         if( log.isActive() ){
             std::stringstream t;
@@ -201,7 +221,6 @@ StatusCode ExposureAlg::execute()
     }
 
     m_tickCount++;
-    return sc;
 }
 
 //------------------------------------------------------------------------
