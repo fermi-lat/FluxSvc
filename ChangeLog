@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan 11 12:07:45 PST 2006
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx PointInfoAlg.cxx 
+	PointingInfo.cxx 
+Log Message:
+Implement SAA breaks and livetime  in the pointing history
+    *
+------------------------------------------------------------
 User: burnett  Wed Jan 11 12:07:44 PST 2006
 FluxSvc/FluxSvc
 
