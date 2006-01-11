@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.73 2005/09/20 21:26:39 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.74 2005/11/25 00:42:07 burnett Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.73 2005/09/20 21:26:39 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.74 2005/11/25 00:42:07 burnett Exp $
 */
 
 
@@ -394,18 +394,8 @@ StatusCode FluxAlg::execute()
 
     TimeStamp currentTime=m_flux->time();
 
-    m_pointing_info.set(currentTime);
-#if 0 // moved this to PointInfoAlg --THB
-    // Here the TDS receives the exposure data
-    Event::ExposureCol* exposureDBase = new Event::ExposureCol;
-    sc=eventSvc()->registerObject(EventModel::MC::ExposureCol , exposureDBase);
-    if(sc.isFailure()) {
-        log << MSG::ERROR << EventModel::MC::ExposureCol  
-            <<" could not be entered into existing data store" << endreq;
-        return sc;
-    }
-    exposureDBase->push_back(m_pointing_info.forTDS());
-#endif
+    // is this proper here?
+    m_pointing_info.set(currentTime, m_insideSAA);
     
     // put pointing stuff into the root tree
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){

@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.91 2005/11/25 00:42:07 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.92 2005/12/08 20:07:31 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -44,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.91 2005/11/25 00:42:07 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.92 2005/12/08 20:07:31 burnett Exp $
 */
 
 // includes
@@ -260,6 +260,7 @@ private:
     bool m_insideSAA; 
 
     DoubleProperty m_expansionFactor;
+    DoubleProperty m_sampleInterval;
 
 
 };
@@ -290,6 +291,7 @@ FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("StartDate"   , m_times.m_startDate="");
     declareProperty("LaunchDate"  , m_times.m_launchDate="");
     declareProperty("StartTimeEnvVar", m_times.m_startTimeEnvVar="");
+    declareProperty("SampleInterval", m_sampleInterval=1.0);
 
 
 
@@ -427,7 +429,7 @@ StatusCode FluxSvc::initialize ()
 
     attachGpsObserver(&m_observer);
 
-
+    astro::GPS::instance()->sampleintvl(m_sampleInterval.value()); // set sample interval for position updates
     return StatusCode::SUCCESS;
 }
 //------------------------------------------------------------------------
@@ -438,9 +440,11 @@ int FluxSvc::askGPS()
 
     if( m_insideSAA == inside) return 0; // no change
     MsgStream log( msgSvc(), name() );
-    log << MSG::INFO
-        << (!inside? " leaving" : "entering") 
-        << " SAA at "  << GPS::instance()->time() << endreq;
+    log << MSG::INFO;
+    std::stringstream t;
+        t<< (!inside? " leaving" : "entering") 
+        << " SAA at "  << std::setprecision(10)<< GPS::instance()->time();
+    log << t.str()    << endreq;
     m_insideSAA = inside;
 
     return 0; // can't be void in observer pattern

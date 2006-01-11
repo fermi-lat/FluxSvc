@@ -1,7 +1,7 @@
 /** @file PointInfoAlg.cxx
 @brief declaration and definition of the class PointInfoAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09/20 21:26:39 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.3 2005/09/21 00:10:11 burnett Exp $
 
 */
 
@@ -22,6 +22,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09
 // to write a Tree with pointing info
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
 
+
 //flux
 #include "FluxSvc/PointingInfo.h"
 
@@ -33,7 +34,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09
 * \brief This is an Algorithm designed to store pointing information in the tuple
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.2 2005/09/20 21:26:39 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.3 2005/09/21 00:10:11 burnett Exp $
 */
 
 
@@ -81,14 +82,16 @@ StatusCode PointInfoAlg::initialize(){
     setProperties();
 
 
-    // get a pointer to RootTupleSvc, use only if available 
+    // get a pointer to RootTupleSvc
     if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
-        log << MSG::WARNING << " RootTupleSvc is not available, will not write Pt tuple" << endreq;
+        log << MSG::ERROR << " RootTupleSvc is not available" << endreq;
         m_rootTupleSvc=0;
+        sc = StatusCode::FAILURE;
     }else if( !m_root_tree.value().empty() ) {
         
         m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
     }
+
 
     return sc;
 }
@@ -123,7 +126,7 @@ StatusCode PointInfoAlg::execute()
         currentTime = mcheader->time();
 
     }
-    m_pointing_info.set(currentTime);
+    m_pointing_info.set(currentTime, false);
 
     
     // put pointing stuff into the root tree

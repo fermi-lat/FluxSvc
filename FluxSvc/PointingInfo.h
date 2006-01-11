@@ -1,5 +1,5 @@
 /** @file PointingInfo.h
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.4 2005/11/19 16:06:33 mcenery Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.5 2005/12/09 17:20:05 mcenery Exp $
 */
 
 #ifndef PointingInfo_h
@@ -27,10 +27,10 @@ public:
     //!@brief  associate it with the the Pt part of the "merit" tuple
     void setPtTuple(INTupleWriterSvc* tuple, const std::string& tname);
 
-    //! fill the pointing info for the given start time
-    void set(double start_time);
+    //! fill the pointing info for the given start time, set SAA status for the interval
+    void set(double start_time, bool insideSAA);
 
-    //! finish it.
+    //! finish it. 
     void finish(double stop_time, double live);
 
     //! accessor for time
