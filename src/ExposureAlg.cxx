@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.36 2006/01/09 02:18:02 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.37 2006/01/11 20:07:45 burnett Exp $
 
 */
 // Include files
@@ -47,7 +47,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.36 2006/01/09 02:18:02 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.37 2006/01/11 20:07:45 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -227,7 +227,7 @@ void ExposureAlg::createEntry()
 //! clean up, summarize
 StatusCode ExposureAlg::finalize(){
     // finish up
-    if( m_tickCount>0 ) execute();
+    if( m_tickCount>0 ) createEntry();
     StatusCode  sc = StatusCode::SUCCESS;
     MsgStream log(msgSvc(), name());
     log << MSG::INFO << "Processed " << m_tickCount << " ticks" << endreq;
