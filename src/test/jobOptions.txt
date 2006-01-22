@@ -3,7 +3,7 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.86 2005/03/21 23:46:58 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.87 2005/04/06 21:15:47 burnett Exp $
 ApplicationMgr.DLLs+= { "GaudiAlg", "GaudiAud"};
 ApplicationMgr.DLLs+= { "GlastSvc"};
 ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
@@ -11,8 +11,8 @@ EventPersistencySvc.CnvServices = {"EventCnvSvc"};
 EventSelector.Input = "NONE";
 
 // these for root tuples.
-ApplicationMgr.DLLs += {"ntupleWriterSvc"};
-ApplicationMgr.ExtSvc += {"RootTupleSvc"};
+ApplicationMgr.DLLs += {"ntupleWriterSvc", "Trigger"};
+ApplicationMgr.ExtSvc += {"RootTupleSvc", "LivetimeSvc"};
 
 // put this in to test that the random engine gets set properly
 ApplicationMgr.ExtSvc += { "GlastRandomSvc" };
