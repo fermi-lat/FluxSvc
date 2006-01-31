@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.74 2005/11/25 00:42:07 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
 
 */
 
@@ -65,8 +65,13 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.74 2005/11/25 00:42:07 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
 */
+
+// TU: CLHEP 1.9.2.2 hack
+typedef HepGeom::Point3D<double>  HepPoint3D;
+typedef HepGeom::Vector3D<double> HepVector3D;
+
 
 
 class FluxAlg : public Algorithm {
@@ -370,7 +375,7 @@ StatusCode FluxAlg::execute()
     double mass = prop->mass() , 
         energy = (ke+mass),
         momentum=sqrt(energy*energy - mass*mass); 
-    HepLorentzVector pin(d*momentum,energy);
+    CLHEP::HepLorentzVector pin(d*momentum,energy);
 
     // This parent particle decay at the start in the first particle, 
     // so initial momentum and final one are the same

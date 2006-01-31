@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.46 2005/06/23 22:55:05 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.47 2005/12/08 20:07:30 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -24,7 +24,7 @@ static const InterfaceID IID_IFluxSvc("FluxSvc", 6, 0);
 class IFlux;
 class IParticlePropertySvc;
 class ISpectrumFactory;
-class HepRandomEngine;
+namespace CLHEP {class HepRandomEngine;}
 
 /** 
 * \class IFluxSvc
@@ -32,7 +32,7 @@ class HepRandomEngine;
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.46 2005/06/23 22:55:05 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.47 2005/12/08 20:07:30 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -48,7 +48,7 @@ public:
     virtual void addFactory(std::string name, const ISpectrumFactory* factory )=0;
 
     /// return pointer to the random engine that FluxSvc uses
-    virtual HepRandomEngine* getRandomEngine()=0;
+    virtual CLHEP::HepRandomEngine* getRandomEngine()=0;
 
     /// pass a specific amount of time
     virtual void pass (double t)=0;    
@@ -75,9 +75,9 @@ public:
     virtual std::pair<double,double> getExplicitRockingAngles()=0;
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-    virtual HepRotation transformGlastToGalactic(double time)const=0;
+    virtual CLHEP::HepRotation transformGlastToGalactic(double time)const=0;
 
-    virtual HepRotation transformToGlast(double seconds,astro::GPS::CoordSystem index)const=0;
+    virtual CLHEP::HepRotation transformToGlast(double seconds,astro::GPS::CoordSystem index)const=0;
     /// get the current satellite location
     virtual std::pair<double,double> location()=0;
 
