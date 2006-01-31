@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan 31 14:01:50 PST 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+      Tag: GR-v7r3p20-newext
+	IFlux.h IFluxSvc.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r32p2, operation: add
 Package: FluxSvc
