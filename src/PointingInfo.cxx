@@ -2,7 +2,7 @@
 @brief declaration and definition of the class PointingInfo
 
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.6 2005/12/09 17:20:06 mcenery Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.7 2006/01/11 20:07:45 burnett Exp $
 
 */
 class MsgStream; // needed for Exposure.
@@ -25,8 +25,8 @@ void PointingInfo::set(double time, bool insideSAA)
     // The GPS singleton has current time and orientation
     GPS* gps = GPS::instance();
     gps->getPointingCharacteristics(time); // sets time for other functions
-    Hep3Vector pos_km = gps->position(time);
-    Hep3Vector location = 1.e3* pos_km; // special, needs its own time
+    CLHEP::Hep3Vector pos_km = gps->position(time);
+    CLHEP::Hep3Vector location = 1.e3* pos_km; // special, needs its own time
     
     // cartesian location of the LAT (in m)
     sc_position[0] = location.x();

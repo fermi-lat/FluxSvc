@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.92 2005/12/08 20:07:31 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -44,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.92 2005/12/08 20:07:31 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
 */
 
 // includes
@@ -86,7 +86,7 @@ public:
 
 
     /// return pointer to the random engine that FluxSvc uses
-    virtual HepRandomEngine* getRandomEngine();
+    virtual CLHEP::HepRandomEngine* getRandomEngine();
     virtual void rootDisplay(std::vector<std::string> arguments);;
 
     /// attach an external observer to GPS
@@ -106,9 +106,9 @@ public:
     std::pair<double,double> getExplicitRockingAngles();
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-    HepRotation transformGlastToGalactic(double time)const;
+    CLHEP::HepRotation transformGlastToGalactic(double time)const;
 
-    HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const;
+    CLHEP::HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const;
 
     /// get the current satellite location
     std::pair<double,double> location();
@@ -452,8 +452,8 @@ int FluxSvc::askGPS()
 
 
 /// return pointer to the random engine
-HepRandomEngine* FluxSvc::getRandomEngine(){
-    return  HepRandom::getTheEngine();
+CLHEP::HepRandomEngine* FluxSvc::getRandomEngine(){
+    return  CLHEP::HepRandom::getTheEngine();
 };
 
 // finalize
@@ -534,11 +534,11 @@ std::pair<double,double> FluxSvc::getExplicitRockingAngles(){
 }
 
 
-HepRotation FluxSvc::transformToGlast(double seconds,GPS::CoordSystem index)const{
+CLHEP::HepRotation FluxSvc::transformToGlast(double seconds,GPS::CoordSystem index)const{
     return m_fluxMgr->transformToGlast(seconds,index);
 }
 
-HepRotation FluxSvc::transformGlastToGalactic(double time)const{
+CLHEP::HepRotation FluxSvc::transformGlastToGalactic(double time)const{
     return m_fluxMgr->transformGlastToGalactic(time);
 }
 
