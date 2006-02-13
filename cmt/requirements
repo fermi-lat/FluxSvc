@@ -1,7 +1,7 @@
 package FluxSvc
 version v6r32p2
 
-# $Id: requirements,v 1.153 2006/01/11 20:09:48 burnett Exp $
+# $Id: requirements,v 1.154 2006/01/22 18:34:23 burnett Exp $
 author  T. Burnett <tburnett@u.washington.edu>
 
 branches FluxSvc cmt doc cdf 
@@ -22,7 +22,8 @@ use celestialSources *
 
 #  set  path to particle properties (used by Gaudi ParticlePropertySvc) 
 #  $(FlUXSVCROOT)/cdf/particleproperty.cdf
-set LHCBDBASE  "${FLUXSVCROOT}"
+set LHCBDBASE       "${FLUXSVCROOT}"
+set PARAMFILESROOT  "${FLUXSVCROOT}"
 
 
 # _____________________________________________________________
