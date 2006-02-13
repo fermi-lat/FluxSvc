@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75.2.1 2006/01/31 22:01:53 usher Exp $
 
 */
 
@@ -65,7 +65,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75.2.1 2006/01/31 22:01:53 usher Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -390,7 +390,8 @@ StatusCode FluxAlg::execute()
     SmartDataPtr<Event::EventHeader> header(eventSvc(), EventModel::EventHeader);
     if(0==header) {
         // not already there: try to register instead
-        sc = eventSvc()->registerObject(EventModel::EventHeader, h=new Event::EventHeader);
+        //sc = eventSvc()->registerObject(EventModel::EventHeader, h=new Event::EventHeader);
+        sc = eventSvc()->registerObject(EventModel::EventHeader, EventModel::EventHeader, h=new Event::EventHeader);
         if( sc.isFailure()) {
             log << MSG::WARNING << " could not find or register the event header" << endreq;
         }

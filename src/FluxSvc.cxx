@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93.2.1 2006/01/31 22:01:54 usher Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -44,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93.2.1 2006/01/31 22:01:54 usher Exp $
 */
 
 // includes
@@ -146,7 +146,7 @@ public:
     virtual StatusCode finalize ();
 
     /// Query interface
-    virtual StatusCode queryInterface( const IID& riid, void** ppvUnknown );
+    virtual StatusCode queryInterface( const InterfaceID& riid, void** ppvUnknown );
 
 protected: 
 
@@ -466,7 +466,7 @@ StatusCode FluxSvc::finalize ()
 }
 
 /// Query interface
-StatusCode FluxSvc::queryInterface(const IID& riid, void** ppvInterface)  {
+StatusCode FluxSvc::queryInterface(const InterfaceID& riid, void** ppvInterface)  {
     if ( IID_IFluxSvc.versionMatch(riid) )  {
         *ppvInterface = (IFluxSvc*)this;
     }else if (IID_IRunable.versionMatch(riid) ) {
