@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Feb 13 14:27:38 PST 2006
+FluxSvc/cdf
+
+Added Files:
+      Tag: GR-v7r3p20-newext
+	particleTable.txt 
+Log Message:
+Gaudi v18 changes the source of the particle data from cdf/particle.cdf to data/particle.txt
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r32cl0, operation: add
 Package: FluxSvc
