@@ -4,6 +4,7 @@
 @verbatim
  * Coordinator: T.Burnett, S. Robinson
 
+   14-Feb-06  v6r32cl1 TU  Tag changes for new Gaudi v18r1
    31-Jan-06  v6r32cl0 TU  Tag development branch for new externals
    22-jan-06  v6r32p2 THB  Fix test program and get the last pointing history entry
    11-jan-06  v6r32p1 THB  Implement breaks for SAA boundaries, and livetime in the pointing history
