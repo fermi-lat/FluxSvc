@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri Feb 17 11:13:04 PST 2006
+FluxSvc/data
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/FluxSvc/data added to the repository
+--> Using per-directory sticky tag `v6r32cl1'
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r32cl1, operation: add
 Package: FluxSvc
