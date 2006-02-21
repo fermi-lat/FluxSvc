@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Tue Feb 21 11:22:05 PST 2006
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-tagging
-    *
-------------------------------------------------------------
-User: burnett  Tue Feb 21 11:22:05 PST 2006
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-tagging
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r32cl2, operation: add
 Package: FluxSvc
