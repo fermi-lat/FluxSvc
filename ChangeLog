@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  4 14:29:16 PST 2006
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+remove test code: fix paths obtained from env vars to not depend on CMT automatic stuff
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r32p3, operation: add
 Package: FluxSvc
