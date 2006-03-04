@@ -1,0 +1,30 @@
+------------------------------------------------------------
+User: burnett  Sat Mar  4 14:25:35 PST 2006
+FluxSvc/test_FluxSvc
+
+Log Message:
+inital test package
+
+Status:
+
+Vendor Tag:	THB
+Release Tags:	v0
+		
+N FluxSvc/test_FluxSvc/.cvsignore
+N FluxSvc/test_FluxSvc/cmt/.cvsignore
+N FluxSvc/test_FluxSvc/cmt/NMake
+N FluxSvc/test_FluxSvc/cmt/requirements
+N FluxSvc/test_FluxSvc/doc/release.notes
+N FluxSvc/test_FluxSvc/src/FluxTestAlg.cxx
+N FluxSvc/test_FluxSvc/src/jobOptions.txt
+N FluxSvc/test_FluxSvc/src/testOptions.txt
+N FluxSvc/test_FluxSvc/src/test_source.xml
+N FluxSvc/test_FluxSvc/src/flux/roottest.cxx
+N FluxSvc/test_FluxSvc/src/flux/testMgr.cxx
+N FluxSvc/test_FluxSvc/src/flux/test_library.xml
+N FluxSvc/test_FluxSvc/src/flux/TimeDepSpectrum.cxx
+N FluxSvc/test_FluxSvc/src/flux/TimeDepSpectrum.h
+
+No conflicts created by this import
+
+    *
