@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Sat Mar  4 14:29:19 PST 2006
+FluxSvc/src/test/flux
+
+Removed Files:
+	TimeDepSpectrum.cxx TimeDepSpectrum.h roottest.cxx testMgr.cxx 
+	test_library.xml 
+Log Message:
+remove test code: fix paths obtained from env vars to not depend on CMT automatic stuff
+    *
+------------------------------------------------------------
 User: burnett  Sat Mar  4 14:29:18 PST 2006
 FluxSvc/src/test
 
