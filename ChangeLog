@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Mar  5 07:12:24 PST 2006
+FluxSvc/src
+
+Modified Files:
+	defaultOptions.txt 
+Log Message:
+missed cap
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r33, operation: add
 Package: FluxSvc
