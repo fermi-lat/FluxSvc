@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 User: usher  Mon Mar 20 17:28:00 PST 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx PointingInfo.cxx 
+Log Message:
+    *
+------------------------------------------------------------
+User: usher  Mon Mar 20 17:28:00 PST 2006
 FluxSvc/cmt
 
 Modified Files:
