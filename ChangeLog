@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: usher  Mon Mar 20 17:27:59 PST 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFlux.h IFluxSvc.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r33p1, operation: add
 Package: FluxSvc
