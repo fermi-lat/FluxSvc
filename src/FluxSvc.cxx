@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.94 2006/03/04 22:29:17 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -44,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.93 2006/01/11 20:07:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.94 2006/03/04 22:29:17 burnett Exp $
 */
 
 // includes
@@ -86,7 +86,7 @@ public:
 
 
     /// return pointer to the random engine that FluxSvc uses
-    virtual HepRandomEngine* getRandomEngine();
+    virtual CLHEP::HepRandomEngine* getRandomEngine();
     virtual void rootDisplay(std::vector<std::string> arguments);;
 
     /// attach an external observer to GPS
@@ -106,9 +106,9 @@ public:
     std::pair<double,double> getExplicitRockingAngles();
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
-    HepRotation transformGlastToGalactic(double time)const;
+    CLHEP::HepRotation transformGlastToGalactic(double time)const;
 
-    HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const;
+    CLHEP::HepRotation transformToGlast(double seconds,GPS::CoordSystem index)const;
 
     /// get the current satellite location
     std::pair<double,double> location();
@@ -146,7 +146,7 @@ public:
     virtual StatusCode finalize ();
 
     /// Query interface
-    virtual StatusCode queryInterface( const IID& riid, void** ppvUnknown );
+    virtual StatusCode queryInterface( const InterfaceID& riid, void** ppvUnknown );
 
 protected: 
 
@@ -452,8 +452,8 @@ int FluxSvc::askGPS()
 
 
 /// return pointer to the random engine
-HepRandomEngine* FluxSvc::getRandomEngine(){
-    return  HepRandom::getTheEngine();
+CLHEP::HepRandomEngine* FluxSvc::getRandomEngine(){
+    return  CLHEP::HepRandom::getTheEngine();
 };
 
 // finalize
@@ -466,7 +466,7 @@ StatusCode FluxSvc::finalize ()
 }
 
 /// Query interface
-StatusCode FluxSvc::queryInterface(const IID& riid, void** ppvInterface)  {
+StatusCode FluxSvc::queryInterface(const InterfaceID& riid, void** ppvInterface)  {
     if ( IID_IFluxSvc.versionMatch(riid) )  {
         *ppvInterface = (IFluxSvc*)this;
     }else if (IID_IRunable.versionMatch(riid) ) {
@@ -534,11 +534,11 @@ std::pair<double,double> FluxSvc::getExplicitRockingAngles(){
 }
 
 
-HepRotation FluxSvc::transformToGlast(double seconds,GPS::CoordSystem index)const{
+CLHEP::HepRotation FluxSvc::transformToGlast(double seconds,GPS::CoordSystem index)const{
     return m_fluxMgr->transformToGlast(seconds,index);
 }
 
-HepRotation FluxSvc::transformGlastToGalactic(double time)const{
+CLHEP::HepRotation FluxSvc::transformGlastToGalactic(double time)const{
     return m_fluxMgr->transformGlastToGalactic(time);
 }
 
