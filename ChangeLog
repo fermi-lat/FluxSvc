@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Mar 22 14:21:48 PST 2006
+FluxSvc/data
+
+Added Files:
+	ParticleTable.txt 
+Log Message:
+Moving (and renaming) ParticleTable.txt to the /data folder. This file is used by Gaudi to fill out its particle properties class.
+    *
+------------------------------------------------------------
 User: usher  Mon Mar 20 17:28:00 PST 2006
 FluxSvc/cdf
 
