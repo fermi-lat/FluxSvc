@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.76 2006/03/21 01:28:00 usher Exp $
 
 */
 
@@ -38,12 +38,11 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 
 #include "FluxSvc/IFluxSvc.h"
 #include "flux/IFlux.h"
 #include "flux/Spectrum.h"
-//#include "flux/SpectrumFactory.h"
 
 #include "flux/EventSource.h"
-//#include "flux/CompositeSource.h"
 
 #include "CLHEP/Vector/LorentzVector.h"
+#include "CLHEP/Random/Random.h"
 
 #include <cassert>
 #include <vector>
@@ -65,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.75 2006/01/11 20:07:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.76 2006/03/21 01:28:00 usher Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -295,6 +294,10 @@ StatusCode FluxAlg::execute()
     // then change our m_flux pointer to be the new one.
     // Output:  a staturCode to ensure the function executed properly.
     m_flux = m_fluxSvc->currentFlux();
+
+    // check the current random number seed
+    int seed = CLHEP::HepRandom::getTheSeed();
+    log << MSG::DEBUG << "random seed: " << seed << endreq;
 
     std::string particleName;
     if( m_avoidSAA) m_SAAreject--;
