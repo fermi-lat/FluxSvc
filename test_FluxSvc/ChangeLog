@@ -1,5 +1,28 @@
 ------------------------------------------------------------
 TAG
+Tag name: v6r34p2, operation: add
+Package: test_FluxSvc
+User: burnett  Thu Apr 20 13:43:55 2006
+Files:
+  test_FluxSvc/.cvsignore  1.1.1.1
+  test_FluxSvc/ChangeLog  1.5
+  test_FluxSvc/cmt/.cvsignore  1.1.1.1
+  test_FluxSvc/cmt/NMake  1.1.1.1
+  test_FluxSvc/cmt/requirements  1.1.1.1
+  test_FluxSvc/doc/release.notes  1.1.1.1
+  test_FluxSvc/src/testOptions.txt  1.1.1.1
+  test_FluxSvc/src/FluxTestAlg.cxx  1.1.1.1
+  test_FluxSvc/src/test_source.xml  1.1.1.1
+  test_FluxSvc/src/jobOptions.txt  1.1.1.1
+  test_FluxSvc/src/flux/testMgr.cxx  1.1.1.1
+  test_FluxSvc/src/flux/roottest.cxx  1.1.1.1
+  test_FluxSvc/src/flux/TimeDepSpectrum.cxx  1.1.1.1
+  test_FluxSvc/src/flux/TimeDepSpectrum.h  1.1.1.1
+  test_FluxSvc/src/flux/test_library.xml  1.1.1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v6r34p1, operation: add
 Package: test_FluxSvc
 User: burnett  Sun Apr  9 14:04:58 2006
