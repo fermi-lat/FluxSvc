@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Thu Apr 20 13:42:10 PDT 2006
-FluxSvc/src
-
-Modified Files:
-	FluxAlg.cxx 
-Log Message:
-particle property name for proton changed to 'p+'
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r34p1, operation: add
 Package: FluxSvc
