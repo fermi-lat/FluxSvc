@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.78 2006/04/20 20:42:10 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.79 2006/05/01 21:33:37 burnett Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.78 2006/04/20 20:42:10 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.79 2006/05/01 21:33:37 burnett Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -325,10 +325,10 @@ StatusCode FluxAlg::execute()
     if( particleName=="p" || particleName=="proton") particleName="p+";
     ParticleProperty* prop = m_partSvc->find(particleName);
 
-    if( prop==0 && particleName=="He" ){
-        // If He didn't work (mystery!) try alpha instead
-        prop = m_partSvc->find("alpha");
-    }
+//    if( prop==0 && particleName=="He" ){
+//        // If He didn't work (mystery!) try alpha instead
+//        prop = m_partSvc->find("alpha");
+//    }
     if( prop==0) {
         log << MSG::ERROR << "Particle name " << particleName << " not found by particle properties" << endreq;
         return StatusCode::FAILURE;
