@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon May  1 14:33:38 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+kluge to work around failure to find He in particle table; tagging
+    *
+------------------------------------------------------------
 User: burnett  Mon May  1 14:33:37 PDT 2006
 FluxSvc/doc
 
