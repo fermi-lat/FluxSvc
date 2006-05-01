@@ -2,6 +2,15 @@
 TAG
 Tag name: v6r34p5, operation: add
 Package: FluxSvc
+User: usher  Mon May  1 16:58:21 2006
+Files:
+  FluxSvc/data/ParticleTable.txt  1.4
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v6r34p5, operation: add
+Package: FluxSvc
 User: usher  Mon May  1 16:57:45 2006
 Files:
   FluxSvc/.cvsignore  1.3
