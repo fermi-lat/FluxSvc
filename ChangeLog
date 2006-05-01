@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon May  1 16:56:58 PDT 2006
+FluxSvc/data
+
+Modified Files:
+	ParticleTable.txt 
+Log Message:
+Re-order heavy ion list so He will show up properly
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r34p4, operation: add
 Package: FluxSvc
