@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.79 2006/05/01 21:33:37 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.80 2006/05/01 23:57:21 usher Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.79 2006/05/01 21:33:37 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.80 2006/05/01 23:57:21 usher Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -153,8 +153,8 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
     declareProperty("sources",     m_source_list);
     declareProperty("MCrun",        m_run=100);
     declareProperty("area",        m_area=6.0); // target area in m^2
-    declareProperty("pointing_mode", m_pointing_mode=0);
-    declareProperty("rocking_angle", m_rocking_angle=0); // in degrees
+    declareProperty("pointing_mode", m_pointing_mode=3);
+    declareProperty("rocking_angle", m_rocking_angle=35); // in degrees
     declareProperty("rocking_angle_z", m_rocking_angle_z=0); // in degrees
 
     declareProperty("PointingHistory",  m_pointingHistory); // doublet, filename and launch date
