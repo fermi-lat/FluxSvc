@@ -2,7 +2,7 @@
 @brief declaration and definition of the class PointingInfo
 
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.7 2006/01/11 20:07:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.8 2006/03/21 01:28:00 usher Exp $
 
 */
 class MsgStream; // needed for Exposure.
@@ -46,7 +46,7 @@ void PointingInfo::set(double time, bool insideSAA)
     lon_geo = gps->lon(); 
 
     
-    // override altitude by using shape of earth.
+    // override altitude by using shape of earth; access magnetic stuff
     EarthCoordinate loc = gps->earthpos();
     rad_geo = loc.altitude(); 
     L=loc.L();
