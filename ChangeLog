@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat May 13 20:21:42 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx PointingInfo.cxx 
+Log Message:
+change default to rock;
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r34p5, operation: add
 Package: FluxSvc
