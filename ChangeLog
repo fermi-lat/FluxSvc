@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon May 22 08:34:51 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+restore pointing mode to zenith-pointing,
+    *
+------------------------------------------------------------
 User: burnett  Mon May 22 08:34:50 PDT 2006
 FluxSvc/doc
 
