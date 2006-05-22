@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon May 22 08:34:50 PDT 2006
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+restore pointing mode to zenith-pointing,
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r35, operation: add
 Package: FluxSvc
