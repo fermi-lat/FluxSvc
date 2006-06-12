@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/FluxTestAlg.cxx,v 1.52 2004/08/13 22:47:51 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/test_FluxSvc/src/FluxTestAlg.cxx,v 1.1.1.1 2006/03/04 22:25:35 burnett Exp $
 
 // Include files
 #include "FluxSvc/IFluxSvc.h"
 #include "FluxSvc/IFlux.h"
-#include "flux/ISpectrumFactory.h"
+#include "FluxSvc/ISpectrumFactory.h"
 
 // Event for creating the McEvent stuff
 //#include "Event/TopLevel/Event.h"
