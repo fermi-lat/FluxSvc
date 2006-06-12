@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Jun 12 10:34:05 PDT 2006
+FluxSvc/test_FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix req file and job options to be consistent with current FluxSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r36, operation: add
 Package: FluxSvc
