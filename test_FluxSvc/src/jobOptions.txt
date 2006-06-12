@@ -3,10 +3,10 @@
 // Job options file for FluxSvc test program
 //
 // List of DLLs, services
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/test/jobOptions.txt,v 1.88 2006/01/22 18:34:26 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/test_FluxSvc/src/jobOptions.txt,v 1.1.1.1 2006/03/04 22:25:35 burnett Exp $
 ApplicationMgr.DLLs+= { "GaudiAlg", "GaudiAud"};
 ApplicationMgr.DLLs+= { "GlastSvc"};
-ApplicationMgr.ExtSvc = { "GlastDetSvc", "GlastEventSelector/EventSelector" , "EventCnvSvc" };
+ApplicationMgr.ExtSvc = { "GlastDetSvc",  "EventCnvSvc" };
 EventPersistencySvc.CnvServices = {"EventCnvSvc"};
 EventSelector.Input = "NONE";
 
