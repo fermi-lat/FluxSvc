@@ -1,11 +1,10 @@
 package FluxSvc
 version v6r36p1
 
-# $Id: requirements,v 1.166 2006/05/22 15:34:50 burnett Exp $
+# $Id: requirements,v 1.167 2006/06/12 17:35:56 burnett Exp $
 author  T. Burnett <tburnett@u.washington.edu>
 
-branches FluxSvc cmt doc cdf 
-
+branches FluxSvc cmt doc test_FluxSvc
 use GlastPolicy v*
 
 # this is a Gaudi shrared component package
