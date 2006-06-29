@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jun 29 11:42:28 PDT 2006
+FluxSvc/cdf
+
+Removed Files:
+	particle.cdf particleTable.txt 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Jun 29 11:42:27 PDT 2006
 FluxSvc/cmt
 
