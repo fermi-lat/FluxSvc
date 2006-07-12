@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.47 2005/12/08 20:07:30 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.48 2006/03/21 01:27:59 usher Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -32,7 +32,7 @@ namespace CLHEP {class HepRandomEngine;}
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.47 2005/12/08 20:07:30 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.48 2006/03/21 01:27:59 usher Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -103,6 +103,9 @@ public:
     /// return current SAA status
     virtual bool insideSAA()=0;
 
+    /// set aligmnment for Glast. 
+    /// @param phi,theta,psi Euler angles (radians)
+    virtual void setAlignmentRotation(double phi, double theta, double psi)=0;
 };
 
 #endif  // _H_IFluxSvc
