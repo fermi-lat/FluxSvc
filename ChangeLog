@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Jul 12 11:01:09 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+add interface to allow instrument rotation
+    *
+------------------------------------------------------------
+User: burnett  Wed Jul 12 11:01:09 PDT 2006
 FluxSvc/FluxSvc
 
 Modified Files:
