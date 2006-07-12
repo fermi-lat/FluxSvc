@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.94 2006/03/04 22:29:17 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.95 2006/03/21 01:28:00 usher Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -44,7 +44,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.94 2006/03/04 22:29:17 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.95 2006/03/21 01:28:00 usher Exp $
 */
 
 // includes
@@ -133,6 +133,13 @@ public:
 
 
     bool insideSAA() { return m_insideSAA;}
+
+    /// set aligmnment for Glast, a transform that will be applied in instrument coordinates to incoming particles 
+    /// @param phi,theta,psi Euler angles (radians)
+    virtual void setAlignmentRotation(double phi, double theta, double psi);
+
+
+
     /// for the IRunnable interfce
     virtual StatusCode run();
 
@@ -656,5 +663,11 @@ StatusCode FluxSvc::run(){
         }
         log << MSG::INFO << "End after "<< eventNumber << " events, time = " << m_times.current() << endreq;
         return status;
+    }
+
+    void FluxSvc::setAlignmentRotation(double phi, double theta, double psi)
+    {
+        CLHEP::HepRotation rot(phi,theta,psi);
+        m_fluxMgr->setAlignmentRotation(rot);
     }
 
