@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 29 13:40:56 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+bring JO parameters up to date; add more descriptive zenith reference parameter
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r37, operation: add
 Package: FluxSvc
