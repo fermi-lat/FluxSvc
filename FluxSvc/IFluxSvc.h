@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.48 2006/03/21 01:27:59 usher Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.49 2006/07/12 18:01:09 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -32,7 +32,7 @@ namespace CLHEP {class HepRandomEngine;}
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.48 2006/03/21 01:27:59 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.49 2006/07/12 18:01:09 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -67,12 +67,16 @@ public:
 
     /// name of the flux
     virtual std::string fluxName()const=0;
-
+#if 0
     /// set the glast tilt angles - this means glast will ALWAYS rock to these angles.
     virtual void setExplicitRockingAngles(double ang1,double ang2)=0;
 
     /// get the angular values of the satellite
     virtual std::pair<double,double> getExplicitRockingAngles()=0;
+#endif
+        /// set the pointing direction 
+    virtual void setPointingDirection(const astro::SkyDir& dir)=0;
+
 
     ///this transforms glast-local (cartesian) vectors into galactic (cartesian) vectors
     virtual CLHEP::HepRotation transformGlastToGalactic(double time)const=0;
