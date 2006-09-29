@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.18 2005/08/21 23:20:24 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.19 2006/09/29 20:40:56 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -41,8 +41,6 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
         - 4 fixed. use rocking_angle to define rotation about x-axis from zenith
     @param FluxAlg.rocking_angle [0 deg] Rotation angle for Glast, about x-axis. 
     @param FluxAlg.rocking_angle_z [0 deg] Rotation angle for Glast, about z-axis.
-    @param FluxAlg.pointing_info_tree_name ["MeritTuple"] If set, copy "Pt" values to it. See point_info for definitions.
-    @param FluxAlg.save_pointing_info [false] Set true to save all entries in the pointing tuple. Normally saved by merit.
     @param FluxAlg.alignment    [{}] Set three rotation angles to mis-align GLAST
     @param FluxAlg.pointingDirection [{}] Set (ra,dec) for pointed mode. Other rocking stuff ignored.
     @param FluxAlg.AvoidSAA     [false] set true to skip events during SAA interval
@@ -52,7 +50,9 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param ExposureAlg.root_tree ["pointing_history"] name for the root tree to be filled if there are clock ticks
     @param ExposureAlg.pointing_history_input_file [""] name for file to give to astro::GPS do define an input pointing history.
 
-
+  @section PointInfoAlg_jobOptions PointInfoAlg jobOptions
+    @param PointInfoAlg.pointing_info_tree_name ["MeritTuple"]If set, copy "Pt" values to it. See point_info for definitions.
+    aparam PointInfoAlg.save_pointing_info  [false] Set true to save all entries in the pointing tuple. Normally saved by merit.
     
     <hr>
   @section Basic_XML_Sources Sources
