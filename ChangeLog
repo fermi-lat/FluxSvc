@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep 28 17:16:17 PDT 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+pointing mode setup; tagging
+    *
+------------------------------------------------------------
 User: burnett  Wed Jul 12 11:01:09 PDT 2006
 FluxSvc/src
 
