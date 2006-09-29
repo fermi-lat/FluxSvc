@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 29 16:48:29 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx mainpage.h 
+Log Message:
+clean up options
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 29 13:40:56 PDT 2006
 FluxSvc/src
 
