@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct 24 00:56:08 PDT 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+set source name in McEvent
+    *
+------------------------------------------------------------
 User: burnett  Tue Oct 24 00:55:33 PDT 2006
 FluxSvc/src
 
