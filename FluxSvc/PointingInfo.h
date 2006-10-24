@@ -1,5 +1,5 @@
 /** @file PointingInfo.h
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.5 2005/12/09 17:20:05 mcenery Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/PointingInfo.h,v 1.6 2006/01/11 20:07:43 burnett Exp $
 */
 
 #ifndef PointingInfo_h
@@ -51,6 +51,7 @@ public:
     float livetime;
     float L; ///< McIllwain L parameter
     float B; ///< magnetic field
+    float zenith_scz; ///< space craft zenith angle
 
 };
 
