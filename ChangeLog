@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Nov  5 19:09:51 PST 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+required by astro/GPS changes
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r38, operation: add
 Package: FluxSvc
