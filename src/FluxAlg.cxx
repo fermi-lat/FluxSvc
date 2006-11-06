@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.85 2006/09/29 23:48:29 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.86 2006/10/24 07:56:08 burnett Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.85 2006/09/29 23:48:29 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.86 2006/10/24 07:56:08 burnett Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -202,10 +202,11 @@ StatusCode FluxAlg::initialize(){
 
     }else if( m_zenithTheta>=0) {
         // if set from defalt, set to this value
-        m_fluxSvc->setRockType(4, m_zenithTheta);
+        m_fluxSvc->setRockType(astro::GPS::EXPLICIT, m_zenithTheta);
         log << MSG::INFO << "set to zenith angle " << m_zenithTheta << " degrees" << endreq;
 
     }else {
+#if 0 // rocking not currently supported
         //then this line sets the rocking type, as well as the rocking angle.
         m_fluxSvc->setRockType(m_pointing_mode,m_rocking_angle);
 
@@ -215,6 +216,7 @@ StatusCode FluxAlg::initialize(){
             log << MSG::INFO << "rocking Mode: " << m_pointing_mode << endreq;
             log << MSG::INFO << "rocking Angle: " << m_rocking_angle << " degrees" << endreq;
         }
+#endif
         //set the input file to be used as the pointing database, if used
         if(! m_pointingHistory.value().empty()){
             std::string filename(m_pointingHistory.value()[0]);
