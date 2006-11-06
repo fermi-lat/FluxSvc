@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Nov  6 05:31:13 PST 2006
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+GPS interface change
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r38p1, operation: add
 Package: FluxSvc
