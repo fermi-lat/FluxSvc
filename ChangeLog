@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Nov  5 19:09:52 PST 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+required by astro/GPS changes
+    *
+------------------------------------------------------------
 User: burnett  Sun Nov  5 19:09:51 PST 2006
 FluxSvc/FluxSvc
 
