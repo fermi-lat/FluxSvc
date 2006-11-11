@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Nov 11 14:01:59 PST 2006
+FluxSvc/FluxSvc
+
+Modified Files:
+	PointingInfo.h 
+Log Message:
+enable rocking; get orientation from the GPS instance, not from the TDS
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r38p2, operation: add
 Package: FluxSvc
