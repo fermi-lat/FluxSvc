@@ -1,7 +1,7 @@
 /** @file PointInfoAlg.cxx
 @brief declaration and definition of the class PointInfoAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.3 2005/09/21 00:10:11 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01/11 20:07:45 burnett Exp $
 
 */
 
@@ -34,7 +34,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.3 2005/09
 * \brief This is an Algorithm designed to store pointing information in the tuple
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.3 2005/09/21 00:10:11 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01/11 20:07:45 burnett Exp $
 */
 
 
@@ -105,30 +105,9 @@ StatusCode PointInfoAlg::execute()
     //
     // Purpose: set tuple items
  
- 
-    // get the event header for the time
+    m_pointing_info.set();
 
-    SmartDataPtr<Event::EventHeader> header(eventSvc(), EventModel::EventHeader);
-    if(0==header) {
-            log << MSG::ERROR << " could not be found on data store" << endreq;
-     }
-
-    TimeStamp currentTime=header->time();
-
-    if( currentTime==-1) { // not set!
-
-        SmartDataPtr<Event::MCEvent> mcheader(eventSvc(), EventModel::MC::Event);
-        if (mcheader == 0) {
-            log << MSG::ERROR << EventModel::MC::Event  <<" could not be found on data store" << endreq;
-            return sc;
-        }
-
-        currentTime = mcheader->time();
-
-    }
-    m_pointing_info.set(currentTime, false);
-
-    
+   
     // put pointing stuff into the root tree
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
         m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), m_save_tuple);
