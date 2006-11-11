@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Nov 11 14:01:59 PST 2006
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx PointInfoAlg.cxx PointingInfo.cxx 
+Log Message:
+enable rocking; get orientation from the GPS instance, not from the TDS
+    *
+------------------------------------------------------------
+User: burnett  Sat Nov 11 14:01:59 PST 2006
 FluxSvc/FluxSvc
 
 Modified Files:
