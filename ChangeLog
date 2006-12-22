@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Fri Dec 22 12:36:02 PST 2006
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-check for validity of sources, abort FluxAlg if none.
-    *
-------------------------------------------------------------
-User: burnett  Fri Dec 22 12:36:02 PST 2006
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-check for validity of sources, abort FluxAlg if none.
-    *
-------------------------------------------------------------
-User: burnett  Fri Dec 22 12:36:02 PST 2006
-FluxSvc/FluxSvc
-
-Modified Files:
-	IFlux.h 
-Log Message:
-check for validity of sources, abort FluxAlg if none.
-    *
-------------------------------------------------------------
 User: burnett  Sat Dec 16 14:40:46 PST 2006
 FluxSvc/data
 
