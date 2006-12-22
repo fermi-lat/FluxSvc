@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Dec 22 12:36:03 PST 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+check for validity of sources, abort FluxAlg if none.
+    *
+------------------------------------------------------------
 User: burnett  Fri Dec 22 12:36:02 PST 2006
 FluxSvc/doc
 
