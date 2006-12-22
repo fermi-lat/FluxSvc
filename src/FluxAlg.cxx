@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.87 2006/11/06 03:09:51 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.88 2006/11/11 22:01:59 burnett Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.87 2006/11/06 03:09:51 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.88 2006/11/11 22:01:59 burnett Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -333,7 +333,11 @@ StatusCode FluxAlg::execute()
     int count = m_prescale;
     do{ // loop if we are rejecting particles generated during SAA
         // also do prescale here
-        m_flux->generate();
+        bool valid =m_flux->generate();
+        if( !valid) {
+            log << MSG::ERROR << "Ran out of valid sources, aborting" << endreq;
+            return StatusCode::FAILURE;
+        }
         particleName = m_flux->particleName();
 
         //if it's a clock then ExposureAlg will take care of it, and no othe algorithms should care about it.
