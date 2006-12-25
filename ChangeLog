@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Dec 24 20:53:07 PST 2006
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+set jobinfo tuple
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 24 20:53:07 PST 2006
 FluxSvc/doc
 
 Modified Files:
