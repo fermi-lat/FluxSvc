@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Dec 24 20:53:07 PST 2006
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+set jobinfo tuple
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r39p2, operation: add
 Package: FluxSvc
