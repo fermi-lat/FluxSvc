@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Dec 24 20:53:07 PST 2006
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+set jobinfo tuple
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 24 20:53:07 PST 2006
 FluxSvc/cmt
 
 Modified Files:
