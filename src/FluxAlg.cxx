@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.89 2006/12/22 20:36:03 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.90 2006/12/25 04:53:07 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.89 2006/12/22 20:36:03 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.90 2006/12/25 04:53:07 burnett Exp $
 */
 
 // TU: CLHEP 1.9.2.2 hack
@@ -469,6 +469,13 @@ StatusCode FluxAlg::execute()
 StatusCode FluxAlg::finalize(){
     StatusCode  sc = StatusCode::SUCCESS;
     static bool done = false;
+
+    // create the jobinfo tuple
+    m_rootTupleSvc->addItem("jobinfo", "run", &m_run);
+    m_rootTupleSvc->addItem("jobinfo", "generated", &m_sequence);
+    m_rootTupleSvc->addItem("jobinfo", "start", &m_initialTime);
+    m_rootTupleSvc->addItem("jobinfo", "stop",  &m_currentTime);
+
     if( done || m_counts.empty() ) return sc;
     done=true;
     MsgStream log(msgSvc(), name());
@@ -486,11 +493,6 @@ StatusCode FluxAlg::finalize(){
         log << "\t\tRejected by SAA: " << m_SAAreject << endreq;
             log << "\t\t(note that this may invalidate the rate calculation)" << endreq;
     }
-    // create the jobinfo tuple
-    m_rootTupleSvc->addItem("jobinfo", "run", &m_run);
-    m_rootTupleSvc->addItem("jobinfo", "generated", &m_sequence);
-    m_rootTupleSvc->addItem("jobinfo", "start", &m_initialTime);
-    m_rootTupleSvc->addItem("jobinfo", "stop",  &m_currentTime);
     return sc;
 }
 
