@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jan  5 12:24:48 PST 2007
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+remove obsolete variable
+    *
+------------------------------------------------------------
 User: burnett  Thu Jan  4 18:22:08 PST 2007
 FluxSvc/src
 
