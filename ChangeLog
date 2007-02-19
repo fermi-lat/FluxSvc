@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Feb 19 15:13:20 PST 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+put jobinfo variables for RootTupleSvc in static memory.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r41, operation: add
 Package: FluxSvc
