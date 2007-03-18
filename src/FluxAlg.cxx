@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.92 2007/01/05 20:24:48 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.93 2007/02/19 23:13:20 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.92 2007/01/05 20:24:48 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.93 2007/02/19 23:13:20 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -216,15 +216,26 @@ StatusCode FluxAlg::initialize(){
             std::string filename(m_pointingHistory.value()[0]);
             facilities::Util::expandEnvVar(&filename);
             double offset = 0;
+            bool eastflag(false);
             if( m_pointingHistory.value().size()>1){
-                facilities::Timestamp jt(m_pointingHistory.value()[1]);
-                offset = (astro::JulianDate(jt.getJulian())-astro::JulianDate::missionStart())*astro::JulianDate::secondsPerDay;
+                std::string field(m_pointingHistory.value()[1]);
+                if(! field.empty() ) { // allow null string
+                    facilities::Timestamp jt(m_pointingHistory.value()[1]);
+                    offset = (astro::JulianDate(jt.getJulian())-astro::JulianDate::missionStart())*astro::JulianDate::secondsPerDay;
+                }
             }
 
+            if( m_pointingHistory.value().size()>2){
+                std::string field(m_pointingHistory.value()[2]);
+                eastflag =! field.empty();
+            }
             log << MSG::INFO << "Loading Pointing History File : " << filename 
                 << " with MET offset "<< offset <<  endreq;
+            if( eastflag){
+                log << MSG::INFO << "Will override x-direction to point east"<<endreq;
+            }
 
-            GPS::instance()->setPointingHistoryFile(filename, offset);
+            GPS::instance()->setPointingHistoryFile(filename, offset, eastflag);
         }
     }
     if( !m_source_list.value().empty()){
