@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.93 2007/02/19 23:13:20 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.94 2007/03/18 14:54:37 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.93 2007/02/19 23:13:20 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.94 2007/03/18 14:54:37 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -478,16 +478,17 @@ StatusCode FluxAlg::finalize(){
     StatusCode  sc = StatusCode::SUCCESS;
     static bool done = false;
 
-    // create the jobinfo tuple: copy to statics
-    run = m_run;
-    sequence=m_sequence;
-    initialTime=m_initialTime;
-    currentTime=m_currentTime;
-    m_rootTupleSvc->addItem("jobinfo", "run", &run);
-    m_rootTupleSvc->addItem("jobinfo", "generated", &sequence);
-    m_rootTupleSvc->addItem("jobinfo", "start", &initialTime);
-    m_rootTupleSvc->addItem("jobinfo", "stop",  &currentTime);
-
+    if( m_rootTupleSvc!=0 ){
+        // create the jobinfo tuple: copy to statics
+        run = m_run;
+        sequence=m_sequence;
+        initialTime=m_initialTime;
+        currentTime=m_currentTime;
+        m_rootTupleSvc->addItem("jobinfo", "run", &run);
+        m_rootTupleSvc->addItem("jobinfo", "generated", &sequence);
+        m_rootTupleSvc->addItem("jobinfo", "start", &initialTime);
+        m_rootTupleSvc->addItem("jobinfo", "stop",  &currentTime);
+    }
     if( done || m_counts.empty() ) return sc;
     done=true;
     MsgStream log(msgSvc(), name());
