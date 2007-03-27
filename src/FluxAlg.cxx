@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.94 2007/03/18 14:54:37 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.95 2007/03/19 17:54:51 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.94 2007/03/18 14:54:37 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.95 2007/03/19 17:54:51 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -238,6 +238,7 @@ StatusCode FluxAlg::initialize(){
             GPS::instance()->setPointingHistoryFile(filename, offset, eastflag);
         }
     }
+    double current_time = GPS::instance()->time();
     if( !m_source_list.value().empty()){
         log << MSG::INFO << "loading sources " << endreq;
         std::vector<std::string> sources=m_source_list.value();
@@ -260,6 +261,8 @@ StatusCode FluxAlg::initialize(){
             return sc;
         }
     }
+
+    GPS::instance()->time(current_time);
     std::string title(m_flux->title()); if(title.length()>100) title = title.substr(0,100)+"...";
     log << MSG::INFO << "Source title: " << title << endreq;
     log << MSG::INFO << "        area: " << m_flux->targetArea() << endreq;
