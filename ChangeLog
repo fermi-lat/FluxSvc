@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Tue Mar 27 11:03:52 PDT 2007
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-tagging after protecting against a source modiying the GPS time
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r41p4, operation: add
 Package: FluxSvc
