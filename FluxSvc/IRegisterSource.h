@@ -7,7 +7,7 @@
 #include <typeinfo>
 
 
-class IFluxSvc;
+#include "IFluxSvc.h"
 
 static const InterfaceID IID_IRegisterSource("IRegisterSource", 1 , 0); 
 
@@ -16,7 +16,7 @@ static const InterfaceID IID_IRegisterSource("IRegisterSource", 1 , 0);
 * @brief Abstract definition of a tool to be called from FluxSvc to load external ISpectrumFactory enteries
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.4 2005/04/28 13:08:16 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IRegisterSource.h,v 1.5 2005/04/28 14:56:44 burnett Exp $
 * 
 * <br> Example of an implementation:
 *   <pre>
