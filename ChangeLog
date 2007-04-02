@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sun Apr  1 18:34:10 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for rhel4
+    *
+------------------------------------------------------------
+User: heather  Sun Apr  1 18:34:10 PDT 2007
 FluxSvc/FluxSvc
 
 Modified Files:
