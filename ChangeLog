@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sun Apr  1 18:34:10 PDT 2007
+FluxSvc/FluxSvc
+
+Modified Files:
+	IRegisterSource.h 
+Log Message:
+patch for rhel4
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r41p5, operation: add
 Package: FluxSvc
