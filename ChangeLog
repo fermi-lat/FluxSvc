@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 24 19:57:18 PDT 2007
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+mods to deal with the stuck in the SAA problem
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r41p6, operation: add
 Package: FluxSvc
