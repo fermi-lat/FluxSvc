@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Apr 24 19:57:18 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+mods to deal with the stuck in the SAA problem
+    *
+------------------------------------------------------------
+User: burnett  Tue Apr 24 19:57:18 PDT 2007
 FluxSvc/FluxSvc
 
 Modified Files:
