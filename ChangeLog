@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Apr 30 20:41:34 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+fix erroneous message
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r41p7, operation: add
 Package: FluxSvc
