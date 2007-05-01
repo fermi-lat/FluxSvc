@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.96 2007/03/27 18:03:53 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.97 2007/04/25 02:57:18 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.96 2007/03/27 18:03:53 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.97 2007/04/25 02:57:18 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -354,7 +354,7 @@ StatusCode FluxAlg::execute()
             setFilterPassed( false );
             return sc;
         }
-        if( m_avoidSAA){
+        if(m_insideSAA && m_avoidSAA.value() ){
             if( GPS::instance()->time() > m_fluxSvc->endruntime()){
                 log << MSG::INFO << "Ran out of time while in SAA"<< endreq;
                 setFilterPassed( false );
