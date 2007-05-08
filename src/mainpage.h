@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.22 2007/01/05 02:22:08 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.23 2007/02/19 19:30:42 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -32,6 +32,8 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxSvc.SampleInterval [1.0] Governs the minimum time that must elapse before a the GPS observers
     are notified to update pointing and attitude information.
     @param FluxSvc.OrbitInclination [25.3] Orbit inclination angle, in degrees for default orbit
+    @param FluxSvc.SAApolyLat  [{}] list of latitudes defining the SAA exclusion polygon
+    @param FluxSvc.SAApolyLon  [{}] longitudes
 
   @section fluxalg_jobOptions FluxAlg jobOptions
     @param FluxAlg.source_name  ["default"] source name, name must be in the source_lib files

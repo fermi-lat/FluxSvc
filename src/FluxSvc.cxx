@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.99 2007/02/19 19:30:42 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.100 2007/04/25 02:57:18 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -28,6 +28,8 @@
 
 #include "astro/SkyDir.h"
 #include "astro/EarthOrbit.h"
+#include "astro/EarthCoordinate.h"
+
 #include "flux/Flux.h"
 #include "flux/FluxMgr.h"
 #include "flux/rootplot.h"
@@ -46,7 +48,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.99 2007/02/19 19:30:42 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.100 2007/04/25 02:57:18 burnett Exp $
 */
 
 // includes
@@ -272,6 +274,9 @@ private:
     DoubleProperty m_sampleInterval;
     DoubleProperty m_orbitInclination;
 
+    DoubleArrayProperty m_SAA_poly_lat;
+    DoubleArrayProperty m_SAA_poly_lon;
+
 
 };
 
@@ -304,7 +309,8 @@ FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("SampleInterval", m_sampleInterval=1.0);
     declareProperty("OrbitInclination", m_orbitInclination=25.3);
 
-
+    declareProperty("SAApolyLat"  , m_SAA_poly_lat);
+    declareProperty("SAApolyLon"  , m_SAA_poly_lon);
 
 }
 
@@ -394,6 +400,18 @@ StatusCode FluxSvc::initialize ()
         std::ostream_iterator<std::string>(log.stream(), ", "));
     log  << endreq;
 
+    size_t nsaa =m_SAA_poly_lat.value().size();
+    if( nsaa>0) {
+        if( m_SAA_poly_lon.value().size() != nsaa ){
+            log << MSG::ERROR <<"sizes of SAA arrays do not match"<< endreq;
+            return StatusCode::FAILURE;
+        }
+        std::vector<std::pair<double,double> > saa_array;
+        for( size_t i = 0; i< nsaa; ++i){
+            saa_array.push_back( std::make_pair(m_SAA_poly_lat.value()[i], m_SAA_poly_lon.value()[i]) );
+        }
+        astro::EarthCoordinate::setSAAboundary( saa_array);
+    }
 
 
     //----------------------------------------------------------------
