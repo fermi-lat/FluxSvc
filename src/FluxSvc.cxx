@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.100 2007/04/25 02:57:18 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.101 2007/05/08 03:26:13 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -48,7 +48,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.100 2007/04/25 02:57:18 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.101 2007/05/08 03:26:13 burnett Exp $
 */
 
 // includes
@@ -147,6 +147,9 @@ public:
     virtual StatusCode run();
 
     double endruntime(); ///< access the end of run time 
+
+    virtual void setFilterCone(std::vector<double> cone); ///< set filter cone parameters (ra, dec, radius)
+
     //------------------------------------------------------------------
     //  stuff required by a Service
 
@@ -706,3 +709,9 @@ StatusCode FluxSvc::run(){
         m_fluxMgr->setAlignmentRotation(rot);
     }
 
+
+    void FluxSvc::setFilterCone(std::vector<double> cone)
+    {
+        assert( cone.size()>2); // assume this already checked
+        m_fluxMgr->setFilterCone(cone[0], cone[1], cone[2]);
+    }

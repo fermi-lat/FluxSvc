@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.97 2007/04/25 02:57:18 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.98 2007/05/01 03:41:34 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.97 2007/04/25 02:57:18 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.98 2007/05/01 03:41:34 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -134,6 +134,7 @@ private:
     DoubleArrayProperty m_pointingDirection; ///< (ra, dec) for pointing
     DoubleProperty m_backoff; ///< backoff distance
     DoubleProperty m_zenithTheta; ///< set for zenith
+    DoubleArrayProperty m_filterCone; ///< set parameters of a cone
 
 
 };
@@ -170,6 +171,7 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
     declareProperty("alignment", m_alignmentRotation);
     declareProperty("pointingDirection", m_pointingDirection);
     declareProperty("zenithTheta", m_zenithTheta=-99);
+    declareProperty("FilterCone",  m_filterCone);
 
 }
 //------------------------------------------------------------------------
@@ -283,6 +285,12 @@ StatusCode FluxAlg::initialize(){
     }
 
 
+    // check for filter cone
+    if( m_filterCone.value().size()==3) {
+
+        m_fluxSvc->setFilterCone(m_filterCone);
+        
+    }
 
     if ( service("ParticlePropertySvc", m_partSvc).isFailure() ){
         log << MSG::ERROR << "Couldn't find the ParticlePropertySvc!" << endreq;
