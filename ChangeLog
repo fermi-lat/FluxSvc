@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed May 23 20:45:59 PDT 2007
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+add code to specify cone
+    *
+------------------------------------------------------------
 User: burnett  Mon May  7 20:27:10 PDT 2007
 FluxSvc/src
 
