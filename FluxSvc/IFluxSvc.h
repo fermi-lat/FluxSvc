@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.51 2006/11/06 03:09:51 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.52 2007/04/25 02:57:18 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -32,7 +32,7 @@ namespace CLHEP {class HepRandomEngine;}
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.51 2006/11/06 03:09:51 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.52 2007/04/25 02:57:18 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -106,6 +106,8 @@ public:
     virtual void setAlignmentRotation(double phi, double theta, double psi)=0;
 
     virtual double endruntime() = 0; ///< access end of run time
+
+    virtual void setFilterCone(std::vector<double> cone)=0; ///< set filter cone parameters (ra, dec, radius)
 };
 
 #endif  // _H_IFluxSvc

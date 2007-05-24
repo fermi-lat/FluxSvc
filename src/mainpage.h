@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.23 2007/02/19 19:30:42 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.24 2007/05/08 03:26:13 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -49,6 +49,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxAlg.AvoidSAA     [false] set true to skip events during SAA interval
     @param FluxAlg.zenithTheta  [-99] if overridden, set to this angle in local zenith frame
     @param FluxAlg.PointingHistory [{}] Doublet, file name and offset, the latter default to none.
+    @param FluxAlg.filterCone   [{}] Triplet: ra, dec, radius of cone to apply to celestial sources
 
   @section exposurealg_jobOptions ExposureAlg jobOptions
     @param ExposureAlg.root_tree ["pointing_history"] name for the root tree to be filled if there are clock ticks
