@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Thu May 24 09:14:55 PDT 2007
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tagging after adding functionality for cone
+    *
+------------------------------------------------------------
+User: burnett  Thu May 24 09:14:55 PDT 2007
 FluxSvc/cmt
 
 Modified Files:
