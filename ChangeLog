@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Jun  4 15:30:45 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+McParticle incoming now has processname set. tagging for new release
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r43, operation: add
 Package: FluxSvc
