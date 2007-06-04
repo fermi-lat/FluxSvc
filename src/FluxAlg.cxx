@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.98 2007/05/01 03:41:34 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.99 2007/05/24 03:45:59 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.98 2007/05/01 03:41:34 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.99 2007/05/24 03:45:59 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -448,7 +448,7 @@ StatusCode FluxAlg::execute()
     // so initial momentum and final one are the same
     parent->initialize(parent, partID, 
         Event::McParticle::PRIMARY,
-        pin,p);
+        pin,p, m_flux->name());
     parent->finalize(pin, p);
 
     // get the event header to set the time
