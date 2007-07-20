@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Fri Jul 20 08:23:58 PDT 2007
-FluxSvc/src
-
-Modified Files:
-	ExposureAlg.cxx 
-Log Message:
-tagging, after having ExposureAlg set filter failed
-    *
-------------------------------------------------------------
-User: burnett  Fri Jul 20 08:23:58 PDT 2007
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-tagging, after having ExposureAlg set filter failed
-    *
-------------------------------------------------------------
-User: burnett  Fri Jul 20 08:23:58 PDT 2007
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-tagging, after having ExposureAlg set filter failed
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r44, operation: add
 Package: FluxSvc
