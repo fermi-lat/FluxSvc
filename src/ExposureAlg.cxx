@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.40 2007/04/25 02:57:18 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.41 2007/07/20 15:23:58 burnett Exp $
 
 */
 // Include files
@@ -48,7 +48,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.40 2007/04/25 02:57:18 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.41 2007/07/20 15:23:58 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -226,10 +226,11 @@ void ExposureAlg::createEntry()
             t   << "tick at " << std::setprecision(10)
                 << m_lasttime - m_initial_time << " sec"
                 << std::setprecision(3)
-                << ", lat, lon, magLat, SAA = " 
+                << ", lat, lon, magLat, zenithTheta, SAA = " 
                 << m_history.lat_geo << ", " 
                 << m_history.lon_geo << ", "
                 << m_history.lat_mag << ", " 
+                << m_history.zenith_scz << ", "
                 << m_history.in_saa;
             log << t.str();
         }
