@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.100 2007/06/04 22:30:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.101 2007/07/22 18:15:57 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.100 2007/06/04 22:30:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.101 2007/07/22 18:15:57 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -265,6 +265,7 @@ StatusCode FluxAlg::initialize(){
     }
 
     gps->time(current_time);  // restore time if it was modified
+    gps->synch();             // and first notification of attached observers
     std::string title(m_flux->title()); if(title.length()>100) title = title.substr(0,100)+"...";
     log << MSG::INFO << "Source title: " << title << endreq;
     log << MSG::INFO << "        area: " << m_flux->targetArea() << endreq;
