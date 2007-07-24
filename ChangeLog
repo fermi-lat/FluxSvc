@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 24 13:07:51 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging after explicit GPS::synch call in initialization
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r45, operation: add
 Package: FluxSvc
