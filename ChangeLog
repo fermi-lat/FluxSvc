@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: dragon  Tue Aug  7 16:14:16 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+Added a single INFO message to FluxSvc::initialize(), displaying the start, end, and delta times.
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r45p1, operation: add
 Package: FluxSvc
