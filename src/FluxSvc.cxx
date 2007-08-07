@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.101 2007/05/08 03:26:13 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.102 2007/05/24 03:45:59 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -48,7 +48,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.101 2007/05/08 03:26:13 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.102 2007/05/24 03:45:59 burnett Exp $
 */
 
 // includes
@@ -235,11 +235,16 @@ private:
             }
             m_start += offset;
 
+
             if( delta >0 && m_endTime==0 )  m_endTime=m_start+delta;
             // set the basic time here: it will be incremented by the flux object
             GPS::instance()->time(m_start);
             m_end = m_endTime;
             if( m_deltaTime>0) m_end=m_start+delta;
+
+	    log << MSG::INFO << "init: start time = " << std::setprecision(10)
+		<< m_start << " sec, end time = " << m_end << " sec, delta = " 
+		<< m_end-m_start << " sec" << endreq;
 
         }
         double convert(std::string date){
