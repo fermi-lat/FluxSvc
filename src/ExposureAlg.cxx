@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.41 2007/07/20 15:23:58 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.42 2007/07/22 18:15:57 burnett Exp $
 
 */
 // Include files
@@ -48,7 +48,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.41 2007/07/20 15:23:58 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.42 2007/07/22 18:15:57 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -230,7 +230,7 @@ void ExposureAlg::createEntry()
                 << m_history.lat_geo << ", " 
                 << m_history.lon_geo << ", "
                 << m_history.lat_mag << ", " 
-                << m_history.zenith_scz << ", "
+                << ( fabs(m_history.zenith_scz)<1e-8? 0: m_history.zenith_scz) << ", "
                 << m_history.in_saa;
             log << t.str();
         }
