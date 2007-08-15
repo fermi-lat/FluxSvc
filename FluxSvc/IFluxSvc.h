@@ -2,7 +2,7 @@
 * @file IFluxSvc.h
 * @brief definition of the interface for IFluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.52 2007/04/25 02:57:18 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.53 2007/05/24 03:45:59 burnett Exp $
 */
 #ifndef _H_IFluxSvc
 #define _H_IFluxSvc
@@ -18,7 +18,7 @@
 #include "astro/GPS.h"
 
 // Declaration of the interface ID ( interface id, major version, minor version) 
-static const InterfaceID IID_IFluxSvc("FluxSvc", 6, 0); 
+static const InterfaceID IID_IFluxSvc("FluxSvc", 6, 1); 
 
 // forward declarations
 class IFlux;
@@ -32,7 +32,7 @@ namespace CLHEP {class HepRandomEngine;}
 *
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.52 2007/04/25 02:57:18 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFluxSvc.h,v 1.53 2007/05/24 03:45:59 burnett Exp $
 */
 class  IFluxSvc : virtual public IInterface {
 public:
@@ -102,8 +102,13 @@ public:
     virtual bool insideSAA()=0;
 
     /// set aligmnment for Glast. 
-    /// @param phi,theta,psi Euler angles (radians)
-    virtual void setAlignmentRotation(double phi, double theta, double psi)=0;
+    /// @param qx, qy, qz x, y, z rotation angles (radians) asssumed small
+    /// @param misalign [false] set true to apply as a misalignment
+    virtual void setAlignmentRotation(double qx, double qy, double qz, bool misalign=false)=0;
+
+    /// set the SAA boundary
+    /// @param boundard set of (lat, lon) pairs of the polygon
+    virtual void setSAABoundary(const std::vector<std::pair<double, double> > & boundary)=0;
 
     virtual double endruntime() = 0; ///< access end of run time
 

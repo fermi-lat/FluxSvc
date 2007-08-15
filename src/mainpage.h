@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.25 2007/05/24 03:45:59 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.26 2007/07/22 18:15:57 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -44,7 +44,8 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxAlg.rocking_angle [0 deg] Rotation angle for Glast, about E-W axis. If set, so to 35 degress, and 
     there is no pointing history file, the mode will be to use the interal orbit description, with 
     rocking on alternate orbits. 
-    @param FluxAlg.alignment    [{}] Set three rotation angles to mis-align GLAST
+    @param FluxAlg.alignment    [{}] Set three rotation angles to align GLAST
+    @param FluxAlg.misalignment [{}] Set three rotation angles to mis-align GLAST
     @param FluxAlg.pointingDirection [{}] Set (ra,dec) for pointed mode. Other rocking stuff ignored.
     @param FluxAlg.AvoidSAA     [false] set true to skip events during SAA interval
     @param FluxAlg.zenithTheta  [-99] if overridden, set to this angle in local zenith frame
