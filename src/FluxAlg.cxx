@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.101 2007/07/22 18:15:57 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.102 2007/07/24 20:07:51 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.101 2007/07/22 18:15:57 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.102 2007/07/24 20:07:51 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -130,6 +130,7 @@ private:
     StringProperty m_source_info_filename;
     std::map<int, std::string> m_flux_names;
     void summary( std::ostream& log, std::string indent);
+    DoubleArrayProperty m_misalignmentRotation;
     DoubleArrayProperty m_alignmentRotation;
     DoubleArrayProperty m_pointingDirection; ///< (ra, dec) for pointing
     DoubleProperty m_backoff; ///< backoff distance
@@ -168,6 +169,7 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
     declareProperty("AvoidSAA",   m_avoidSAA=false);
     declareProperty("Prescale",   m_prescale=1);
     declareProperty("source_info", m_source_info_filename="source_info.txt");
+    declareProperty("misalignment", m_misalignmentRotation);
     declareProperty("alignment", m_alignmentRotation);
     declareProperty("pointingDirection", m_pointingDirection);
     declareProperty("zenithTheta", m_zenithTheta=-99);
@@ -274,17 +276,24 @@ StatusCode FluxAlg::initialize(){
         log << MSG::INFO << "    prescale: "<< m_prescale << endreq;
     }
 
-    // check for alignment
+    // check for (mis) alignment
     int alignment_pars ( m_alignmentRotation.value().size() );
     if (alignment_pars >0){
 
-        double phi(0),theta(0),psi(0);
-        phi = m_alignmentRotation.value()[0]*M_PI/180;
-        if(alignment_pars >1) theta = m_alignmentRotation.value()[1]*M_PI/180;
-        if(alignment_pars >2) psi = m_alignmentRotation.value()[2]*M_PI/180;
-        m_fluxSvc->setAlignmentRotation(phi, theta, psi);
+        double qx(m_alignmentRotation.value()[0]),qy(0),qz(0);
+        if(alignment_pars >1) qy = m_alignmentRotation.value()[1];
+        if(alignment_pars >2) qz = m_alignmentRotation.value()[2];
+        m_fluxSvc->setAlignmentRotation(qx, qy, qz, false);
     }
 
+    alignment_pars = ( m_misalignmentRotation.value().size() );
+    if (alignment_pars >0){
+
+        double qx(m_misalignmentRotation.value()[0]),qy(0),qz(0);
+        if(alignment_pars >1) qy = m_misalignmentRotation.value()[1];
+        if(alignment_pars >2) qz = m_misalignmentRotation.value()[2];
+        m_fluxSvc->setAlignmentRotation(qx, qy, qz, true);
+    }
 
     // check for filter cone
     if( m_filterCone.value().size()==3) {

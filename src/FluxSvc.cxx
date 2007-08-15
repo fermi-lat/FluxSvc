@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.102 2007/05/24 03:45:59 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.103 2007/08/07 23:14:15 dragon Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -48,7 +48,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.102 2007/05/24 03:45:59 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.103 2007/08/07 23:14:15 dragon Exp $
 */
 
 // includes
@@ -137,11 +137,6 @@ public:
 
     bool insideSAA() { return m_insideSAA;}
 
-    /// set aligmnment for Glast, a transform that will be applied in instrument coordinates to incoming particles 
-    /// @param phi,theta,psi Euler angles (radians)
-    virtual void setAlignmentRotation(double phi, double theta, double psi);
-
-
 
     /// for the IRunnable interfce
     virtual StatusCode run();
@@ -149,6 +144,16 @@ public:
     double endruntime(); ///< access the end of run time 
 
     virtual void setFilterCone(std::vector<double> cone); ///< set filter cone parameters (ra, dec, radius)
+
+    /// set aligmnment for Glast. 
+    /// @param qx, qy, qz x, y, z rotation angles (radians) asssumed small
+    /// @param misalign [false] set true to apply as a misalignment
+    virtual void setAlignmentRotation(double qx, double qy, double qz, bool misalign);
+
+    /// set the SAA boundary
+    /// @param boundard set of (lat, lon) pairs of the polygon
+    virtual void setSAABoundary(const std::vector<std::pair<double, double> > & boundary);
+
 
     //------------------------------------------------------------------
     //  stuff required by a Service
@@ -708,10 +713,9 @@ StatusCode FluxSvc::run(){
         return status;
     }
 
-    void FluxSvc::setAlignmentRotation(double phi, double theta, double psi)
+    void FluxSvc::setAlignmentRotation(double qx, double qy, double qz, bool misalign)
     {
-        CLHEP::HepRotation rot(phi,theta,psi);
-        m_fluxMgr->setAlignmentRotation(rot);
+        m_fluxMgr->setAlignmentRotation(qx, qy, qz, misalign);
     }
 
 
@@ -720,3 +724,10 @@ StatusCode FluxSvc::run(){
         assert( cone.size()>2); // assume this already checked
         m_fluxMgr->setFilterCone(cone[0], cone[1], cone[2]);
     }
+
+
+ 
+    void FluxSvc::setSAABoundary(const std::vector<std::pair<double, double> > & boundary)
+    {
+    }
+
