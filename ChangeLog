@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Aug 15 11:49:28 PDT 2007
+FluxSvc/FluxSvc
+
+Modified Files:
+	IFluxSvc.h 
+Log Message:
+jobopts, interface changes for alignment
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r46, operation: add
 Package: FluxSvc
