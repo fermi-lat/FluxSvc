@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.42 2007/07/22 18:15:57 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.43 2007/08/08 00:15:43 burnett Exp $
 
 */
 // Include files
@@ -48,7 +48,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.42 2007/07/22 18:15:57 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.43 2007/08/08 00:15:43 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -196,9 +196,8 @@ StatusCode ExposureAlg::execute()
 
     if(m_clockName.value() == name){
         createEntry();
+        setFilterPassed(false); // since this is on a branch, and we want the sequence to fail
     } 
-    
-    setFilterPassed(false); // since this is on a branch, and we want the sequence to fail
 
     return sc;
 }
