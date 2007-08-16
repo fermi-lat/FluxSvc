@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Aug 16 13:36:21 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx 
+Log Message:
+Set filter failed only for clock ticks.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r47, operation: add
 Package: FluxSvc
