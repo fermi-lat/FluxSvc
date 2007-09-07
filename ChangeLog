@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Sep  7 12:03:11 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+include cassert
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r47p1, operation: add
 Package: FluxSvc
