@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Fri Sep  7 12:03:12 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+include cassert
+    *
+------------------------------------------------------------
+User: heather  Fri Sep  7 12:03:12 PDT 2007
 FluxSvc/doc
 
 Modified Files:
