@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.103 2007/08/07 23:14:15 dragon Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.104 2007/08/15 18:49:29 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -36,6 +36,7 @@
 #include "flux/ISpectrumFactory.h"
 #include "flux/Spectrum.h"
 
+#include <cassert>
 #include <algorithm>
 #include <iterator>
 #include <sstream>
@@ -48,7 +49,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.103 2007/08/07 23:14:15 dragon Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.104 2007/08/15 18:49:29 burnett Exp $
 */
 
 // includes
