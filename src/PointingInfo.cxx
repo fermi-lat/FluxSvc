@@ -2,7 +2,7 @@
 @brief declaration and definition of the class PointingInfo
 
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.11 2006/11/06 13:31:13 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointingInfo.cxx,v 1.12 2006/11/11 22:01:59 burnett Exp $
 
 */
 class MsgStream; // needed for Exposure.
@@ -123,5 +123,7 @@ void PointingInfo::setPtTuple(INTupleWriterSvc* tuple, const std::string& tname)
     tuple->addItem(tname, "PtRax",    &ra_scx);
     tuple->addItem(tname, "PtDecx",   &dec_scx);
     tuple->addItem(tname, "PtSCzenith", &zenith_scz);
+    tuple->addItem(tname, "PtMcIlwainB", &B);
+    tuple->addItem(tname, "PtMcIlwainL", &L);
 
 }
