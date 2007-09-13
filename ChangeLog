@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep 13 15:11:38 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	PointingInfo.cxx 
+Log Message:
+add PtMcIlwainB and PtMcIlwainL to merit tuple and tag
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 13 15:11:37 PDT 2007
 FluxSvc/doc
 
