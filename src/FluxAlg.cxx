@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.102 2007/07/24 20:07:51 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.103 2007/08/15 18:49:29 burnett Exp $
 
 */
 
@@ -63,7 +63,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.102 2007/07/24 20:07:51 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.103 2007/08/15 18:49:29 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -392,8 +392,9 @@ StatusCode FluxAlg::execute()
     double ke = m_flux->energy(); // kinetic energy in MeV
 
     //here's where we get the particleID and mass for later.
-    // Note that the Gaudi particle table now only has p+: 
+    // Note that the Gaudi particle table now only has p+ and n0 for proton and neutron: 
     if( particleName=="p" || particleName=="proton") particleName="p+";
+    if( particleName=="neutron") particleName="n0";
     ParticleProperty* prop = m_partSvc->find(particleName);
 
 //    if( prop==0 && particleName=="He" ){
