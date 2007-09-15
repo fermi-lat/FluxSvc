@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Sat Sep 15 16:50:39 PDT 2007
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-fix for neutrons
-    *
-------------------------------------------------------------
 TAG
 Tag name: v6r48, operation: add
 Package: FluxSvc
