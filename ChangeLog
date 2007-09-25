@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep 24 19:07:34 PDT 2007
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+Add new service to set orbit parameters; tag
+    *
+------------------------------------------------------------
 User: burnett  Mon Sep 24 19:07:33 PDT 2007
 FluxSvc/doc
 
