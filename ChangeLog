@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Sep 24 19:07:33 PDT 2007
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Add new service to set orbit parameters; tag
+    *
+------------------------------------------------------------
+User: burnett  Mon Sep 24 19:07:33 PDT 2007
 FluxSvc/cmt
 
 Modified Files:
