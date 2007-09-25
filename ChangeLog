@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Sep 24 19:07:33 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add new service to set orbit parameters; tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r48p1, operation: add
 Package: FluxSvc
