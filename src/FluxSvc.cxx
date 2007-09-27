@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.104 2007/08/15 18:49:29 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.105 2007/09/07 19:03:12 heather Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -49,7 +49,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.104 2007/08/15 18:49:29 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.105 2007/09/07 19:03:12 heather Exp $
 */
 
 // includes
@@ -675,6 +675,7 @@ StatusCode FluxSvc::run(){
     GPS::instance()->notifyObservers(); // make sure all are in the
 
     // loop: will quit if either limit is set, and exceeded
+    bool first(true);
     while( (m_evtMax==0  || m_evtMax>0 &&  eventNumber < m_evtMax)
         && (m_times.end()==0 || m_times.end()>0 && m_times.current() < m_times.end()) ) {
 
@@ -684,9 +685,14 @@ StatusCode FluxSvc::run(){
             int percent_complete= static_cast<int>(  std::max( efrac, tfrac)  );
             if( percent_complete!=last_fraction){
                 last_fraction=percent_complete;
-                if( percent_complete<10 || percent_complete%10 ==0){
-                    log << MSG::INFO <<   percent_complete << "% complete: "
-                        << " event "<< eventNumber<<",  time=launch+ "<< (m_times.current()-m_times.launch()) << endreq;
+                if( percent_complete<10 || percent_complete%10 ==0 || first){
+                    first = false;
+                    log << MSG::INFO 
+                        <<  std::setprecision(12)<< std::resetiosflags(4096) // scientific??
+                        << percent_complete << "% complete: "
+                        << " event "<< eventNumber<<",  time= " 
+                        <<  m_times.current() << "= launch+ "
+                        << (m_times.current()-m_times.launch()) << endreq;
                 }
 
             }
