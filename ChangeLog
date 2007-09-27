@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep 27 11:07:58 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+add some precision to time printout.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r49, operation: add
 Package: FluxSvc
