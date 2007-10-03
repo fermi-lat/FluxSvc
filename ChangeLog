@@ -1,4 +1,34 @@
 ------------------------------------------------------------
+User: dragon  Wed Oct  3 14:54:29 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+Minor cosmetic change to the FluxSvc progress messages: added a time stamp so they now look like this:
+FluxSvc              INFO  [2007-10-03 21:47:58]  1% complete:  event 141,  time= 252759270.602= launch+ 298470.602006
+FluxSvc              INFO  [2007-10-03 21:47:59]  2% complete:  event 262,  time= 252759270.604= launch+ 298470.604006
+FluxSvc              INFO  [2007-10-03 21:48:01]  3% complete:  event 394,  time= 252759270.606= launch+ 298470.606017
+FluxSvc              INFO  [2007-10-03 21:48:04]  4% complete:  event 522,  time= 252759270.608= launch+ 298470.608021
+FluxSvc              INFO  [2007-10-03 21:48:06]  5% complete:  event 671,  time= 252759270.61= launch+ 298470.61002
+FluxSvc              INFO  [2007-10-03 21:48:14]  6% complete:  event 802,  time= 252759270.612= launch+ 298470.612037
+FluxSvc              INFO  [2007-10-03 21:48:18]  7% complete:  event 931,  time= 252759270.614= launch+ 298470.614029
+FluxSvc              INFO  [2007-10-03 21:48:20]  8% complete:  event 1049,  time= 252759270.616= launch+ 298470.616013
+FluxSvc              INFO  [2007-10-03 21:48:22]  9% complete:  event 1202,  time= 252759270.618= launch+ 298470.618007
+FluxSvc              INFO  [2007-10-03 21:48:24]  10% complete:  event 1343,  time= 252759270.62= launch+ 298470.620011
+FluxSvc              INFO  [2007-10-03 21:48:39]  20% complete:  event 2612,  time= 252759270.64= launch+ 298470.640062
+FluxSvc              INFO  [2007-10-03 21:48:56]  30% complete:  event 3877,  time= 252759270.66= launch+ 298470.660003
+FluxSvc              INFO  [2007-10-03 21:49:16]  40% complete:  event 5216,  time= 252759270.68= launch+ 298470.68001
+FluxSvc              INFO  [2007-10-03 21:49:45]  50% complete:  event 6476,  time= 252759270.7= launch+ 298470.7
+FluxSvc              INFO  [2007-10-03 21:50:12]  60% complete:  event 7745,  time= 252759270.72= launch+ 298470.720022
+FluxSvc              INFO  [2007-10-03 21:50:32]  70% complete:  event 9051,  time= 252759270.74= launch+ 298470.740009
+FluxSvc              INFO  [2007-10-03 21:50:53]  80% complete:  event 10339,  time= 252759270.76= launch+ 298470.760004
+FluxSvc              INFO  [2007-10-03 21:51:11]  90% complete:  event 11673,  time= 252759270.78= launch+ 298470.780006
+
+
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep 27 11:07:58 PDT 2007
 FluxSvc/src
 
