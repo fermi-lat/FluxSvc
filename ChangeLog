@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: dragon  Thu Oct  4 15:37:29 PDT 2007
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+Minor change to precision of previously added message (from 10 to 12 digits to ensure some fractional seconds).  Tested with pipeline job.
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r49p1, operation: add
 Package: FluxSvc
