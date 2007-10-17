@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Oct 17 09:37:20 PDT 2007
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+intro use of IExternal/extFiles for now, until we set up env var at runtime
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r49p2, operation: add
 Package: FluxSvc
