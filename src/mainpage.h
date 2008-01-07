@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.27 2007/08/15 18:49:29 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.28 2007/09/25 02:07:34 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -34,6 +34,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxSvc.OrbitInclination [25.3] Orbit inclination angle, in degrees for default orbit
     @param FluxSvc.SAApolyLat  [{}] list of latitudes defining the SAA exclusion polygon
     @param FluxSvc.SAApolyLon  [{}] longitudes
+    @param FluxSvc.xmlListFile    [""] name of a file containing a list of xml file names, multiple source_lib entries, consistent with obssim
 
   @section fluxalg_jobOptions FluxAlg jobOptions
     @param FluxAlg.source_name  ["default"] source name, name must be in the source_lib files
@@ -54,6 +55,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
                                  (2) date-time offset needed for text format, 
                                  (3) any string, if present, will trigger the horizontal orientation
     @param FluxAlg.filterCone   [{}] Triplet: ra, dec, radius of cone to apply to celestial sources
+    @param FluxAlg.sourceListFile [""] File with a list of source names to be added to the "sources" list. Consistent with obssim
 
   @section exposurealg_jobOptions ExposureAlg jobOptions
     @param ExposureAlg.root_tree ["pointing_history"] name for the root tree to be filled if there are clock ticks
