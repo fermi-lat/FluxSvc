@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jan  6 21:05:31 PST 2008
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging after new jobinfo parameters
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r51, operation: add
 Package: FluxSvc
