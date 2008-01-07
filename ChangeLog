@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sun Jan  6 21:05:32 PST 2008
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx mainpage.h 
+Log Message:
+tagging after new jobinfo parameters
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan  6 21:05:32 PST 2008
 FluxSvc/doc
 
 Modified Files:
