@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.28 2007/09/25 02:07:34 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.29 2008/01/07 05:05:32 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -56,6 +56,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
                                  (3) any string, if present, will trigger the horizontal orientation
     @param FluxAlg.filterCone   [{}] Triplet: ra, dec, radius of cone to apply to celestial sources
     @param FluxAlg.sourceListFile [""] File with a list of source names to be added to the "sources" list. Consistent with obssim
+    @param FluxAlg.abortOnExceptioni [false] What to do if flux generates an exception.
 
   @section exposurealg_jobOptions ExposureAlg jobOptions
     @param ExposureAlg.root_tree ["pointing_history"] name for the root tree to be filled if there are clock ticks
