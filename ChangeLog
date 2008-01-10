@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Jan  9 16:54:45 PST 2008
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add catch clasue for call to get a particle
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r52, operation: add
 Package: FluxSvc
