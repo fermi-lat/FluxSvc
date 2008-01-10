@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Jan  9 16:54:45 PST 2008
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add catch clasue for call to get a particle
+    *
+------------------------------------------------------------
+User: burnett  Wed Jan  9 16:54:45 PST 2008
 FluxSvc/cmt
 
 Modified Files:
