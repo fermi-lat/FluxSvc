@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: FluxSvc-06-52-01, operation: add
+Package: FluxSvc
+User: glastrm  Mon Apr  7 08:03:42 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v6r52p1, operation: add
 Package: FluxSvc
 User: burnett  Wed Jan  9 16:55:34 2008
