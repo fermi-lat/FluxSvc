@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.29 2008/01/07 05:05:32 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/mainpage.h,v 1.30 2008/01/10 00:54:45 burnett Exp $
 // Mainpage for doxygen
 
 /*! \mainpage package FluxSvc
@@ -35,6 +35,7 @@ Usage is primarily via the FluxAlg algorithm, which access the service to genera
     @param FluxSvc.SAApolyLat  [{}] list of latitudes defining the SAA exclusion polygon
     @param FluxSvc.SAApolyLon  [{}] longitudes
     @param FluxSvc.xmlListFile    [""] name of a file containing a list of xml file names, multiple source_lib entries, consistent with obssim
+    @param FluxSvc.EnableAberration [false] enable stellar aberration for celestial sources
 
   @section fluxalg_jobOptions FluxAlg jobOptions
     @param FluxAlg.source_name  ["default"] source name, name must be in the source_lib files
