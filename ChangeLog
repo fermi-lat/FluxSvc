@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 15 10:27:18 PDT 2008
+FluxSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add flag (default disabled) to allow testing of aberration
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-52-01, operation: add
 Package: FluxSvc
