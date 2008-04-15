@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr 15 10:27:19 PDT 2008
+FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx mainpage.h 
+Log Message:
+add flag (default disabled) to allow testing of aberration
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr 15 10:27:18 PDT 2008
 FluxSvc/doc
 
