@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.105 2008/01/07 05:05:32 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.106 2008/01/10 00:54:45 burnett Exp $
 
 */
 
@@ -33,7 +33,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.105 2008/01/07
 #include "astro/GPS.h"
 
 //flux
-#include "FluxSvc/PointingInfo.h"
+#include "FluxSvc/IPointingInfo.h"
 #include "FluxSvc/IFluxSvc.h"
 #include "flux/IFlux.h"
 #include "flux/Spectrum.h"
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.105 2008/01/07 05:05:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.106 2008/01/10 00:54:45 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -111,9 +111,8 @@ private:
     double m_currentTime;
     int m_SAAreject;
 
-    PointingInfo m_pointing_info;
+    IPointingInfo* m_pointingInfo;
 
-    
     StringArrayProperty m_pointingHistory;///< history file name and launch date
 
     StringProperty m_root_tree;
@@ -336,14 +335,21 @@ StatusCode FluxAlg::initialize(){
         return StatusCode::FAILURE;
     }
 
+    // Retrieve pointer to the Pointing Info tool
+    if ((sc = toolSvc()->retrieveTool("FluxPointingInfoTool", m_pointingInfo)).isFailure())
+    {
+        log << MSG::ERROR << " could not retrieve the FluxPointingInfoTool" << endreq;
+    }
+
     // get a pointer to RootTupleSvc, use only if available 
     if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
         log << MSG::WARNING << " RootTupleSvc is not available, will not write Pt tuple" << endreq;
         m_rootTupleSvc=0;
-    }else if( !m_root_tree.value().empty() ) {
-        
-        m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
     }
+    //else if( !m_root_tree.value().empty() ) {
+    //    
+    //    m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
+    //}
 
 
     // attach an observer to be notified when orbital position changes
@@ -408,7 +414,7 @@ StatusCode FluxAlg::execute()
 
         //if it's a clock then ExposureAlg will take care of it, and no othe algorithms should care about it.
         if(particleName == "TimeTick" || particleName == "Clock"){
-            m_pointing_info.set();
+            m_pointingInfo->set();
 
             setFilterPassed( false );
             return sc;
@@ -522,7 +528,7 @@ StatusCode FluxAlg::execute()
     m_currentTime=m_flux->time();
 
     // is this proper here?
-    m_pointing_info.set();
+    m_pointingInfo->set();
     
     // put pointing stuff into the root tree
     if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
