@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.44 2007/08/16 20:36:21 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.45 2008/05/15 20:14:25 usher Exp $
 
 */
 // Include files
@@ -48,7 +48,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.44 2007/08/16 20:36:21 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.45 2008/05/15 20:14:25 usher Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -137,6 +137,12 @@ StatusCode ExposureAlg::initialize(){
     if (sc.isFailure()) return sc;
 
     m_initial_time =m_lasttime = startTime.value();
+
+    // Retrieve pointer to the Pointing Info tool
+    if ((sc = toolSvc()->retrieveTool("FluxPointingInfoTool", m_history)).isFailure())
+    {
+        log << MSG::ERROR << " could not retrieve the FluxPointingInfoTool" << endreq;
+    }
 
     // get a pointer to RootTupleSvc 
     if( (sc = service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
