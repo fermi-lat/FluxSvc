@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu May 15 13:12:45 PDT 2008
+FluxSvc/src
+
+Added Files:
+	FluxPointingInfoTool.cxx 
+Log Message:
+A Gaudi Tool to interface the PointingInfo class to the outside world, in particular, outside of the Flux package. This will allow PtValsAlg to use the same memory locations for the Pt variables as those assigned by PointInfoAlg so that both will output to the ntuple, instead of just one.
+    *
+------------------------------------------------------------
 User: usher  Thu May 15 13:11:32 PDT 2008
 FluxSvc/FluxSvc
 
