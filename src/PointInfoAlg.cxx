@@ -1,7 +1,7 @@
 /** @file PointInfoAlg.cxx
 @brief declaration and definition of the class PointInfoAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01/11 20:07:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.5 2006/11/11 22:01:59 burnett Exp $
 
 */
 
@@ -22,9 +22,8 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01
 // to write a Tree with pointing info
 #include "ntupleWriterSvc/INTupleWriterSvc.h"
 
-
 //flux
-#include "FluxSvc/PointingInfo.h"
+#include "FluxSvc/IPointingInfo.h"
 
 
 
@@ -34,7 +33,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01
 * \brief This is an Algorithm designed to store pointing information in the tuple
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.4 2006/01/11 20:07:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/PointInfoAlg.cxx,v 1.5 2006/11/11 22:01:59 burnett Exp $
 */
 
 
@@ -48,7 +47,7 @@ public:
 
 
 private: 
-    PointingInfo m_pointing_info;
+    IPointingInfo* m_pointingInfo;
 
     StringProperty m_root_tree;
     BooleanProperty m_save_tuple; // set true to save
@@ -65,7 +64,7 @@ const IAlgFactory& PointInfoAlgFactory = Factory;
 //------------------------------------------------------------------------
 //! ctor
 PointInfoAlg::PointInfoAlg(const std::string& name, ISvcLocator* pSvcLocator)
-:Algorithm(name, pSvcLocator) 
+:Algorithm(name, pSvcLocator), m_pointingInfo(0), m_rootTupleSvc(0)
 {
     // declare properties with setProperties calls
 
@@ -81,16 +80,26 @@ StatusCode PointInfoAlg::initialize(){
     // Use the Job options service to set the Algorithm's parameters
     setProperties();
 
+    // Retrieve pointer to the Pointing Info tool
+    if ((sc = toolSvc()->retrieveTool("FluxPointingInfoTool", m_pointingInfo)).isFailure())
+    {
+        log << MSG::ERROR << " could not retrieve the FluxPointingInfoTool" << endreq;
+    }
 
     // get a pointer to RootTupleSvc
-    if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
+    if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) 
+    {
         log << MSG::ERROR << " RootTupleSvc is not available" << endreq;
         m_rootTupleSvc=0;
         sc = StatusCode::FAILURE;
-    }else if( !m_root_tree.value().empty() ) {
-        
-        m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
     }
+    //**** 5/15/08 NOTE
+    // The pointing_info_tree name is now set in the FluxPointingInfoTool itself and ignore here
+    //****
+    //else if( !m_root_tree.value().empty() ) {
+    //    
+    //    m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
+    //}
 
 
     return sc;
@@ -105,7 +114,7 @@ StatusCode PointInfoAlg::execute()
     //
     // Purpose: set tuple items
  
-    m_pointing_info.set();
+    m_pointingInfo->set();
 
    
     // put pointing stuff into the root tree
@@ -122,7 +131,7 @@ StatusCode PointInfoAlg::execute()
             <<" could not be entered into existing data store" << endreq;
         return sc;
     }
-    exposureDBase->push_back(m_pointing_info.forTDS());
+    exposureDBase->push_back(m_pointingInfo->forTDS());
 
     return StatusCode::SUCCESS;
 }
