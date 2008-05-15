@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu May 15 13:11:32 PDT 2008
+FluxSvc/FluxSvc
+
+Added Files:
+	IPointingInfo.h 
+Log Message:
+Interface definition for a tool which will allow the use of ONE (and only one) instance of PointingInfo so that PtValsAlg (in AnalysisNtuple) will not usurp the memory locations of the PT variables
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-53-00, operation: add
 Package: FluxSvc
