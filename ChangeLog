@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Thu May 15 13:14:26 PDT 2008
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx FluxAlg.cxx PointInfoAlg.cxx 
+Log Message:
+Modifications to use FluxPointingInfoTool to generically interface to the PointingInfo class. This solves a problem where PtValsAlg (with its own copy of PointingInfo) was usurping the output memory locations of the Pt variables in the output ntuple. 
+**** This needs to be looked at by the Flux package expert *****
+    *
+------------------------------------------------------------
 User: usher  Thu May 15 13:14:25 PDT 2008
 FluxSvc/src/Dll
 
