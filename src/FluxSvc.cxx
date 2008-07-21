@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.109 2008/01/07 05:05:32 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.110 2008/04/15 17:27:19 burnett Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -52,7 +52,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.109 2008/01/07 05:05:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.110 2008/04/15 17:27:19 burnett Exp $
 */
 
 // includes
@@ -305,8 +305,8 @@ static SvcFactory<FluxSvc> a_factory;
 const ISvcFactory& FluxSvcFactory = a_factory;
 
 
-static std::string default_source_library("$(FLUX_XML)/source_library.xml");
-static std::string default_dtd_file("$(FLUX_XML)/source.dtd");
+static std::string default_source_library("$(FLUXXMLPATH)/source_library.xml");
+static std::string default_dtd_file("$(FLUXXMLPATH)/source.dtd");
 
 // ------------------------------------------------
 // Implementation of the FluxSvc class
