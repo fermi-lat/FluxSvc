@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Jul 21 08:17:28 PDT 2008
+GlastRelease-scons/FluxSvc/test_FluxSvc/src
+
+Modified Files:
+	testOptions.txt 
+Log Message:
+Removed dependency on CMT env variables
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-54-01, operation: add
 Package: test_FluxSvc
