@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:41 PDT 2008
+GlastRelease-scons/FluxSvc
+
+Added Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-54-02, operation: add
 Package: FluxSvc
