@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: ecephas  Fri Oct 31 08:58:41 PDT 2008
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	FluxSvcLib.py 
+Log Message:
+Added the following shared library:
+
+	env.Tool('celestialSourcesLib')
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Oct 31 08:57:35 PDT 2008
 GlastRelease-scons/FluxSvc
 
