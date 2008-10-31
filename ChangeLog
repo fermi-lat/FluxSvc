@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: ecephas  Fri Oct 31 08:57:35 PDT 2008
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+Replaced 
+
+ 	FluxSvc = libEnv.SharedLibrary('FluxSvc', listFiles(['FluxSvc/*.cxx']) + listFiles(['src/Dll/*.cxx']) + listFiles(['src/*.cxx']))
+
+with
+
+	FluxSvc = libEnv.SharedLibrary('FluxSvc', listFiles(['FluxSvc/*.cxx','src/Dll/*.cxx','src/*.cxx']))
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:42:34 PDT 2008
 GlastRelease-scons/FluxSvc
 
