@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header$
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/SConscript,v 1.1 2008/08/15 21:22:41 ecephas Exp $
 # Authors: T. Burnett <tburnett@u.washington.edu>
 # Version: FluxSvc-06-54-02
 Import('baseEnv')
@@ -15,7 +15,7 @@ libEnv.Tool('f2cLib')
 # The oldnames library below comes from the macro f2c_linkopts coming from f2c/cmt/requirements.  
 # I added it to this file because of the -import=f2c in the requirements file for this SConscript.
 
-FluxSvc = libEnv.SharedLibrary('FluxSvc', listFiles(['FluxSvc/*.cxx']) + listFiles(['src/Dll/*.cxx']) + listFiles(['src/*.cxx']))
+FluxSvc = libEnv.SharedLibrary('FluxSvc', listFiles(['FluxSvc/*.cxx','src/Dll/*.cxx','src/*.cxx']))
 
 
 progEnv.Tool('FluxSvcLib')
