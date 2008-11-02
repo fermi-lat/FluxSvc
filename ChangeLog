@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat Nov  1 17:43:11 PDT 2008
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Log Message:
+revert to 1.106
+    *
+------------------------------------------------------------
 User: ecephas  Fri Oct 31 08:58:41 PDT 2008
 GlastRelease-scons/FluxSvc
 
