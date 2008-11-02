@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Nov  1 17:45:35 PDT 2008
+FluxSvc/src
+
+Removed Files:
+	FluxPointingInfoTool.cxx 
+Log Message:
+removing TU changes
+    *
+------------------------------------------------------------
+User: burnett  Sat Nov  1 17:45:35 PDT 2008
 FluxSvc/FluxSvc
 
 Removed Files:
