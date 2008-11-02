@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Sat Nov  1 17:45:34 PDT 2008
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+removing TU changes
+    *
+------------------------------------------------------------
+User: burnett  Sat Nov  1 17:45:34 PDT 2008
 FluxSvc/doc
 
 Modified Files:
