@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Sat Nov  1 18:30:10 PDT 2008
+FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r55, operation: add
 Package: FluxSvc
