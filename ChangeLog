@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Nov 10 08:06:26 PST 2008
+FluxSvc/src
+
+Modified Files:
+	ExposureAlg.cxx PointInfoAlg.cxx 
+Log Message:
+checkin after reverting to previous versions
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-00, operation: add
 Package: FluxSvc
