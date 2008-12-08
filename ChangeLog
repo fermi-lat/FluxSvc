@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: FluxSvc-06-53-00, operation: add
+Package: FluxSvc
+User: ecephas  Mon Dec  8 13:39:56 2008
+Files:
+  FluxSvc/SConscript  1.5
+  FluxSvc/SConscript  1.5
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 13:39:50 PST 2008
 GlastRelease-scons/FluxSvc
 
