@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: ecephas  Tue Dec  9 13:24:42 PST 2008
+GlastRelease-scons/FluxSvc/src
+
+Added Files:
+      Tag: GlastReleasev15r49
+	flux_c_type_fix.cxx 
+Log Message:
+Check in file.  Needed to resolve an undefined reference to __ctype_b for the shared library, FluxSvc. Documentation is in the file. 
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-53-00, operation: add
 Package: FluxSvc
