@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v6r53gl1, operation: add
+Package: FluxSvc
+User: ecephas  Tue Dec  9 13:25:41 2008
+Files:
+  FluxSvc/src/flux_c_type_fix.cxx  1.1.2.1
+
+    *
+------------------------------------------------------------
 User: ecephas  Tue Dec  9 13:24:42 PST 2008
 GlastRelease-scons/FluxSvc/src
 
