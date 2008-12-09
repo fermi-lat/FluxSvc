@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 16:08:22 PST 2008
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	FluxSvcLib.py 
+Log Message:
+Check in FluxSvcLib.py for FluxSvc v6r53 (branch-tag, GlastReleasev15r49).
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-53-00, operation: add
 Package: FluxSvc
