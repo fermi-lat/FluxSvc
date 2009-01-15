@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 15 11:33:06 PST 2009
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+For new tag v6r55p2
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v6r55p2, operation: add
 Package: FluxSvc
