@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+TAG
+Tag name: v6r55p2, operation: add
+Package: FluxSvc
+User: jrb  Thu Jan 15 12:26:33 2009
+Files:
+  FluxSvc/.cvsignore  1.3
+  FluxSvc/ChangeLog  1.1.1.1287
+  FluxSvc/SConscript  1.5
+  FluxSvc/FluxSvcLib.py  1.3
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 15 11:33:39 PST 2009
 FluxSvc/doc
 
