@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Thu Jan 22 16:07:38 PST 2009
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in for GlastRelease-15-49-00
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-02, operation: add
 Package: FluxSvc
