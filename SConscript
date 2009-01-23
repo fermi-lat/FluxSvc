@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/SConscript,v 1.5 2008/12/08 21:39:50 ecephas Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/SConscript,v 1.3 2008/11/02 01:30:10 glastrm Exp $
 # Authors: T. Burnett <tburnett@u.washington.edu>
-# Version: FluxSvc-06-55-02
+# Version: FluxSvc-06-53-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -36,6 +36,7 @@ FluxSvc = libEnv.SharedLibrary('FluxSvc', [ExposureAlg,FluxAlg_os,FluxSvc_os,Flu
 progEnv.Tool('registerObjects', package = 'FluxSvc', libraries = [FluxSvc],
              includes = listFiles(['FluxSvc/*.h']),
              data = listFiles(['data/*'], recursive = True))
+
 
 
 
