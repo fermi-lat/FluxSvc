@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-15-49-00, operation: add
+Package: FluxSvc
+User: ecephas  Fri Jan 23 07:40:07 2009
+Files:
+  FluxSvc/src/flux_c_type_fix.cxx  1.1.2.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: FluxSvc-06-53-00, operation: mov
 Package: FluxSvc
 User: glastrm  Thu Jan 22 16:31:54 2009
