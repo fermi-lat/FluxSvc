@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+TAG
+Tag name: FluxSvc-06-53-00, operation: mov
+Package: FluxSvc
+User: glastrm  Thu Jan 22 16:31:54 2009
+Files:
+  FluxSvc/SConscript  1.7
+  FluxSvc/SConscript  1.7
+  FluxSvc/SConscript  1.7
+  FluxSvc/FluxSvcLib.py  1.4
+  FluxSvc/FluxSvcLib.py  1.4
+  FluxSvc/FluxSvcLib.py  1.4
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:21:09 PST 2009
 GlastRelease-scons/FluxSvc
 
