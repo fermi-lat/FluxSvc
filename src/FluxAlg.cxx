@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.106 2008/01/10 00:54:45 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.108 2008/11/02 00:43:11 burnett Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.106 2008/01/10 00:54:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.108 2008/11/02 00:43:11 burnett Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -116,8 +116,8 @@ private:
     
     StringArrayProperty m_pointingHistory;///< history file name and launch date
 
-    StringProperty m_root_tree;
-    BooleanProperty m_save_tuple; // set true to save
+    //StringProperty m_root_tree;
+    //BooleanProperty m_save_tuple; // set true to save
     BooleanProperty m_avoidSAA;
 
 
@@ -166,8 +166,8 @@ FluxAlg::FluxAlg(const std::string& name, ISvcLocator* pSvcLocator)
     declareProperty("PointingHistory",  m_pointingHistory); // doublet, filename and launch date
 
 // deprecate these
-    declareProperty("pointing_info_tree_name",  m_root_tree="");
-    declareProperty("save_pointing_info",  m_save_tuple=false);
+    //declareProperty("pointing_info_tree_name",  m_root_tree="");
+    //declareProperty("save_pointing_info",  m_save_tuple=false);
 
     declareProperty("AvoidSAA",   m_avoidSAA=false);
     declareProperty("Prescale",   m_prescale=1);
@@ -337,13 +337,14 @@ StatusCode FluxAlg::initialize(){
     }
 
     // get a pointer to RootTupleSvc, use only if available 
-    if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
-        log << MSG::WARNING << " RootTupleSvc is not available, will not write Pt tuple" << endreq;
-        m_rootTupleSvc=0;
-    }else if( !m_root_tree.value().empty() ) {
-        
-        m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
-    }
+    // this is done in PtValsAlg now
+    //if( (service("RootTupleSvc", m_rootTupleSvc, true) ). isFailure() ) {
+    //    log << MSG::WARNING << " RootTupleSvc is not available, will not write Pt tuple" << endreq;
+    //    m_rootTupleSvc=0;
+    //}else if( !m_root_tree.value().empty() ) {
+    //    
+    //    m_pointing_info.setPtTuple(m_rootTupleSvc, m_root_tree.value());
+    //}
 
 
     // attach an observer to be notified when orbital position changes
@@ -525,9 +526,10 @@ StatusCode FluxAlg::execute()
     m_pointing_info.set();
     
     // put pointing stuff into the root tree
-    if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
-        m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), m_save_tuple);
-    }
+    //  done in PtValsAlg now
+    //if( m_rootTupleSvc!=0 && !m_root_tree.value().empty()){
+    //    m_rootTupleSvc->storeRowFlag(this->m_root_tree.value(), m_save_tuple);
+    //}
 
     if( m_initialTime==0) m_initialTime=m_currentTime;
     h->setTime(m_currentTime);
