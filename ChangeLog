@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: lsrea  Tue Mar 17 18:01:15 PDT 2009
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx 
+Removed Files:
+	PointInfoAlg.cxx 
+Log Message:
+Removed all code that created Pt* variables in the merit tuple
+This is now done in AnalysisNtuple::PtValsAlg
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-49-00, operation: add
 Package: FluxSvc
