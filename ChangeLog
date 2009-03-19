@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Wed Mar 18 21:38:39 PDT 2009
+FluxSvc/src/Dll
+
+Modified Files:
+	FluxSvc_load.cxx 
+Log Message:
+comment the DECLARE statement for PointInfoAlg, which no longer exists
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-03, operation: add
 Package: FluxSvc
