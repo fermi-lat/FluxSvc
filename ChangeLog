@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Aug  5 14:00:29 PDT 2009
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	FluxSvcLib.py 
+Log Message:
+Take out unnecessary dependency on f2c
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-04, operation: add
 Package: FluxSvc
