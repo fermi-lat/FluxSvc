@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.110 2008/04/15 17:27:19 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.111 2008/07/21 15:17:28 glastrm Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -43,6 +43,7 @@
 #include <sstream>
 #include <iomanip>
 #include <cstdlib>
+#include <iostream>
 
 using astro::GPS;
 /** 
@@ -52,7 +53,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.110 2008/04/15 17:27:19 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.111 2008/07/21 15:17:28 glastrm Exp $
 */
 
 // includes
@@ -723,7 +724,8 @@ StatusCode FluxSvc::run(){
 		    
                     log << MSG::INFO 
 		        << " [" << tstamp.getString() << "]  "
-                        <<  std::setprecision(12)<< std::resetiosflags(4096) // scientific??
+                        //<<  std::setprecision(12)<< std::resetiosflags(4096) // scientific??
+                        <<  std::setprecision(12)<< std::resetiosflags(std::ios::scientific) // scientific??
                         << percent_complete << "% complete: "
                         << " event "<< eventNumber<<",  time= " 
                         <<  m_times.current() << "= launch+ "
@@ -769,7 +771,7 @@ StatusCode FluxSvc::run(){
 
 
  
-    void FluxSvc::setSAABoundary(const std::vector<std::pair<double, double> > & boundary)
+    void FluxSvc::setSAABoundary(const std::vector<std::pair<double, double> > & /*boundary*/)
     {
     }
 
