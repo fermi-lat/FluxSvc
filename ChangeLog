@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Sep 15 08:03:08 PDT 2009
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix warnings and re-enable m_rootTupleSvc in FluxAlg
+    *
+------------------------------------------------------------
+User: heather  Tue Sep 15 08:03:08 PDT 2009
 FluxSvc
 
 Modified Files:
