@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Sep 15 08:03:09 PDT 2009
+FluxSvc/src
+
+Modified Files:
+	FluxAlg.cxx FluxSvc.cxx 
+Log Message:
+fix warnings and re-enable m_rootTupleSvc in FluxAlg
+    *
+------------------------------------------------------------
 User: heather  Tue Sep 15 08:03:08 PDT 2009
 FluxSvc/doc
 
