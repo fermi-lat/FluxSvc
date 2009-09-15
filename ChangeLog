@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: heather  Tue Sep 15 08:03:08 PDT 2009
-FluxSvc/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-fix warnings and re-enable m_rootTupleSvc in FluxAlg
-    *
-------------------------------------------------------------
-User: heather  Tue Sep 15 08:03:08 PDT 2009
-FluxSvc/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-fix warnings and re-enable m_rootTupleSvc in FluxAlg
-    *
-------------------------------------------------------------
-User: heather  Tue Sep 15 08:03:08 PDT 2009
-FluxSvc
-
-Modified Files:
-	SConscript 
-Log Message:
-fix warnings and re-enable m_rootTupleSvc in FluxAlg
-    *
-------------------------------------------------------------
 User: jrb  Wed Aug  5 14:00:29 PDT 2009
 GlastRelease-scons/FluxSvc
 
