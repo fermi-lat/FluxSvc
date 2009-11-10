@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 10 15:35:11 PST 2009
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	.cvsignore FluxSvcLib.py SConscript 
+Log Message:
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-05, operation: add
 Package: FluxSvc
