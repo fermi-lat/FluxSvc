@@ -1,11 +1,17 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/FluxSvcLib.py,v 1.4 2009/01/23 00:21:09 ecephas Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/FluxSvcLib.py,v 1.5 2009/08/05 21:00:29 jrb Exp $
 def generate(env, **kw):
     if not kw.get('depsOnly', 0):
         env.Tool('addLibrary', library = ['FluxSvc'])
-    env.Tool('celestialSourcesLib')
-    env.Tool('tipLib')
-    env.Tool('fluxLib')
     env.Tool('TriggerLib')
+    env.Tool('ntupleWriterSvcLib')
+    env.Tool('EventLib')
+    env.Tool('GlastSvcLib')
+    env.Tool('celestialSourcesLib')
+    env.Tool('fluxLib')
+    env.Tool('astroLib')
+    env.Tool('tipLib')
+    env.Tool('facilitiesLib')
     env.Tool('addLibrary', library = env['clhepLibs'])
+    env.Tool('addLibrary', library = env['gaudiLibs'])
 def exists(env):
     return 1;
