@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec 17 11:33:55 PST 2009
+FluxSvc/test_FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+jobOptions.txt:  eliminate reference to undefined source timeticks30s
+requirements:    correct capitalization in "use" statement
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-06, operation: add
 Package: test_FluxSvc
