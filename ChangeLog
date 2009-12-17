@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec 17 11:40:14 PST 2009
+FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-06, operation: add
 Package: FluxSvc
