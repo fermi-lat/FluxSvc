@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:35:17 PDT 2010
+GlastRelease-scons/FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+updates for SCons build
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-07, operation: add
 Package: FluxSvc
