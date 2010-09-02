@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Sep  2 08:02:57 PDT 2010
+FluxSvc/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+updates for Gaudi v21r7
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-08, operation: add
 Package: FluxSvc
