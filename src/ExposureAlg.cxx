@@ -1,7 +1,7 @@
 /*** @file ExposureAlg.cxx
     @brief declaration and implementation of class ExposureAlg
 
-    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.44 2007/08/16 20:36:21 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.47 2008/11/10 16:06:26 burnett Exp $
 
     note: reverted to 1.44 by THB on 11/10
 */
@@ -49,7 +49,7 @@
 *
 * \author Sean Robinson
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.44 2007/08/16 20:36:21 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/ExposureAlg.cxx,v 1.47 2008/11/10 16:06:26 burnett Exp $
 */
 class ExposureAlg : public Algorithm {
 public:
@@ -92,8 +92,9 @@ private:
 };
 //------------------------------------------------------------------------
 
-static const AlgFactory<ExposureAlg>  Factory;
-const IAlgFactory& ExposureAlgFactory = Factory;
+//static const AlgFactory<ExposureAlg>  Factory;
+//const IAlgFactory& ExposureAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(ExposureAlg);
 
 //------------------------------------------------------------------------
 //! ctor
