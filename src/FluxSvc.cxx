@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.112 2009/09/15 15:03:09 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.112.20.1 2010/09/02 15:02:58 heather Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -28,6 +28,8 @@
 #include "FluxObs.h"
 
 #include "CLHEP/Random/Random.h"
+
+#include "GlastSvc/GlastRandomSvc/IRandomAccess.h"
 
 #include "astro/SkyDir.h"
 #include "astro/EarthOrbit.h"
@@ -55,7 +57,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.112 2009/09/15 15:03:09 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.112.20.1 2010/09/02 15:02:58 heather Exp $
 */
 
 // includes
@@ -186,6 +188,8 @@ private:
     //! 
 
     IParticlePropertySvc* m_partSvc;
+
+    IRandomAccess *m_randTool;
 
     /// Allow SvcFactory to instantiate the service.
     friend class SvcFactory<FluxSvc>;
@@ -515,10 +519,14 @@ StatusCode FluxSvc::initialize ()
       log << MSG::DEBUG << "Got pointer to ToolSvc " << endmsg;
     }
 
+
+    status = m_toolSvc->retrieveTool("FluxSvcRandom", m_randTool);
+    if (status.isFailure()) 
+        log << MSG::WARNING << "unable to create tool FluxSvcRandom" << endreq;
+
     m_fluxObs = new FluxObs();
     m_fluxObs->setFluxSvc(this);
     m_toolSvc->registerObserver(m_fluxObs);
-
 
     // attach an observer to be notified when orbital position changes
     // set callback to be notified when the position changes
