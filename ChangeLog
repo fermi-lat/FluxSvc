@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Sep  8 08:28:04 PDT 2010
+FluxSvc/src
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	FluxSvc.cxx 
+Log Message:
+update for random num access
+    *
+------------------------------------------------------------
 User: heather  Thu Sep  2 08:02:58 PDT 2010
 FluxSvc/src
 
