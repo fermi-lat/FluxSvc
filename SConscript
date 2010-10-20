@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/SConscript,v 1.14 2010/06/11 00:35:17 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/SConscript,v 1.15 2010/06/12 17:24:26 jrb Exp $
 # Authors: T. Burnett <tburnett@u.washington.edu>
 # Version: FluxSvc-06-55-08
 Import('baseEnv')
@@ -10,8 +10,8 @@ libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='FluxSvc', toBuild='component')
 
-FluxSvc = libEnv.SharedLibrary('FluxSvc',
-                               listFiles(['src/*.cxx', 'src/Dll/*.cxx']) )
+FluxSvc = libEnv.ComponentLibrary('FluxSvc',
+                                  listFiles(['src/*.cxx']) )
 
 libEnv.Tool('registerTargets', package = 'FluxSvc',
             libraryCxts = [[FluxSvc, libEnv]],
