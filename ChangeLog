@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: heather  Mon Apr 18 11:40:17 PDT 2011
+FluxSvc/src
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	ExposureAlg.cxx FluxAlg.cxx FluxSvc.cxx FluxSvcRandom.cxx 
+	OrbitSvc.cxx 
+Added Files:
+      Tag: GlastReleasev18r7p1
+	FluxObs.cxx FluxObs.h 
+Log Message:
+merge in mods for gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Apr 18 11:40:17 PDT 2011
 FluxSvc/doc
 
 Modified Files:
