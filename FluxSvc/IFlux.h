@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.31 2006/03/21 01:27:59 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.32 2006/12/22 20:36:02 burnett Exp $
 
 #ifndef _H_IFlux_
 #define _H_IFlux_
@@ -21,7 +21,7 @@ class ISpectrumFactory;
 * 
   Abstract interface for an object that generates particles, Flux
 
-  * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.31 2006/03/21 01:27:59 usher Exp $
+  * $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/FluxSvc/IFlux.h,v 1.32 2006/12/22 20:36:02 burnett Exp $
 */
 class IFlux {
 public:
@@ -48,10 +48,10 @@ public:
     virtual double energy()const=0;
     
     /// starting point 
-    virtual Hep3Vector launchPoint()const=0;
+    virtual CLHEP::Hep3Vector launchPoint()const=0;
     
     /// direction
-    virtual Hep3Vector launchDir()const=0;
+    virtual CLHEP::Hep3Vector launchDir()const=0;
     
     /// time (s) (absolute or elapsed??)
     virtual double time()const=0;

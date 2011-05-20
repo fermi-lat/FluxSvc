@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.109 2009/03/18 01:01:15 lsrea Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.110 2009/09/15 15:03:08 heather Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.109 2009/03/18 01:01:15 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.110 2009/09/15 15:03:08 heather Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -428,8 +428,8 @@ StatusCode FluxAlg::execute()
         else break;
     } while(m_insideSAA && m_avoidSAA.value() || --count>0);
 
-    Hep3Vector p = m_flux->launchPoint();
-    Hep3Vector d = m_flux->launchDir();
+    CLHEP::Hep3Vector p = m_flux->launchPoint();
+    CLHEP::Hep3Vector d = m_flux->launchDir();
 
     double ke = m_flux->energy(); // kinetic energy in MeV
 
