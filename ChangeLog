@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri May 20 08:31:03 PDT 2011
+FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+CLHEP 2.1.0.1
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-55-08-gr01, operation: add
 Package: FluxSvc
