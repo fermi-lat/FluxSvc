@@ -2,6 +2,28 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: FluxSvc
+User: heather  Wed Sep  7 14:28:50 2011
+Files:
+  FluxSvc/src/FluxSvc.h  1.21
+  FluxSvc/src/FluxSvc.cxx  1.112
+  FluxSvc/src/FluxAlg.h  1.8
+  FluxSvc/src/ExposureAlg.cxx  1.47
+  FluxSvc/src/PointingInfo.cxx  1.13
+  FluxSvc/src/FluxAlg.cxx  1.110
+  FluxSvc/src/OrbitSvc.cxx  1.1
+  FluxSvc/src/mainpage.h  1.31
+  FluxSvc/src/defaultOptions.txt  1.17
+  FluxSvc/src/ExposureAlg.h  1.6
+  FluxSvc/src/FluxSvcRandom.cxx  1.1
+  FluxSvc/src/SAAboundary.txt  1.1
+  FluxSvc/src/Dll/FluxSvc_load.cxx  1.18
+  FluxSvc/src/Dll/FluxSvc_dll.cxx  1.5
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: FluxSvc
 User: heather  Wed Sep  7 14:28:39 2011
 Files:
   FluxSvc/data/ParticleTable.txt  1.5
