@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: FluxSvc
+User: heather  Wed Sep  7 10:31:53 2011
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: FluxSvc
 User: heather  Wed Sep  7 10:31:39 2011
 Files:
   FluxSvc/data/ParticleTable.txt  1.5
