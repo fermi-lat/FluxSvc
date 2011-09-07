@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: FluxSvc
+User: heather  Wed Sep  7 14:28:08 2011
+Files:
+  FluxSvc/.cvsignore  1.4
+  FluxSvc/ChangeLog  1.1.1.1329
+  FluxSvc/SConscript  1.15
+  FluxSvc/FluxSvcLib.py  1.6
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: FluxSvc
 User: heather  Wed Sep  7 10:31:53 2011
