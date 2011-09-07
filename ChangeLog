@@ -2,6 +2,21 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: FluxSvc
+User: heather  Wed Sep  7 14:28:39 2011
+Files:
+  FluxSvc/data/ParticleTable.txt  1.5
+  FluxSvc/doc/.cvsignore  1.1.1.1
+  FluxSvc/doc/FluxSvcFig2.jpg  1.1
+  FluxSvc/doc/release.notes  1.161
+  FluxSvc/doc/FluxSvcFig1.jpg  1.1
+  FluxSvc/doc/FluxSvcDoc2.htm  1.2
+  FluxSvc/doc/Doxyfile  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: FluxSvc
 User: heather  Wed Sep  7 14:28:21 2011
 Files:
 
