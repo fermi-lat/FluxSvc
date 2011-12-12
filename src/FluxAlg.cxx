@@ -1,7 +1,7 @@
 /** @file FluxAlg.cxx
 @brief declaration and definition of the class FluxAlg
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.110 2009/09/15 15:03:08 heather Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxAlg.cxx,v 1.110.22.1 2011/04/18 18:40:17 heather Exp $
 
 */
 
@@ -64,7 +64,7 @@ using astro::GPS;
 * from FluxSvc and put it onto the TDS for later retrieval
 * \author Toby Burnett
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxAlg.cxx,v 1.110 2009/09/15 15:03:08 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxAlg.cxx,v 1.110.22.1 2011/04/18 18:40:17 heather Exp $
 */
 
 typedef HepGeom::Point3D<double>  HepPoint3D;
@@ -145,8 +145,9 @@ private:
 //------------------------------------------------------------------------
 
 
-static const AlgFactory<FluxAlg>  Factory;
-const IAlgFactory& FluxAlgFactory = Factory;
+//static const AlgFactory<FluxAlg>  Factory;
+//const IAlgFactory& FluxAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(FluxAlg);
 
 //------------------------------------------------------------------------
 //! ctor
