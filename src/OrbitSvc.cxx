@@ -1,7 +1,7 @@
 /** @file OrbitSvc.cxx
 @brief declaration and definition of the class OrbitSvc
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/OrbitSvc.cxx,v 1.104 2007/09/15 23:50:40 burnett Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/OrbitSvc.cxx,v 1.1.506.1 2011/04/18 18:40:17 heather Exp $
 
 */
 
@@ -56,8 +56,9 @@ private:
 //------------------------------------------------------------------------
 
 
-static const SvcFactory<OrbitSvc>  Factory;
-const ISvcFactory& OrbitSvcFactory = Factory;
+//static const SvcFactory<OrbitSvc>  Factory;
+//const ISvcFactory& OrbitSvcFactory = Factory;
+DECLARE_SERVICE_FACTORY(OrbitSvc);
 
 //------------------------------------------------------------------------
 //! ctor
