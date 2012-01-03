@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Jan  3 12:11:14 PST 2012
+FluxSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch to find CRflux
+    *
+------------------------------------------------------------
+User: heather  Tue Jan  3 12:11:14 PST 2012
 FluxSvc
 
 Modified Files:
