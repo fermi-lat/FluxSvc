@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.113 2011/12/12 20:48:51 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.114 2012/01/03 20:11:15 heather Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -57,7 +57,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.113 2011/12/12 20:48:51 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.114 2012/01/03 20:11:15 heather Exp $
 */
 
 // includes
@@ -522,15 +522,28 @@ StatusCode FluxSvc::initialize ()
   /* HMK Explicitly search for RegisterCRflux tool since objManager is
      no longer available in new Gaudi */
 
-   IRegisterSource *crFlux;
-   status = m_toolSvc->retrieveTool("RegisterCRflux", crFlux);
+   IRegisterSource *ireg;
+   status = m_toolSvc->retrieveTool("RegisterCRflux", ireg);
    if (status.isFailure())
        log << MSG::INFO << "No CRflux requested for this run" << endreq;
    else {
        log << MSG::INFO << "Found RegisterCRflux" << endreq;
-       crFlux->registerMe(this);
+       ireg->registerMe(this);
    }
 
+   // In Interleave
+   status = m_toolSvc->retrieveTool("RegisterSampledBackground", ireg);
+   if (status.isSuccess()) {
+       log << MSG::INFO << "Found RegisterSampledBackground" << endreq;
+       ireg->registerMe(this);
+   }
+
+   // In userAlg
+   status = m_toolSvc->retrieveTool("RegisterSource", ireg);
+   if (status.isSuccess()) {
+       log << MSG::INFO << "Found RegisterSource" << endreq;
+       ireg->registerMe(this);
+   }
 
     status = m_toolSvc->retrieveTool("FluxSvcRandom", m_randTool);
     if (status.isFailure()) 
