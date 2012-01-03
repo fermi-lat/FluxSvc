@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jan  3 13:06:12 PST 2012
+FluxSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+add in patches for Interleave and userAlg registerSources too
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-56-01, operation: add
 Package: FluxSvc
