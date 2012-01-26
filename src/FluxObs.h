@@ -1,7 +1,7 @@
 /** @file FluxObs.h
 @brief definition of the class FluxObs
 
-$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/Attic/FluxObs.h,v 1.1.4.1 2011/04/18 18:40:17 heather Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.2 2011/12/12 20:48:51 heather Exp $
 
 */
 #ifndef _FluxObs_H
@@ -35,7 +35,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/Attic/FluxO
 *
 * @authors Toby Burnett, Karl Young
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/Attic/FluxObs.h,v 1.1.4.1 2011/04/18 18:40:17 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.2 2011/12/12 20:48:51 heather Exp $
 */
 class FluxObs : public IToolSvc::Observer
 {
