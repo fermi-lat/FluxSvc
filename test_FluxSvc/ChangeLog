@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: FluxSvc-06-55-08-gr01, operation: add
+Package: test_FluxSvc
+User: heather  Wed Jan 25 21:49:56 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-br01, operation: add
 Package: test_FluxSvc
 User: heather  Fri Jan 20 12:02:33 2012
