@@ -6,7 +6,7 @@ gets adresses
  and sets seeds for them based on run and particle sequence
  number obtained from the MCHeader
 
- $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/Attic/FluxObs.cxx,v 1.1.4.1 2011/04/18 18:40:17 heather Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.cxx,v 1.2 2011/12/12 20:48:51 heather Exp $
 
  Author: Toby Burnett, Karl Young
 */
