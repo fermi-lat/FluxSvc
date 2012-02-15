@@ -6,7 +6,7 @@ gets adresses
  and sets seeds for them based on run and particle sequence
  number obtained from the MCHeader
 
- $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/Attic/FluxObs.cxx,v 1.1.4.1 2011/04/18 18:40:17 heather Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.cxx,v 1.2 2011/12/12 20:48:51 heather Exp $
 
  Author: Toby Burnett, Karl Young
 */
@@ -32,10 +32,10 @@ FluxObs::FluxObs():IToolSvc::Observer(), m_fluxSvc(0)
 }
 
 
-void FluxObs::onCreate(IAlgTool& tool) {
+void FluxObs::onCreate(const IAlgTool* tool) {
 
     IRegisterSource* ireg;
-    StatusCode status =tool.queryInterface( IRegisterSource::interfaceID(), (void**)&ireg);
+    StatusCode status =const_cast<IAlgTool*>(tool)->queryInterface( IRegisterSource::interfaceID(), (void**)&ireg);
     if( status.isSuccess() ){
         ireg->registerMe(m_fluxSvc);
     }
