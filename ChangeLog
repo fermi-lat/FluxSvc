@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 15 12:19:02 PST 2012
+FluxSvc/src
+
+Modified Files:
+	FluxObs.cxx FluxObs.h 
+Log Message:
+patch Observer use
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-04-01-gr13, operation: add
 Package: FluxSvc
