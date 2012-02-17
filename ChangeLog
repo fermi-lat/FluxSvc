@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Fri Feb 17 13:21:09 PST 2012
+FluxSvc/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	FluxObs.cxx FluxObs.h 
+Log Message:
+patch Observer
+    *
+------------------------------------------------------------
+User: heather  Fri Feb 17 13:21:09 PST 2012
 FluxSvc/doc
 
 Modified Files:
