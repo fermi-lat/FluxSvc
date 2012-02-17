@@ -6,6 +6,7 @@
 
             * EOH *
 
+ FluxSvc-06-55-08-gr03 17-Feb-2012 hmk Merge in observer patch
  FluxSvc-06-55-08-gr02 26-Jan-2012 hmk Gaudi v21r7 upgrade
  FluxSvc-06-55-08 12-Jun-2010    jrb upgrades for SCons builds
  FluxSvc-06-55-07 17-Dec-2009    jrb bug fix for test program
