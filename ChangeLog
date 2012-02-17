@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Feb 17 13:21:08 PST 2012
+FluxSvc
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+patch Observer
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-57-00, operation: add
 Package: FluxSvc
