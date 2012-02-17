@@ -1,7 +1,7 @@
 /** @file FluxObs.h
 @brief definition of the class FluxObs
 
-$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.2 2011/12/12 20:48:51 heather Exp $
+$Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.3 2012/02/15 20:19:02 heather Exp $
 
 */
 #ifndef _FluxObs_H
@@ -35,7 +35,7 @@ $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.2 2011/12/12 20:
 *
 * @authors Toby Burnett, Karl Young
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.2 2011/12/12 20:48:51 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxObs.h,v 1.3 2012/02/15 20:19:02 heather Exp $
 */
 class FluxObs : public IToolSvc::Observer
 {
@@ -45,9 +45,9 @@ public:
 
     virtual ~FluxObs();
 
-    void onCreate(IAlgTool& tool);
+    virtual void onCreate(const IAlgTool* tool);
    
-    void onRetrieve(IAlgTool& tool) { }
+    virtual void onRetrieve(const IAlgTool* tool) { }
 
     void setFluxSvc(IFluxSvc *fluxSvc) { m_fluxSvc = fluxSvc; }
 
