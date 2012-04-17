@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: FluxSvc
+User: heather  Tue Apr 17 11:50:38 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: FluxSvc
 User: heather  Tue Apr 17 11:50:30 2012
 Files:
   FluxSvc/.cvsignore  1.4
