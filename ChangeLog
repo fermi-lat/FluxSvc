@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Mon Jul  2 14:00:19 PDT 2012
+GlastRelease-scons/FluxSvc/src
+
+Modified Files:
+	FluxSvc.cxx 
+Log Message:
+oops forgot to remove the empty delimiters when calling Util, these should not be there if we consider that Util is used for backward compatibility
+    *
+------------------------------------------------------------
 TAG
 Tag name: FluxSvc-06-58-00, operation: add
 Package: FluxSvc
