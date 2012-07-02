@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/SConscript,v 1.20 2012/02/16 03:03:47 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/SConscript,v 1.21 2012/07/02 20:57:33 cohen Exp $
 # Authors: T. Burnett <tburnett@u.washington.edu>
-# Version: FluxSvc-06-58-00
+# Version: FluxSvc-06-58-01
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
