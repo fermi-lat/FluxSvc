@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.115 2012/01/03 21:06:12 heather Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.116 2012/07/02 20:54:54 cohen Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -55,7 +55,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.115 2012/01/03 21:06:12 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.116 2012/07/02 20:54:54 cohen Exp $
 */
 
 // includes
@@ -234,7 +234,7 @@ private:
 		try {
 		  //... first try the old way, needed for gaudi versions 
 		  // where it is not expanded on the fly when calling .value()
-		  int success = facilities::Util::expandEnvVar(&ev,"","");
+		  int success = facilities::Util::expandEnvVar(&ev);
 		  comma =  ev.find(',');
 		} catch(facilities::Untranslatable ex)
 		  {
