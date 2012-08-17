@@ -1,7 +1,9 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/FluxSvcLib.py,v 1.5 2009/08/05 21:00:29 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/FluxSvcLib.py,v 1.6 2009/11/10 23:35:11 jrb Exp $
 def generate(env, **kw):
     if not kw.get('depsOnly', 0):
         env.Tool('addLibrary', library = ['FluxSvc'])
+        if env['PLATFORM']=='win32' and env.get('CONTAINERNAME','')=='GlastRelease':
+	    env.Tool('findPkgPath', package = 'FluxSvc') 
     env.Tool('TriggerLib')
     env.Tool('ntupleWriterSvcLib')
     env.Tool('EventLib')
