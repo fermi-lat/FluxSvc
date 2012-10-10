@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-20-06-02, operation: add
 Package: FluxSvc
+User: heather  Wed Oct 10 03:38:31 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-20-06-02, operation: add
+Package: FluxSvc
 User: heather  Wed Oct 10 03:38:24 2012
 Files:
   FluxSvc/.cvsignore  1.4
