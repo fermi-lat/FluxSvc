@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp44, operation: add
 Package: FluxSvc
+User: heather  Tue May 21 15:43:59 2013
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp44, operation: add
+Package: FluxSvc
 User: heather  Tue May 21 15:43:51 2013
 Files:
   FluxSvc/src/FluxSvc.h  1.21
