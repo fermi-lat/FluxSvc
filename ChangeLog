@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp48, operation: add
 Package: FluxSvc
+User: heather  Thu Jul 18 10:21:44 2013
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp48, operation: add
+Package: FluxSvc
 User: heather  Thu Jul 18 09:58:39 2013
 Files:
   FluxSvc/.cvsignore  1.4
