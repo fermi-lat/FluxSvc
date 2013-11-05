@@ -2,7 +2,7 @@
 * @file FluxSvc.cxx
 * @brief definition of the class FluxSvc
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.116 2012/07/02 20:54:54 cohen Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.117 2012/07/02 21:00:19 cohen Exp $
 *  Original author: Toby Burnett tburnett@u.washington.edu
 */
 
@@ -55,7 +55,7 @@ using astro::GPS;
 *  FluxSvc handles the creation and interfacing with Flux objects.  
 * \author Toby Burnett tburnett@u.washington.edu
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/FluxSvc/src/FluxSvc.cxx,v 1.116 2012/07/02 20:54:54 cohen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/FluxSvc/src/FluxSvc.cxx,v 1.117 2012/07/02 21:00:19 cohen Exp $
 */
 
 // includes
@@ -337,7 +337,7 @@ FluxSvc::FluxSvc(const std::string& name,ISvcLocator* svc)
     declareProperty("LaunchDate"  , m_times.m_launchDate="");
     declareProperty("StartTimeEnvVar", m_times.m_startTimeEnvVar="");
     declareProperty("SampleInterval", m_sampleInterval=1.0);
-    declareProperty("OrbitInclination", m_orbitInclination=25.3);
+    declareProperty("OrbitInclination", m_orbitInclination=25.6);
 
     declareProperty("SAApolyLat"  , m_SAA_poly_lat);
     declareProperty("SAApolyLon"  , m_SAA_poly_lon);
