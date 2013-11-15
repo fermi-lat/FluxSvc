@@ -1,5 +1,49 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-20-09-05, operation: add
+Package: FluxSvc
+User: heather  Fri Nov 15 09:19:03 2013
+Files:
+  FluxSvc/.cvsignore  1.4
+  FluxSvc/ChangeLog  1.1.1.1589
+  FluxSvc/SConscript  1.24
+  FluxSvc/FluxSvcLib.py  1.7
+  FluxSvc/FluxSvc/PointingInfo.h  1.8
+  FluxSvc/FluxSvc/ISpectrum.h  1.9
+  FluxSvc/FluxSvc/IFluxSvc.h  1.54
+  FluxSvc/FluxSvc/IFlux.h  1.33
+  FluxSvc/FluxSvc/ISpectrumFactory.h  1.9
+  FluxSvc/FluxSvc/IRegisterSource.h  1.6
+  FluxSvc/cmt/.cvsignore  1.2
+  FluxSvc/cmt/requirements  1.225
+  FluxSvc/cmt/Makefile  1.1.1.1
+  FluxSvc/data/ParticleTable.txt  1.5
+  FluxSvc/doc/.cvsignore  1.1.1.1
+  FluxSvc/doc/FluxSvcFig2.jpg  1.1
+  FluxSvc/doc/release.notes  1.170
+  FluxSvc/doc/FluxSvcFig1.jpg  1.1
+  FluxSvc/doc/FluxSvcDoc2.htm  1.2
+  FluxSvc/doc/Doxyfile  1.1
+  FluxSvc/src/FluxSvc.h  1.21
+  FluxSvc/src/FluxSvc.cxx  1.118
+  FluxSvc/src/FluxObs.h  1.3
+  FluxSvc/src/FluxObs.cxx  1.3
+  FluxSvc/src/FluxAlg.h  1.8
+  FluxSvc/src/ExposureAlg.cxx  1.48
+  FluxSvc/src/PointingInfo.cxx  1.13
+  FluxSvc/src/FluxAlg.cxx  1.112
+  FluxSvc/src/OrbitSvc.cxx  1.2
+  FluxSvc/src/mainpage.h  1.32
+  FluxSvc/src/defaultOptions.txt  1.17
+  FluxSvc/src/ExposureAlg.h  1.6
+  FluxSvc/src/FluxSvcRandom.cxx  1.2
+  FluxSvc/src/SAAboundary.txt  1.1
+  FluxSvc/src/Dll/FluxSvc_load.cxx  1.18
+  FluxSvc/src/Dll/FluxSvc_dll.cxx  1.5
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: FluxSvc-06-59-01, operation: add
 Package: FluxSvc
 User: bregeon  Tue Nov  5 09:31:24 2013
