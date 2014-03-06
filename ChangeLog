@@ -1,5 +1,33 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-20-09-08, operation: add
+Package: FluxSvc
+User: heather  Thu Mar  6 09:40:33 2014
+Files:
+  FluxSvc/.cvsignore  1.4
+  FluxSvc/ChangeLog  1.1.1.1589
+  FluxSvc/SConscript  1.24
+  FluxSvc/FluxSvcLib.py  1.7
+  FluxSvc/FluxSvc/PointingInfo.h  1.8
+  FluxSvc/FluxSvc/ISpectrum.h  1.9
+  FluxSvc/FluxSvc/IFluxSvc.h  1.54
+  FluxSvc/FluxSvc/IFlux.h  1.33
+  FluxSvc/FluxSvc/ISpectrumFactory.h  1.9
+  FluxSvc/FluxSvc/IRegisterSource.h  1.6
+  FluxSvc/cmt/.cvsignore  1.2
+  FluxSvc/cmt/requirements  1.225
+  FluxSvc/cmt/Makefile  1.1.1.1
+  FluxSvc/data/ParticleTable.txt  1.5
+  FluxSvc/doc/.cvsignore  1.1.1.1
+  FluxSvc/doc/FluxSvcFig2.jpg  1.1
+  FluxSvc/doc/release.notes  1.170
+  FluxSvc/doc/FluxSvcFig1.jpg  1.1
+  FluxSvc/doc/FluxSvcDoc2.htm  1.2
+  FluxSvc/doc/Doxyfile  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-09-07, operation: add
 Package: FluxSvc
 User: heather  Thu Feb 20 00:32:02 2014
